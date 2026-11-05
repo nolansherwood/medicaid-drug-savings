@@ -1,0 +1,26 @@
+# Light theme (the default): warm off-white canvas, white cards, blue accent.
+# The dark theme, modeled on the reference dashboard, is the same settings with
+# the colors in app/lib/ui.py THEMES["dark"] (side-menu "Dark mode" toggle).
+[theme]
+base = "light"
+primaryColor = "#4C8DF6"
+backgroundColor = "#F6F6F3"
+secondaryBackgroundColor = "#ECECE7"
+textColor = "#1F2328"
+borderColor = "#E1E1DA"
+baseRadius = "10px"
+font = "Inter:https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+# Headings are serif, as in the original dashboard; the font is loaded and
+# applied in app/lib/ui.py (headingFont mis-parses "Source Serif 4").
+headingFontWeights = [400, 500, 500, 600, 600, 600]
+headingFontSizes = ["2.4rem", "1.6rem", "1.3rem", "1.1rem", "1rem", "0.95rem"]
+
+[theme.sidebar]
+backgroundColor = "#EEEEE9"
+secondaryBackgroundColor = "#E2E2DC"
+
+[client]
+toolbarMode = "minimal"
+
+[server]
+runOnSave = true

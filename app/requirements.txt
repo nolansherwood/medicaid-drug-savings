@@ -1,0 +1,10 @@
+# Packages for the hosted app (Streamlit Community Cloud reads this file because it
+# sits next to the entry point, app/Home.py). Pinned to the versions the app was tested
+# with: the light/dark switch uses Streamlit 1.50 internals (docs/deploy.md).
+# The pipeline's own dependencies are in the root requirements.txt.
+streamlit==1.50.0
+plotly==7.1.0
+pandas==2.3.3
+numpy==2.0.2
+pyarrow==21.0.0
+altair==5.5.0

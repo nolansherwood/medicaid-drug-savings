@@ -1,0 +1,425 @@
+state,modality,product_type,ingredients,prescriptions,share_prescriptions,medicaid_amount,share_spending,cost_per_prescription
+US,Small molecule,"Brand, single source",885,39050510,0.05383,55211623834.14,0.49324,1413.85
+US,Small molecule,"Brand, generic competition",561,37189644,0.05126,9579688832.14,0.08558,257.59
+US,Small molecule,Authorized generic,329,18089392,0.02493,1953784697.1,0.01745,108.01
+US,Small molecule,Generic,989,581721107,0.80183,11314310615.03,0.10108,19.45
+US,Biologic,Reference biologic,312,16526557,0.02278,32763773235.02,0.2927,1982.49
+US,Biologic,Biosimilar,11,331916,0.00046,388802224.48,0.00347,1171.39
+US,Biologic,Interchangeable biosimilar,9,534664,0.00074,249544344.48,0.00223,466.73
+US,Other,OTC / unapproved / unclassified,444,32044382,0.04417,475441203.13,0.00425,14.84
+AK,Small molecule,"Brand, single source",366,82677,0.06709,90890124.52,0.45272,1099.34
+AK,Small molecule,"Brand, generic competition",227,49506,0.04017,8188810.1,0.04079,165.41
+AK,Small molecule,Authorized generic,175,59211,0.04805,6303269.16,0.0314,106.45
+AK,Small molecule,Generic,706,1002913,0.81386,26579437.08,0.13239,26.5
+AK,Biologic,Reference biologic,146,30144,0.02446,67462047.52,0.33602,2237.99
+AK,Biologic,Biosimilar,8,291,0.00024,344221.78,0.00171,1182.89
+AK,Biologic,Interchangeable biosimilar,4,927,0.00075,755169.05,0.00376,814.64
+AK,Other,OTC / unapproved / unclassified,42,6621,0.00537,243561.28,0.00121,36.79
+AL,Small molecule,"Brand, single source",510,358111,0.05603,447030719.23,0.45445,1248.3
+AL,Small molecule,"Brand, generic competition",254,250300,0.03916,72099054.02,0.0733,288.05
+AL,Small molecule,Authorized generic,209,185820,0.02907,20881215.91,0.02123,112.37
+AL,Small molecule,Generic,802,5435592,0.85045,117286343.42,0.11923,21.58
+AL,Biologic,Reference biologic,172,132585,0.02074,322064986.63,0.32741,2429.12
+AL,Biologic,Biosimilar,8,3458,0.00054,2997218.55,0.00305,866.75
+AL,Biologic,Interchangeable biosimilar,4,1800,0.00028,290488.98,0.0003,161.38
+AL,Other,OTC / unapproved / unclassified,47,23730,0.00371,1026077.76,0.00104,43.24
+AR,Small molecule,"Brand, single source",443,152365,0.02816,158182001.95,0.33889,1038.18
+AR,Small molecule,"Brand, generic competition",234,373026,0.06895,81192676.14,0.17395,217.66
+AR,Small molecule,Authorized generic,159,63818,0.0118,10455443.48,0.0224,163.83
+AR,Small molecule,Generic,733,4666012,0.86246,77389446.63,0.1658,16.59
+AR,Biologic,Reference biologic,166,102881,0.01902,136616579.89,0.29268,1327.91
+AR,Biologic,Biosimilar,9,1104,0.0002,2033548.64,0.00436,1841.98
+AR,Biologic,Interchangeable biosimilar,5,157,3e-05,316352.91,0.00068,2014.99
+AR,Other,OTC / unapproved / unclassified,56,50741,0.00938,584398.05,0.00125,11.52
+AZ,Small molecule,"Brand, single source",595,457575,0.03228,920698920.85,0.4611,2012.13
+AZ,Small molecule,"Brand, generic competition",304,521787,0.03681,174027859.25,0.08716,333.52
+AZ,Small molecule,Authorized generic,219,429911,0.03033,44587526.93,0.02233,103.71
+AZ,Small molecule,Generic,836,11809168,0.83314,205572914.26,0.10295,17.41
+AZ,Biologic,Reference biologic,213,390787,0.02757,618531930.27,0.30977,1582.79
+AZ,Biologic,Biosimilar,10,8165,0.00058,8952645.75,0.00448,1096.47
+AZ,Biologic,Interchangeable biosimilar,7,12738,0.0009,16238549.48,0.00813,1274.81
+AZ,Other,OTC / unapproved / unclassified,192,544135,0.03839,8132095.53,0.00407,14.94
+CA,Small molecule,"Brand, single source",785,7010061,0.07856,9985331856.35,0.56478,1424.43
+CA,Small molecule,"Brand, generic competition",477,3250469,0.03643,1204236582.29,0.06811,370.48
+CA,Small molecule,Authorized generic,270,3147352,0.03527,256766227.95,0.01452,81.58
+CA,Small molecule,Generic,931,69374711,0.77746,1629545087.67,0.09217,23.49
+CA,Biologic,Reference biologic,265,2097463,0.02351,4466926829.33,0.25265,2129.68
+CA,Biologic,Biosimilar,10,38527,0.00043,47803972.73,0.0027,1240.79
+CA,Biologic,Interchangeable biosimilar,7,100109,0.00112,29120530.2,0.00165,290.89
+CA,Other,OTC / unapproved / unclassified,173,4214101,0.04723,60446081.74,0.00342,14.34
+CO,Small molecule,"Brand, single source",592,489913,0.05013,696488652.98,0.43152,1421.66
+CO,Small molecule,"Brand, generic competition",307,693029,0.07091,158862868.62,0.09843,229.23
+CO,Small molecule,Authorized generic,204,201398,0.02061,21908543.7,0.01357,108.78
+CO,Small molecule,Generic,832,7979397,0.81641,142902882.5,0.08854,17.91
+CO,Biologic,Reference biologic,195,293025,0.02998,582708944.0,0.36103,1988.6
+CO,Biologic,Biosimilar,10,6350,0.00065,7732604.54,0.00479,1217.73
+CO,Biologic,Interchangeable biosimilar,7,1961,0.0002,1302388.29,0.00081,664.14
+CO,Other,OTC / unapproved / unclassified,102,108667,0.01112,2128460.34,0.00132,19.59
+CT,Small molecule,"Brand, single source",601,712985,0.07867,927414470.42,0.48898,1300.75
+CT,Small molecule,"Brand, generic competition",359,687855,0.07589,212547619.04,0.11207,309.0
+CT,Small molecule,Authorized generic,241,188135,0.02076,27007074.54,0.01424,143.55
+CT,Small molecule,Generic,841,6998226,0.77215,147573478.05,0.07781,21.09
+CT,Biologic,Reference biologic,187,233479,0.02576,567664123.21,0.2993,2431.33
+CT,Biologic,Biosimilar,9,3545,0.00039,2675467.05,0.00141,754.72
+CT,Biologic,Interchangeable biosimilar,6,7048,0.00078,1490766.67,0.00079,211.52
+CT,Other,OTC / unapproved / unclassified,116,231990,0.0256,10268302.22,0.00541,44.26
+DC,Small molecule,"Brand, single source",438,121459,0.06828,197868715.95,0.70194,1629.1
+DC,Small molecule,"Brand, generic competition",265,46415,0.02609,9262086.13,0.03286,199.55
+DC,Small molecule,Authorized generic,190,61880,0.03479,6038954.6,0.02142,97.59
+DC,Small molecule,Generic,773,1416403,0.79623,19158719.24,0.06797,13.53
+DC,Biologic,Reference biologic,172,37745,0.02122,46004466.43,0.1632,1218.82
+DC,Biologic,Biosimilar,10,762,0.00043,508966.07,0.00181,667.93
+DC,Biologic,Interchangeable biosimilar,5,5760,0.00324,2359417.87,0.00837,409.62
+DC,Other,OTC / unapproved / unclassified,144,88466,0.04973,686075.42,0.00243,7.76
+DE,Small molecule,"Brand, single source",464,168369,0.07313,100298082.63,0.38391,595.7
+DE,Small molecule,"Brand, generic competition",246,119454,0.05188,34924733.75,0.13368,292.37
+DE,Small molecule,Authorized generic,172,52014,0.02259,4587967.66,0.01756,88.21
+DE,Small molecule,Generic,757,1847656,0.80249,28323254.81,0.10841,15.33
+DE,Biologic,Reference biologic,157,55482,0.0241,88272412.35,0.33788,1591.01
+DE,Biologic,Biosimilar,8,1420,0.00062,4288339.35,0.01641,3019.96
+DE,Biologic,Interchangeable biosimilar,5,119,5e-05,90822.55,0.00035,763.21
+DE,Other,OTC / unapproved / unclassified,102,57881,0.02514,467341.23,0.00179,8.07
+FL,Small molecule,"Brand, single source",683,918525,0.04351,1460924317.44,0.46553,1590.51
+FL,Small molecule,"Brand, generic competition",393,1485422,0.07036,318739893.54,0.10157,214.58
+FL,Small molecule,Authorized generic,238,458421,0.02171,49379896.15,0.01574,107.72
+FL,Small molecule,Generic,883,17604689,0.83387,261985176.08,0.08348,14.88
+FL,Biologic,Reference biologic,243,506998,0.02401,1028584544.91,0.32776,2028.77
+FL,Biologic,Biosimilar,11,16938,0.0008,12307234.09,0.00392,726.6
+FL,Biologic,Interchangeable biosimilar,7,4095,0.00019,2008313.47,0.00064,490.43
+FL,Other,OTC / unapproved / unclassified,162,116837,0.00553,4263448.55,0.00136,36.49
+GA,Small molecule,"Brand, single source",571,426877,0.03126,565429659.26,0.45599,1324.57
+GA,Small molecule,"Brand, generic competition",321,477200,0.03495,132988566.57,0.10725,278.69
+GA,Small molecule,Authorized generic,224,423314,0.031,37318972.61,0.0301,88.16
+GA,Small molecule,Generic,845,11809279,0.86479,140376115.79,0.11321,11.89
+GA,Biologic,Reference biologic,203,244091,0.01787,352242328.06,0.28407,1443.08
+GA,Biologic,Biosimilar,10,3013,0.00022,3502981.21,0.00282,1162.62
+GA,Biologic,Interchangeable biosimilar,6,12373,0.00091,4301356.82,0.00347,347.64
+GA,Other,OTC / unapproved / unclassified,160,259476,0.019,3839055.92,0.0031,14.8
+HI,Small molecule,"Brand, single source",439,109797,0.06061,139223629.02,0.52681,1268.01
+HI,Small molecule,"Brand, generic competition",226,43239,0.02387,5081041.59,0.01923,117.51
+HI,Small molecule,Authorized generic,156,77827,0.04296,7545026.53,0.02855,96.95
+HI,Small molecule,Generic,755,1368115,0.75525,25413285.47,0.09616,18.58
+HI,Biologic,Reference biologic,161,57981,0.03201,83076531.61,0.31435,1432.82
+HI,Biologic,Biosimilar,9,1399,0.00077,1367344.54,0.00517,977.37
+HI,Biologic,Interchangeable biosimilar,6,6246,0.00345,1598401.52,0.00605,255.91
+HI,Other,OTC / unapproved / unclassified,100,146868,0.08108,971236.43,0.00368,6.61
+IA,Small molecule,"Brand, single source",544,411590,0.05354,449357876.2,0.52368,1091.76
+IA,Small molecule,"Brand, generic competition",322,326361,0.04245,46324476.91,0.05399,141.94
+IA,Small molecule,Authorized generic,197,149786,0.01948,10408299.56,0.01213,69.49
+IA,Small molecule,Generic,816,6466023,0.84113,60641326.9,0.07067,9.38
+IA,Biologic,Reference biologic,173,167719,0.02182,281599183.91,0.32818,1678.99
+IA,Biologic,Biosimilar,10,3322,0.00043,8596433.4,0.01002,2587.73
+IA,Biologic,Interchangeable biosimilar,5,501,7e-05,299790.31,0.00035,598.38
+IA,Other,OTC / unapproved / unclassified,94,161970,0.02107,847207.64,0.00099,5.23
+ID,Small molecule,"Brand, single source",472,210554,0.0555,262066934.19,0.45874,1244.65
+ID,Small molecule,"Brand, generic competition",269,278473,0.0734,55613600.11,0.09735,199.71
+ID,Small molecule,Authorized generic,175,65999,0.0174,4961529.95,0.00869,75.18
+ID,Small molecule,Generic,739,3114419,0.82091,50447991.29,0.08831,16.2
+ID,Biologic,Reference biologic,177,92477,0.02438,195095562.57,0.34151,2109.67
+ID,Biologic,Biosimilar,10,1466,0.00039,1636969.32,0.00287,1116.62
+ID,Biologic,Interchangeable biosimilar,6,3054,0.0008,849347.73,0.00149,278.11
+ID,Other,OTC / unapproved / unclassified,61,27429,0.00723,600315.02,0.00105,21.89
+IL,Small molecule,"Brand, single source",643,1038031,0.04609,1518056591.45,0.46728,1462.44
+IL,Small molecule,"Brand, generic competition",354,821042,0.03645,287379246.91,0.08846,350.02
+IL,Small molecule,Authorized generic,230,823761,0.03658,63171781.9,0.01945,76.69
+IL,Small molecule,Generic,863,18439319,0.81871,286680014.68,0.08824,15.55
+IL,Biologic,Reference biologic,231,734916,0.03263,1066790902.37,0.32838,1451.58
+IL,Biologic,Biosimilar,9,9057,0.0004,8503465.68,0.00262,938.88
+IL,Biologic,Interchangeable biosimilar,5,9571,0.00042,11868909.02,0.00365,1240.09
+IL,Other,OTC / unapproved / unclassified,141,646724,0.02871,6240091.06,0.00192,9.65
+IN,Small molecule,"Brand, single source",631,995668,0.055,1308850954.16,0.46074,1314.55
+IN,Small molecule,"Brand, generic competition",332,1207974,0.06673,278746002.35,0.09812,230.75
+IN,Small molecule,Authorized generic,221,247838,0.01369,47257490.69,0.01664,190.68
+IN,Small molecule,Generic,874,14123914,0.78025,256064100.56,0.09014,18.13
+IN,Biologic,Reference biologic,233,421832,0.0233,924441090.23,0.32542,2191.49
+IN,Biologic,Biosimilar,9,7345,0.00041,14893143.45,0.00524,2027.66
+IN,Biologic,Interchangeable biosimilar,6,3032,0.00017,3556932.23,0.00125,1173.13
+IN,Other,OTC / unapproved / unclassified,198,1094122,0.06044,6948343.35,0.00245,6.35
+KS,Small molecule,"Brand, single source",456,199998,0.06112,202225823.83,0.56648,1011.14
+KS,Small molecule,"Brand, generic competition",245,75526,0.02308,8531054.65,0.0239,112.96
+KS,Small molecule,Authorized generic,186,100453,0.0307,10354439.79,0.02901,103.08
+KS,Small molecule,Generic,800,2697101,0.82418,54646287.31,0.15308,20.26
+KS,Biologic,Reference biologic,162,60878,0.0186,77629406.65,0.21746,1275.16
+KS,Biologic,Biosimilar,10,2100,0.00064,1257311.47,0.00352,598.72
+KS,Biologic,Interchangeable biosimilar,6,6245,0.00191,693591.64,0.00194,111.06
+KS,Other,OTC / unapproved / unclassified,90,130171,0.03978,1646821.45,0.00461,12.65
+KY,Small molecule,"Brand, single source",652,1454617,0.05353,1368475999.0,0.49432,940.78
+KY,Small molecule,"Brand, generic competition",376,1884659,0.06936,301642323.49,0.10896,160.05
+KY,Small molecule,Authorized generic,238,388258,0.01429,60751383.51,0.02194,156.47
+KY,Small molecule,Generic,898,21820059,0.80301,326880348.59,0.11808,14.98
+KY,Biologic,Reference biologic,204,446202,0.01642,693581160.67,0.25053,1554.41
+KY,Biologic,Biosimilar,10,2922,0.00011,6128596.21,0.00221,2097.4
+KY,Biologic,Interchangeable biosimilar,6,1781,7e-05,864096.49,0.00031,485.17
+KY,Other,OTC / unapproved / unclassified,126,1174486,0.04322,10081578.7,0.00364,8.58
+LA,Small molecule,"Brand, single source",613,1042045,0.05822,1245536467.27,0.52141,1195.28
+LA,Small molecule,"Brand, generic competition",334,331899,0.01854,79941919.73,0.03347,240.86
+LA,Small molecule,Authorized generic,238,490304,0.02739,81159637.71,0.03398,165.53
+LA,Small molecule,Generic,875,15525596,0.86741,299740422.63,0.12548,19.31
+LA,Biologic,Reference biologic,229,320748,0.01792,659451056.88,0.27606,2055.98
+LA,Biologic,Biosimilar,10,1801,0.0001,4629200.01,0.00194,2570.35
+LA,Biologic,Interchangeable biosimilar,5,2727,0.00015,644640.0,0.00027,236.39
+LA,Other,OTC / unapproved / unclassified,128,183592,0.01026,17693495.17,0.00741,96.37
+MA,Small molecule,"Brand, single source",669,952016,0.06659,1055217923.12,0.43011,1108.4
+MA,Small molecule,"Brand, generic competition",399,1423616,0.09958,377401154.82,0.15383,265.1
+MA,Small molecule,Authorized generic,235,225150,0.01575,33962327.17,0.01384,150.84
+MA,Small molecule,Generic,886,10445299,0.73063,196231682.28,0.07999,18.79
+MA,Biologic,Reference biologic,229,401844,0.02811,776714873.24,0.31659,1932.88
+MA,Biologic,Biosimilar,9,5579,0.00039,5637835.15,0.0023,1010.55
+MA,Biologic,Interchangeable biosimilar,6,1898,0.00013,1114400.0,0.00045,587.14
+MA,Other,OTC / unapproved / unclassified,201,840937,0.05882,7066256.76,0.00288,8.4
+MD,Small molecule,"Brand, single source",623,624085,0.0425,822446832.09,0.4889,1317.84
+MD,Small molecule,"Brand, generic competition",307,655238,0.04462,201315634.83,0.11967,307.24
+MD,Small molecule,Authorized generic,250,485728,0.03308,48752586.03,0.02898,100.37
+MD,Small molecule,Generic,882,12374532,0.8427,162754507.36,0.09675,13.15
+MD,Biologic,Reference biologic,183,234179,0.01595,421534539.03,0.25058,1800.05
+MD,Biologic,Biosimilar,9,7368,0.0005,7735566.15,0.0046,1049.89
+MD,Biologic,Interchangeable biosimilar,7,34461,0.00235,16394037.57,0.00975,475.73
+MD,Other,OTC / unapproved / unclassified,148,268800,0.01831,1299381.42,0.00077,4.83
+ME,Small molecule,"Brand, single source",457,152345,0.05382,189244583.78,0.3743,1242.21
+ME,Small molecule,"Brand, generic competition",302,350713,0.12389,95714075.73,0.18931,272.91
+ME,Small molecule,Authorized generic,177,84033,0.02969,7727801.49,0.01528,91.96
+ME,Small molecule,Generic,730,2028456,0.71656,38226354.89,0.07561,18.85
+ME,Biologic,Reference biologic,155,94578,0.03341,172122272.98,0.34044,1819.9
+ME,Biologic,Biosimilar,8,1048,0.00037,1179592.09,0.00233,1125.56
+ME,Biologic,Interchangeable biosimilar,6,239,8e-05,28333.48,6e-05,118.55
+ME,Other,OTC / unapproved / unclassified,89,119403,0.04218,1346382.55,0.00266,11.28
+MI,Small molecule,"Brand, single source",635,1608467,0.05741,2209277627.22,0.54723,1373.53
+MI,Small molecule,"Brand, generic competition",351,1376914,0.04914,354370978.15,0.08778,257.37
+MI,Small molecule,Authorized generic,236,373856,0.01334,32640348.99,0.00808,87.31
+MI,Small molecule,Generic,853,22291279,0.79562,308264858.1,0.07636,13.83
+MI,Biologic,Reference biologic,231,589774,0.02105,1106072577.16,0.27397,1875.42
+MI,Biologic,Biosimilar,10,8726,0.00031,10137197.79,0.00251,1161.72
+MI,Biologic,Interchangeable biosimilar,6,1718,6e-05,1229979.12,0.0003,715.94
+MI,Other,OTC / unapproved / unclassified,185,1766669,0.06306,15216002.42,0.00377,8.61
+MN,Small molecule,"Brand, single source",600,679290,0.05687,682174941.2,0.43729,1004.25
+MN,Small molecule,"Brand, generic competition",368,800621,0.06703,129872850.06,0.08325,162.22
+MN,Small molecule,Authorized generic,229,182334,0.01526,19593508.36,0.01256,107.46
+MN,Small molecule,Generic,876,9048726,0.75754,207878664.93,0.13326,22.97
+MN,Biologic,Reference biologic,210,292498,0.02449,496629480.23,0.31835,1697.89
+MN,Biologic,Biosimilar,11,4922,0.00041,5910262.9,0.00379,1200.78
+MN,Biologic,Interchangeable biosimilar,6,1745,0.00015,2378125.72,0.00152,1362.82
+MN,Other,OTC / unapproved / unclassified,187,934702,0.07825,15567404.93,0.00998,16.65
+MO,Small molecule,"Brand, single source",580,818763,0.05164,987973667.53,0.49623,1206.67
+MO,Small molecule,"Brand, generic competition",339,1177559,0.07427,215616622.62,0.1083,183.1
+MO,Small molecule,Authorized generic,210,202581,0.01278,18060127.91,0.00907,89.15
+MO,Small molecule,Generic,846,12896440,0.81342,225886141.51,0.11346,17.52
+MO,Biologic,Reference biologic,209,355652,0.02243,535852445.36,0.26914,1506.68
+MO,Biologic,Biosimilar,10,1796,0.00011,2398621.34,0.0012,1335.54
+MO,Biologic,Interchangeable biosimilar,6,381,2e-05,35304.51,2e-05,92.66
+MO,Other,OTC / unapproved / unclassified,78,401508,0.02532,5135152.76,0.00258,12.79
+MS,Small molecule,"Brand, single source",491,219671,0.04475,260917584.73,0.45082,1187.77
+MS,Small molecule,"Brand, generic competition",285,175466,0.03574,44990167.47,0.07774,256.4
+MS,Small molecule,Authorized generic,183,97351,0.01983,7955484.19,0.01375,81.72
+MS,Small molecule,Generic,769,4178596,0.85123,80063434.09,0.13834,19.16
+MS,Biologic,Reference biologic,180,106390,0.02167,180032971.78,0.31107,1692.2
+MS,Biologic,Biosimilar,9,2173,0.00044,2336000.75,0.00404,1075.01
+MS,Biologic,Interchangeable biosimilar,6,1765,0.00036,460575.55,0.0008,260.95
+MS,Other,OTC / unapproved / unclassified,119,127467,0.02597,2004741.78,0.00346,15.73
+MT,Small molecule,"Brand, single source",418,96691,0.0358,113732165.01,0.33055,1176.24
+MT,Small molecule,"Brand, generic competition",253,228691,0.08468,60577847.95,0.17606,264.89
+MT,Small molecule,Authorized generic,170,44575,0.01651,3476059.97,0.0101,77.98
+MT,Small molecule,Generic,733,2216057,0.82055,35582766.98,0.10342,16.06
+MT,Biologic,Reference biologic,150,54155,0.02005,127469702.72,0.37048,2353.79
+MT,Biologic,Biosimilar,9,1523,0.00056,2258981.97,0.00657,1483.24
+MT,Biologic,Interchangeable biosimilar,5,560,0.00021,147853.27,0.00043,264.02
+MT,Other,OTC / unapproved / unclassified,118,58434,0.02164,820158.05,0.00238,14.04
+NC,Small molecule,"Brand, single source",663,1569372,0.07139,2134370930.92,0.51352,1360.02
+NC,Small molecule,"Brand, generic competition",400,1746830,0.07946,385929105.0,0.09285,220.93
+NC,Small molecule,Authorized generic,244,395928,0.01801,61511998.56,0.0148,155.36
+NC,Small molecule,Generic,874,17656027,0.80313,333862941.13,0.08033,18.91
+NC,Biologic,Reference biologic,219,520641,0.02368,1223135570.04,0.29428,2349.29
+NC,Biologic,Biosimilar,9,6402,0.00029,10812821.75,0.0026,1688.98
+NC,Biologic,Interchangeable biosimilar,6,7063,0.00032,3763321.88,0.00091,532.82
+NC,Other,OTC / unapproved / unclassified,111,81627,0.00371,2971299.96,0.00071,36.4
+ND,Small molecule,"Brand, single source",352,43154,0.04728,37839583.58,0.3698,876.85
+ND,Small molecule,"Brand, generic competition",214,73394,0.08042,11336719.05,0.11079,154.46
+ND,Small molecule,Authorized generic,122,12035,0.01319,5815866.1,0.05684,483.25
+ND,Small molecule,Generic,690,748718,0.82037,13184901.05,0.12885,17.61
+ND,Biologic,Reference biologic,125,20104,0.02203,33493867.46,0.32733,1666.03
+ND,Biologic,Biosimilar,9,813,0.00089,270020.25,0.00264,332.13
+ND,Biologic,Interchangeable biosimilar,5,119,0.00013,201733.15,0.00197,1695.24
+ND,Other,OTC / unapproved / unclassified,92,14322,0.01569,181520.1,0.00177,12.67
+NE,Small molecule,"Brand, single source",486,203830,0.05131,223027850.8,0.46497,1094.19
+NE,Small molecule,"Brand, generic competition",266,252569,0.06358,41642149.28,0.08682,164.87
+NE,Small molecule,Authorized generic,185,55601,0.014,5181340.73,0.0108,93.19
+NE,Small molecule,Generic,781,3051443,0.76809,47152592.3,0.0983,15.45
+NE,Biologic,Reference biologic,163,91358,0.023,156657324.36,0.3266,1714.76
+NE,Biologic,Biosimilar,9,2726,0.00069,1960812.92,0.00409,719.3
+NE,Biologic,Interchangeable biosimilar,5,896,0.00023,762644.6,0.00159,851.17
+NE,Other,OTC / unapproved / unclassified,147,314347,0.07913,3278984.6,0.00684,10.43
+NH,Small molecule,"Brand, single source",446,113670,0.05599,129066814.04,0.47937,1135.45
+NH,Small molecule,"Brand, generic competition",265,102753,0.05061,9339953.47,0.03469,90.9
+NH,Small molecule,Authorized generic,175,55981,0.02757,9885632.85,0.03672,176.59
+NH,Small molecule,Generic,792,1656327,0.81584,23729934.86,0.08814,14.33
+NH,Biologic,Reference biologic,156,41932,0.02065,93888293.76,0.34871,2239.06
+NH,Biologic,Biosimilar,10,1031,0.00051,2648664.16,0.00984,2569.02
+NH,Biologic,Interchangeable biosimilar,6,1408,0.00069,547782.23,0.00203,389.05
+NH,Other,OTC / unapproved / unclassified,137,57113,0.02813,136456.55,0.00051,2.39
+NJ,Small molecule,"Brand, single source",664,719727,0.03625,929745292.37,0.47825,1291.8
+NJ,Small molecule,"Brand, generic competition",348,422067,0.02126,47675593.75,0.02452,112.96
+NJ,Small molecule,Authorized generic,245,702083,0.03536,87439876.17,0.04498,124.54
+NJ,Small molecule,Generic,899,16562636,0.83427,217083296.89,0.11166,13.11
+NJ,Biologic,Reference biologic,218,320502,0.01614,621924434.52,0.31991,1940.47
+NJ,Biologic,Biosimilar,10,7918,0.0004,9902530.46,0.00509,1250.64
+NJ,Biologic,Interchangeable biosimilar,6,60997,0.00307,22044677.19,0.01134,361.41
+NJ,Other,OTC / unapproved / unclassified,173,1056867,0.05324,8246939.28,0.00424,7.8
+NM,Small molecule,"Brand, single source",503,215840,0.0406,278594340.85,0.41584,1290.74
+NM,Small molecule,"Brand, generic competition",300,195028,0.03668,19208253.23,0.02867,98.49
+NM,Small molecule,Authorized generic,203,176077,0.03312,23594550.74,0.03522,134.0
+NM,Small molecule,Generic,805,4485645,0.84375,147504156.04,0.22017,32.88
+NM,Biologic,Reference biologic,172,116812,0.02197,177115737.19,0.26437,1516.25
+NM,Biologic,Biosimilar,10,3002,0.00056,4418537.82,0.0066,1471.86
+NM,Biologic,Interchangeable biosimilar,6,28927,0.00544,8156615.94,0.01217,281.97
+NM,Other,OTC / unapproved / unclassified,134,94972,0.01786,11363298.45,0.01696,119.65
+NV,Small molecule,"Brand, single source",580,317469,0.04555,421940885.02,0.50077,1329.08
+NV,Small molecule,"Brand, generic competition",315,282089,0.04047,38600548.15,0.04581,136.84
+NV,Small molecule,Authorized generic,222,235379,0.03377,25764596.23,0.03058,109.46
+NV,Small molecule,Generic,847,5777867,0.82897,86093352.98,0.10218,14.9
+NV,Biologic,Reference biologic,201,135079,0.01938,255302804.6,0.303,1890.03
+NV,Biologic,Biosimilar,9,5770,0.00083,7330608.27,0.0087,1270.47
+NV,Biologic,Interchangeable biosimilar,6,11091,0.00159,4763421.45,0.00565,429.49
+NV,Other,OTC / unapproved / unclassified,188,205171,0.02944,2784615.23,0.0033,13.57
+NY,Small molecule,"Brand, single source",743,3974875,0.05572,6194586152.51,0.51133,1558.44
+NY,Small molecule,"Brand, generic competition",484,3130153,0.04388,914826912.6,0.07551,292.26
+NY,Small molecule,Authorized generic,291,1444111,0.02024,175528505.12,0.01449,121.55
+NY,Small molecule,Generic,913,52661345,0.73822,1446660531.63,0.11941,27.47
+NY,Biologic,Reference biologic,264,1518467,0.02129,3178079970.13,0.26233,2092.95
+NY,Biologic,Biosimilar,10,56498,0.00079,40074546.35,0.00331,709.31
+NY,Biologic,Interchangeable biosimilar,8,56430,0.00079,11134129.25,0.00092,197.31
+NY,Other,OTC / unapproved / unclassified,177,8493946,0.11907,153713659.03,0.01269,18.1
+OH,Small molecule,"Brand, single source",705,1737663,0.04664,2116939774.69,0.44978,1218.27
+OH,Small molecule,"Brand, generic competition",388,1643502,0.04412,465702187.09,0.09895,283.36
+OH,Small molecule,Authorized generic,238,1090595,0.02928,94600351.78,0.0201,86.74
+OH,Small molecule,Generic,890,30162705,0.80967,526888128.4,0.11195,17.47
+OH,Biologic,Reference biologic,224,1063925,0.02856,1472797823.56,0.31292,1384.31
+OH,Biologic,Biosimilar,9,14013,0.00038,7488146.09,0.00159,534.37
+OH,Biologic,Interchangeable biosimilar,6,2258,6e-05,2631834.89,0.00056,1165.56
+OH,Other,OTC / unapproved / unclassified,167,1538418,0.0413,19548448.67,0.00415,12.71
+OK,Small molecule,"Brand, single source",541,310814,0.03898,470359139.32,0.47646,1513.31
+OK,Small molecule,"Brand, generic competition",305,543958,0.06822,85866656.25,0.08698,157.86
+OK,Small molecule,Authorized generic,207,188231,0.02361,13673383.31,0.01385,72.64
+OK,Small molecule,Generic,797,6704848,0.84093,78980420.7,0.08,11.78
+OK,Biologic,Reference biologic,172,186375,0.02338,334019505.84,0.33835,1792.19
+OK,Biologic,Biosimilar,9,1797,0.00023,1819751.47,0.00184,1012.66
+OK,Biologic,Interchangeable biosimilar,6,3682,0.00046,638105.94,0.00065,173.3
+OK,Other,OTC / unapproved / unclassified,40,33401,0.00419,1846510.74,0.00187,55.28
+OR,Small molecule,"Brand, single source",553,398541,0.03574,452138648.72,0.46441,1134.48
+OR,Small molecule,"Brand, generic competition",276,240856,0.0216,31518445.23,0.03237,130.86
+OR,Small molecule,Authorized generic,207,362616,0.03252,42718792.47,0.04388,117.81
+OR,Small molecule,Generic,853,9494476,0.85141,156903782.68,0.16116,16.53
+OR,Biologic,Reference biologic,182,208323,0.01868,266712535.72,0.27395,1280.28
+OR,Biologic,Biosimilar,11,7961,0.00071,9511814.21,0.00977,1194.8
+OR,Biologic,Interchangeable biosimilar,7,30964,0.00278,11714361.43,0.01203,378.32
+OR,Other,OTC / unapproved / unclassified,139,407765,0.03657,2367549.96,0.00243,5.81
+PA,Small molecule,"Brand, single source",702,2137139,0.0639,2818172109.37,0.55974,1318.67
+PA,Small molecule,"Brand, generic competition",396,1019719,0.03049,289792497.94,0.05756,284.19
+PA,Small molecule,Authorized generic,250,932363,0.02788,100909658.51,0.02004,108.23
+PA,Small molecule,Generic,907,26945140,0.80561,466424301.63,0.09264,17.31
+PA,Biologic,Reference biologic,228,814020,0.02434,1326427633.49,0.26345,1629.48
+PA,Biologic,Biosimilar,11,5967,0.00018,9623527.45,0.00191,1612.79
+PA,Biologic,Interchangeable biosimilar,6,7086,0.00021,9537644.88,0.00189,1345.98
+PA,Other,OTC / unapproved / unclassified,176,1585605,0.04741,13862705.62,0.00275,8.74
+PR,Small molecule,"Brand, single source",339,393338,0.02837,548675514.57,0.39288,1394.92
+PR,Small molecule,"Brand, generic competition",192,573140,0.04134,81982437.18,0.0587,143.04
+PR,Small molecule,Authorized generic,136,253402,0.01828,20315072.33,0.01455,80.17
+PR,Small molecule,Generic,640,12010878,0.86643,122618741.35,0.0878,10.21
+PR,Biologic,Reference biologic,184,363139,0.0262,580880879.87,0.41594,1599.61
+PR,Biologic,Biosimilar,9,9305,0.00067,28781977.89,0.02061,3093.17
+PR,Biologic,Interchangeable biosimilar,5,9400,0.00068,12366847.98,0.00886,1315.62
+PR,Other,OTC / unapproved / unclassified,23,249903,0.01803,918346.26,0.00066,3.67
+RI,Small molecule,"Brand, single source",417,125206,0.03762,162583245.11,0.53175,1298.53
+RI,Small molecule,"Brand, generic competition",218,34268,0.0103,6110235.26,0.01998,178.31
+RI,Small molecule,Authorized generic,164,151692,0.04558,13324493.13,0.04358,87.84
+RI,Small molecule,Generic,732,2774587,0.83376,38500492.33,0.12592,13.88
+RI,Biologic,Reference biologic,119,48347,0.01453,80761060.03,0.26414,1670.45
+RI,Biologic,Biosimilar,6,0,0.0,0.0,0.0,
+RI,Biologic,Interchangeable biosimilar,4,5690,0.00171,3786985.52,0.01239,665.55
+RI,Other,OTC / unapproved / unclassified,109,188007,0.0565,686740.59,0.00225,3.65
+SC,Small molecule,"Brand, single source",526,276947,0.03758,336224169.99,0.44266,1214.04
+SC,Small molecule,"Brand, generic competition",271,274117,0.0372,67559893.06,0.08895,246.46
+SC,Small molecule,Authorized generic,198,131373,0.01783,12919385.15,0.01701,98.34
+SC,Small molecule,Generic,798,6391512,0.86728,75681276.86,0.09964,11.84
+SC,Biologic,Reference biologic,181,148645,0.02017,262066653.23,0.34503,1763.04
+SC,Biologic,Biosimilar,10,3687,0.0005,3277778.08,0.00432,889.01
+SC,Biologic,Interchangeable biosimilar,6,1121,0.00015,727869.9,0.00096,649.3
+SC,Other,OTC / unapproved / unclassified,181,142241,0.0193,1090977.92,0.00144,7.67
+SD,Small molecule,"Brand, single source",393,76041,0.05719,88061543.31,0.31564,1158.08
+SD,Small molecule,"Brand, generic competition",247,46233,0.03477,12300564.51,0.04409,266.06
+SD,Small molecule,Authorized generic,182,37492,0.0282,9129870.01,0.03272,243.52
+SD,Small molecule,Generic,749,1120131,0.84249,67732048.74,0.24277,60.47
+SD,Biologic,Reference biologic,142,34991,0.02632,97626225.15,0.34992,2790.04
+SD,Biologic,Biosimilar,9,371,0.00028,1052834.19,0.00377,2837.83
+SD,Biologic,Interchangeable biosimilar,5,959,0.00072,584969.02,0.0021,609.98
+SD,Other,OTC / unapproved / unclassified,113,13326,0.01002,2509619.1,0.009,188.33
+TN,Small molecule,"Brand, single source",623,669748,0.05467,753171125.01,0.48265,1124.56
+TN,Small molecule,"Brand, generic competition",354,915067,0.07469,169804429.63,0.10881,185.57
+TN,Small molecule,Authorized generic,216,321568,0.02625,28248318.55,0.0181,87.85
+TN,Small molecule,Generic,845,9955576,0.81262,154875334.24,0.09925,15.56
+TN,Biologic,Reference biologic,198,208293,0.017,446176286.67,0.28592,2142.06
+TN,Biologic,Biosimilar,10,3268,0.00027,4420103.34,0.00283,1352.54
+TN,Biologic,Interchangeable biosimilar,7,6214,0.00051,1168060.19,0.00075,187.97
+TN,Other,OTC / unapproved / unclassified,244,171489,0.014,2642541.28,0.00169,15.41
+TX,Small molecule,"Brand, single source",622,1083376,0.04105,1713338706.6,0.47651,1581.48
+TX,Small molecule,"Brand, generic competition",400,1632934,0.06187,436061668.72,0.12128,267.04
+TX,Small molecule,Authorized generic,225,469945,0.01781,58770110.56,0.01635,125.06
+TX,Small molecule,Generic,893,21416453,0.81143,387308008.83,0.10772,18.08
+TX,Biologic,Reference biologic,230,419994,0.01591,952394297.22,0.26488,2267.64
+TX,Biologic,Biosimilar,10,9863,0.00037,16144562.66,0.00449,1636.88
+TX,Biologic,Interchangeable biosimilar,5,13648,0.00052,3446601.36,0.00096,252.54
+TX,Other,OTC / unapproved / unclassified,166,1347206,0.05104,28112449.84,0.00782,20.87
+UT,Small molecule,"Brand, single source",468,167277,0.04943,222842018.78,0.48243,1332.17
+UT,Small molecule,"Brand, generic competition",259,193588,0.05721,56766520.37,0.12289,293.23
+UT,Small molecule,Authorized generic,188,91838,0.02714,12606539.74,0.02729,137.27
+UT,Small molecule,Generic,802,2774756,0.81998,49389787.52,0.10692,17.8
+UT,Biologic,Reference biologic,178,73835,0.02182,111123636.11,0.24057,1505.03
+UT,Biologic,Biosimilar,9,2521,0.00074,2643543.92,0.00572,1048.61
+UT,Biologic,Interchangeable biosimilar,6,14429,0.00426,5354907.8,0.01159,371.12
+UT,Other,OTC / unapproved / unclassified,82,65697,0.01941,1193307.01,0.00258,18.16
+VA,Small molecule,"Brand, single source",673,798889,0.03792,1021755102.34,0.42866,1278.97
+VA,Small molecule,"Brand, generic competition",396,2196299,0.10425,267604783.66,0.11227,121.84
+VA,Small molecule,Authorized generic,251,437422,0.02076,46203417.73,0.01938,105.63
+VA,Small molecule,Generic,911,16672690,0.7914,261325467.36,0.10963,15.67
+VA,Biologic,Reference biologic,233,488910,0.02321,773941693.11,0.32469,1582.99
+VA,Biologic,Biosimilar,9,7518,0.00036,7881840.72,0.00331,1048.4
+VA,Biologic,Interchangeable biosimilar,8,12023,0.00057,2422402.57,0.00102,201.48
+VA,Other,OTC / unapproved / unclassified,230,453713,0.02154,2492992.43,0.00105,5.49
+VT,Small molecule,"Brand, single source",349,55343,0.03826,58453249.19,0.32894,1056.2
+VT,Small molecule,"Brand, generic competition",239,201307,0.13918,47253148.34,0.26591,234.73
+VT,Small molecule,Authorized generic,135,31466,0.02175,2444718.54,0.01376,77.69
+VT,Small molecule,Generic,711,1050494,0.72628,18883513.5,0.10626,17.98
+VT,Biologic,Reference biologic,131,31942,0.02208,49524972.56,0.27869,1550.47
+VT,Biologic,Biosimilar,9,452,0.00031,255650.67,0.00144,565.6
+VT,Biologic,Interchangeable biosimilar,6,12,1e-05,48903.24,0.00028,4075.27
+VT,Other,OTC / unapproved / unclassified,90,75388,0.05212,840257.62,0.00473,11.15
+WA,Small molecule,"Brand, single source",579,451337,0.03658,770383104.17,0.45214,1706.89
+WA,Small molecule,"Brand, generic competition",308,291148,0.0236,84927092.48,0.04984,291.7
+WA,Small molecule,Authorized generic,221,420291,0.03407,61138219.6,0.03588,145.47
+WA,Small molecule,Generic,839,10226400,0.82886,213256691.21,0.12516,20.85
+WA,Biologic,Reference biologic,204,275157,0.0223,540098437.59,0.31698,1962.87
+WA,Biologic,Biosimilar,9,2100,0.00017,2683903.99,0.00158,1278.05
+WA,Biologic,Interchangeable biosimilar,7,16885,0.00137,21595474.35,0.01267,1278.97
+WA,Other,OTC / unapproved / unclassified,83,654558,0.05305,9781646.46,0.00574,14.94
+WI,Small molecule,"Brand, single source",541,749320,0.06119,903212359.74,0.43353,1205.38
+WI,Small molecule,"Brand, generic competition",325,924190,0.07547,287117710.39,0.13781,310.67
+WI,Small molecule,Authorized generic,201,360027,0.0294,28572767.02,0.01371,79.36
+WI,Small molecule,Generic,789,9281620,0.75791,179549371.72,0.08618,19.34
+WI,Biologic,Reference biologic,174,384833,0.03142,674974517.91,0.32398,1753.94
+WI,Biologic,Biosimilar,8,2049,0.00017,2236637.05,0.00107,1091.57
+WI,Biologic,Interchangeable biosimilar,6,6101,0.0005,577024.87,0.00028,94.58
+WI,Other,OTC / unapproved / unclassified,90,538189,0.04395,7147649.13,0.00343,13.28
+WV,Small molecule,"Brand, single source",467,323715,0.04411,387736886.87,0.45043,1197.77
+WV,Small molecule,"Brand, generic competition",291,576723,0.07858,136548645.99,0.15863,236.77
+WV,Small molecule,Authorized generic,174,158844,0.02164,17632860.86,0.02048,111.01
+WV,Small molecule,Generic,757,6059225,0.82555,90810918.81,0.1055,14.99
+WV,Biologic,Reference biologic,161,132013,0.01799,224748477.59,0.26109,1702.47
+WV,Biologic,Biosimilar,9,850,0.00012,1587567.25,0.00184,1867.73
+WV,Biologic,Interchangeable biosimilar,5,241,3e-05,308357.4,0.00036,1279.49
+WV,Other,OTC / unapproved / unclassified,70,88028,0.01199,1433839.11,0.00167,16.29
+WY,Small molecule,"Brand, single source",256,12207,0.03269,13463764.74,0.33659,1102.95
+WY,Small molecule,"Brand, generic competition",162,22164,0.05936,6434462.24,0.16086,290.31
+WY,Small molecule,Authorized generic,108,7175,0.01922,440800.84,0.01102,61.44
+WY,Small molecule,Generic,605,315856,0.84593,5468963.83,0.13672,17.31
+WY,Biologic,Reference biologic,113,8219,0.02201,13857045.33,0.34642,1685.98
+WY,Biologic,Biosimilar,7,173,0.00046,157311.68,0.00393,909.32
+WY,Biologic,Interchangeable biosimilar,4,0,0.0,0.0,0.0,
+WY,Other,OTC / unapproved / unclassified,61,7588,0.02032,178723.6,0.00447,23.55

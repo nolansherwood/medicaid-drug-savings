@@ -1,0 +1,129 @@
+/*
+ * Design tokens the dashboard page expects (normally supplied by the claude.ai
+ * dashboard runtime), plus the site shell around it.
+ * Layout: one centered column, max 1240px, with a slim site bar and footer.
+ */
+:root {
+  color-scheme: light;
+  --color-bg: #f6f7f9;
+  --color-panel: #ffffff;
+  --color-fg: #1a1d23;
+  --color-fg-muted: #5c6470;
+  --color-border-line: #e1e4ea;
+  --color-ok: #1f7a4a;
+  --color-warn: #a35f00;
+  --color-bad: #b83a2e;
+  --series-1: #2f6fdb;   /* prescriptions */
+  --series-2: #c2532f;   /* spending */
+  --series-3: #2b8a58;   /* savings */
+  --series-4: #7b5cc4;
+  --series-5: #b8860b;
+  --series-6: #1f8fa3;
+  --series-7: #c2477f;
+  --series-8: #6b7280;
+  --skeleton: #e8ebf0;
+
+  --cds-surface-popover: #ffffff;
+  --cds-border: #d6dae1;
+  --cds-text-secondary: #5c6470;
+  --cds-shadow-popover: 0 8px 28px rgba(20, 28, 40, 0.16), 0 1px 3px rgba(20, 28, 40, 0.08);
+  --cds-radius: 8px;
+  --cds-gap-xs: 4px; --cds-gap-sm: 8px; --cds-gap-md: 12px; --cds-gap-lg: 20px; --cds-gap-xl: 32px;
+  --cds-pad-xs: 4px; --cds-pad-sm: 8px; --cds-pad-md: 12px; --cds-pad-lg: 20px;
+  --cds-font-size-caption: 0.8125rem;
+  --cds-font-size-body: 0.9375rem;
+  --cds-font-size-heading: 1rem;
+  --cds-font-size-title: 1.75rem;
+  --cds-font-weight-medium: 500;
+  --cds-dur-slow: 300ms;
+  --font-anthropic-sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-anthropic-serif: "Iowan Old Style", "Charter", "Palatino Linotype", Palatino, Georgia, serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    color-scheme: dark;
+    --color-bg: #0f1114;
+    --color-panel: #171a1f;
+    --color-fg: #e9ebee;
+    --color-fg-muted: #9aa2ad;
+    --color-border-line: #2a2f36;
+    --color-ok: #5cc98e;
+    --color-warn: #f0b456;
+    --color-bad: #f07b6c;
+    --series-1: #5b93f0;
+    --series-2: #e07a52;
+    --series-3: #4cbf80;
+    --skeleton: #252a31;
+    --cds-surface-popover: #1f2329;
+    --cds-border: #353b44;
+    --cds-text-secondary: #9aa2ad;
+    --cds-shadow-popover: 0 8px 28px rgba(0, 0, 0, 0.5);
+  }
+}
+:root[data-theme="dark"] {
+  color-scheme: dark;
+  --color-bg: #0f1114; --color-panel: #171a1f; --color-fg: #e9ebee; --color-fg-muted: #9aa2ad;
+  --color-border-line: #2a2f36; --color-ok: #5cc98e; --color-warn: #f0b456; --color-bad: #f07b6c;
+  --series-1: #5b93f0; --series-2: #e07a52; --series-3: #4cbf80; --skeleton: #252a31;
+  --cds-surface-popover: #1f2329; --cds-border: #353b44; --cds-text-secondary: #9aa2ad;
+  --cds-shadow-popover: 0 8px 28px rgba(0, 0, 0, 0.5);
+}
+
+/* The dashboard runtime's reset makes `hidden` win over component display
+   rules (tooltips are display: grid). Without it, hidden tooltips stay visible. */
+[hidden] { display: none !important; }
+
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-fg);
+  font-family: var(--font-anthropic-sans);
+  font-size: var(--cds-font-size-body);
+  line-height: 1.45;
+}
+a { color: inherit; }
+
+/* Site shell */
+.site-bar, .site-foot, #dash-root {
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+.site-bar { border-bottom: 1px solid var(--color-border-line); background: var(--color-panel); }
+.site-bar-inner, .site-foot-inner {
+  max-width: 1240px; margin-inline: auto; display: flex; flex-wrap: wrap; gap: var(--cds-gap-md);
+  align-items: center; justify-content: space-between;
+}
+.site-bar-inner { padding-block: 10px; font-size: var(--cds-font-size-caption); }
+.site-bar a { text-decoration: none; color: var(--color-fg-muted); }
+.site-bar a:hover, .site-bar a:focus-visible { color: var(--color-fg); text-decoration: underline; }
+.site-name { font-weight: 600; color: var(--color-fg); }
+.site-bar-right { display: flex; align-items: center; gap: var(--cds-gap-md); }
+.theme-toggle {
+  display: inline-flex; align-items: center; gap: 6px; font: inherit; font-size: var(--cds-font-size-caption);
+  color: var(--color-fg); background: var(--color-bg); border: 1px solid var(--color-border-line);
+  border-radius: 999px; padding: 4px 10px; cursor: pointer;
+}
+.theme-toggle:hover { border-color: var(--color-fg-muted); }
+.theme-toggle:focus-visible { outline: 2px solid var(--color-fg); outline-offset: 2px; }
+.theme-toggle .icon-sun { display: none; }
+.theme-toggle[data-next="light"] .icon-sun { display: inline; }
+.theme-toggle[data-next="light"] .icon-moon { display: none; }
+#dash-root { padding-block: 28px 40px; }
+.site-foot { border-top: 1px solid var(--color-border-line); }
+.site-foot-inner {
+  padding-block: 20px 28px; align-items: start; color: var(--color-fg-muted);
+  font-size: var(--cds-font-size-caption); line-height: 1.55;
+}
+.site-foot p { margin: 0; max-width: 72ch; }
+.site-foot-cols { display: grid; gap: var(--cds-gap-sm); }
+:focus-visible { outline-color: var(--color-fg); }
+
+/* Loading placeholders (the dashboard runtime's "dash-skeleton") */
+.dash-skeleton { color: transparent !important; background: var(--skeleton); border-radius: 4px; }
+b.dash-skeleton { display: inline-block; min-width: 3em; }
+.mr-chart.dash-skeleton { border-radius: var(--cds-radius); }
+@media (prefers-reduced-motion: no-preference) {
+  .dash-skeleton { animation: site-pulse 1.4s ease-in-out infinite; }
+  @keyframes site-pulse { 50% { opacity: 0.55; } }
+}

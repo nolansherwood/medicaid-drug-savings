@@ -1,0 +1,16 @@
+data/raw/*
+data/processed/*
+data/cache/*
+outputs/*
+# The app's data (about 49 MB) is committed so Community Cloud can serve it (docs/deploy.md).
+!outputs/dashboard/
+!**/.gitkeep
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/
+.DS_Store
+
+# Retired static site's built output (archive/static_site/README.md)
+archive/static_site/site/
+.pytest_cache/

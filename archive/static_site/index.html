@@ -1,0 +1,1380 @@
+<style>
+  .mr { max-width: 1240px; margin-inline: auto; display: grid; gap: var(--cds-gap-xl); font-family: var(--font-anthropic-sans); color: var(--color-fg); }
+  .mr-head { display: grid; gap: var(--cds-gap-sm); }
+  .mr-head-row { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: var(--cds-gap-sm) var(--cds-gap-lg); }
+  .mr-state { display: inline-flex; align-items: center; gap: var(--cds-gap-xs); font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+  .mr-state select { font: inherit; font-size: var(--cds-font-size-body); color: var(--color-fg); background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-xs) var(--cds-pad-sm); max-width: 100%; }
+  .mr-state select:focus-visible { outline: 2px solid var(--color-fg); outline-offset: 2px; }
+  .mr-state-note { margin: 0; max-width: 90ch; font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); border-left: 2px solid var(--color-warn); padding-left: var(--cds-pad-sm); line-height: 1.45; }
+  .mr-title { margin: 0; font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); text-wrap: balance; }
+  .mr-lede { margin: 0; max-width: 70ch; color: var(--color-fg-muted); font-size: var(--cds-font-size-body); line-height: 1.5; }
+  .mr .mr-lede b { color: var(--color-fg); font-weight: 600; font-variant-numeric: tabular-nums; }
+  .mr-card { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-lg); display: grid; gap: var(--cds-gap-md); min-width: 0; align-content: start; }
+  .mr-card-head { display: grid; gap: var(--cds-gap-xs); }
+  .mr-h2 { margin: 0; font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); }
+  .mr-note { margin: 0; color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); line-height: 1.45; }
+  .mr-chips { display: flex; flex-wrap: wrap; gap: var(--cds-gap-xs); }
+  .mr-chip { font: inherit; font-size: var(--cds-font-size-caption); color: var(--color-fg); background: var(--color-bg); border: 1px solid var(--color-border-line); border-radius: 999px; padding: var(--cds-pad-xs) var(--cds-pad-sm); cursor: pointer; }
+  .mr-chip:hover { border-color: var(--color-fg-muted); }
+  .mr-chip:focus-visible, .mr-table tr[data-key]:focus-visible { outline: 2px solid var(--color-fg); outline-offset: 2px; }
+  .mr-chip[aria-pressed="true"] { background: var(--color-fg); color: var(--color-bg); border-color: var(--color-fg); }
+  .mr-table-wrap { overflow-x: auto; }
+  .mr-table { width: 100%; border-collapse: collapse; font-size: var(--cds-font-size-caption); font-variant-numeric: tabular-nums; }
+  .mr-table th { text-align: right; font-weight: var(--cds-font-weight-medium); color: var(--color-fg-muted); padding: var(--cds-pad-xs) var(--cds-pad-sm); border-bottom: 1px solid var(--color-border-line); white-space: nowrap; }
+  .mr-table th:first-child, .mr-table td:first-child { text-align: left; }
+  .mr-table td { text-align: right; padding: var(--cds-pad-xs) var(--cds-pad-sm); border-bottom: 1px solid var(--color-border-line); white-space: nowrap; }
+  .mr-table tbody tr { cursor: pointer; }
+  .mr-table tbody tr:hover td { background: var(--color-bg); }
+  .mr-table tbody tr[aria-selected="true"] td { background: var(--color-bg); font-weight: 600; }
+  .mr-share { display: inline-flex; align-items: center; gap: var(--cds-gap-xs); justify-content: flex-end; }
+  .mr-share i { display: inline-block; height: 8px; border-radius: 4px; }
+  .mr-share s { display: inline-block; width: 64px; text-decoration: none; text-align: left; }
+  .mr-mod { color: var(--color-fg-muted); }
+  .mr-rank-head { display: grid; gap: var(--cds-gap-xs); }
+  .mr-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 26rem), 1fr)); gap: var(--cds-gap-md); }
+  .mr-chart { position: relative; min-height: 616px; }
+  .mr-chart svg { display: block; overflow: visible; }
+  .mr-chart text { font-family: var(--font-anthropic-sans); font-size: var(--cds-font-size-caption); font-variant-numeric: tabular-nums; }
+  .mr-empty { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+  .mr-fail { display: flex; align-items: center; justify-content: center; gap: var(--cds-gap-xs); min-height: inherit; color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+  .mr-fail::before { content: ""; width: 0.375rem; height: 0.375rem; border-radius: 50%; background: var(--color-bad); }
+  .mr-tip { position: absolute; z-index: 2; pointer-events: none; background: var(--cds-surface-popover); border: 1px solid var(--cds-border); border-radius: var(--cds-radius); box-shadow: var(--cds-shadow-popover); padding: var(--cds-pad-xs) var(--cds-pad-sm); font-size: var(--cds-font-size-caption); max-width: 300px; display: grid; gap: 2px; font-variant-numeric: tabular-nums; }
+  .mr-tip-title { font-weight: 600; }
+  .mr-tip-sub { color: var(--cds-text-secondary); margin-bottom: 2px; }
+  .mr-tip-row { display: flex; justify-content: space-between; gap: var(--cds-gap-md); }
+  .mr-tip-row span:first-child { color: var(--cds-text-secondary); }
+  .mr-tip-split { color: var(--cds-text-secondary); margin-top: 2px; white-space: normal; }
+  .mr-foot { display: grid; gap: var(--cds-gap-xs); color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); line-height: 1.5; max-width: 90ch; }
+  .mr-foot ul { margin: 0; padding-left: 1.2em; }
+
+  .mr-tabs { display: flex; gap: var(--cds-gap-md); border-bottom: 1px solid var(--color-border-line); }
+  .mr-tab { font: inherit; font-size: var(--cds-font-size-body); color: var(--color-fg-muted); background: none; border: 0; border-bottom: 2px solid transparent; padding: var(--cds-pad-xs) 0; margin-bottom: -1px; cursor: pointer; }
+  .mr-tab[aria-selected="true"] { color: var(--color-fg); border-bottom-color: var(--color-fg); font-weight: var(--cds-font-weight-medium); }
+  .mr-tab:focus-visible { outline: 2px solid var(--color-fg); outline-offset: 2px; }
+  .mr-tab-panel { display: grid; gap: var(--cds-gap-xl); }
+  .mr-tab-panel[hidden] { display: none; }
+  .mr-kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 12rem), 1fr)); gap: var(--cds-gap-md); }
+  .mr-kpi { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-md) var(--cds-pad-lg); display: grid; gap: var(--cds-gap-xs); align-content: start; }
+  .mr-kpi-label { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+  .mr .mr-kpi-value { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); font-variant-numeric: tabular-nums; }
+  .mr-kpi-note { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+  .mr-callout { margin: 0; max-width: 90ch; font-size: var(--cds-font-size-caption); line-height: 1.5; border-left: 2px solid var(--color-warn); padding-left: var(--cds-pad-sm); color: var(--color-fg); }
+  .mr-sav-table td.mr-wrap { white-space: normal; min-width: 8rem; }
+  .mr-sav-table td.mr-muted { color: var(--color-fg-muted); }
+  .mr-sav-table td.mr-flag { color: var(--color-warn); font-size: var(--cds-font-size-caption); text-align: left; }
+  .mr-sav-table td.mr-neg { color: var(--color-bad); }
+  .mr-sav-table th:last-child { text-align: left; }
+  .mr-sav-table tbody tr { cursor: default; }
+
+  .mr-chart g.row { cursor: pointer; }
+  .mr-chart g.row:hover text.name, .mr-chart g.row:focus text.name { text-decoration: underline; }
+  .mr-chart g.row:focus { outline: none; }
+  .mr-chart g.row:focus rect.hit { stroke: var(--color-fg); stroke-width: 1; }
+  .mr-dialog { position: fixed; inset: 0; margin: auto; height: fit-content; width: min(980px, calc(100vw - 32px)); max-height: min(85vh, 900px); padding: 0; border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); background: var(--color-panel); color: var(--color-fg); box-shadow: var(--cds-shadow-popover); font-family: var(--font-anthropic-sans); }
+  .mr-loading { display: flex; align-items: center; gap: var(--cds-gap-sm); color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); padding: var(--cds-pad-md) var(--cds-pad-sm); }
+  .mr-spinner { width: 0.9rem; height: 0.9rem; border-radius: 50%; border: 2px solid var(--color-border-line); border-top-color: var(--color-fg); flex: none; }
+  @media (prefers-reduced-motion: no-preference) { .mr-spinner { animation: mr-spin 0.8s linear infinite; } }
+  @keyframes mr-spin { to { transform: rotate(360deg); } }
+  .mr-dialog::backdrop { background: rgba(0, 0, 0, 0.35); }
+  .mr-dialog-inner { display: grid; gap: var(--cds-gap-md); padding: var(--cds-pad-lg); }
+  .mr-dialog-head { display: flex; justify-content: space-between; align-items: start; gap: var(--cds-gap-md); }
+  .mr-dialog-title { margin: 0; font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); text-wrap: balance; }
+  .mr-close { font: inherit; font-size: var(--cds-font-size-caption); color: var(--color-fg); background: var(--color-bg); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-xs) var(--cds-pad-sm); cursor: pointer; flex: none; }
+  .mr-close:focus-visible { outline: 2px solid var(--color-fg); outline-offset: 2px; }
+  .mr-dialog .mr-table-wrap { max-height: 60vh; overflow: auto; }
+  .mr-dialog .mr-table th { position: sticky; top: 0; background: var(--color-panel); }
+  .mr-dialog .mr-table tbody tr { cursor: default; }
+  .mr-dialog td.mr-wrap { white-space: normal; min-width: 7rem; text-align: left; }
+  .mr-dialog tr.mr-in-cat td { font-weight: 600; }
+  .mr-pt { display: inline-block; font-size: var(--cds-font-size-caption); padding: 0 var(--cds-pad-xs); border-radius: 999px; border: 1px solid var(--color-border-line); white-space: nowrap; }
+
+  .mr-dialog-inner { position: relative; }
+  .mr-prodname { cursor: default; }
+  .mr-prodname.mr-has-ind { text-decoration: underline dotted; text-underline-offset: 3px; cursor: help; }
+  .mr-prodname:focus-visible { outline: 2px solid var(--color-fg); outline-offset: 2px; }
+  .mr-ind-tip { position: fixed; z-index: 3; width: min(440px, calc(100vw - 32px)); overflow-y: auto; background: var(--cds-surface-popover); border: 1px solid var(--cds-border); border-radius: var(--cds-radius); box-shadow: var(--cds-shadow-popover); padding: var(--cds-pad-sm) var(--cds-pad-md); font-size: var(--cds-font-size-caption); line-height: 1.5; display: grid; gap: var(--cds-gap-xs); pointer-events: none; white-space: normal; text-align: left; }
+  .mr-ind-tip-label { color: var(--cds-text-secondary); font-weight: 600; }
+  .mr-ind-tip-meta { color: var(--cds-text-secondary); }
+
+  .mr-tabs { flex-wrap: wrap; }
+  .mr-search { display: grid; gap: var(--cds-gap-xs); max-width: 640px; position: relative; }
+  .mr-search-label { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+  .mr-search input { font: inherit; font-size: var(--cds-font-size-body); color: var(--color-fg); background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-sm) var(--cds-pad-md); width: 100%; box-sizing: border-box; }
+  .mr-search input:focus-visible { outline: 2px solid var(--color-fg); outline-offset: 2px; }
+  .mr-results { display: grid; gap: 2px; font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+  .mr-result { font: inherit; text-align: left; display: grid; gap: 2px; background: var(--color-panel); color: var(--color-fg); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-xs) var(--cds-pad-sm); cursor: pointer; }
+  .mr-result:hover, .mr-result:focus-visible { border-color: var(--color-fg); outline: none; }
+  .mr-result-name { font-weight: 600; }
+  .mr-result-meta { color: var(--color-fg-muted); }
+  .mr-ex-facts { display: flex; flex-wrap: wrap; gap: var(--cds-gap-lg); }
+  .mr-ex-facts div { display: grid; gap: 2px; font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+  .mr .mr-ex-facts b { color: var(--color-fg); font-size: var(--cds-font-size-heading); font-weight: 500; font-variant-numeric: tabular-nums; }
+  .mr-ex-use { margin: 0; max-width: 90ch; font-size: var(--cds-font-size-caption); line-height: 1.5; color: var(--color-fg-muted); }
+  .mr-ex-groups { display: grid; gap: var(--cds-gap-md); }
+  .mr-ex-groups > .mr-chip { justify-self: start; }
+  .mr-ex-none { display: grid; gap: var(--cds-gap-xs); border-left: 2px solid var(--color-warn); padding-left: var(--cds-pad-sm); font-size: var(--cds-font-size-caption); line-height: 1.5; }
+  .mr-ex-none p { margin: 0; max-width: 90ch; }
+  .mr-ex-savings { margin: 0; font-size: var(--cds-font-size-caption); font-variant-numeric: tabular-nums; }
+  .mr-ex-table td.mr-wrap { white-space: normal; min-width: 7rem; text-align: left; }
+  .mr-ex-table td:nth-child(3) { text-align: left; }
+  .mr-ex-table tbody tr { cursor: default; }
+  .mr-ex-cheaper { color: var(--color-ok); font-weight: 600; }
+  .mr-ex-table td.mr-muted { color: var(--color-fg-muted); }
+  .mr-explore-btn { font: inherit; font-size: var(--cds-font-size-caption); color: var(--color-fg); background: var(--color-bg); border: 1px solid var(--color-border-line); border-radius: 999px; padding: 2px var(--cds-pad-sm); cursor: pointer; white-space: nowrap; }
+  .mr-explore-btn:hover { border-color: var(--color-fg); }
+  .mr-explore-btn:focus-visible { outline: 2px solid var(--color-fg); outline-offset: 2px; }
+
+  /* Text columns left-aligned (header and cells together); number columns stay right-aligned. */
+  #product-table :is(th, td):nth-child(-n+5),
+  .mr-ex-table :is(th, td):nth-child(-n+4),
+  #savings-table :is(th, td):nth-child(-n+5),
+  #product-table td, .mr-ex-table td, #savings-table td { vertical-align: middle; }
+
+  .mr-ndcs { display: flex; flex-wrap: wrap; gap: 2px 8px; align-items: baseline; max-width: 16rem; }
+  .mr-ndc { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 0.75rem; white-space: nowrap; color: var(--color-fg); }
+  .mr-ndc-more { font: inherit; font-size: 0.75rem; color: var(--color-fg-muted); background: none; border: 0; padding: 0; cursor: pointer; text-decoration: underline dotted; text-underline-offset: 2px; }
+  .mr-ndc-more:focus-visible { outline: 2px solid var(--color-fg); outline-offset: 2px; }
+  .mr-ex-own-ndcs { display: flex; flex-wrap: wrap; gap: 4px 8px; align-items: baseline; font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+  [data-dash-source-state=refreshing] { opacity: .5; transition: opacity var(--cds-dur-slow); }
+  [data-dash-source-state=empty] { color: transparent; }
+  @media (max-width: 640px) { .mr-narrow-hide { display: none; } .mr-share s { width: 36px; } }
+</style>
+
+<div class="mr">
+  <header class="mr-head" id="summary-head">
+    <div class="mr-head-row">
+      <h1 class="mr-title" id="page-title">Medicaid drug rankings, 2025</h1>
+      <label class="mr-state" for="state-select">State
+        <select id="state-select" data-source="summary"></select>
+      </label>
+    </div>
+    <nav class="mr-tabs" role="tablist" aria-label="Pages">
+      <button type="button" class="mr-tab" role="tab" id="tabbtn-rankings" aria-controls="tab-rankings" aria-selected="true">Rankings</button>
+      <button type="button" class="mr-tab" role="tab" id="tabbtn-savings" aria-controls="tab-savings" aria-selected="false" tabindex="-1">Savings Opportunity Overview</button>
+      <button type="button" class="mr-tab" role="tab" id="tabbtn-explore" aria-controls="tab-explore" aria-selected="false" tabindex="-1">Explore Alternatives</button>
+    </nav>
+    <p class="mr-state-note" id="state-note" hidden>State figures come from that state’s own rows. CMS hides any row with fewer than 11 prescriptions, so rare, high-cost drugs are undercounted at the state level, and a state’s numbers do not add up to its full Medicaid total.</p>
+  </header>
+
+  <div id="tab-rankings" class="mr-tab-panel" role="tabpanel" aria-labelledby="tabbtn-rankings">
+    <p class="mr-lede" id="lede">
+      <span id="lede-geo">Nationally</span>, brand-name drugs and reference biologics account for
+      <b class="dash-skeleton" data-source="brand_share" data-field="rx_share" data-where="state=US">—</b> of Medicaid prescriptions but
+      <b class="dash-skeleton" data-source="brand_share" data-field="spend_share" data-where="state=US">—</b> of Medicaid spending. Generics fill
+      <b class="dash-skeleton" data-source="summary" data-field="share_prescriptions" data-where="state=US&amp;product_type=Generic">—</b> of prescriptions for
+      <b class="dash-skeleton" data-source="summary" data-field="share_spending" data-where="state=US&amp;product_type=Generic">—</b> of spending.
+    </p>
+
+  <section class="mr-card" id="categories">
+    <div class="mr-card-head">
+      <h2 class="mr-h2">Drug categories</h2>
+      <p class="mr-note">Categories follow the FDA approval pathway (brand NDA, generic ANDA, biologic BLA, biosimilar 351(k)). Click a row to rank its drugs below. <span id="geo-label">National totals</span>, all of 2025.</p>
+    </div>
+    <div class="mr-table-wrap">
+      <table class="mr-table" id="summary-table" data-source="summary" data-row-key="state,product_type">
+        <thead>
+          <tr>
+            <th data-field="product_type">Category</th>
+            <th data-field="modality" class="mr-narrow-hide">Modality</th>
+            <th data-field="prescriptions" class="mr-narrow-hide">Prescriptions</th>
+            <th data-field="share_prescriptions">Share of Rx</th>
+            <th data-field="medicaid_amount" class="mr-narrow-hide">Medicaid spending</th>
+            <th data-field="share_spending">Share of spending</th>
+            <th data-field="cost_per_prescription" class="mr-narrow-hide">Cost per Rx</th>
+          </tr>
+        </thead>
+        <tbody class="dash-skeleton"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="mr-card" id="rankings">
+    <div class="mr-rank-head">
+      <h2 class="mr-h2" id="rank-title">Top 25 drugs</h2>
+      <p class="mr-note" id="rank-note">Drugs are ranked by active ingredient, summing every package of that ingredient within the category.</p>
+    </div>
+    <div class="mr-chips" id="chips" role="group" aria-label="Category" data-source="summary"></div>
+    <div class="mr-grid">
+      <div class="mr-card" id="by-volume" style="background: var(--color-bg)">
+        <div class="mr-card-head">
+          <h3 class="mr-h2">By prescriptions</h3>
+          <p class="mr-note">Paid prescriptions. Each fill or refill counts once.</p>
+        </div>
+        <div class="mr-chart dash-skeleton" id="chart-volume" data-source="rankings"></div>
+      </div>
+      <div class="mr-card" id="by-spending" style="background: var(--color-bg)">
+        <div class="mr-card-head">
+          <h3 class="mr-h2">By Medicaid spending</h3>
+          <p class="mr-note">Medicaid amount reimbursed to pharmacies, before manufacturer rebates.</p>
+        </div>
+        <div class="mr-chart dash-skeleton" id="chart-spending" data-source="rankings"></div>
+      </div>
+    </div>
+  </section>
+
+  </div>
+
+  <div id="tab-savings" class="mr-tab-panel" role="tabpanel" aria-labelledby="tabbtn-savings" hidden>
+    <p class="mr-lede" id="savings-lede">Estimated 2025 savings if prescriptions for brand-name drugs and reference biologics had been filled with their matched generic or biosimilar, <span id="savings-geo">nationally</span>. Matches require the same ingredient, strength and form, and an FDA substitutability rating for generics.</p>
+
+    <div class="mr-chips" id="sav-tiers" role="group" aria-label="Switch type"></div>
+
+    <section class="mr-kpis" id="savings-kpis" data-source="savings_summary">
+      <div class="mr-kpi" id="kpi-brand">
+        <span class="mr-kpi-label">Brand spending with a matched alternative</span>
+        <b class="mr-kpi-value dash-skeleton" data-source="savings_summary" data-field="brand_spending" data-where="geo=US&amp;match_level=primary&amp;tier=all">—</b>
+        <span class="mr-kpi-note">Pre-rebate Medicaid paid, 2025</span>
+      </div>
+      <div class="mr-kpi" id="kpi-gross">
+        <span class="mr-kpi-label">Gross savings</span>
+        <b class="mr-kpi-value dash-skeleton" data-source="savings_summary" data-field="gross_savings" data-where="geo=US&amp;match_level=primary&amp;tier=all">—</b>
+        <span class="mr-kpi-note">Before rebates. Upper bound</span>
+      </div>
+      <div class="mr-kpi" id="kpi-min">
+        <span class="mr-kpi-label">After minimum rebates</span>
+        <b class="mr-kpi-value dash-skeleton" data-source="savings_summary" data-field="min_rebate_savings" data-where="geo=US&amp;match_level=primary&amp;tier=all">—</b>
+        <span class="mr-kpi-note">Statutory floor: 23.1% brand, 13% generic</span>
+      </div>
+      <div class="mr-kpi" id="kpi-avg">
+        <span class="mr-kpi-label">After average rebates</span>
+        <b class="mr-kpi-value dash-skeleton" data-source="savings_summary" data-field="avg_rebate_savings" data-where="geo=US&amp;match_level=primary&amp;tier=all">—</b>
+        <span class="mr-kpi-note">Brand rebates at an estimated 61.9% (calibrated to MACPAC FY 2024)</span>
+      </div>
+    </section>
+    <p class="mr-callout" id="savings-callout"></p>
+
+    <section class="mr-card" id="savings-top">
+      <div class="mr-card-head">
+        <h2 class="mr-h2" id="savings-top-title">Top 25 switching opportunities</h2>
+        <p class="mr-note">Ranked by gross savings. "Already on alternative" is the share of this product's units already dispensed as the generic or biosimilar. NDCs are listed nationally, highest Medicaid spending first. Flags mark brands a state has put on its brand-preferred list (it found the brand cheaper after rebates) and switches that cost more after average rebates.</p>
+      </div>
+      <div class="mr-table-wrap">
+        <table class="mr-table mr-sav-table" id="savings-table" data-source="savings_top" data-row-key="key">
+          <thead><tr>
+            <th data-field="brand_names">Brand</th>
+            <th>Brand NDCs</th>
+            <th data-field="group_name" class="mr-narrow-hide">Product</th>
+            <th data-field="tier" class="mr-narrow-hide">Switch to</th>
+            <th class="mr-narrow-hide">Alternative NDCs</th>
+            <th data-field="brand_spending" class="mr-narrow-hide">Brand spending</th>
+            <th data-field="alt_share_of_units" class="mr-narrow-hide">Already on alternative</th>
+            <th data-field="gross_savings">Gross savings</th>
+            <th data-field="min_rebate_savings" class="mr-narrow-hide">After min. rebates</th>
+            <th data-field="avg_rebate_savings">After avg. rebates</th>
+            <th data-field="brand_preferred_states">Flags</th>
+          </tr></thead>
+          <tbody class="dash-skeleton"></tbody>
+        </table>
+      </div>
+    </section>
+
+
+    <section class="mr-foot" id="savings-method">
+      <strong>How the savings are estimated</strong>
+      <ul>
+        <li>Brands match generics with the same RxNorm clinical drug (ingredient, strength and dose form) and an FDA "A" therapeutic-equivalence rating; authorized generics always match. Reference biologics match biosimilars with the same concentration, volume and device.</li>
+        <li>The alternative's price is the volume-weighted average Medicaid paid per unit for the matched products in the same state (national when a state has too little volume).</li>
+        <li>Minimum rebates use the statutory floor (23.1% of price for brands, 17.1% for clotting factors and pediatric drugs, 13% for generics). Average rebates use 61.9% for brands, calibrated to MACPAC's FY 2024 totals ($58.4B rebates on $106.4B gross); authorized generics and biosimilars stay at 23.1%. Rebates are applied to Medicaid paid amounts, and confidential state supplemental rebates are not included.</li>
+        <li>Brand-preferred lists are compiled for SC, IA, MD, NH, OH and NY (2026 lists). Other states may have lists that are not yet included.</li>
+        <li>Interchangeable biosimilars can be substituted by the pharmacy where state law allows. Other biosimilars need a new prescription.</li>
+      </ul>
+    </section>
+  </div>
+
+
+  <div id="tab-explore" class="mr-tab-panel" role="tabpanel" aria-labelledby="tabbtn-explore" hidden>
+    <p class="mr-lede">Pick a product to see the generics, authorized generics or biosimilars sold at the same strength and form, and what each cost Medicaid per unit. Where none exists, the page says why, using FDA records. <span id="explore-geo-note">National figures, 2025.</span></p>
+
+    <div class="mr-search">
+      <label for="explore-search" class="mr-search-label">Find a product</label>
+      <input type="search" id="explore-search" autocomplete="off" placeholder="Brand or generic name, e.g. Eliquis, Humira, atorvastatin" aria-controls="explore-results">
+      <div class="mr-results" id="explore-results" role="listbox" aria-label="Matching products"></div>
+    </div>
+
+    <section class="mr-card mr-ex-head" id="explore-product" hidden>
+      <div class="mr-card-head">
+        <h2 class="mr-dialog-title" id="ex-title"></h2>
+        <p class="mr-note" id="ex-sub"></p>
+      </div>
+      <div class="mr-ex-facts" id="ex-facts"></div>
+      <p class="mr-ex-use" id="ex-use" hidden></p>
+      <p class="mr-callout" id="ex-verdict"></p>
+    </section>
+    <div class="mr-ex-groups" id="explore-groups"></div>
+    <p class="mr-empty" id="explore-empty">Search for a product above, or click "Explore" next to any product in a Rankings popup.</p>
+
+    <section class="mr-foot" id="explore-method">
+      <strong>How alternatives and reasons are found</strong>
+      <ul>
+        <li>An alternative has the same ingredient, strength and dose form (RxNorm clinical drug) and the same billing unit. Generics must carry an FDA "A" therapeutic-equivalence rating; authorized generics always qualify. Biosimilars must match concentration, volume and device.</li>
+        <li>Prices are national averages of what Medicaid paid per unit in 2025, before rebates. Savings estimates come from the Savings Opportunity Overview.</li>
+        <li>When no alternative was dispensed, the reason comes from the FDA Orange Book (generic approvals, listed patents, exclusivities) or the Purple Book (licensed biosimilars, exclusivities). Listed patents can be challenged, settled or ruled invalid, so their dates are not guaranteed launch dates.</li>
+      </ul>
+    </section>
+  </div>
+
+  <dialog class="mr-dialog" id="product-dialog" aria-labelledby="product-title">
+    <div class="mr-dialog-inner">
+      <div class="mr-dialog-head">
+        <div class="mr-card-head">
+          <h2 class="mr-dialog-title" id="product-title">Products</h2>
+          <p class="mr-note" id="product-sub"></p>
+        </div>
+        <button type="button" class="mr-close" id="product-close">Close</button>
+      </div>
+      <p class="mr-note" id="product-summary"></p>
+      <div class="mr-table-wrap">
+        <table class="mr-table" id="product-table" data-row-key="geo,ingredient,product,labeler,product_type">
+          <thead><tr>
+            <th data-field="product">Product</th>
+            <th data-field="labeler" class="mr-narrow-hide">Manufacturer</th>
+            <th>NDCs</th>
+            <th data-field="product_type">Category</th>
+            <th data-field="forms" class="mr-narrow-hide">Form</th>
+            <th data-field="prescriptions" class="mr-narrow-hide">Prescriptions</th>
+            <th data-field="medicaid_amount">Medicaid spending</th>
+            <th data-field="cost_per_prescription">Cost per Rx</th>
+            <th data-field="cost_per_unit" class="mr-narrow-hide">Cost per unit</th>
+            <th>Alternatives</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <div class="mr-ind-tip" id="ind-tip" hidden></div>
+      <p class="mr-note">Hover over a product name (dotted underline) to see what the FDA approved it for. "Explore" opens that product's alternatives and prices. Each product combines all strengths and package sizes sold under that name by that manufacturer; NDCs lists them (national, highest Medicaid spending first). Cost per unit is per billing unit (tablet, capsule, mL, each), so it is only comparable between products of the same strength and form. Bold rows are in the category you are viewing. Spending is before manufacturer rebates.</p>
+    </div>
+  </dialog>
+
+  <footer class="mr-foot" id="caveats">
+    <strong>How to read these numbers</strong>
+    <ul>
+      <li>Spending is before manufacturer rebates, so it overstates Medicaid's net cost, especially for brand drugs.</li>
+      <li>Reimbursement includes pharmacy dispensing fees.</li>
+      <li>“Generic competition” means a generic of the same strength and form was dispensed to Medicaid in 2025 (national data). Manufacturers’ own CMS categories often disagree, so they are not used. A brand can appear in both brand categories when only some strengths have generics.</li>
+      <li>Prescription counts are not adjusted for days supply: a 90-day fill counts the same as a 30-day fill.</li>
+      <li>Source: CMS State Drug Utilization Data 2025 (national totals), FDA NDC Directory, Purple Book and Medicaid Drug Rebate Program product data; ingredients from NLM RxNorm.</li>
+    </ul>
+  </footer>
+</div>
+
+<script>
+(() => {
+  const ALL = 'All product types';
+  const NATIONAL = 'US';
+  const STATE_NAMES = { US: 'United States (national)', AK: 'Alaska', AL: 'Alabama', AR: 'Arkansas', AZ: 'Arizona', CA: 'California', CO: 'Colorado', CT: 'Connecticut', DC: 'District of Columbia', DE: 'Delaware', FL: 'Florida', GA: 'Georgia', HI: 'Hawaii', IA: 'Iowa', ID: 'Idaho', IL: 'Illinois', IN: 'Indiana', KS: 'Kansas', KY: 'Kentucky', LA: 'Louisiana', MA: 'Massachusetts', MD: 'Maryland', ME: 'Maine', MI: 'Michigan', MN: 'Minnesota', MO: 'Missouri', MS: 'Mississippi', MT: 'Montana', NC: 'North Carolina', ND: 'North Dakota', NE: 'Nebraska', NH: 'New Hampshire', NJ: 'New Jersey', NM: 'New Mexico', NV: 'Nevada', NY: 'New York', OH: 'Ohio', OK: 'Oklahoma', OR: 'Oregon', PA: 'Pennsylvania', PR: 'Puerto Rico', RI: 'Rhode Island', SC: 'South Carolina', SD: 'South Dakota', TN: 'Tennessee', TX: 'Texas', UT: 'Utah', VA: 'Virginia', VT: 'Vermont', WA: 'Washington', WI: 'Wisconsin', WV: 'West Virginia', WY: 'Wyoming' };
+  const stateName = (code) => STATE_NAMES[code] || code;
+  window.mrStateName = stateName;
+  const CATEGORY_NOTES = {
+    [ALL]: 'Every drug, all categories combined. Hover a bar to see how its use splits across brand, generic and biosimilar versions.',
+    'Brand, single source': 'Brand-name drugs (FDA NDA) with no generic of the same strength and form dispensed to Medicaid in 2025. Some have FDA-approved generics that are not yet on the market.',
+    'Brand, generic competition': 'Brand-name drugs (FDA NDA) where a generic of the same strength and form was dispensed to Medicaid in 2025. This is based on what was dispensed, not the category manufacturers report to CMS, which is often out of date.',
+    'Authorized generic': 'The brand manufacturer’s own drug, sold under a generic label.',
+    'Generic': 'Generic copies approved by FDA ANDA.',
+    'Reference biologic': 'Original biologics (FDA BLA 351(a)), including insulins and other products moved to biologic status in 2020.',
+    'Biosimilar': 'Biosimilars (FDA 351(k)) not designated interchangeable.',
+    'Interchangeable biosimilar': 'Biosimilars FDA has designated interchangeable, so pharmacies may substitute them where state law allows.',
+    'OTC / unapproved / unclassified': 'Over-the-counter monograph products, unapproved drugs, and products with no FDA or CMS record.',
+  };
+
+  const fmtInt = d3.format(',');
+  const fmtUsd = d3.format('$,.0f');
+  const fmtUsd2 = d3.format('$,.2f');
+  const fmtPct = d3.format('.1%');
+  const compact = new Intl.NumberFormat('en', { notation: 'compact', maximumFractionDigits: 1 });
+  const shortRx = (v) => compact.format(v);
+  const shortUsd = (v) => '$' + compact.format(v);
+
+  dash.calc('brand_share', {
+    inputs: ['summary'],
+    title: 'Brand and reference biologic share',
+    description: 'Per state: share of prescriptions and of spending in Brand, single source + Brand, generic competition + Reference biologic, summed from the category summary.',
+    fn: (summary) => {
+      const brand = ['Brand, single source', 'Brand, generic competition', 'Reference biologic'];
+      const states = [...new Set(summary.map((r) => r.state))];
+      return states.map((state) => {
+        const rows = summary.filter((r) => r.state === state && brand.includes(r.product_type));
+        return {
+          state,
+          rx_share: rows.reduce((s, r) => s + Number(r.share_prescriptions), 0),
+          spend_share: rows.reduce((s, r) => s + Number(r.share_spending), 0),
+        };
+      });
+    },
+  });
+
+  const pick = (category) => dash.setParams({ category });
+  const current = () => dash.params().category || ALL;
+  const currentState = () => dash.params().state || NATIONAL;
+  const encodeKey = (...parts) => parts.map((p) => encodeURIComponent(p)).join(',');
+  const stateSelect = document.getElementById('state-select');
+  stateSelect.addEventListener('change', () => dash.setParams({ state: stateSelect.value }));
+
+  const failLine = (el) => {
+    const d = document.createElement('div');
+    d.className = 'mr-fail';
+    d.textContent = 'Failed to load';
+    el.replaceChildren(d);
+  };
+
+  // ---- header -------------------------------------------------------------
+  function drawLede() {
+    const bs = dash.data('brand_share');
+    const sm = dash.data('summary');
+    const st = currentState();
+    // Say which level the figures describe, since they follow the state menu.
+    document.getElementById('lede-geo').textContent = st === NATIONAL ? 'Nationally' : `In ${st === 'DC' ? 'the ' : ''}${stateName(st)}`;
+    document.querySelectorAll('#lede b').forEach((b) => {
+      const src = b.dataset.source === 'brand_share' ? bs : sm;
+      b.dataset.where = b.dataset.source === 'brand_share' ? `state=${st}` : `state=${st}&product_type=Generic`;
+      if (src.status !== 'ok') { b.textContent = '—'; b.classList.toggle('dash-skeleton', src.status === 'loading'); return; }
+      b.classList.remove('dash-skeleton');
+      let v;
+      const row = b.dataset.source === 'brand_share'
+        ? src.data.find((r) => r.state === st)
+        : src.data.find((r) => r.state === st && r.product_type === 'Generic');
+      v = row && row[b.dataset.field];
+      b.textContent = v == null ? '—' : fmtPct(Number(v));
+    });
+  }
+
+  // ---- category table + chips ---------------------------------------------
+  function drawCategories() {
+    const sm = dash.data('summary');
+    const tbody = document.querySelector('#summary-table tbody');
+    const chips = document.getElementById('chips');
+    const cat = current();
+    if (sm.status !== 'ok') {
+      tbody.classList.toggle('dash-skeleton', sm.status === 'loading');
+      if (sm.status !== 'loading') {
+        const tr = document.createElement('tr'); const td = document.createElement('td');
+        td.colSpan = 7; failLine(td); tr.append(td); tbody.replaceChildren(tr);
+      }
+      chips.replaceChildren();
+      return;
+    }
+    tbody.classList.remove('dash-skeleton');
+    const st = currentState();
+    const codes = [...new Set(sm.data.map((r) => r.state))]
+      .sort((a, b) => (a === NATIONAL ? -1 : b === NATIONAL ? 1 : stateName(a).localeCompare(stateName(b))));
+    if (stateSelect.options.length !== codes.length) {
+      stateSelect.replaceChildren(...codes.map((c) => new Option(stateName(c), c)));
+    }
+    stateSelect.value = st;
+    const rows = sm.data.filter((r) => r.state === st);
+    const maxRx = d3.max(rows, (r) => Number(r.share_prescriptions));
+    const maxAmt = d3.max(rows, (r) => Number(r.share_spending));
+    const shareCell = (v, max, color) => {
+      const td = document.createElement('td');
+      const wrap = document.createElement('span'); wrap.className = 'mr-share';
+      const track = document.createElement('s');
+      const bar = document.createElement('i');
+      bar.style.width = Math.max(2, (v / max) * 100) + '%';
+      bar.style.background = color;
+      track.append(bar);
+      const label = document.createElement('span'); label.textContent = fmtPct(v);
+      wrap.append(label, track); td.append(wrap);
+      return td;
+    };
+    tbody.replaceChildren(...rows.map((r) => {
+      const tr = document.createElement('tr');
+      tr.dataset.key = encodeKey(r.state, r.product_type);
+      tr.dataset.category = r.product_type;
+      tr.tabIndex = 0;
+      tr.setAttribute('aria-selected', String(r.product_type === cat));
+      const cells = [
+        r.product_type,
+        r.modality,
+        fmtInt(Number(r.prescriptions)),
+        null,
+        shortUsd(Number(r.medicaid_amount)),
+        null,
+        fmtUsd2(Number(r.cost_per_prescription)),
+      ];
+      cells.forEach((text, i) => {
+        if (i === 3) { tr.append(shareCell(Number(r.share_prescriptions), maxRx, dash.colors[0])); return; }
+        if (i === 5) { tr.append(shareCell(Number(r.share_spending), maxAmt, dash.colors[1])); return; }
+        const td = document.createElement('td');
+        td.textContent = text;
+        if (i === 1) td.className = 'mr-mod mr-narrow-hide';
+        if (i === 2 || i === 4 || i === 6) td.className = 'mr-narrow-hide';
+        tr.append(td);
+      });
+      return tr;
+    }));
+
+    const names = [ALL, ...rows.map((r) => r.product_type)];
+    chips.replaceChildren(...names.map((name) => {
+      const b = document.createElement('button');
+      b.type = 'button'; b.className = 'mr-chip';
+      b.textContent = name === ALL ? 'All drugs' : name;
+      b.setAttribute('aria-pressed', String(name === cat));
+      b.addEventListener('click', () => pick(name));
+      return b;
+    }));
+  }
+
+  const table = document.getElementById('summary-table');
+  table.addEventListener('click', (e) => {
+    const tr = e.target.closest('tr[data-key]');
+    if (tr) { pick(tr.dataset.category); document.getElementById('rankings').scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+  });
+  table.addEventListener('keydown', (e) => {
+    const tr = e.target.closest('tr[data-key]');
+    if (tr && (e.key === 'Enter' || e.key === ' ')) { e.preventDefault(); pick(tr.dataset.category); }
+  });
+
+  // ---- ranked bar charts --------------------------------------------------
+  const ROW_H = 24, BAR_H = 14, RANK_W = 24;
+
+  function fitText(node, text, maxW) {
+    node.textContent = text;
+    if (node.getComputedTextLength() <= maxW) return;
+    let lo = 0, hi = text.length;
+    while (lo < hi) {
+      const mid = Math.ceil((lo + hi) / 2);
+      node.textContent = text.slice(0, mid).trimEnd() + '…';
+      if (node.getComputedTextLength() <= maxW) lo = mid; else hi = mid - 1;
+    }
+    node.textContent = text.slice(0, lo).trimEnd() + '…';
+  }
+
+  function tipRow(label, value) {
+    const row = document.createElement('div'); row.className = 'mr-tip-row';
+    const a = document.createElement('span'); a.textContent = label;
+    const b = document.createElement('span'); b.textContent = value;
+    row.append(a, b); return row;
+  }
+
+  function drawChart(el, rows, measure, cat) {
+    const field = measure === 'volume' ? 'prescriptions' : 'medicaid_amount';
+    const shareField = measure === 'volume' ? 'share_of_category_prescriptions' : 'share_of_category_spending';
+    const shareLabel = measure === 'volume' ? 'Share of category Rx' : 'Share of category spending';
+    const short = measure === 'volume' ? shortRx : shortUsd;
+    const color = measure === 'volume' ? dash.colors[0] : dash.colors[1];
+    el.replaceChildren();
+    if (!rows.length) {
+      const p = document.createElement('p'); p.className = 'mr-empty';
+      p.textContent = 'No drugs with a mapped ingredient in this category.';
+      el.append(p); return;
+    }
+    const W = Math.max(280, el.clientWidth);
+    const H = rows.length * ROW_H + 4;
+    const svg = d3.select(el).append('svg')
+      .attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`).attr('role', 'img')
+      .attr('aria-label', `Top ${rows.length} drugs by ${measure === 'volume' ? 'prescriptions' : 'Medicaid spending'}`);
+
+    // Measure the widest name and value label to set the columns.
+    const probe = svg.append('text').attr('x', -9999);
+    const nameW = d3.max(rows, (r) => { probe.text(r.ingredient); return probe.node().getComputedTextLength(); });
+    const valW = d3.max(rows, (r) => { probe.text(short(Number(r[field]))); return probe.node().getComputedTextLength(); });
+    probe.remove();
+    const labelW = Math.min(nameW, W * 0.42);
+    const x0 = RANK_W + labelW + 10;
+    const x1 = Math.max(x0 + 40, W - valW - 8);
+    const x = d3.scaleLinear([0, d3.max(rows, (r) => Number(r[field])) || 1], [0, x1 - x0]);
+
+    const tip = document.createElement('div'); tip.className = 'mr-tip'; tip.hidden = true;
+    el.append(tip);
+
+    const g = svg.selectAll('g.row').data(rows).join('g')
+      .attr('class', 'row').attr('transform', (d, i) => `translate(0,${i * ROW_H})`);
+
+    g.append('rect').attr('class', 'hit').attr('x', 0).attr('y', 0).attr('width', W).attr('height', ROW_H)
+      .attr('fill', 'transparent');
+    g.append('text').attr('x', RANK_W - 6).attr('y', ROW_H / 2).attr('dy', '0.35em').attr('text-anchor', 'end')
+      .attr('fill', 'var(--color-fg-muted)').text((d) => d.rank);
+    g.append('text').attr('class', 'name').attr('x', RANK_W).attr('y', ROW_H / 2).attr('dy', '0.35em')
+      .attr('fill', 'var(--color-fg)')
+      .each(function (d) { fitText(this, d.ingredient, labelW); });
+    g.append('rect').attr('class', 'bar').attr('x', x0).attr('y', (ROW_H - BAR_H) / 2)
+      .attr('width', (d) => Math.max(2, x(Number(d[field])))).attr('height', BAR_H).attr('rx', 4)
+      .attr('fill', color);
+    g.append('text').attr('x', (d) => x0 + Math.max(2, x(Number(d[field]))) + 6).attr('y', ROW_H / 2).attr('dy', '0.35em')
+      .attr('fill', 'var(--color-fg-muted)').text((d) => short(Number(d[field])));
+
+    const show = (event, d) => {
+      g.selectAll('rect.bar').attr('opacity', (o) => (o === d ? 1 : 0.45));
+      const split = measure === 'volume' ? d.product_type_split_prescriptions : d.product_type_split_spending;
+      const kids = [];
+      const t = document.createElement('div'); t.className = 'mr-tip-title'; t.textContent = `${d.rank}. ${d.ingredient}`; kids.push(t);
+      if (d.therapeutic_class) {
+        const s = document.createElement('div'); s.className = 'mr-tip-sub';
+        s.textContent = d.therapeutic_class.charAt(0) + d.therapeutic_class.slice(1).toLowerCase();
+        kids.push(s);
+      }
+      kids.push(tipRow('Prescriptions', fmtInt(Number(d.prescriptions))));
+      kids.push(tipRow('Medicaid spending', fmtUsd(Number(d.medicaid_amount))));
+      if (d.cost_per_prescription !== '' && d.cost_per_prescription != null) kids.push(tipRow('Cost per Rx', fmtUsd2(Number(d.cost_per_prescription))));
+      kids.push(tipRow(cat === ALL ? (measure === 'volume' ? 'Share of all Rx' : 'Share of all spending') : shareLabel, fmtPct(Number(d[shareField]))));
+      if (cat === ALL && split) {
+        const s = document.createElement('div'); s.className = 'mr-tip-split';
+        s.textContent = 'By category: ' + split.split('; ').join(' · ');
+        kids.push(s);
+      }
+      tip.replaceChildren(...kids);
+      tip.hidden = false;
+      const box = el.getBoundingClientRect();
+      const tw = tip.offsetWidth, th = tip.offsetHeight;
+      let left = event.clientX - box.left + 14;
+      if (left + tw > box.width) left = Math.max(0, event.clientX - box.left - tw - 14);
+      let top = event.clientY - box.top + 12;
+      if (top + th > box.height) top = Math.max(0, box.height - th);
+      tip.style.left = left + 'px'; tip.style.top = top + 'px';
+    };
+    const hide = () => { tip.hidden = true; g.selectAll('rect.bar').attr('opacity', 1); };
+    g.on('mousemove', show).on('mouseleave', hide)
+      .attr('tabindex', 0).attr('role', 'button')
+      .attr('aria-label', (d) => `${d.ingredient}: show the products that sell it`)
+      .on('click', (event, d) => { hide(); openProducts(d.ingredient, d.therapeutic_class); })
+      .on('keydown', (event, d) => {
+        if (event.key === 'Enter' || event.key === ' ') {
+          event.preventDefault();
+          const r = event.currentTarget.getBoundingClientRect(); anchorY = r.top + r.height / 2;
+          openProducts(d.ingredient, d.therapeutic_class);
+        }
+      });
+  }
+
+  function drawRankings() {
+    // A hidden tab has zero width, so text measures as 0 and the chart would be
+    // laid out for 280px and then stretched. Draw only when visible; switching
+    // back to this tab calls mrDrawRankings (see showTab).
+    if (document.getElementById('tab-rankings').hidden) return;
+    const rk = dash.data('rankings');
+    const cat = current();
+    const st = currentState();
+    const where = st === NATIONAL ? '' : ` in ${stateName(st)}`;
+    document.getElementById('rank-title').textContent =
+      cat === ALL ? `Top 25 drugs${where}, all categories` : `Top 25 drugs${where}: ${cat}`;
+    document.getElementById('rank-note').textContent =
+      `${CATEGORY_NOTES[cat] || ''} Drugs are ranked by active ingredient, summing every package of that ingredient within the category. Click a drug to see the products that sell it.`;
+    for (const [id, measure] of [['chart-volume', 'volume'], ['chart-spending', 'spending']]) {
+      const el = document.getElementById(id);
+      if (rk.status !== 'ok') {
+        if (rk.status === 'loading') { el.classList.add('dash-skeleton'); el.replaceChildren(); }
+        else { el.classList.remove('dash-skeleton'); failLine(el); }
+        continue;
+      }
+      el.classList.remove('dash-skeleton');
+      const rows = rk.data
+        .filter((r) => r.state === st && r.category === cat && r.measure === measure)
+        .sort((a, b) => Number(a.rank) - Number(b.rank));
+      drawChart(el, rows, measure, cat);
+    }
+  }
+
+
+  // ---- ingredient popup: the products that sell an ingredient -----------------
+  const dialog = document.getElementById('product-dialog');
+  const productTable = document.getElementById('product-table');
+  let openIngredient = null, openClass = null;
+  const fmtUnit = d3.format('$,.4~f');
+  document.getElementById('product-close').addEventListener('click', () => dialog.close());
+  dialog.addEventListener('click', (e) => { if (e.target === dialog) dialog.close(); });
+  dialog.addEventListener('close', () => { openIngredient = null; });
+
+
+  // ---- FDA-approved use, shown when hovering a product name -----------------
+  const indTip = document.getElementById('ind-tip');
+  const enc = (v) => encodeURIComponent(v);
+  function indicationFor(product, labeler) {
+    const d = dash.data('indications');
+    if (d.status !== 'ok') return null;
+    if (!window.mrIndIndex || window.mrIndIndex.src !== d.data) {
+      window.mrIndIndex = { src: d.data, map: new Map(d.data.map((r) => [r.product + '\u0000' + r.labeler, r])) };
+    }
+    return window.mrIndIndex.map.get(product + '\u0000' + labeler) || null;
+  }
+  // NDC list: the first NDC, then "+N more" to expand the rest in place and
+  // "Hide" to collapse them again.
+  function ndcList(ndcs, shown = 1) {
+    const all = String(ndcs || '').split(' ').filter(Boolean);
+    const wrap = document.createElement('span'); wrap.className = 'mr-ndcs';
+    if (!all.length) { wrap.textContent = '—'; return wrap; }
+    const draw = (n) => {
+      wrap.replaceChildren(...all.slice(0, n).map((c) => { const e = document.createElement('span'); e.className = 'mr-ndc'; e.textContent = c; return e; }));
+      if (all.length > n) {
+        const b = document.createElement('button'); b.type = 'button'; b.className = 'mr-ndc-more';
+        b.textContent = `+${all.length - n} more`; b.setAttribute('aria-label', `Show all ${all.length} NDCs`);
+        b.setAttribute('aria-expanded', 'false');
+        b.addEventListener('click', (e) => { e.stopPropagation(); draw(all.length); wrap.querySelector('.mr-ndc-more')?.focus(); });
+        wrap.append(b);
+      } else if (all.length > shown) {
+        const b = document.createElement('button'); b.type = 'button'; b.className = 'mr-ndc-more';
+        b.textContent = 'Hide'; b.setAttribute('aria-label', `Show only the first NDC`);
+        b.setAttribute('aria-expanded', 'true');
+        b.addEventListener('click', (e) => { e.stopPropagation(); draw(shown); wrap.querySelector('.mr-ndc-more')?.focus(); });
+        wrap.append(b);
+      }
+    };
+    draw(shown);
+    return wrap;
+  }
+  window.mrNdcList = ndcList;
+  function ndcsFor(product, labeler, productType) {
+    const d = dash.data('product_ndcs');
+    if (d.status !== 'ok') return d.status === 'loading' ? null : '';
+    if (!window.mrNdcIndex || window.mrNdcIndex.src !== d.data) {
+      window.mrNdcIndex = { src: d.data, map: new Map(d.data.map((r) => [[r.product, r.labeler, r.product_type].join('\u0000'), r.ndcs])) };
+    }
+    return window.mrNdcIndex.map.get([product, labeler, productType].join('\u0000')) || '';
+  }
+
+  function loadingLine(text) {
+    const d = document.createElement('div'); d.className = 'mr-loading'; d.setAttribute('role', 'status');
+    const sp = document.createElement('span'); sp.className = 'mr-spinner'; sp.setAttribute('aria-hidden', 'true');
+    const t = document.createElement('span'); t.textContent = text;
+    d.append(sp, t); return d;
+  }
+  function showIndication(target, rec) {
+    if (!rec) {                                     // label data still loading
+      indTip.removeAttribute('data-source'); indTip.removeAttribute('data-field'); indTip.removeAttribute('data-where');
+      indTip.replaceChildren(loadingLine('Loading FDA-approved use…'));
+      placeTip(target); return;
+    }
+    indTip.dataset.source = 'indications';
+    indTip.dataset.field = 'indication';
+    indTip.dataset.where = `product=${enc(rec.product)}&labeler=${enc(rec.labeler)}`;
+    const label = document.createElement('div'); label.className = 'mr-ind-tip-label'; label.textContent = 'FDA-approved use';
+    const body = document.createElement('div'); body.textContent = rec.indication;
+    const meta = document.createElement('div'); meta.className = 'mr-ind-tip-meta';
+    const eff = rec.effective_time ? String(rec.effective_time) : '';
+    const date = eff.length === 8 ? `${eff.slice(0, 4)}-${eff.slice(4, 6)}-${eff.slice(6, 8)}` : eff;
+    meta.textContent = `FDA label${rec.label_brand_name ? ': ' + rec.label_brand_name : ''}${date ? ' · revised ' + date : ''}`;
+    indTip.replaceChildren(label, body, meta);
+    placeTip(target);
+  }
+  function placeTip(target) {
+    // Positioned against the window (position: fixed), so the popup's own edges
+    // cannot clip it. Below the name if it fits, else above, else wherever has
+    // more room with the box scrolling inside; always 8px inside the window.
+    indTip.style.maxHeight = '';
+    indTip.hidden = false;
+    const r = target.getBoundingClientRect();
+    const vw = window.innerWidth, vh = window.innerHeight, gap = 6, edge = 8;
+    const below = vh - r.bottom - gap - edge, above = r.top - gap - edge;
+    let h = indTip.offsetHeight, top;
+    if (h <= below) top = r.bottom + gap;
+    else if (h <= above) top = r.top - gap - h;
+    else if (below >= above) { indTip.style.maxHeight = below + 'px'; top = r.bottom + gap; }
+    else { indTip.style.maxHeight = above + 'px'; h = indTip.offsetHeight; top = r.top - gap - h; }
+    const left = Math.max(edge, Math.min(r.left, vw - indTip.offsetWidth - edge));
+    indTip.style.top = Math.max(edge, top) + 'px'; indTip.style.left = left + 'px';
+  }
+  const hideIndication = () => { indTip.hidden = true; };
+  dialog.addEventListener('close', hideIndication);
+  dialog.addEventListener('scroll', hideIndication, true);
+
+  let anchorY = null;
+  document.addEventListener('pointerdown', (e) => { anchorY = e.clientY; }, true);
+  function placeDialog() {
+    // Centered by CSS (inset: 0; margin: auto). When the dashboard frame is as
+    // tall as the whole page, "centered" would be the middle of the document,
+    // possibly off screen, so then place it level with where the user clicked.
+    const tallFrame = window.innerHeight > (window.screen?.availHeight || 900) * 1.2;
+    if (!tallFrame || anchorY == null) { dialog.style.top = ''; dialog.style.bottom = ''; return; }
+    const h = dialog.offsetHeight;
+    const top = Math.max(16, Math.min(anchorY - h / 2, window.innerHeight - h - 16));
+    dialog.style.top = top + 'px'; dialog.style.bottom = 'auto';
+  }
+  function openProducts(ingredient, therapeuticClass) {
+    openIngredient = ingredient; openClass = therapeuticClass;
+    drawProducts();
+    if (!dialog.open) dialog.showModal();
+    placeDialog();
+  }
+
+  function drawProducts() {
+    if (!openIngredient) return;
+    const st = currentState();
+    const id = st === NATIONAL ? 'products_us' : 'products_states';
+    productTable.dataset.source = id;      // set on open, so the state file loads only when needed
+    const cat = current();
+    document.getElementById('product-title').textContent = openIngredient;
+    const cls = openClass ? openClass.charAt(0) + openClass.slice(1).toLowerCase() : '';
+    document.getElementById('product-sub').textContent =
+      [cls, st === NATIONAL ? 'National, 2025' : `${stateName(st)}, 2025`].filter(Boolean).join(' · ');
+    const tbody = productTable.querySelector('tbody');
+    const src = dash.data(id);
+    const summary = document.getElementById('product-summary');
+    if (src.status !== 'ok') {
+      summary.textContent = '';
+      if (src.status === 'loading') {
+        summary.textContent = '';
+        const tr = document.createElement('tr'); const td = document.createElement('td'); td.colSpan = 10;
+        td.append(loadingLine(st === NATIONAL ? 'Loading products…' : `Loading products for ${stateName(st)}…`));
+        tr.append(td); tbody.replaceChildren(tr); tbody.classList.remove('dash-skeleton');
+      }
+      else { tbody.classList.remove('dash-skeleton'); const tr = document.createElement('tr'); const td = document.createElement('td'); td.colSpan = 10; failLine(td); tr.append(td); tbody.replaceChildren(tr); }
+      return;
+    }
+    tbody.classList.remove('dash-skeleton');
+    const rows = src.data.filter((r) => r.geo === st && r.ingredient === openIngredient)
+      .sort((a, b) => Number(b.medicaid_amount) - Number(a.medicaid_amount));
+    const total = d3.sum(rows, (r) => Number(r.medicaid_amount));
+    const totalRx = d3.sum(rows, (r) => Number(r.prescriptions));
+    const named = rows.filter((r) => r.product_type).length;
+    summary.textContent = `${named} product${named === 1 ? '' : 's'}${rows.length > named ? ' shown, plus smaller ones grouped' : ''} · ${fmtInt(totalRx)} prescriptions · ${fmtUsd(total)} Medicaid spending`;
+    tbody.replaceChildren(...rows.map((r) => {
+      const tr = document.createElement('tr');
+      tr.dataset.key = encodeKey(r.geo, r.ingredient, r.product, r.labeler, r.product_type || '');
+      if (cat !== ALL && r.product_type === cat) tr.className = 'mr-in-cat';
+      const cell = (text, cls) => { const td = document.createElement('td'); td.textContent = text; if (cls) td.className = cls; return td; };
+      const pt = document.createElement('td');
+      if (r.product_type) { const chip = document.createElement('span'); chip.className = 'mr-pt'; chip.textContent = r.product_type; pt.append(chip); }
+      const nameTd = document.createElement('td'); nameTd.className = 'mr-wrap';
+      const name = document.createElement('span'); name.className = 'mr-prodname'; name.textContent = r.product;
+      const ind = r.product_type ? indicationFor(r.product, r.labeler) : null;
+      if (r.product_type && dash.data('indications').status === 'loading') {
+        name.tabIndex = 0;
+        name.addEventListener('mouseenter', () => showIndication(name, null));
+        name.addEventListener('focus', () => showIndication(name, null));
+        name.addEventListener('mouseleave', hideIndication);
+        name.addEventListener('blur', hideIndication);
+      } else if (ind && ind.indication) {
+        name.classList.add('mr-has-ind'); name.tabIndex = 0;
+        name.setAttribute('aria-label', `${r.product}: FDA-approved use. ${ind.indication}`);
+        name.addEventListener('mouseenter', () => showIndication(name, ind));
+        name.addEventListener('focus', () => showIndication(name, ind));
+        name.addEventListener('click', () => (indTip.hidden ? showIndication(name, ind) : hideIndication()));
+        name.addEventListener('mouseleave', hideIndication);
+        name.addEventListener('blur', hideIndication);
+      }
+      nameTd.append(name);
+      tr.append(
+        nameTd,
+        cell(r.labeler || '', 'mr-wrap mr-narrow-hide'),
+        (() => {
+          const td = document.createElement('td');
+          if (!r.product_type) { td.textContent = ''; return td; }      // the grouped "N other products" row
+          const n = ndcsFor(r.product, r.labeler, r.product_type);
+          if (n === null) td.append(loadingLine('Loading…')); else td.append(ndcList(n));
+          return td;
+        })(),
+        pt,
+        cell(r.forms || '', 'mr-wrap mr-narrow-hide'),
+        cell(fmtInt(Number(r.prescriptions)), 'mr-narrow-hide'),
+        cell(fmtUsd(Number(r.medicaid_amount))),
+        cell(fmtUsd2(Number(r.cost_per_prescription))),
+        cell(r.cost_per_unit === '' || r.cost_per_unit == null ? '—' : `${fmtUnit(Number(r.cost_per_unit))} / ${(r.unit_type || '').toLowerCase()}`, 'mr-narrow-hide'),
+      );
+      const ex = document.createElement('td');
+      if (r.product_type) {
+        const b = document.createElement('button'); b.type = 'button'; b.className = 'mr-explore-btn';
+        b.textContent = 'Explore'; b.setAttribute('aria-label', `Explore alternatives to ${r.product}`);
+        b.addEventListener('click', () => { dialog.close(); window.mrExplore?.(r.product, r.labeler); });
+        ex.append(b);
+      }
+      tr.append(ex);
+      return tr;
+    }));
+  }
+
+  window.mrDrawRankings = drawRankings;
+
+  dash.onData(() => {
+    const st = currentState();
+    document.getElementById('page-title').textContent =
+      st === NATIONAL ? 'Medicaid drug rankings, 2025' : `Medicaid drug rankings, 2025: ${stateName(st)}`;
+    document.getElementById('state-note').hidden = st === NATIONAL;
+    document.getElementById('geo-label').textContent = st === NATIONAL ? 'National totals' : `${stateName(st)} totals`;
+    drawLede();
+    drawCategories();
+    drawRankings();
+    drawProducts();
+  });
+})();
+</script>
+
+<script>
+(() => {
+  const NATIONAL = 'US';
+  const TIER_LABEL = {
+    all: 'All switches',
+    generic: 'Brand to generic',
+    interchangeable_biosimilar: 'To interchangeable biosimilar',
+    biosimilar: 'To biosimilar (new prescription)',
+  };
+  const TIER_SHORT = { generic: 'Generic', interchangeable_biosimilar: 'Interchangeable biosimilar', biosimilar: 'Biosimilar' };
+  const compact = new Intl.NumberFormat('en', { notation: 'compact', maximumFractionDigits: 1 });
+  const usd = (v) => (v < 0 ? '−$' : '$') + compact.format(Math.abs(v));
+  const pct = d3.format('.0%');
+  const st = () => dash.params().state || NATIONAL;
+  const tier = () => dash.params().savtier || 'all';
+  const stateName = (c) => (window.mrStateName ? window.mrStateName(c) : c);
+
+  // ---- tabs (shared with the rankings script through the DOM) ----------------
+  const tabs = [['rankings', document.getElementById('tabbtn-rankings')], ['savings', document.getElementById('tabbtn-savings')],
+                ['explore', document.getElementById('tabbtn-explore')]];
+  function showTab(name, link) {
+    tabs.forEach(([n, btn]) => {
+      const on = n === name;
+      btn.setAttribute('aria-selected', String(on));
+      btn.tabIndex = on ? 0 : -1;
+      document.getElementById(`tab-${n}`).hidden = !on;
+    });
+    if (link) dash.setLink(name);
+    if (name === 'rankings') window.mrDrawRankings?.();
+    if (name === 'explore') window.mrDrawExplore?.();
+  }
+  tabs.forEach(([n, btn]) => btn.addEventListener('click', () => showTab(n, true)));
+  window.mrShowTab = showTab;
+  if (['savings', 'explore'].includes(location.hash.slice(1))) showTab(location.hash.slice(1), false);
+
+  // ---- tier chips ---------------------------------------------------------
+  const chips = document.getElementById('sav-tiers');
+  function drawChips() {
+    chips.replaceChildren(...Object.entries(TIER_LABEL).map(([k, label]) => {
+      const b = document.createElement('button');
+      b.type = 'button'; b.className = 'mr-chip'; b.textContent = label;
+      b.setAttribute('aria-pressed', String(k === tier()));
+      b.addEventListener('click', () => dash.setParams({ savtier: k }));
+      return b;
+    }));
+  }
+
+  const failLine = (el) => {
+    const d = document.createElement('div'); d.className = 'mr-fail'; d.textContent = 'Failed to load'; el.replaceChildren(d);
+  };
+
+  // ---- KPI tiles + callout ------------------------------------------------
+  function drawKpis() {
+    const s = dash.data('savings_summary');
+    const g = st(), t = tier();
+    document.getElementById('savings-geo').textContent = g === NATIONAL ? 'nationally' : `in ${stateName(g)}`;
+    const row = s.status === 'ok' ? s.data.find((r) => r.geo === g && r.match_level === 'primary' && r.tier === t) : null;
+    document.querySelectorAll('#savings-kpis b[data-field]').forEach((b) => {
+      b.dataset.where = `geo=${g}&match_level=primary&tier=${t}`;
+      b.classList.toggle('dash-skeleton', s.status === 'loading');
+      b.textContent = row ? usd(Number(b.dataset.field && row[b.dataset.field])) : '—';
+    });
+    const call = document.getElementById('savings-callout');
+    call.replaceChildren();
+    if (!row) { call.hidden = true; return; }
+    call.hidden = false;
+    const n = Number(row.groups);
+    const rev = Number(row.groups_reverse_after_rebates);
+    const parts = [`${d3.format(',')(n)} brand products have a cheaper matched alternative.`];
+    if (rev > 0) parts.push(`${d3.format(',')(rev)} of them would cost Medicaid more after average rebates, so the brand may already be the better buy.`);
+    if (g !== NATIONAL) {
+      const bp = Number(row.groups_brand_preferred_here);
+      if (bp > 0) parts.push(`${d3.format(',')(bp)} are on ${stateName(g)}'s brand-preferred list (${usd(Number(row.gross_savings_brand_preferred_here))} of the gross savings): the state has already judged the brand cheaper after rebates.`);
+    }
+    call.textContent = parts.join(' ');
+  }
+
+  // ---- tables ---------------------------------------------------------------
+  function flagText(r) {
+    const flags = [];
+    if (String(r.brand_preferred_here) === 'True' || r.brand_preferred_here === true) flags.push('Brand preferred here');
+    else if (r.brand_preferred_states && st() === NATIONAL) flags.push(`Brand preferred: ${r.brand_preferred_states.replace(/,/g, ', ')}`);
+    if (String(r.savings_reverse_after_rebates) === 'True' || r.savings_reverse_after_rebates === true) flags.push('Costs more after rebates');
+    return flags.join(' · ');
+  }
+
+  function rowsFor(level, n) {
+    const d = dash.data('savings_top');
+    if (d.status !== 'ok') return null;
+    const g = st(), t = tier();
+    let rows = d.data.filter((r) => r.geo === g && r.match_level === level && (t === 'all' || r.tier === t));
+    rows.sort((a, b) => Number(b.gross_savings) - Number(a.gross_savings));
+    if (t === 'all') {   // a reference biologic can appear in both biosimilar tiers: keep its best switch
+      const seen = new Set();
+      rows = rows.filter((r) => (seen.has(r.group_key) ? false : seen.add(r.group_key)));
+    }
+    return rows.slice(0, n);
+  }
+
+  function savingsNdcs(r) {
+    const d = dash.data('savings_ndcs');
+    if (d.status !== 'ok') return d.status === 'loading' ? null : {};
+    if (!window.mrSavNdc || window.mrSavNdc.src !== d.data) {
+      window.mrSavNdc = { src: d.data, map: new Map(d.data.map((x) => [[x.match_level, x.tier, x.group_key].join('\u0000'), x])) };
+    }
+    return window.mrSavNdc.map.get([r.match_level, r.tier, r.group_key].join('\u0000')) || {};
+  }
+  function ndcCell(r, field, cls) {
+    const td = document.createElement('td'); if (cls) td.className = cls;
+    const n = savingsNdcs(r);
+    if (n === null) td.textContent = 'Loading…';
+    else td.append(window.mrNdcList ? window.mrNdcList(n[field]) : document.createTextNode(n[field] || '—'));
+    return td;
+  }
+
+  function moneyCell(v, max, color) {
+    const td = document.createElement('td');
+    const wrap = document.createElement('span'); wrap.className = 'mr-share';
+    const label = document.createElement('span'); label.textContent = usd(v);
+    const track = document.createElement('s');
+    const bar = document.createElement('i');
+    bar.style.width = Math.max(2, (Math.max(v, 0) / max) * 100) + '%';
+    bar.style.background = color;
+    track.append(bar); wrap.append(label, track); td.append(wrap);
+    return td;
+  }
+  function textCell(text, cls) {
+    const td = document.createElement('td'); td.textContent = text; if (cls) td.className = cls; return td;
+  }
+
+  function drawTable(id, level, n, columns) {
+    const tbody = document.querySelector(`#${id} tbody`);
+    const d = dash.data('savings_top');
+    if (d.status !== 'ok') {
+      tbody.classList.toggle('dash-skeleton', d.status === 'loading');
+      if (d.status !== 'loading') { const tr = document.createElement('tr'); const td = document.createElement('td'); td.colSpan = columns.length; failLine(td); tr.append(td); tbody.replaceChildren(tr); }
+      return;
+    }
+    tbody.classList.remove('dash-skeleton');
+    const rows = rowsFor(level, n);
+    if (!rows.length) {
+      const tr = document.createElement('tr'); const td = document.createElement('td'); td.colSpan = columns.length;
+      td.className = 'mr-empty'; td.textContent = 'No matched opportunities for this selection.'; tr.append(td);
+      tbody.replaceChildren(tr); return;
+    }
+    const max = d3.max(rows, (r) => Number(r.gross_savings)) || 1;
+    tbody.replaceChildren(...rows.map((r) => {
+      const tr = document.createElement('tr');
+      tr.dataset.key = r.key;
+      tr.style.cursor = 'default';
+      for (const c of columns) {
+        if (c === 'brand_names') {
+          const td = textCell(r.brand_names || r.ingredient || '');
+          td.className = 'mr-wrap';
+          tr.append(td);
+        } else if (c === 'brand_ndcs') tr.append(ndcCell(r, 'brand_ndcs'));
+        else if (c === 'alt_ndcs') tr.append(ndcCell(r, 'alt_ndcs', 'mr-narrow-hide'));
+        else if (c === 'group_name') tr.append(textCell(r.group_name || '', 'mr-narrow-hide mr-wrap mr-muted'));
+        else if (c === 'tier') tr.append(textCell(TIER_SHORT[r.tier] || r.tier, 'mr-narrow-hide'));
+        else if (c === 'brand_spending') tr.append(textCell(usd(Number(r.brand_spending)), 'mr-narrow-hide'));
+        else if (c === 'alt_share_of_units') tr.append(textCell(pct(Number(r.alt_share_of_units)), 'mr-narrow-hide'));
+        else if (c === 'gross_savings') tr.append(moneyCell(Number(r.gross_savings), max, dash.colors[2]));
+        else if (c === 'min_rebate_savings') tr.append(textCell(usd(Number(r.min_rebate_savings)), 'mr-narrow-hide'));
+        else if (c === 'avg_rebate_savings') {
+          const v = Number(r.avg_rebate_savings);
+          tr.append(textCell(usd(v), v < 0 ? 'mr-neg' : ''));
+        } else if (c === 'brand_preferred_states') tr.append(textCell(flagText(r), 'mr-flag mr-wrap'));
+      }
+      return tr;
+    }));
+  }
+
+
+  dash.onData(() => {
+    drawChips();
+    drawKpis();
+    document.getElementById('savings-top-title').textContent =
+      `Top 25 switching opportunities${st() === NATIONAL ? '' : ` in ${stateName(st())}`}: ${TIER_LABEL[tier()].toLowerCase()}`;
+    drawTable('savings-table', 'primary', 25,
+      ['brand_names', 'brand_ndcs', 'group_name', 'tier', 'alt_ndcs', 'brand_spending', 'alt_share_of_units', 'gross_savings', 'min_rebate_savings', 'avg_rebate_savings', 'brand_preferred_states']);
+  });
+})();
+</script>
+
+<script>
+(() => {
+  const panel = document.getElementById('tab-explore');
+  const input = document.getElementById('explore-search');
+  const results = document.getElementById('explore-results');
+  const groupsEl = document.getElementById('explore-groups');
+  const NATIONAL = 'US';
+  const STATE_FILES = 4;                    // must match src/explore.py STATE_FILES
+  const fmtInt = d3.format(',');
+  const usd0 = d3.format('$,.0f');
+  const usd2 = d3.format('$,.2f');
+  const compact = new Intl.NumberFormat('en', { notation: 'compact', maximumFractionDigits: 1 });
+  const usdC = (v) => (v < 0 ? '−$' : '$') + compact.format(Math.abs(v));
+  const unitFmt = (v, u) => (v == null || isNaN(v) ? '—' : `${d3.format('$,.4~f')(v)} / ${(u || 'unit').toLowerCase()}`);
+  const pct = d3.format('.0%');
+  const num = (v) => (v === '' || v == null ? null : Number(v));
+  const ROLE_LABEL = { brand: 'Brand', reference: 'Reference biologic', generic: 'Generic (A-rated)', generic_not_a_rated: 'Generic (not A-rated)',
+    authorized_generic: 'Authorized generic', biosimilar: 'Biosimilar', interchangeable: 'Interchangeable biosimilar' };
+  const ALT_FOR = { brand: ['generic', 'authorized_generic'], reference: ['interchangeable', 'biosimilar'] };
+  const fmtDate = (s) => { if (!s) return ''; const d = new Date(s + 'T00:00:00'); return isNaN(d) ? s : d.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' }); };
+  const geo = () => dash.params().state || NATIONAL;
+  const stateName = (c) => (window.mrStateName ? window.mrStateName(c) : c);
+  let showAll = false;
+
+  const selected = () => {
+    const v = dash.params().explore;
+    if (!v) return null;
+    const i = v.lastIndexOf('|');
+    return { product: v.slice(0, i), labeler: v.slice(i + 1) };
+  };
+  window.mrExplore = (product, labeler) => {
+    showAll = false;
+    dash.setParams({ explore: `${product}|${labeler}` });
+    if (window.mrShowTab) window.mrShowTab('explore', true);
+    window.scrollTo?.({ top: 0 });
+  };
+
+  // ---- state figures: one of STATE_FILES files, 13 states each, alphabetical ----------
+  function stateFileId(st) {
+    const sm = dash.data('summary');
+    if (sm.status !== 'ok') return null;
+    const codes = [...new Set(sm.data.map((r) => r.state))].filter((c) => c !== NATIONAL).sort();
+    const size = Math.ceil(codes.length / STATE_FILES);
+    const i = codes.indexOf(st);
+    return i < 0 ? null : `explore_states_${Math.floor(i / size) + 1}`;
+  }
+  let cache = { src: null, st: null };
+  function stateFigures(st) {
+    if (st === NATIONAL) return { status: 'national' };
+    const id = stateFileId(st);
+    if (!id) return { status: 'loading' };
+    const d = dash.data(id);
+    if (d.status !== 'ok') return { status: d.status, id };
+    if (cache.src !== d.data || cache.st !== st) {
+      const p = new Map(), g = new Map(), s = new Map();
+      for (const r of d.data) {
+        if (r.state !== st) continue;
+        (r.kind === 'p' ? p : r.kind === 'g' ? g : s).set(Number(r.id), r);
+      }
+      cache = { src: d.data, st, p, g, s, id };
+    }
+    return { status: 'ok', ...cache };
+  }
+
+  // Figures for one national group-member row, in the selected geography.
+  function figures(m, sf) {
+    const natUnit = num(m.cost_per_unit), natRx = num(m.cost_per_prescription);
+    if (sf.status === 'national') {
+      return { rx: num(m.prescriptions), amt: num(m.medicaid_amount), unit: natUnit, perRx: natRx, unitNational: false, here: true };
+    }
+    const r = sf.g.get(Number(m.gid));
+    if (!r || !(num(r.rx) > 0)) return { rx: 0, amt: 0, unit: natUnit, perRx: natRx, unitNational: true, here: false };
+    const units = num(r.units), rx = num(r.rx), amt = num(r.amt);
+    return { rx, amt, unit: units > 0 ? amt / units : natUnit, perRx: rx > 0 ? amt / rx : natRx, unitNational: !(units > 0), here: true };
+  }
+
+  // ---- search -----------------------------------------------------------------
+  input.addEventListener('input', () => drawResults());
+  input.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') { const first = results.querySelector('button'); if (first) first.click(); }
+  });
+  function drawResults() {
+    const q = input.value.trim().toLowerCase();
+    results.replaceChildren();
+    if (q.length < 2) return;
+    const idx = dash.data('explore_index');
+    if (idx.status !== 'ok') { results.textContent = idx.status === 'loading' ? 'Loading products…' : 'Failed to load'; return; }
+    const hits = idx.data.filter((r) => String(r.product ?? '').toLowerCase().includes(q) || String(r.ingredient ?? '').toLowerCase().includes(q))
+      .sort((a, b) => Number(b.medicaid_amount) - Number(a.medicaid_amount)).slice(0, 12);
+    if (!hits.length) { results.textContent = 'No product matches that name.'; return; }
+    results.replaceChildren(...hits.map((r) => {
+      const b = document.createElement('button'); b.type = 'button'; b.className = 'mr-result'; b.setAttribute('role', 'option');
+      const name = document.createElement('span'); name.className = 'mr-result-name'; name.textContent = r.product || 'Unnamed product';
+      const meta = document.createElement('span'); meta.className = 'mr-result-meta';
+      meta.textContent = `${r.labeler} · ${r.product_type || 'unclassified'} · ${r.ingredient || ''} · ${usdC(Number(r.medicaid_amount))} national`;
+      b.append(name, meta);
+      b.addEventListener('click', () => { input.value = ''; results.replaceChildren(); window.mrExplore(r.product, r.labeler); });
+      return b;
+    }));
+  }
+
+  // ---- reason text when no alternative was dispensed ---------------------------------
+  function reason(st) {
+    const lines = [];
+    switch (st.status) {
+      case 'only_non_equivalent':
+        lines.push('Generics of this strength and form were dispensed, but none is rated by the FDA as therapeutically equivalent ("A"-rated), so none is an automatic substitute.'); break;
+      case 'other_strengths':
+        lines.push('No generic or biosimilar of this exact strength and form was dispensed in Medicaid in 2025. Equivalents exist for other strengths or forms of the same ingredient.'); break;
+      case 'approved_not_marketed':
+        lines.push(`The FDA has approved a generic for this form${st.first_generic_approval ? ` (first approval ${fmtDate(st.first_generic_approval)})` : ''}, but none was dispensed in Medicaid in 2025. Generic launches are often delayed by patents or patent settlements.`); break;
+      case 'no_generic_approved':
+        lines.push('No generic has been approved by the FDA for this form.'); break;
+      case 'biosimilar_not_dispensed':
+        lines.push(`The FDA has licensed biosimilars for this product${st.biosimilars_licensed ? `: ${st.biosimilars_licensed}` : ''}. None matching this exact presentation was dispensed in Medicaid in 2025.`); break;
+      case 'no_biosimilar_licensed':
+        lines.push('No biosimilar has been licensed by the FDA for this product.'); break;
+      default:
+        lines.push("This product's FDA application is not in the Orange Book, so the reason can't be determined.");
+    }
+    if (st.latest_patent_expiry) lines.push(`Listed patents expire as late as ${fmtDate(st.latest_patent_expiry)}${st.n_patents ? ` (${fmtInt(Number(st.n_patents))} unexpired patent${Number(st.n_patents) === 1 ? '' : 's'})` : ''}. Listed patents can be challenged or settled, so this is not a guaranteed launch date.`);
+    if (st.exclusivities) lines.push(`FDA exclusivity: ${st.exclusivities}.`);
+    if (st.ref_exclusivity) lines.push(`Reference-product exclusivity until ${fmtDate(st.ref_exclusivity)}.`);
+    if (st.orphan_exclusivity) lines.push(`Orphan-drug exclusivity until ${fmtDate(st.orphan_exclusivity)}.`);
+    return lines;
+  }
+
+  // ---- one card per presentation -----------------------------------------------
+  function groupCard(members, me, st, sf) {
+    const here = geo() === NATIONAL ? 'nationally' : `in ${stateName(geo())}`;
+    const card = document.createElement('section'); card.className = 'mr-card mr-ex-group';
+    card.dataset.source = ['explore_groups', 'explore_status', sf.id].filter(Boolean).join(' ');
+    const head = document.createElement('div'); head.className = 'mr-card-head';
+    const h = document.createElement('h3'); h.className = 'mr-h2'; h.textContent = me.presentation;
+    const f = figures(me, sf);
+    const note = document.createElement('p'); note.className = 'mr-note';
+    note.textContent = f.here
+      ? `${me.product} ${here}: ${unitFmt(f.unit, me.unit_type)}${f.unitNational ? ' (national)' : ''} · ${usd2(f.perRx)} per Rx · ${fmtInt(f.rx)} prescriptions · ${usdC(f.amt)} spent`
+      : `${me.product} was not dispensed ${here} at this strength in 2025 (or in fewer than 11 prescriptions). National price: ${unitFmt(f.unit, me.unit_type)}.`;
+    const own = document.createElement('div'); own.className = 'mr-ex-own-ndcs';
+    const ownLabel = document.createElement('span'); ownLabel.textContent = `${me.product} NDCs:`;
+    own.append(ownLabel, window.mrNdcList(me.ndcs));
+    head.append(h, note, own); card.append(head);
+
+    const isBrand = me.role === 'brand' || me.role === 'reference';
+    let others = members.filter((m) => !(m.product === me.product && m.labeler === me.labeler && m.role === me.role));
+    if (isBrand) others = others.filter((m) => ALT_FOR[me.role].includes(m.role));
+
+    if (isBrand && st && st.status !== 'alternatives') {
+      const box = document.createElement('div'); box.className = 'mr-ex-none';
+      const t = document.createElement('strong'); t.textContent = me.role === 'reference' ? 'No biosimilar alternative dispensed' : 'No generic alternative dispensed';
+      box.append(t);
+      for (const line of reason(st)) { const p = document.createElement('p'); p.textContent = line; box.append(p); }
+      card.append(box);
+      return card;
+    }
+    if (!others.length) {
+      const p = document.createElement('p'); p.className = 'mr-empty';
+      p.textContent = isBrand ? 'No alternative of this presentation was dispensed.' : 'No other product of this strength and form was dispensed in Medicaid in 2025.';
+      card.append(p); return card;
+    }
+    const rows = others.map((m) => ({ m, f: figures(m, sf) }))
+      .sort((a, b) => (b.f.here - a.f.here) || ((a.f.unit ?? Infinity) - (b.f.unit ?? Infinity)));
+    if (isBrand && String(st?.unit_mismatch) === 'True') {
+      const p = document.createElement('p'); p.className = 'mr-callout';
+      p.textContent = 'Medicaid units for this brand and its alternatives are reported on different bases (for example per package versus per tablet), so per-unit prices and the "less per unit" comparison are not reliable here, and no savings are estimated.';
+      card.append(p);
+    }
+    if (isBrand) {
+      const anyHere = rows.some((r) => r.f.here);
+      if (!anyHere && geo() !== NATIONAL) {
+        const p = document.createElement('p'); p.className = 'mr-callout';
+        p.textContent = `Alternatives were dispensed nationally but not in ${stateName(geo())} in 2025 (or each in fewer than 11 prescriptions). National prices are shown.`;
+        card.append(p);
+      }
+      // Savings: the selected geography's estimate (national status row, or the
+      // state's savings row); a state without one falls back to the national figure.
+      const sv = geo() === NATIONAL ? st : (sf.s.get(Number(st?.sid)) || null);
+      const est = sv && (geo() === NATIONAL
+        ? { g: num(sv.gross_savings), mn: num(sv.min_rebate_savings), av: num(sv.avg_rebate_savings) }
+        : { g: num(sv.gross), mn: num(sv.min_rebate), av: num(sv.avg_rebate) });
+      const nat = st ? { g: num(st.gross_savings), av: num(st.avg_rebate_savings) } : null;
+      const s = document.createElement('p'); s.className = 'mr-ex-savings';
+      if (est && est.g != null) {
+        s.textContent = `If every prescription ${here} moved to the alternatives: ${usdC(est.g)} gross · ${usdC(est.mn)} after minimum rebates · ${usdC(est.av)} after average rebates.`;
+      } else if (geo() !== NATIONAL && nat && nat.g != null) {
+        s.textContent = `No ${stateName(geo())} estimate (too little volume there). National estimate: ${usdC(nat.g)} gross · ${usdC(nat.av)} after average rebates.`;
+      }
+      if (s.textContent) card.append(s);
+      const flags = [];
+      const reverse = geo() === NATIONAL ? String(st?.savings_reverse_after_rebates) === 'True' : num(sv?.reverse) === 1;
+      if (reverse) flags.push('After average rebates the brand may cost Medicaid less than the alternatives.');
+      if (geo() === NATIONAL && st?.brand_preferred_states) flags.push(`On the brand-preferred list in ${st.brand_preferred_states.replace(/,/g, ', ')} (the state found the brand cheaper after rebates).`);
+      if (geo() !== NATIONAL && num(sv?.preferred_here) === 1) flags.push(`On ${stateName(geo())}'s brand-preferred list: the state found the brand cheaper after rebates.`);
+      if (flags.length) { const fl = document.createElement('p'); fl.className = 'mr-callout'; fl.textContent = flags.join(' '); card.append(fl); }
+    }
+    const wrap = document.createElement('div'); wrap.className = 'mr-table-wrap';
+    const table = document.createElement('table'); table.className = 'mr-table mr-ex-table';
+    const thead = document.createElement('thead'); const hr = document.createElement('tr');
+    const rxLabel = geo() === NATIONAL ? 'Prescriptions' : `${geo()} prescriptions`;
+    for (const [label, cls] of [['Product'], ['Manufacturer', 'mr-narrow-hide'], ['NDCs'], ['Type'], ['Cost per unit'], ['Cost per Rx', 'mr-narrow-hide'], [rxLabel], ['vs. this product']]) {
+      const th = document.createElement('th'); th.textContent = label; if (cls) th.className = cls; hr.append(th);
+    }
+    thead.append(hr);
+    const tbody = document.createElement('tbody');
+    for (const { m, f: o } of rows.slice(0, 15)) {
+      const tr = document.createElement('tr');
+      const c = (text, cls) => { const td = document.createElement('td'); td.textContent = text; if (cls) td.className = cls; return td; };
+      const diff = f.unit > 0 && o.unit != null ? (o.unit - f.unit) / f.unit : null;
+      const cmp = c(diff == null ? '—' : diff < 0 ? `${pct(-diff)} less per unit` : diff > 0 ? `${pct(diff)} more per unit` : 'same price');
+      if (diff != null && diff < 0) cmp.className = 'mr-ex-cheaper';
+      const ndcTd = document.createElement('td'); ndcTd.append(window.mrNdcList(m.ndcs));
+      tr.append(c(m.product, 'mr-wrap'), c(m.labeler, 'mr-wrap mr-narrow-hide'), ndcTd, c(ROLE_LABEL[m.role] || m.product_type || ''),
+        c(unitFmt(o.unit, m.unit_type) + (o.unitNational && geo() !== NATIONAL ? ' (national)' : '')),
+        c(o.perRx == null ? '—' : usd2(o.perRx), 'mr-narrow-hide'),
+        c(o.here ? fmtInt(o.rx) : 'not dispensed here', o.here ? '' : 'mr-muted'), cmp);
+      tbody.append(tr);
+    }
+    table.append(thead, tbody); wrap.append(table); card.append(wrap);
+    if (rows.length > 15) { const p = document.createElement('p'); p.className = 'mr-note'; p.textContent = `${rows.length - 15} more products not shown.`; card.append(p); }
+    return card;
+  }
+
+  function draw() {
+    if (panel.hidden) return;                    // load the Explore data only when the tab is open
+    const g = geo();
+    document.getElementById('explore-geo-note').textContent = g === NATIONAL
+      ? 'National figures, 2025.'
+      : `Prescriptions, spending and prices for ${stateName(g)}, 2025 (national price where a product was not dispensed in the state). Reasons come from national FDA records.`;
+    drawResults();
+    const sel = selected();
+    const head = document.getElementById('explore-product');
+    const empty = document.getElementById('explore-empty');
+    if (!sel) { head.hidden = true; groupsEl.replaceChildren(); empty.hidden = false; return; }
+    empty.hidden = true;
+    const idx = dash.data('explore_index'), grp = dash.data('explore_groups'), sts = dash.data('explore_status');
+    const sf = stateFigures(g);
+    const pending = [idx, grp, sts].concat(sf.status === 'national' ? [] : [sf]);
+    if (pending.some((d) => d.status !== 'ok' && d.status !== 'national')) {
+      head.hidden = false;
+      document.getElementById('ex-title').textContent = sel.product;
+      document.getElementById('ex-sub').textContent = pending.some((d) => d.status === 'loading') ? 'Loading…' : 'Failed to load';
+      document.getElementById('ex-facts').replaceChildren();
+      groupsEl.replaceChildren();
+      return;
+    }
+    const prod = idx.data.find((r) => r.product === sel.product && r.labeler === sel.labeler);
+    head.hidden = false;
+    document.getElementById('ex-title').textContent = sel.product;
+    document.getElementById('ex-sub').textContent = [sel.labeler, prod?.product_type, prod?.ingredient, g === NATIONAL ? 'National' : stateName(g)].filter(Boolean).join(' · ');
+    let facts = [];
+    if (prod) {
+      const sp = g === NATIONAL ? { rx: prod.prescriptions, amt: prod.medicaid_amount } : sf.p.get(Number(prod.pid));
+      const rx = sp ? num(sp.rx) : 0, amt = sp ? num(sp.amt) : 0;
+      const where = g === NATIONAL ? '' : ` (${g})`;
+      facts = [[`Prescriptions${where}`, fmtInt(rx)], [`Medicaid spending${where}`, usd0(amt)],
+        [`Cost per Rx${where}`, rx > 0 ? usd2(amt / rx) : '—'], ['Strengths and forms', fmtInt(Number(prod.presentations))]];
+    }
+    document.getElementById('ex-facts').replaceChildren(...facts.map(([k, v]) => {
+      const d = document.createElement('div'); const a = document.createElement('span'); a.textContent = k; const b = document.createElement('b'); b.textContent = v; d.append(a, b); return d;
+    }));
+    const ind = dash.data('indications');
+    const use = document.getElementById('ex-use');
+    const rec = ind.status === 'ok' ? ind.data.find((r) => r.product === sel.product && r.labeler === sel.labeler) : null;
+    use.hidden = !rec;
+    if (rec) { use.dataset.source = 'indications'; use.textContent = `FDA-approved use: ${rec.indication}`; }
+
+    const mine = grp.data.filter((r) => r.product === sel.product && r.labeler === sel.labeler)
+      .map((m) => ({ m, f: figures(m, sf) }))
+      .sort((a, b) => (b.f.amt - a.f.amt) || (Number(b.m.medicaid_amount) - Number(a.m.medicaid_amount)))
+      .map((x) => x.m);
+    const keys = new Set(mine.map((m) => m.group_key));
+    const byGroup = d3.group(grp.data.filter((r) => keys.has(r.group_key)), (r) => r.group_key);
+    const statusByGroup = new Map(sts.data.map((r) => [r.group_key, r]));
+    const cards = mine.map((me) => groupCard(byGroup.get(me.group_key) || [], me, statusByGroup.get(me.group_key), sf));
+
+    const verdict = document.getElementById('ex-verdict');
+    const brandRows = mine.filter((m) => m.role === 'brand' || m.role === 'reference');
+    const here = g === NATIONAL ? '' : ` in ${stateName(g)}`;
+    if (brandRows.length) {
+      const altHere = (m) => (byGroup.get(m.group_key) || []).some((o) => ALT_FOR[m.role].includes(o.role) && figures(o, sf).here && figures(o, sf).rx > 0)
+        && statusByGroup.get(m.group_key)?.status === 'alternatives';
+      const withAlt = brandRows.filter(altHere);
+      const spendOf = (m) => figures(m, sf).amt || 0;
+      const spendAlt = d3.sum(withAlt, spendOf), spend = d3.sum(brandRows, spendOf);
+      verdict.textContent = withAlt.length
+        ? `A cheaper equivalent was dispensed${here} for ${withAlt.length} of ${brandRows.length} strength/form${brandRows.length === 1 ? '' : 's'}${spend ? `, covering ${pct(spendAlt / spend)} of this product's spending${here}` : ''}.`
+        : `No generic or biosimilar alternative was dispensed${here} in 2025 for any strength or form of ${sel.product}. The details are below.`;
+    } else if (mine.length) {
+      verdict.textContent = 'This product is itself a generic, authorized generic or biosimilar. Below are the other products sold at the same strength and form, cheapest first.';
+    } else {
+      verdict.textContent = 'This product could not be matched to a strength and form (no RxNorm clinical drug), so alternatives cannot be listed.';
+    }
+
+    const limit = showAll ? cards.length : 6;
+    groupsEl.replaceChildren(...cards.slice(0, limit));
+    if (cards.length > limit) {
+      const b = document.createElement('button'); b.type = 'button'; b.className = 'mr-chip';
+      b.textContent = `Show ${cards.length - limit} more strengths and forms`;
+      b.addEventListener('click', () => { showAll = true; draw(); });
+      groupsEl.append(b);
+    }
+  }
+
+  window.mrDrawExplore = draw;
+  dash.onData(draw);
+})();
+</script>

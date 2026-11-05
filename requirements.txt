@@ -1,0 +1,9 @@
+duckdb
+pandas
+pyarrow
+requests
+pytest
+pypdf
+ijson
+streamlit>=1.50
+plotly>=6

@@ -1,0 +1,4 @@
+ndc,ingredient_rxcui,ingredient_name,atc4,note
+,1945038,fluticasone / umeclidinium / vilanterol,R03AL,"Trelegy Ellipta. WHO ATC R03AL08 (adrenergics + anticholinergics incl. triple combinations with corticosteroids). RxClass has no ATCPROD for any Trelegy product; component fallback gave D07AC (skin corticosteroid). Added 2026-10-21."
+,1291859,azelastine / fluticasone,R01AD,"Dymista nasal spray. WHO ATC R01AD58 (fluticasone, combinations). No ATCPROD; component fallback gave D07AC. Added 2026-10-21."
+,2631084,"antihemophilic factor (recombinant), Fc-VWF-XTEN fusion protein",B02BD,"Altuviiio (efanesoctocog alfa). WHO ATC B02BD02 (coagulation factor VIII). Approved 2023; no ATC in RxClass yet. Added 2026-10-21."
