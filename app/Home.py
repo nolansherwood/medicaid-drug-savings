@@ -13,7 +13,7 @@ st.set_page_config(
     page_title="Medicaid Drug Savings Explorer",
     page_icon=":material/medication:",
     layout="wide",
-    initial_sidebar_state="expanded",
+    initial_sidebar_state="auto",   # open on desktop, collapsed on phones
 )
 ui.apply_style()
 st.logo(str(Path(__file__).parent / "static" / ("logo_light.svg" if ui.mode() == "light" else "logo.svg")),

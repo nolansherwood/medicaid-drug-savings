@@ -37,9 +37,16 @@ def colors() -> dict:
 CSS = """
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600&display=swap");
-/* The side menu stays open: hide the collapse and expand controls. */
-[data-testid="stSidebarCollapseButton"], [data-testid="stExpandSidebarButton"],
-[data-testid="stSidebarCollapsedControl"] { display: none !important; }
+/* On desktop the side menu stays open: hide the collapse and expand controls. On phones
+   (Streamlit's mobile layout, up to 768px) the menu starts collapsed and keeps them. */
+@media (min-width: 769px) {
+  [data-testid="stSidebarCollapseButton"], [data-testid="stExpandSidebarButton"],
+  [data-testid="stSidebarCollapsedControl"] { display: none !important; }
+}
+/* Streamlit shows the expand button only on hover, which a phone can't do. */
+@media (max-width: 768px) {
+  [data-testid="stExpandSidebarButton"] { display: inline-flex !important; }
+}
 [data-testid="stSidebarNavSeparator"] { display: none; }
 [data-testid="stSidebarNav"] a { border-radius: 10px; padding: 0.45rem 0.75rem; margin: 2px 0; }
 [data-testid="stSidebarNav"] a[aria-current="page"] { background: var(--mr-card-raised); }
@@ -56,17 +63,23 @@ h1, h2, h3, [data-testid="stDialog"] h2 { font-family: var(--mr-serif) !importan
 h1 { letter-spacing: -0.01em; padding: 0 0 0.6rem !important; line-height: 1.15 !important; }
 .mr-lede { color: var(--mr-lede-ink); font-size: 0.95rem; line-height: 1.55; max-width: 60rem; margin: 0 0 1.1rem; }
 .st-key-page-picker { padding-top: 0.45rem; }
+@media (max-width: 640px) { .st-key-page-picker { padding-top: 0; margin-top: -1.5rem; } }
 .st-key-mr-tooltips, .st-key-mr-theme-sync { display: none; }
-/* Back link to the portfolio in the top-left corner, above the logo (home_link()), as on the
-   original dashboard. The side menu always stays open, so a fixed position stays in its corner. */
-.mr-home { position: fixed; top: 0.85rem; left: 2rem; z-index: 1000; display: inline-flex; align-items: center;
+/* Back link to the portfolio in the top-left corner of the side menu, above the logo
+   (home_link()), as on the original dashboard. Positioned against the menu, so it slides
+   away with it when the menu collapses on a phone. */
+[data-testid="stSidebar"] { position: relative; }
+.mr-home { position: absolute; top: 0.85rem; left: 20px;   /* the menu's padding, like the logo */
+  z-index: 1000; display: inline-flex; align-items: center;
   gap: 0.35rem; font-size: 0.8rem; color: var(--mr-muted) !important; text-decoration: none !important; }
 .mr-home:hover, .mr-home:focus-visible { color: var(--mr-strong) !important; }
 .mr-home i { font-family: 'Material Symbols Rounded'; font-style: normal; font-size: 16px; line-height: 1; }
 [data-testid="stSidebarHeader"] { margin-top: 1.4rem; }
 /* Streamlit wraps the keyed container in another block; taking that wrapper out of the flow
    removes the menu's gap for it. */
-div:has(> .st-key-mr-home-wrap), .st-key-mr-home-wrap { position: absolute; }
+div:has(> .st-key-mr-home-wrap) { position: absolute; top: 0; left: 0 !important; margin: 0; }
+/* ...and the blocks inside it unpositioned, so the link is placed against the menu's edge. */
+.st-key-mr-home-wrap, .st-key-mr-home-wrap [data-testid="stElementContainer"] { position: static !important; }
 
 /* Cards: st.container(border=True, key="card-...") blocks; Streamlit owns the padding. */
 [class*="st-key-card-"] {
@@ -207,6 +220,7 @@ def _theme_input(m: str) -> str:
 # same function Streamlit uses for an imported theme (found on the app's React tree),
 # so the switch happens in place and widgets and tables follow. The choice is kept in
 # localStorage and restored on the next visit by flipping the toggle.
+# It also closes the side menu after a page is picked on a phone.
 _THEME_JS = r"""
 (() => {
   const W = window, D = W.document;
@@ -250,6 +264,15 @@ _THEME_JS = r"""
     try { W.localStorage.setItem('mr-theme', want); } catch (e) {}
   }
   W.setInterval(tick, 250);
+
+  // On phones the side menu covers the page; close it after a page is picked.
+  D.addEventListener('click', (ev) => {
+    if (W.innerWidth > 768 || !ev.target.closest('[data-testid="stSidebarNav"] a')) return;
+    W.setTimeout(() => {
+      const btn = D.querySelector('[data-testid="stSidebarCollapseButton"] button');
+      if (btn) btn.click();
+    }, 100);
+  }, true);
 })();
 """
 
