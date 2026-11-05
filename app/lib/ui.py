@@ -19,7 +19,7 @@ THEMES = {
                  sidebar2="#2A2C33", card="#1F2025", card_alt="#24262C", raised="#2A2C33", tip_line="#3A3C44",
                  strong="#F3F4F6", soft="#C9CBD2", lede="#A9ACB5", muted="#8B8E98", good="#4ADE80", bad="#F87171",
                  shadow="rgba(0,0,0,.45)"),
-    "light": dict(bg="#F6F6F3", bg2="#ECECE7", text="#1F2328", line="#E1E1DA", sidebar="#EEEEE9",
+    "light": dict(bg="#FFFFFF", bg2="#ECECE7", text="#1F2328", line="#E1E1DA", sidebar="#EEEEE9",
                   sidebar2="#E2E2DC", card="#FFFFFF", card_alt="#F2F2EE", raised="#E8E8E2", tip_line="#D4D4CC",
                   strong="#111318", soft="#3B3F47", lede="#545962", muted="#6A6F78", good="#15803D", bad="#DC2626",
                   shadow="rgba(0,0,0,.14)"),
@@ -65,6 +65,11 @@ h1 { letter-spacing: -0.01em; padding: 0 0 0.6rem !important; line-height: 1.15 
 .st-key-page-picker { padding-top: 0.45rem; }
 @media (max-width: 640px) { .st-key-page-picker { padding-top: 0; margin-top: -1.5rem; } }
 .st-key-mr-tooltips, .st-key-mr-theme-sync { display: none; }
+/* Topology background (theme script): the canvas sits behind the app, whose page layers go
+   transparent so it shows between the cards. Cards, tables and the header stay solid. */
+#mr-topo { position: fixed; inset: 0; z-index: -1; pointer-events: none; }
+html.mr-has-topo [data-testid="stApp"], html.mr-has-topo [data-testid="stAppViewContainer"],
+html.mr-has-topo [data-testid="stMain"] { background: transparent !important; }
 /* Back link to the portfolio in the top-left corner of the side menu, above the logo
    (home_link()), as on the original dashboard. Positioned against the menu, so it slides
    away with it when the menu collapses on a phone. */
@@ -221,6 +226,7 @@ def _theme_input(m: str) -> str:
 # so the switch happens in place and widgets and tables follow. The choice is kept in
 # localStorage and restored on the next visit by flipping the toggle.
 # It also closes the side menu after a page is picked on a phone.
+# And it draws the animated topology background (Vanta.js) on desktop.
 _THEME_JS = r"""
 (() => {
   const W = window, D = W.document;
@@ -242,10 +248,38 @@ _THEME_JS = r"""
     }
     return null;
   }
+  // Animated topology lines behind the pages (Vanta.js TOPOLOGY, drawn with p5.js), in
+  // faint blue. Desktop only: it redraws every frame on the CPU, so phones and visitors who
+  // ask for reduced motion get the plain background. If the CDN fails, nothing changes.
+  const TOPO = {light: {backgroundColor: 0xFFFFFF, color: 0xC9DAF8}, dark: {backgroundColor: 0x17181C, color: 0x2A3F63}};
+  const LIBS = ['https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js',
+                'https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.topology.min.js'];
+  let topo = null, topoMode = null, topoLoading = false;
+  const load = (src) => new Promise((ok, fail) => {
+    const s = D.createElement('script'); s.src = src; s.onload = ok; s.onerror = fail; D.head.append(s); });
+  async function background(mode) {
+    if (W.innerWidth <= 768 || W.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+    if (topoLoading || (topo && topoMode === mode)) return;
+    topoLoading = true;
+    try {
+      if (!W.p5) await load(LIBS[0]);
+      if (!(W.VANTA && W.VANTA.TOPOLOGY)) await load(LIBS[1]);
+      if (topo) topo.destroy();   // a mode change redraws in the new colors
+      let el = D.getElementById('mr-topo');
+      if (!el) { el = D.createElement('div'); el.id = 'mr-topo'; D.body.prepend(el); }
+      topo = W.VANTA.TOPOLOGY(Object.assign({el, p5: W.p5, mouseControls: true, touchControls: true,
+        gyroControls: false, minHeight: 200, minWidth: 200, scale: 1, scaleMobile: 1}, TOPO[mode]));
+      topoMode = mode;
+      D.documentElement.classList.add('mr-has-topo');
+    } catch (e) {}
+    topoLoading = false;
+  }
+
   function tick() {
     const el = D.querySelector('.mr-theme-sync');
     if (!el) return;
     const want = el.dataset.mode;
+    background(want);
     let saved = null;
     try { saved = W.localStorage.getItem('mr-theme'); } catch (e) {}
     if (!restored) {

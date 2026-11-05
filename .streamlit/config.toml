@@ -1,10 +1,11 @@
-# Light theme (the default): warm off-white canvas, white cards, blue accent.
+# Light theme (the default): white canvas behind faint topology lines (app/lib/ui.py),
+# white cards with a hairline border, blue accent.
 # The dark theme, modeled on the reference dashboard, is the same settings with
 # the colors in app/lib/ui.py THEMES["dark"] (side-menu "Dark mode" toggle).
 [theme]
 base = "light"
 primaryColor = "#4C8DF6"
-backgroundColor = "#F6F6F3"
+backgroundColor = "#FFFFFF"
 secondaryBackgroundColor = "#ECECE7"
 textColor = "#1F2328"
 borderColor = "#E1E1DA"

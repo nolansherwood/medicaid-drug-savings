@@ -18,7 +18,11 @@ from `ui.THEMES`. The side-menu "Dark mode" toggle switches to the dark colors
 there: Streamlit 1.50 can't change theme from Python, so a small script in
 `ui.sync_theme()` applies it in the browser and remembers the choice
 (localStorage). It uses Streamlit internals (the function behind "import
-theme"), so check the toggle after any Streamlit upgrade.
+theme"), so check the toggle after any Streamlit upgrade. The same script
+draws the animated topology background (Vanta.js TOPOLOGY with p5.js, loaded
+from cdnjs at pinned versions) on desktop only; phones and visitors who set
+"reduce motion" get the plain background, and so does everyone if the CDN is
+unreachable.
 
 App layout:
 
