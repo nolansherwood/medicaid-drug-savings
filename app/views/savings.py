@@ -150,7 +150,7 @@ with st.container(border=True, key="card-savings-top"):
             column_config={
                 "Strengths": st.column_config.NumberColumn(width="small"),
                 "Gross savings ($)": st.column_config.ProgressColumn(
-                    width=125, format="compact", min_value=0, max_value=float(view["Gross savings ($)"].max())),
+                    width=105, format="compact", min_value=0, max_value=float(view["Gross savings ($)"].max())),
                 "Switch to": st.column_config.TextColumn(width=112),
                 "On alt.": st.column_config.NumberColumn(
                     format="percent", help="Of all units dispensed at these strengths and forms (brand plus "
