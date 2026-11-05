@@ -99,7 +99,7 @@ div:has(> .st-key-mr-home-wrap) { position: absolute; top: 0; left: 0 !important
 
 /* Cards: st.container(border=True, key="card-...") blocks; Streamlit owns the padding. */
 [class*="st-key-card-"] {
-  background: var(--mr-card); border-color: var(--mr-line) !important; border-radius: 14px !important; min-height: 290px;
+  background: var(--mr-card); border-color: var(--mr-line) !important; border-radius: 6px !important; min-height: 290px;
 }
 [class*="st-key-card-"] > div:last-child { margin-top: auto; }
 .mr-card-title { display: flex; align-items: center; gap: 0.65rem; color: var(--mr-soft); font-size: 0.95rem; font-weight: 500; }
@@ -178,7 +178,7 @@ div:has(> .st-key-mr-home-wrap) { position: absolute; top: 0; left: 0 !important
 [data-testid="stPlotlyChart"] .plot-container, [data-testid="stPlotlyChart"] .svg-container,
 [data-testid="stPlotlyChart"] .main-svg { overflow: visible !important; }
 .mr-callout {
-  background: var(--mr-card); border: 1px solid var(--mr-line); border-left: 3px solid var(--mr-accent); border-radius: 10px;
+  background: var(--mr-card); border: 1px solid var(--mr-line); border-left: 3px solid var(--mr-accent); border-radius: 6px;
   padding: 0.75rem 1rem; color: var(--mr-soft); font-size: 0.92rem; line-height: 1.5; margin-bottom: 0.5rem;
 }
 .mr-callout-warn { border-left-color: #F59E5B; }
@@ -189,12 +189,12 @@ div:has(> .st-key-mr-home-wrap) { position: absolute; top: 0; left: 0 !important
 .mr-fact b { font-family: var(--mr-serif); color: var(--mr-strong); font-size: 1.35rem; font-weight: 400; font-variant-numeric: tabular-nums; }
 .mr-ex-use { color: var(--mr-soft); font-size: 0.88rem; line-height: 1.5; margin: 0.2rem 0 0.4rem; }
 .mr-none {
-  background: var(--mr-card-alt); border-radius: 10px; padding: 0.75rem 1rem; color: var(--mr-soft); font-size: 0.9rem; line-height: 1.5;
+  background: var(--mr-card-alt); border-radius: 6px; padding: 0.75rem 1rem; color: var(--mr-soft); font-size: 0.9rem; line-height: 1.5;
 }
 .mr-none strong { color: var(--mr-strong); display: block; margin-bottom: 0.3rem; }
 .mr-none p { margin: 0.25rem 0 0; }
 /* Explore search results: one left-aligned row per product, meta line muted. */
-.st-key-ex-results { background: var(--mr-card); border: 1px solid var(--mr-line); border-radius: 10px; padding: 0.35rem; gap: 0; }
+.st-key-ex-results { background: var(--mr-card); border: 1px solid var(--mr-line); border-radius: 6px; padding: 0.35rem; gap: 0; }
 .st-key-ex-results [data-testid="stButton"] button { justify-content: flex-start; padding: 0.4rem 0.7rem; }
 .st-key-ex-results [data-testid="stButton"] button:hover { background: var(--mr-card-raised); }
 .st-key-ex-results [data-testid="stButton"] button > div { justify-content: flex-start; }
