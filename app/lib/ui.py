@@ -70,12 +70,9 @@ h1 { letter-spacing: -0.01em; padding: 0 0 0.6rem !important; line-height: 1.15 
 #mr-topo { position: fixed; inset: 0; z-index: -1; pointer-events: none; }
 html.mr-has-topo [data-testid="stApp"], html.mr-has-topo [data-testid="stAppViewContainer"],
 html.mr-has-topo [data-testid="stMain"] { background: transparent !important; }
-/* The top bar (Community Cloud's Fork / GitHub buttons) is frosted instead of solid, so the
-   lines show through it while scrolled text stays blurred behind it. */
-html.mr-has-topo [data-testid="stHeader"] {
-  background: color-mix(in srgb, var(--mr-page) 35%, transparent) !important;
-  backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px);
-}
+/* The top bar (Community Cloud's Fork / GitHub buttons) is fully transparent, so the lines
+   run to the top edge. Scrolled content passes visibly behind its buttons. */
+html.mr-has-topo [data-testid="stHeader"] { background: transparent !important; }
 /* Expanders ("How to read...") are see-through by default; give them the page color. */
 html.mr-has-topo [data-testid="stMain"] [data-testid="stExpander"] details { background: var(--mr-page); }
 /* Text that sits on the lines (titles, intros, headings, captions outside cards) gets a soft
