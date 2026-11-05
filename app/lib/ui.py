@@ -262,7 +262,7 @@ _THEME_JS = r"""
   // Animated topology lines behind the pages (Vanta.js TOPOLOGY, drawn with p5.js), in
   // faint blue. Desktop only: it redraws every frame on the CPU, so phones and visitors who
   // ask for reduced motion get the plain background. If the CDN fails, nothing changes.
-  const TOPO = {light: {backgroundColor: 0xFFFFFF, color: 0xC9DAF8}, dark: {backgroundColor: 0x17181C, color: 0x2A3F63}};
+  const TOPO = {light: {backgroundColor: 0xFFFFFF, color: 0xDFE9FB}, dark: {backgroundColor: 0x17181C, color: 0x2A3F63}};
   const LIBS = ['https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js',
                 'https://cdnjs.cloudflare.com/ajax/libs/vanta/0.5.24/vanta.topology.min.js'];
   let topo = null, topoMode = null, topoLoading = false;
