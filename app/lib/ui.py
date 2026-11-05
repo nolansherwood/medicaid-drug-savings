@@ -66,10 +66,16 @@ h1 { letter-spacing: -0.01em; padding: 0 0 0.6rem !important; line-height: 1.15 
 @media (max-width: 640px) { .st-key-page-picker { padding-top: 0; margin-top: -1.5rem; } }
 .st-key-mr-tooltips, .st-key-mr-theme-sync { display: none; }
 /* Topology background (theme script): the canvas sits behind the app, whose page layers go
-   transparent so it shows between the cards. Cards, tables and the header stay solid. */
+   transparent so it shows between the cards. Cards and tables stay solid. */
 #mr-topo { position: fixed; inset: 0; z-index: -1; pointer-events: none; }
 html.mr-has-topo [data-testid="stApp"], html.mr-has-topo [data-testid="stAppViewContainer"],
 html.mr-has-topo [data-testid="stMain"] { background: transparent !important; }
+/* The top bar (Community Cloud's Fork / GitHub buttons) is frosted instead of solid, so the
+   lines show through it while scrolled text stays blurred behind it. */
+html.mr-has-topo [data-testid="stHeader"] {
+  background: color-mix(in srgb, var(--mr-page) 35%, transparent) !important;
+  backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px);
+}
 /* Expanders ("How to read...") are see-through by default; give them the page color. */
 html.mr-has-topo [data-testid="stMain"] [data-testid="stExpander"] details { background: var(--mr-page); }
 /* Text that sits on the lines (titles, intros, headings, captions outside cards) gets a soft
