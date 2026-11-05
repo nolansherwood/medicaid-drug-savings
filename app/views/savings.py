@@ -205,7 +205,7 @@ with st.expander("How the savings are estimated"):
         "the same state (national when a state has too little volume).\n"
         "- Minimum rebates use the statutory floor (23.1% of price for brands, 17.1% for clotting factors and "
         "pediatric drugs, 13% for generics). Average rebates use 61.9% for brands, calibrated to MACPAC's FY 2024 "
-        "totals ($58.4B rebates on $106.4B gross); authorized generics and biosimilars stay at 23.1%. Rebates are "
+        "totals (\\$58.4B rebates on \\$106.4B gross); authorized generics and biosimilars stay at 23.1%. Rebates are "
         "applied to Medicaid paid amounts, and confidential state supplemental rebates are not included.\n"
         "- The totals at the top count only the strengths and forms where switching saves money in that scenario. "
         "The brand table adds up every strength of a brand, so its after-rebates figures can be negative "

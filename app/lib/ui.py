@@ -70,6 +70,14 @@ h1 { letter-spacing: -0.01em; padding: 0 0 0.6rem !important; line-height: 1.15 
 #mr-topo { position: fixed; inset: 0; z-index: -1; pointer-events: none; }
 html.mr-has-topo [data-testid="stApp"], html.mr-has-topo [data-testid="stAppViewContainer"],
 html.mr-has-topo [data-testid="stMain"] { background: transparent !important; }
+/* Expanders ("How to read...") are see-through by default; give them the page color. */
+html.mr-has-topo [data-testid="stMain"] [data-testid="stExpander"] details { background: var(--mr-page); }
+/* Text that sits on the lines (titles, intros, headings, captions outside cards) gets a soft
+   halo in the page color, so the lines fade out right around the letters. */
+html.mr-has-topo [data-testid="stMain"] :is(h1, h2, h3, p, li, span, label, .mr-lede, .mr-note):not([class*="st-key-card-"] *) {
+  text-shadow: 0 0 2px var(--mr-page), 0 0 4px var(--mr-page), 0 0 8px var(--mr-page), 0 0 14px var(--mr-page),
+               0 0 20px var(--mr-page);
+}
 /* Back link to the portfolio in the top-left corner of the side menu, above the logo
    (home_link()), as on the original dashboard. Positioned against the menu, so it slides
    away with it when the menu collapses on a phone. */
@@ -198,7 +206,7 @@ def apply_style() -> None:
     root = (f":root {{ --mr-card: {c['card']}; --mr-card-alt: {c['card_alt']}; --mr-card-raised: {c['raised']}; "
             f"--mr-line: {c['line']}; --mr-strong: {c['strong']}; --mr-ink: {c['text']}; --mr-soft: {c['soft']}; "
             f"--mr-lede-ink: {c['lede']}; --mr-muted: {c['muted']}; --mr-good: {c['good']}; --mr-accent: #4C8DF6; "
-            f"--mr-tip-line: {c['tip_line']}; --mr-shadow: {c['shadow']}; }}")
+            f"--mr-tip-line: {c['tip_line']}; --mr-shadow: {c['shadow']}; --mr-page: {c['bg']}; }}")
     st.html(CSS.replace("<style>", "<style>\n" + root, 1))
 
 
