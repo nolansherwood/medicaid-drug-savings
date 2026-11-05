@@ -57,6 +57,16 @@ h1 { letter-spacing: -0.01em; padding: 0 0 0.6rem !important; line-height: 1.15 
 .mr-lede { color: var(--mr-lede-ink); font-size: 0.95rem; line-height: 1.55; max-width: 60rem; margin: 0 0 1.1rem; }
 .st-key-page-picker { padding-top: 0.45rem; }
 .st-key-mr-tooltips, .st-key-mr-theme-sync { display: none; }
+/* Back link to the portfolio in the top-left corner, above the logo (home_link()), as on the
+   original dashboard. The side menu always stays open, so a fixed position stays in its corner. */
+.mr-home { position: fixed; top: 0.85rem; left: 2rem; z-index: 1000; display: inline-flex; align-items: center;
+  gap: 0.35rem; font-size: 0.8rem; color: var(--mr-muted) !important; text-decoration: none !important; }
+.mr-home:hover, .mr-home:focus-visible { color: var(--mr-strong) !important; }
+.mr-home i { font-family: 'Material Symbols Rounded'; font-style: normal; font-size: 16px; line-height: 1; }
+[data-testid="stSidebarHeader"] { margin-top: 1.4rem; }
+/* Streamlit wraps the keyed container in another block; taking that wrapper out of the flow
+   removes the menu's gap for it. */
+div:has(> .st-key-mr-home-wrap), .st-key-mr-home-wrap { position: absolute; }
 
 /* Cards: st.container(border=True, key="card-...") blocks; Streamlit owns the padding. */
 [class*="st-key-card-"] {
@@ -313,6 +323,15 @@ def state_picker(key: str, geo: str, on_change) -> None:
     st.session_state[key] = geo
     st.selectbox("State", data.states(), format_func=lambda c: data.STATE_NAMES.get(c, c),
                  key=key, on_change=on_change, label_visibility="collapsed")
+
+
+def home_link(url: str, label: str) -> None:
+    """The back arrow and portfolio link in the top-left corner (CSS .mr-home).
+    target=_top leaves the app even where it runs inside a frame (Community Cloud)."""
+    # The arrow is a Material Symbols glyph (the icon font Streamlit loads); st.html strips inline SVG.
+    with st.container(key="mr-home-wrap"):   # taken out of the menu's flow (CSS), so it adds no gap
+        st.html(f'<a class="mr-home" href="{escape(url)}" target="_top"><i aria-hidden="true">arrow_back</i>'
+                f"{escape(label)}</a>")
 
 
 def card_title(icon: str, text: str, color: str) -> None:

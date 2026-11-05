@@ -35,12 +35,12 @@ nav = st.navigation(
 )
 
 with st.sidebar:
+    ui.home_link("https://nolansherwood.com", "nolansherwood.com")
     st.toggle("Dark mode", key="theme_dark")
     ui.sync_theme()
     st.caption(
         "Built from CMS State Drug Utilization Data (2025) and FDA records. "
         "Spending is before manufacturer rebates."
     )
-    st.markdown("[nolansherwood.com](https://nolansherwood.com)")
 
 nav.run()
