@@ -47,7 +47,8 @@ CSS = """
   font-size: 0.7rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--mr-muted);
 }
 
-.block-container { padding-top: 2.25rem; max-width: 1200px; }
+/* Clears Streamlit's 60px header, which Community Cloud fills with its Fork / GitHub buttons. */
+.block-container { padding-top: 4.5rem; max-width: 1200px; }
 :root { --mr-serif: "Source Serif 4", "Iowan Old Style", Charter, Georgia, serif; }
 
 /* Page header (page_header()): serif title, muted lede, optional state picker on the right. */
