@@ -353,14 +353,17 @@ else:
                        "alternatives cannot be listed.")
         callout(verdict)
 
-    # ---- one card per strength/form ----
+    # ---- every strength/form, one row each, in a single card ----
     show_all = st.session_state.get("ex_show_all", False)
     limit = len(mine) if show_all else CARD_LIMIT
-    for i, me in enumerate(mine[:limit]):
-        group_card(i, by_group.get(me["group_key"], []), me, status.get(me["group_key"]))
-    if len(mine) > limit:
-        st.button(f"Show {len(mine) - limit} more strengths and forms",
-                  on_click=lambda: st.session_state.update(ex_show_all=True))
+    if mine:
+        with st.container(border=True, key="card-ex-strengths"):
+            st.markdown('<div class="mr-section">Strengths and forms</div>', unsafe_allow_html=True)
+            for i, me in enumerate(mine[:limit]):
+                group_card(i, by_group.get(me["group_key"], []), me, status.get(me["group_key"]))
+            if len(mine) > limit:
+                st.button(f"Show {len(mine) - limit} more strengths and forms",
+                          on_click=lambda: st.session_state.update(ex_show_all=True))
 
 with st.expander("How alternatives and reasons are found"):
     st.markdown(esc(

@@ -74,7 +74,11 @@ html.mr-has-topo [data-testid="stMain"] { background: transparent !important; }
    run to the top edge. Scrolled content passes visibly behind its buttons. */
 html.mr-has-topo [data-testid="stHeader"] { background: transparent !important; }
 /* Expanders ("How to read...") are see-through by default; give them the page color. */
-html.mr-has-topo [data-testid="stMain"] [data-testid="stExpander"] details { background: var(--mr-page); }
+html.mr-has-topo [data-testid="stMain"] [data-testid="stExpander"]:not([class*="st-key-card-"] *) details {
+  background: var(--mr-page); }
+/* Explore: the strength and form rows share one card; it sizes to its rows. */
+.st-key-card-ex-strengths { min-height: 0; }
+.st-key-card-ex-strengths > div:last-child { margin-top: 0; }
 /* Text that sits on the lines (titles, intros, headings, captions outside cards) gets a soft
    halo in the page color, so the lines fade out right around the letters. */
 html.mr-has-topo [data-testid="stMain"] :is(h1, h2, h3, p, li, span, label, .mr-lede, .mr-note):not([class*="st-key-card-"] *) {
