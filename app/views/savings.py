@@ -57,15 +57,15 @@ kpis = [
     ("payments", "#4C8DF6", "Brand spending", ui.usd_compact(row.brand_spending),
      "Matched to an alternative"),
     ("savings", "#4ADE80", "Gross savings", ui.usd_compact(row.gross_savings), "Upper bound, before rebates"),
-    ("percent", "#F59E5B", "After min. rebates", ui.usd_compact(row.min_rebate_savings),
+    ("vertical_align_bottom", "#F59E5B", "After min. rebates", ui.usd_compact(row.min_rebate_savings),
      "Statutory floor rebates"),
-    ("account_balance", "#C084FC", "After avg. rebates", ui.usd_compact(row.avg_rebate_savings),
+    ("equalizer", "#C084FC", "After avg. rebates", ui.usd_compact(row.avg_rebate_savings),
      "Brand rebates at 61.9%"),
 ]
 for col, (icon, color, label, value, sub) in zip(st.container(key="kpi-row").columns(4, gap="medium"), kpis):
     with col, st.container(border=True, key=f"card-kpi-{icon}"):
         ui.kpi(icon, color, label, value, sub)
-        if icon == "account_balance":
+        if icon == "equalizer":
             st.page_link("views/rebates.py", label="How rebates are estimated ›")
 
 # The old callout: how many matches, how many reverse after rebates, brand-preferred lists.
