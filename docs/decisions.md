@@ -428,6 +428,13 @@ See outputs/product_type_disagreements_2025.csv. Largest groups:
 - **Cost:** the file grows from 7.2 MB to 9.8 MB (77,585 rows); `outputs/dashboard/` is about 49 MB.
 - **Code:** src/export_dashboard.py `export_products`; the products popup on the Rankings page (now lists Prescriptions, spending and cost per Rx right after the product name).
 
+## D-025: biosimilars matched to the reference product the Purple Book names
+- **Date:** 2026-11-06. **Status:** accepted (user). Implements D-012 as written; the code had keyed biologics on RxNorm ingredient text instead.
+- **Problem:** biologic groups used the RxNorm clinical drug name with the biosimilar suffix removed. RxNorm spells some ingredients differently for the reference and its biosimilars: NovoLog is "insulin aspart, human", Kirsty is "insulin aspart-xjhz" ("insulin aspart" once the suffix is removed). So Kirsty (interchangeable) and Merilog were never matched to NovoLog, and NovoLog showed "no biosimilar dispensed" although Kirsty had 793 prescriptions. The same text key also paired Semglee, Rezvoglar and unbranded insulin glargine with Basaglar, which is its own 351(a) reference product (D-014), not their reference (Lantus).
+- **Decision:** a biologic's group is its reference product plus its presentation. The reference is the product's own BLA for a 351(a) product and, for a 351(k) biosimilar, the BLA of the product its Purple Book row names as "Ref. Product Proprietary Name" (per product, so a BLA covering two products with different references, like Bomyntra / Conexxence, is handled). The presentation is the RxNorm clinical drug name without the ingredient words, so concentration, volume, device and billing unit must still match.
+- **Result (2025):** Kirsty and Merilog now match NovoLog and Novo's unbranded Insulin Aspart (+$67M gross); the Basaglar pairs are gone (−$39M gross). National gross savings $9.099B → $9.127B (still $9.1B); interchangeable tier $3.838B → $3.866B; savings after average rebates unchanged. Every other biosimilar–reference pair is unchanged.
+- **Code:** src/equivalence.py (`purple_book_references`, `presentation`, `biologic_keys`). Checked by src/audit_matches.py (check A).
+
 ## Open items
 
 ### OI-1: multipacks of identical units are matched only to the same pack (raised 2026-11-04)

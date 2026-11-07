@@ -103,6 +103,7 @@ Y=2025
 .venv/bin/python -m src.savings --year $Y
 .venv/bin/python -m src.export_dashboard --year $Y
 .venv/bin/python -m src.explore --year $Y
+.venv/bin/python -m src.audit_matches --year $Y   # missed-match audit: outputs/audit/match_audit_$Y.csv
 .venv/bin/python -m pytest -q
 ```
 

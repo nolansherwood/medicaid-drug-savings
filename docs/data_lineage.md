@@ -315,7 +315,7 @@ Outputs are `GROUP BY` the following, with no further joins except the category 
 
   | Field | Small molecules | Biologics |
   |---|---|---|
-  | `primary_key` | `'scd:' + clinical_rxcui + '|' + mdrp_unit_type` | `'bio:' + clinical_name without biosimilar suffix + '|' + mdrp_unit_type` |
+  | `primary_key` | `'scd:' + clinical_rxcui + '|' + mdrp_unit_type` | `'bio:' + reference BLA + '|' + presentation(clinical_name) + '|' + mdrp_unit_type` (D-025). Reference BLA: the NDC's own `application_no` for 351(a); for 351(k), the 351(a) BLA of the product named in the raw Purple Book's `Ref. Product Proprietary Name` (matched on the biosimilar's BLA + proprietary name; an unbranded biosimilar takes its BLA's only reference; of several reference BLAs with that name, the one with the same presentation). `presentation` = clinical_name without lowercase ingredient words. Fallback when no reference is found: `'bio:' + clinical_name without biosimilar suffix + '|' + mdrp_unit_type` |
   | `loose_key` | `'form:' + clinical_name with numbers/units removed + '|' + mdrp_unit_type` | same |
 
 - **Role** (from `product_type` and `mdrp_te_code`): brand, generic (A-rated), generic_not_a_rated, authorized_generic, reference, biosimilar, interchangeable, none.

@@ -247,3 +247,13 @@ def test_state_map_high_values_stand_out(dark, monkeypatch):
     monkeypatch.setattr(ui, "mode", lambda: "dark" if dark else "light")
     scale = charts.state_map("generic_rx_share", "US").data[0].colorscale
     assert scale[-1][1].lower() == (charts.BLUE_RAMP[-1] if dark else charts.BLUE_RAMP[0]).lower()
+
+
+def test_biosimilars_match_their_purple_book_reference():
+    # D-025: Kirsty (insulin aspart-xjhz) matches NovoLog ("insulin aspart, human" in RxNorm);
+    # Semglee's reference is Lantus, so it is not an alternative to Basaglar (its own 351(a) product).
+    g = pd.read_csv(data.DASH_DIR / "explore_groups_2025.csv")
+    kirsty = set(g[g["product"].str.upper() == "KIRSTY"].group_key)
+    assert kirsty and all((g[g.group_key == k]["product"].str.upper() == "NOVOLOG").any() for k in kirsty)
+    basaglar = set(g[g["product"].str.upper() == "BASAGLAR"].group_key)
+    assert not g[g.group_key.isin(basaglar) & g.role.isin(["biosimilar", "interchangeable"])].shape[0]
