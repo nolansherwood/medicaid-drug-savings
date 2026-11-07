@@ -435,6 +435,28 @@ See outputs/product_type_disagreements_2025.csv. Largest groups:
 - **Result (2025):** Kirsty and Merilog now match NovoLog and Novo's unbranded Insulin Aspart (+$67M gross); the Basaglar pairs are gone (−$39M gross). National gross savings $9.099B → $9.127B (still $9.1B); interchangeable tier $3.838B → $3.866B; savings after average rebates unchanged. Every other biosimilar–reference pair is unchanged.
 - **Code:** src/equivalence.py (`purple_book_references`, `presentation`, `biologic_keys`). Checked by src/audit_matches.py (check A).
 
+## D-026: Orange Book rating and unit when the MDRP file has none
+- **Date:** 2026-11-07. **Status:** accepted (user). Found by the match audit (src/audit_matches.py, checks B and C).
+- **Problem:** a generic is a switch target only with an MDRP "A" TE code (D-011), and the MDRP unit type is part of the group key. 264 dispensed generic NDCs have no MDRP record at all (no code, no unit), and 684 are coded "NR" (not rated), although FDA's Orange Book rates their ANDA "A". Largest case: generic glycerol phenylbutyrate had no MDRP record, so Ravicti ($258M) counted as having no generic and was classified Brand, single source.
+- **Decision:**
+  - A generic is A-rated when its MDRP TE code starts with "A", or, when the MDRP code is blank or "NR", when every Orange Book product of its ANDA has an "A" TE code. An explicit MDRP B code (BX, BP, BN, BE: 90 NDCs) is kept: CMS says they are not substitutable, and the Orange Book rates per strength while the NDC's strength is not known there.
+  - An NDC with no MDRP unit takes the most common unit of the other NDCs with the same RxNorm clinical drug.
+  - Both apply in the product-type step (generic competition, D-019) and in the savings groups, so the pages agree.
+- **Result (2025):** national gross savings $9.127B → $9.249B (Ravicti +$108M, 1 L saline bags +$17M); after average rebates unchanged ($2.081B). Ravicti moves to Brand, generic competition ($258M of brand spending moves from single source).
+- **Code:** src/product_type.py (`orange_book_a_rated`, `a_rated`, `fill_units`), used by `add_market_evidence` and src/equivalence.py.
+
+## D-027: units on one basis per clinical drug (per pen vs. per mL)
+- **Date:** 2026-11-07. **Status:** accepted (user). Found by the match audit (checks A and C).
+- **Problem:** the MDRP unit type is part of the group key, and the same presentation can be billed on different bases. Humira and some biosimilars bill per pen (EA); Hadlima, Amjevita, Hyrimoz, Yuflyma and unbranded adalimumab bill per mL. So Humira was never compared with them ($3.3B of Humira spending in the groups, $115M of per-mL biosimilar use left out of the benchmark). Smaller cases: premixed bags vs. vials (cefazolin, cefepime) and capsules billed EA vs. CAP.
+- **Checked first:** SDUD units are consistent with this reading. Humira 0.4 mL pen: 2.46 units per prescription at $3,131 (pens); per-mL biosimilars: 1.03 units per prescription at $1,327 (mL, about 2.5 pens of 0.4 mL).
+- **Decision:** units are put on one basis per clinical drug before grouping:
+  - EA with a stated volume at the start of the RxNorm clinical drug name ("0.4 ML adalimumab 100 MG/ML Auto-Injector", "50 ML ... Injection") becomes ML at that volume. Packs are not converted (their volume is per item; see OI-1).
+  - EA for a clinical drug whose other NDCs are billed per tablet or capsule counts as one tablet or capsule.
+  - The minimum-volume test for a price benchmark (D-015, 1,000 units) keeps using the units as reported, so converting does not change which benchmarks have enough volume (without this, Idacio's 1,036 pens became 829 mL and the Humira 0.8 mL 50 mg/mL biosimilar comparison dropped out).
+  - The unit-mismatch exclusion (D-022) runs on the converted units.
+- **Result (2025):** national gross savings $9.249B → $9.342B, after minimum rebates $6.864B → $6.935B, after average rebates $2.081B → $2.132B. Interchangeable tier $3.866B → $3.960B (Humira groups now priced against all their biosimilars; the 0.2 mL syringe gets an alternative for the first time, +$41M). Generic and biosimilar tiers within $2M.
+- **Code:** src/product_type.py (`common_units`), src/equivalence.py (`unit_type`, `unit_factor`), src/savings.py (`run`, `compute`), src/explore.py (units in Explore).
+
 ## Open items
 
 ### OI-1: multipacks of identical units are matched only to the same pack (raised 2026-11-04)
@@ -448,3 +470,11 @@ See outputs/product_type_disagreements_2025.csv. Largest groups:
   - Check units: states may report multipack units per package, not per pen or mL (see D-022).
   - Expected effect: national gross savings rise by up to about $114M.
   - **Code:** src/equivalence.py (group keys) and src/rxnav.py (GPCK lookup).
+
+### OI-2: brands with no RxNorm clinical drug can't be matched (raised 2026-11-07)
+- **Status:** open, low value. Found by the match audit (check D).
+- **Problem:** NDCs with no RxNorm clinical drug never enter a group, so they never get an alternative. Brand spending without one: $118M in 2025, mostly contrast agents, imaging kits and diluents (Smoflipid $19.3M, Omnipaque $13.0M, Pylarify $6.8M, Sterile Water $40.4M across products, Lexiscan $4.0M). Their generics (regadenoson, iodixanol, sterile water) have no RxNorm drug either.
+- **Option:** map the largest by hand in src/crosswalk_overrides.csv. Most have no practical pharmacy switch (diagnostic agents given in a facility), so the expected savings are small.
+
+### OI-3: MDRP B code vs. Orange Book A rating (raised 2026-11-07)
+- **Status:** open, small. D-026 keeps an explicit MDRP B code. The audit lists 2 such generic groups ($0.5M of brand spending). Revisit if the Orange Book can be matched per strength (NDC → ANDA product number).

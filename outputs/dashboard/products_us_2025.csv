@@ -1,16 +1,16 @@
 geo,ingredient,product,labeler,product_type,forms,unit_type,ndcs,prescriptions,medicaid_amount,cost_per_prescription,cost_per_unit
-US,abatacept,ORENCIA,"E.R. Squibb & Sons, L.L.C.",Reference biologic,"injection, solution; injection, powder, lyophilized, for solution",EA/ML,5,58386,256662640.0,4395.96,
+US,abatacept,ORENCIA,"E.R. Squibb & Sons, L.L.C.",Reference biologic,"injection, solution; injection, powder, lyophilized, for solution",ML/EA,5,58386,256662640.0,4395.96,
 US,abatacept,ORENCIA,"E.R. SQUIBB & SONS, LLC.",Reference biologic,,EA,1,13,25068.0,1928.32,696.3386
 US,abemaciclib,Verzenio,Eli Lilly and Company,"Brand, single source",tablet,TAB,4,28782,435122695.0,15117.88,283.4565
 US,acetaminophen,Rugby Regular Strength Acetaminophen,RUGBY LABORATORIES,OTC / unapproved / unclassified,tablet,TAB,3,876585,12670954.0,14.45,0.1993
 US,acetaminophen,acetaminophen,Major Pharmaceuticals,OTC / unapproved / unclassified,tablet,TAB,6,1423449,11311032.0,7.95,0.1078
-US,acetaminophen,Acetaminophen,Major Pharmaceuticals,OTC / unapproved / unclassified,tablet; solution,ML/TAB,11,748281,6672424.0,8.92,
+US,acetaminophen,Acetaminophen,Major Pharmaceuticals,OTC / unapproved / unclassified,solution; tablet,ML/TAB,11,748281,6672424.0,8.92,
 US,acetaminophen,ACETAMINOPHEN,TIME CAP LABS INC,OTC / unapproved / unclassified,"tablet; tablet, film coated",TAB,5,845011,4165116.0,4.93,0.0746
 US,acetaminophen,Acetaminophen,"Westminster Pharmaceuticals, LLC",OTC / unapproved / unclassified,liquid,ML,2,487481,3938689.0,8.08,0.0451
 US,acetaminophen,Childrens Acetaminophen,Padagis Israel Pharmaceuticals Ltd,OTC / unapproved / unclassified,suspension,ML,1,296441,3713884.0,12.53,0.075
 US,acetaminophen,Children Acetaminophen Oral Solution,MAJOR PHARMACEUTICALS,OTC / unapproved / unclassified,liquid,ML,2,476366,3220467.0,6.76,0.0343
 US,acetaminophen,M-PAP,"Method Pharmaceuticals, LLC",OTC / unapproved / unclassified,liquid,ML,4,358010,2171218.0,6.06,0.0326
-US,acetaminophen,Acetaminophen,"Rising Pharma Holdings, Inc.",OTC / unapproved / unclassified,"tablet, film coated; solution",ML/TAB,4,257295,1930786.0,7.5,
+US,acetaminophen,Acetaminophen,"Rising Pharma Holdings, Inc.",OTC / unapproved / unclassified,"solution; tablet, film coated",TAB/ML,4,257295,1930786.0,7.5,
 US,acetaminophen,Acetaminophen,MAJOR PHARMACEUTICALS,Generic,tablet,TAB,2,154572,1806605.0,11.69,0.1537
 US,acetaminophen,Rugby Childrens Acetaminophen,Rugby Laboratories,OTC / unapproved / unclassified,suspension,ML,1,86515,1799842.0,20.8,0.1289
 US,acetaminophen,Acetaminophen,"TIME CAP LABORATORIES, INC.",Generic,"tablet, extended release",TAB,1,177833,1618145.0,9.1,0.1267
@@ -32,7 +32,7 @@ US,acetaminophen,childrens acetaminophen,Padagis Israel Pharmaceuticals Ltd,OTC 
 US,acetaminophen,Acetaminophen,B. Braun Medical Inc.,"Brand, generic competition",injection,ML,1,32333,342004.0,10.58,0.1129
 US,acetaminophen,leader Acetaminophen,"Cardinal Health 110, LLC. dba Leader",OTC / unapproved / unclassified,tablet,TAB,4,30795,302335.0,9.82,0.1276
 US,acetaminophen,Good Sense Pain Relief,L. Perrigo Company,OTC / unapproved / unclassified,"tablet; tablet, film coated",TAB,8,31950,300182.0,9.4,0.124
-US,acetaminophen,foster and thrive pain reliever,Strategic Sourcing Services LLC,OTC / unapproved / unclassified,"tablet, film coated; tablet",TAB,5,26021,299481.0,11.51,0.1513
+US,acetaminophen,foster and thrive pain reliever,Strategic Sourcing Services LLC,OTC / unapproved / unclassified,"tablet; tablet, film coated",TAB,5,26021,299481.0,11.51,0.1513
 US,acetaminophen,Childrens Mapap,Major Pharmaceuticals,OTC / unapproved / unclassified,"tablet, chewable",TAB,1,2591,264437.0,102.06,2.4416
 US,acetaminophen,MAPAP,Major Pharmaceuticals,OTC / unapproved / unclassified,capsule,CAP,1,51719,243295.0,4.7,0.0784
 US,acetaminophen,childrens mapap,Major Pharmaceuticals,OTC / unapproved / unclassified,"tablet, chewable",TAB,1,6368,241647.0,37.95,0.8921
@@ -168,7 +168,7 @@ US,albuterol,"ALBUTEROL SULFATE INHALATION SOLUTION, 0.083%",NEPHRON PHARMACEUTI
 US,albuterol,ALBUTEROL SULFATE,QUAGEN PHARMACEUTICALS LLC,Generic,syrup,ML,1,48592,677634.0,13.95,0.0943
 US,albuterol,VENTOLIN,GlaxoSmithKline LLC,"Brand, single source","aerosol, metered",GM,1,24853,668399.0,26.89,3.2195
 US,albuterol,Albuterol Sulfate Inhalation Solution 0.042%,NEPHRON PHARMACEUTICALS CORPORATION,Generic,,ML,1,16153,351065.0,21.73,0.2669
-US,albuterol,Albuterol Sulfate,American Health Packaging,Generic,solution; inhalant,GM/ML,3,29255,281624.0,9.63,
+US,albuterol,Albuterol Sulfate,American Health Packaging,Generic,inhalant; solution,GM/ML,3,29255,281624.0,9.63,
 US,albuterol,Albuterol Sulfate,"Rising Pharma Holdings, Inc.",Generic,solution,ML,1,3240,179777.0,55.49,1.0468
 US,albuterol,Albuterol,"Rising Pharma Holdings, Inc.",Generic,tablet,TAB,2,1832,89013.0,48.59,0.552
 US,albuterol,Albuterol,Zydus Pharmaceuticals USA Inc.,Generic,tablet,TAB,2,1451,72324.0,49.84,0.5592
@@ -184,13 +184,13 @@ US,albuterol,ALBUTEROL SULFATE,"Chartwell RX, LLC",Generic,syrup,ML,2,68,2306.0,
 US,albuterol,ALBUTEROL SULFATE,Civica Inc.,Generic,,GM,1,77,1631.0,21.18,2.8641
 US,albuterol,Albuterol Sulfate,"Chartwell RX, LLC",Generic,solution,ML,3,84,1563.0,18.61,0.1583
 US,albuterol,Albuterol Sulfate,Mylan Pharmaceuticals Inc.,Authorized generic,,ML,2,227,795.0,3.5,0.2823
-US,albuterol,Albuterol Sulfate,Dey Pharma L.P.,"Brand, single source",,,1,161,0.0,0.0,
+US,albuterol,Albuterol Sulfate,Dey Pharma L.P.,"Brand, generic competition",,,1,161,0.0,0.0,
 US,alogliptin,Alogliptin,Padagis Israel Pharmaceuticals Ltd,Authorized generic,"tablet, film coated",TAB,3,109669,24630677.0,224.59,5.3447
 US,alogliptin,Nesina,"Takeda Pharmaceuticals America, Inc.","Brand, generic competition","tablet, film coated",TAB,2,243,226773.0,933.22,13.0449
 US,alprazolam,Alprazolam,Aurobindo Pharma Limited,Generic,"tablet; tablet, extended release",TAB,15,942570,8655606.0,9.18,0.1647
 US,alprazolam,Alprazolam,"Actavis Pharma, Inc.",Generic,tablet,TAB,14,945149,7661530.0,8.11,0.1531
 US,alprazolam,Alprazolam,Sandoz Inc,Generic,tablet,TAB,11,801107,6621570.0,8.27,0.1501
-US,alprazolam,Alprazolam,Mylan Pharmaceuticals Inc.,Authorized generic,"tablet, extended release; tablet",TAB,15,185818,1929205.0,10.38,0.1822
+US,alprazolam,Alprazolam,Mylan Pharmaceuticals Inc.,Authorized generic,"tablet; tablet, extended release",TAB,15,185818,1929205.0,10.38,0.1822
 US,alprazolam,Xanax,PHARMACIA & UPJOHN COMPANY LLC,"Brand, generic competition",tablet,TAB,3,958,747665.0,780.44,11.1598
 US,alprazolam,XANAX 1MG 100 CNT 1 PBTL,PHARMACIA AND UPJOHN COMPANY LLC,"Brand, generic competition",,TAB,1,819,578277.0,706.08,8.8729
 US,alprazolam,Alprazolam,"Par Health USA, LLC",Generic,"tablet, orally disintegrating",TAB,4,4534,294315.0,64.91,1.5004
@@ -224,11 +224,11 @@ US,amlodipine,Norvasc (amlodipine besylate) Tablets 5mg,PFIZER LABORATORIES DIV 
 US,amlodipine,AMLODIPINE BESYLATE TABLETS 5MG 90,"Teva Pharmaceuticals, Inc.",Generic,,TAB,1,15,180.0,11.99,0.3746
 US,amlodipine,Norvasc (amlodipine besylate) Tablets 10mg,PFIZER LABORATORIES DIV PFIZER INC,"Brand, generic competition",,TAB,1,190,95.0,0.5,0.5043
 US,amlodipine,Amlodipine Besylate,Cipla USA Inc.,Generic,tablet,TAB,1,20,37.0,1.87,0.0625
-US,amoxicillin,Amoxicillin,Hikma Pharmaceuticals USA Inc.,Generic,"powder, for suspension; capsule; tablet, coated",TAB/CAP/ML,15,3593638,39133731.0,10.89,
-US,amoxicillin,Amoxicillin,Aurobindo Pharma Limited,Generic,"powder, for suspension; capsule; tablet, film coated",CAP/ML/TAB,18,3547312,37124263.0,10.47,
-US,amoxicillin,Amoxicillin,"Teva Pharmaceuticals USA, Inc.",Generic,"capsule; tablet, chewable; powder, for suspension; tablet, film coated",ML/CAP/TAB,18,2096536,19739178.0,9.42,
-US,amoxicillin,Amoxicillin,"Rising Pharma Holdings, Inc.",Generic,"tablet, film coated; capsule; powder, for suspension",TAB/CAP/ML,10,1217458,11490858.0,9.44,
-US,amoxicillin,Amoxicillin,Sandoz Inc,Generic,"capsule; tablet, film coated; powder, for suspension",TAB/CAP/ML,18,641647,10361236.0,16.15,
+US,amoxicillin,Amoxicillin,Hikma Pharmaceuticals USA Inc.,Generic,"capsule; powder, for suspension; tablet, coated",TAB/CAP/ML,15,3593638,39133731.0,10.89,
+US,amoxicillin,Amoxicillin,Aurobindo Pharma Limited,Generic,"powder, for suspension; capsule; tablet, film coated",CAP/TAB/ML,18,3547312,37124263.0,10.47,
+US,amoxicillin,Amoxicillin,"Teva Pharmaceuticals USA, Inc.",Generic,"capsule; tablet, chewable; tablet, film coated; powder, for suspension",TAB/ML/CAP,18,2096536,19739178.0,9.42,
+US,amoxicillin,Amoxicillin,"Rising Pharma Holdings, Inc.",Generic,"tablet, film coated; capsule; powder, for suspension",CAP/TAB/ML,10,1217458,11490858.0,9.44,
+US,amoxicillin,Amoxicillin,Sandoz Inc,Generic,"tablet, film coated; capsule; powder, for suspension",CAP/TAB/ML,18,641647,10361236.0,16.15,
 US,amoxicillin,Amoxicillin,NorthStar Rx LLC,Generic,capsule,CAP,5,350859,3023166.0,8.62,0.3658
 US,amoxicillin,Amoxicillin,"USAntibiotics, LLC",Authorized generic,for suspension,ML,3,133808,1697498.0,12.69,0.0801
 US,amoxicillin,AMOXICILLIN,"USAntibiotics, LLC",Generic,capsule,TAB,2,69140,554104.0,8.01,0.3451
@@ -236,12 +236,12 @@ US,amoxicillin,AMOXICILLIN,Micro Labs Limited,Generic,capsule,CAP,1,12794,110297
 US,amoxicillin,Amoxicillin,American Health Packaging,Generic,"tablet, film coated; capsule",TAB/CAP,5,184,921.0,5.0,
 US,amoxicillin,AMOXICILLI,Unknown labeler,OTC / unapproved / unclassified,,,1,14,0.0,0.0,
 US,amoxicillin / clavulanate,Amoxicillin and Clavulanate Potassium,Aurobindo Pharma Limited,Generic,"tablet, film coated; powder, for suspension",TAB/ML,16,3208339,46592184.0,14.52,
-US,amoxicillin / clavulanate,Amoxicillin and Clavulanate Potassium,Sandoz Inc,Generic,"suspension; tablet, film coated; powder, for suspension; tablet, multilayer, extended release",TAB/ML,19,484920,9726747.0,20.06,
-US,amoxicillin / clavulanate,Amoxicillin and Clavulanate Potassium,Hikma Pharmaceuticals USA Inc.,Generic,"tablet; suspension; powder, for suspension",TAB/ML,10,559509,7698801.0,13.76,
+US,amoxicillin / clavulanate,Amoxicillin and Clavulanate Potassium,Sandoz Inc,Generic,"suspension; tablet, multilayer, extended release; tablet, film coated; powder, for suspension",ML/TAB,19,484920,9726747.0,20.06,
+US,amoxicillin / clavulanate,Amoxicillin and Clavulanate Potassium,Hikma Pharmaceuticals USA Inc.,Generic,"powder, for suspension; suspension; tablet",ML/TAB,10,559509,7698801.0,13.76,
 US,amoxicillin / clavulanate,AMOXICILLIN AND CLAVULANATE POTASSIUM,Micro Labs Limited,Generic,"tablet, film coated",TAB,5,507938,6701421.0,13.19,0.7772
-US,amoxicillin / clavulanate,Amoxicillin and Clavulanate Potassium,NorthStar Rx LLC,Generic,"powder, for suspension; tablet, film coated",TAB/ML,13,363077,4793169.0,13.2,
-US,amoxicillin / clavulanate,AMOXICILLIN AND CLAVULANATE POTASSIUM,"USAntibiotics, LLC",Authorized generic,"for suspension; tablet, coated",TAB/ML,8,203649,3416092.0,16.77,
-US,amoxicillin / clavulanate,Amoxicillin and Clavulanate Potassium,"Teva Pharmaceuticals USA, Inc.",Generic,"powder, for suspension; tablet, film coated",ML/TAB,7,240264,3061121.0,12.74,
+US,amoxicillin / clavulanate,Amoxicillin and Clavulanate Potassium,NorthStar Rx LLC,Generic,"powder, for suspension; tablet, film coated",ML/TAB,13,363077,4793169.0,13.2,
+US,amoxicillin / clavulanate,AMOXICILLIN AND CLAVULANATE POTASSIUM,"USAntibiotics, LLC",Authorized generic,"tablet, coated; for suspension",ML/TAB,8,203649,3416092.0,16.77,
+US,amoxicillin / clavulanate,Amoxicillin and Clavulanate Potassium,"Teva Pharmaceuticals USA, Inc.",Generic,"tablet, film coated; powder, for suspension",ML/TAB,7,240264,3061121.0,12.74,
 US,amoxicillin / clavulanate,Amoxicillin and Clavulanate potassium,Cipla USA Inc.,Generic,suspension,ML,3,15551,1056394.0,67.93,0.4634
 US,amoxicillin / clavulanate,Amoxicillin and Clavulanate Potassium,Northstar RxLLC,Generic,,TAB,5,20502,308035.0,15.02,0.8862
 US,amoxicillin / clavulanate,Amoxicillin and Clavulanate Potassium,Bionpharma Inc.,Generic,,ML/TAB,3,16669,228349.0,13.7,
@@ -295,15 +295,15 @@ US,amylase / lipase / protease,Zenpep,"Aimmune Therapeutics, Inc.",Reference bio
 US,amylase / lipase / protease,PERTZYE,"Digestive Care, Inc.",Reference biologic,"capsule, delayed release",CAP,7,5690,16249223.0,2855.75,5.1484
 US,amylase / lipase / protease,Viokace,"Aimmune Therapeutics, Inc.",Reference biologic,tablet,TAB,2,1951,2180723.0,1117.75,5.1787
 US,"antihemophilic factor (recombinant), Fc-VWF-XTEN fusion protein",ALTUVIIIO,Bioverativ Therapeutics Inc.,Reference biologic,kit,AHF,6,8417,292346397.0,34732.85,4.7975
-US,apixaban,ELIQUIS,"E.R. Squibb & Sons, L.L.C.","Brand, single source","kit; tablet, film coated",TAB,6,2188265,1391299602.0,635.8,9.5526
+US,apixaban,ELIQUIS,"E.R. Squibb & Sons, L.L.C.","Brand, single source","tablet, film coated; kit",TAB,6,2188265,1391299602.0,635.8,9.5526
 US,aripiprazole,ABILIFY MAINTENA,"Otsuka America Pharmaceutical, Inc.","Brand, single source",kit,EA,8,330115,848512211.0,2570.35,2584.0625
 US,aripiprazole,Abilify Asimtufii,"Otsuka America Pharmaceutical, Inc","Brand, single source","injection, suspension, extended release",ML,2,32664,169064469.0,5175.87,1713.7257
 US,aripiprazole,Aripiprazole,"Ascend Laboratories, LLC",Generic,tablet,TAB,12,936200,13199216.0,14.1,0.4449
 US,aripiprazole,Aripiprazole,Alembic Pharmaceuticals Inc.,Generic,"tablet; tablet, orally disintegrating",TAB,18,844650,11864694.0,14.05,0.4281
 US,aripiprazole,Aripiprazole,Aurobindo Pharma Limited,Generic,tablet,TAB,6,775852,10341591.0,13.33,0.3823
 US,aripiprazole,Aripiprazole,Amneal Pharmaceuticals LLC,Generic,tablet; solution,ML/TAB,13,359040,5954437.0,16.58,
-US,aripiprazole,Aripiprazole,"Camber Pharmaceuticals, Inc.",Generic,solution; tablet,TAB/ML,7,309828,5469528.0,17.65,
-US,aripiprazole,Aripiprazole,NorthStar RxLLC,Generic,solution; tablet,ML/TAB,7,341528,5049956.0,14.79,
+US,aripiprazole,Aripiprazole,"Camber Pharmaceuticals, Inc.",Generic,solution; tablet,ML/TAB,7,309828,5469528.0,17.65,
+US,aripiprazole,Aripiprazole,NorthStar RxLLC,Generic,solution; tablet,TAB/ML,7,341528,5049956.0,14.79,
 US,aripiprazole,Aripiprazole,Dr.Reddys Laboratories Inc,Generic,tablet,TAB,12,363941,4734663.0,13.01,0.3744
 US,aripiprazole,Aripiprazole,Ajanta Pharma USA Inc.,Generic,tablet,TAB,12,315205,4500563.0,14.28,0.4142
 US,aripiprazole,ABILIFY,"Otsuka America Pharmaceutical, Inc.","Brand, generic competition",tablet,TAB,6,4891,3738091.0,764.28,19.4321
@@ -330,16 +330,16 @@ US,ascorbic acid / cholecalciferol / cuprous oxide / folic acid / magnesium oxid
 US,aspirin,Aspirin,Major Pharmaceuticals,OTC / unapproved / unclassified,"tablet, delayed release",TAB,1,2430851,22702753.0,9.34,0.2215
 US,aspirin,LOW DOSE ASPIRIN,"TIME CAP LABORATORIES, INC",OTC / unapproved / unclassified,"tablet, coated",TAB,2,1599222,10287421.0,6.43,0.1357
 US,aspirin,Aspirin Low Dose Chewable Orange,MAJOR PHARMACEUTICALS,OTC / unapproved / unclassified,"tablet, chewable",TAB,2,1196949,8124141.0,6.79,0.169
-US,aspirin,Aspirin,Rugby Laboratories,OTC / unapproved / unclassified,"tablet, film coated; tablet, delayed release",TAB,3,438249,3398635.0,7.76,0.1733
+US,aspirin,Aspirin,Rugby Laboratories,OTC / unapproved / unclassified,"tablet, delayed release; tablet, film coated",TAB,3,438249,3398635.0,7.76,0.1733
 US,aspirin,ASPIRIN LOW DOSE,MAJOR PHARMACEUTICALS,OTC / unapproved / unclassified,"tablet, coated",TAB,1,273698,1946890.0,7.11,0.1784
 US,aspirin,Rugby Aspirin,Rugby Laboratories,OTC / unapproved / unclassified,"tablet, chewable",TAB,1,189919,1133615.0,5.97,0.1228
 US,aspirin,aspirin,Major Pharmaceuticals,OTC / unapproved / unclassified,"tablet, chewable",TAB,1,150533,1046883.0,6.95,0.1682
 US,aspirin,Low Dose Aspirin,Strategic Sourcing Services LLC,OTC / unapproved / unclassified,"tablet, coated",TAB,5,37990,427889.0,11.26,0.2785
 US,aspirin,Aspirin Regimen,"Cardinal Health 110, LLC. DBA Leader",OTC / unapproved / unclassified,"tablet, delayed release",TAB,5,18715,144132.0,7.7,0.1837
 US,aspirin,Aspirin 81,Amerisource Bergen,OTC / unapproved / unclassified,"tablet, delayed release",TAB,2,17481,133831.0,7.66,0.1829
-US,aspirin,aspirin,"Time-Cap Labs, Inc",OTC / unapproved / unclassified,"tablet, chewable; tablet, coated",TAB,3,7848,81481.0,10.38,0.2675
+US,aspirin,aspirin,"Time-Cap Labs, Inc",OTC / unapproved / unclassified,"tablet, coated; tablet, chewable",TAB,3,7848,81481.0,10.38,0.2675
 US,aspirin,Aspirin,Strategic Sourcing Services LLC,OTC / unapproved / unclassified,"tablet, film coated; tablet, delayed release",TAB,5,8021,72953.0,9.1,0.2483
-US,aspirin,Aspirin,Amerisource Bergen,OTC / unapproved / unclassified,"tablet, delayed release; tablet, film coated",TAB,4,9984,61487.0,6.16,0.1075
+US,aspirin,Aspirin,Amerisource Bergen,OTC / unapproved / unclassified,"tablet, film coated; tablet, delayed release",TAB,4,9984,61487.0,6.16,0.1075
 US,aspirin,Aspirin,AmerisourceBergen (Good Neighbor Pharmacy) 46122,OTC / unapproved / unclassified,,TAB,2,8067,57568.0,7.14,0.1634
 US,aspirin,leader aspirin,"Cardinal Health 110, LLC. dba Leader",OTC / unapproved / unclassified,"tablet, chewable",TAB,2,6725,48557.0,7.22,0.1681
 US,aspirin,Good Sense aspirin,L. Perrigo Company,OTC / unapproved / unclassified,"tablet, chewable",TAB,1,4859,43025.0,8.85,0.2151
@@ -478,11 +478,11 @@ US,baclofen,Baclofen,Amneal Pharmaceuticals of New York LLC,Generic,,TAB,1,28,86
 US,baclofen,Baclofen,"Chartwell RX, LLC",Generic,tablet,TAB,1,11,260.0,23.61,0.2214
 US,beclomethasone,QVAR REDIHALER,"Teva Respiratory, LLC","Brand, single source","aerosol, metered",GM,2,279846,70176252.0,250.77,22.7721
 US,beclomethasone,QNASL,"Teva Respiratory, LLC","Brand, single source","aerosol, metered",GM,2,9592,3012683.0,314.08,30.8503
-US,belimumab,BENLYSTA,GlaxoSmithKline LLC,Reference biologic,"solution; injection, powder, lyophilized, for solution",EA/ML,4,66077,260334379.0,3939.86,
+US,belimumab,BENLYSTA,GlaxoSmithKline LLC,Reference biologic,"solution; injection, powder, lyophilized, for solution",ML/EA,4,66077,260334379.0,3939.86,
 US,benzoyl peroxide,Benzoyl Peroxide,"Burel Pharmaceuticals, LLC",OTC / unapproved / unclassified,liquid,GM,4,219853,2734703.0,12.44,0.063
 US,benzoyl peroxide,benzoyl peroxide,Padagis Israel Pharmaceuticals Ltd,OTC / unapproved / unclassified,gel,GM,9,128228,2048887.0,15.98,0.1833
-US,benzoyl peroxide,Rugby Benzoyl Peroxide,Rugby Laboratories,OTC / unapproved / unclassified,gel,GM/ML,5,76378,865142.0,11.33,
-US,benzoyl peroxide,Rugby Benzoyl Peroxide Wash,Rugby Laboratories,OTC / unapproved / unclassified,lotion,GM/ML,4,48308,544852.0,11.28,
+US,benzoyl peroxide,Rugby Benzoyl Peroxide,Rugby Laboratories,OTC / unapproved / unclassified,gel,ML/GM,5,76378,865142.0,11.33,
+US,benzoyl peroxide,Rugby Benzoyl Peroxide Wash,Rugby Laboratories,OTC / unapproved / unclassified,lotion,ML/GM,4,48308,544852.0,11.28,
 US,benzoyl peroxide,EPSOLAY,"Galderma Laboratories, L.P.","Brand, single source",,GM,1,242,140599.0,580.99,17.4896
 US,benzoyl peroxide,BENZOYL PEROXIDE GET/ACNE MED 10%,RUGBY LABORATORIES,OTC / unapproved / unclassified,,GM,1,6085,92736.0,15.24,0.2504
 US,benzoyl peroxide,Epsolay,Mayne Pharma Commercial LLC,"Brand, single source",cream,GM,1,87,66362.0,762.79,24.3085
@@ -565,7 +565,7 @@ US,bupropion,Bupropion Hydrochloride,"Lupin Pharmaceuticals, Inc.",Generic,"tabl
 US,bupropion,WELLBUTRIN,Bausch Health US LLC,"Brand, generic competition","tablet, extended release",TAB,3,5820,18861604.0,3240.83,76.1221
 US,bupropion,bupropion hydrochloride,"Rising Pharma Holdings, Inc.",Generic,"tablet, extended release",TAB,7,1287802,16502076.0,12.81,0.3059
 US,bupropion,bupropion hydrochloride,"Upsher-Smith Laboratories, LLC",Authorized generic,"tablet, film coated, extended release",TAB,1,53662,14537794.0,270.91,7.3237
-US,bupropion,Bupropion Hydrochloride,"Epic Pharma, LLC",Generic,"tablet, extended release; tablet, film coated, extended release",TAB,16,974185,13188189.0,13.54,0.2924
+US,bupropion,Bupropion Hydrochloride,"Epic Pharma, LLC",Generic,"tablet, film coated, extended release; tablet, extended release",TAB,16,974185,13188189.0,13.54,0.2924
 US,bupropion,Aplenzin,"Bausch Health US, LLC","Brand, single source","tablet, extended release",TAB,3,3185,12969347.0,4072.01,123.9378
 US,bupropion,Bupropion Hydrochloride,"ScieGen Pharmaceuticals,Inc.",Generic,"tablet, film coated, extended release",TAB,6,351766,4882183.0,13.88,0.3729
 US,bupropion,Bupropion Hydrochloride,"ScieGen Pharmaceuticals, Inc.",Generic,"tablet, film coated, extended release",TAB,8,407501,4854685.0,11.91,0.2054
@@ -580,7 +580,7 @@ US,bupropion,BUPROPION HYDROCHLORIDE,Wockhardt USA LLC.,Authorized generic,,TAB,
 US,bupropion,bupropion Hydrochloride,Heritage Pharmaceuticals Inc. d/b/a Avet Pharmaceuticals Inc.,Generic,tablet,TAB,2,117556,1738705.0,14.79,0.2561
 US,bupropion,Bupropion Hydrochloride,"Actavis Pharma, Inc.",Generic,"tablet, extended release; tablet, film coated, extended release",TAB,14,54352,1309154.0,24.09,0.5168
 US,bupropion,Bupropion Hydrochloride,Dr. Reddys Laboratories Inc.,Generic,"tablet, film coated, extended release",TAB,6,67571,922483.0,13.65,0.1954
-US,bupropion,WELLBUTRIN,GlaxoSmithKline LLC,"Brand, generic competition","tablet, film coated",TAB,3,1577,817933.0,518.66,8.3344
+US,bupropion,WELLBUTRIN,GlaxoSmithKline LLC,"Brand, generic competition","tablet, film coated",TAB,4,1599,817933.0,511.53,8.331
 US,bupropion,Bupropion Hydrochloride,Alembic Pharmaceuticals Inc.,Generic,"tablet, film coated",TAB,2,39590,572037.0,14.45,0.2657
 US,bupropion,Bupropion Hydrochloride,"Westminster Pharmaceuticals, LLC",Generic,,TAB,4,32183,523270.0,16.26,0.4482
 US,bupropion,Bupropion Hydrochloride,"Slate Run Pharmaceuticals, LLC",Generic,"tablet, extended release",TAB,12,39446,513219.0,13.01,0.3645
@@ -603,7 +603,7 @@ US,bupropion,bupropion,Zydus Pharmaceuticals USA Inc.,Generic,"tablet, extended 
 US,bupropion,Bupropion Hydrochloride,MAJOR PHARMACEUTICALS,Generic,tablet,TAB,2,1532,20059.0,13.09,0.2366
 US,bupropion,BUPROPION HCL ER TAB,BLUEPOINT LABORATORIES,Generic,,TAB,1,1764,19836.0,11.24,0.3581
 US,bupropion,Bupropion Hydrochloride,Quallent Pharmaceuticals Health LLC,Generic,"tablet, extended release",TAB,2,625,9457.0,15.13,0.2259
-US,bupropion,Bupropion Hydrochloride,Major Pharmaceuticals,Generic,"tablet, extended release; tablet, film coated",TAB,8,1369,9282.0,6.78,0.3671
+US,bupropion,Bupropion Hydrochloride,Major Pharmaceuticals,Generic,"tablet, film coated; tablet, extended release",TAB,8,1369,9282.0,6.78,0.3671
 US,bupropion,Bupropion Hydrochloride,"CIPLA USA INC.,",Generic,"tablet, extended release",TAB,3,601,8284.0,13.78,0.4552
 US,bupropion,Bupropion Hydrochloride,"Chartwell RX, LLC",Generic,tablet,TAB,2,132,1771.0,13.42,0.3069
 US,bupropion,Bupropion Hydrochloride,Exelan Pharmaceuticals Inc.,Generic,"tablet, extended release",TAB,1,124,1538.0,12.4,0.4069
@@ -615,7 +615,6 @@ US,bupropion,buPROpion Hydrochloride,TruPharma LLC,Generic,,TAB,1,15,216.0,14.41
 US,bupropion,Bupropion Hydrochloride,American Health Packaging,Generic,"tablet, film coated",TAB,3,88,42.0,0.47,0.3161
 US,bupropion,bupropion hydrochloride,Major Pharmaceuticals,Generic,"tablet, film coated, extended release",TAB,1,13,38.0,2.94,0.2921
 US,bupropion,Bupropion Hydrochloride,AvPAK,Generic,"tablet, film coated",TAB,2,39,32.0,0.81,0.2023
-US,bupropion,WELLBUTRIN,GlaxoSmithKline LLC,"Brand, single source",,,1,22,0.0,0.0,
 US,calcium carbonate,Major Regular Strength,Major Pharmaceuticals,OTC / unapproved / unclassified,"tablet, chewable",TAB,1,111989,1108490.0,9.9,0.1312
 US,calcium carbonate,Rugby Cal-Gest Antacid,"Rugby Laboratories, Inc.",OTC / unapproved / unclassified,"tablet, chewable",TAB,1,50738,418956.0,8.26,0.1059
 US,calcium carbonate,Calcium Carbonate,"PAI Holdings, LLC dba PAI Pharma",OTC / unapproved / unclassified,suspension,ML,2,27221,282387.0,10.37,0.0399
@@ -641,7 +640,7 @@ US,calcium carbonate,CardinalExtra Strength,CARDINAL HEALTH,OTC / unapproved / u
 US,calcium carbonate,Leader Ultra Strength Antacid,"CARDINAL HEALTH 110, LLC. DBA LEADER",OTC / unapproved / unclassified,"tablet, chewable",TAB,1,415,4268.0,10.28,0.1385
 US,calcium carbonate,Antacid,American Health Packaging,OTC / unapproved / unclassified,"tablet, chewable",TAB,2,513,4121.0,8.03,0.141
 US,calcium carbonate,Foster and Thrive Extra Strength Sugar Free Antacid Orange,Strategic Sourcing Services LLC,OTC / unapproved / unclassified,"tablet, chewable",TAB,1,322,3273.0,10.17,0.1429
-US,calcium carbonate,ANTACID,"CARDINAL HEALTH 110, LLC.",OTC / unapproved / unclassified,"tablet, chewable",CAP/EA,2,326,2934.0,9.0,
+US,calcium carbonate,ANTACID,"CARDINAL HEALTH 110, LLC.",OTC / unapproved / unclassified,"tablet, chewable",EA/CAP,2,326,2934.0,9.0,
 US,calcium carbonate,Leader Extra Strength Antacid,"CARDINAL HEALTH 110, LLC. DBA LEADER",OTC / unapproved / unclassified,"tablet, chewable",TAB,2,250,2211.0,8.84,0.114
 US,calcium carbonate,Plus Pharma,"Gemini Pharmaceuticals, Inc. dba Plus Pharma",OTC / unapproved / unclassified,,TAB,1,185,2045.0,11.05,0.1445
 US,calcium carbonate,Cardinal Extra Strength Smooth Antacid,CARDINAL HEALTH,OTC / unapproved / unclassified,"tablet, chewable",TAB,1,182,1918.0,10.54,0.144
@@ -694,11 +693,11 @@ US,cetirizine,Cetirizine Hydrochloride,"PAI Holdings, LLC dba PAI Pharma",Generi
 US,cetirizine,Cetirizine Hydrochloride,"Rising Pharma Holdings, Inc.",Generic,tablet,TAB,3,2224760,12524440.0,5.63,0.1455
 US,cetirizine,Cetirizine Hydrochloride,Dr. Reddy's Laboratories Inc.,Generic,"tablet, film coated",TAB,2,1887452,11824638.0,6.26,0.1707
 US,cetirizine,Cetirizine,Major Pharmaceuticals,Generic,"tablet, film coated",TAB,8,666204,9778739.0,14.68,0.4399
-US,cetirizine,Cetirizine Hydrochloride,"Sun Pharmaceutical Industries, Inc.",Generic,solution,ML/TAB,3,835337,8016506.0,9.6,
+US,cetirizine,Cetirizine Hydrochloride,"Sun Pharmaceutical Industries, Inc.",Generic,solution,TAB/ML,3,835337,8016506.0,9.6,
 US,cetirizine,Cetirizine Hydrochloride (Allergy),NorthStar Rx LLC,Generic,tablet,TAB,4,831022,7442902.0,8.96,0.2651
-US,cetirizine,cetirizine hydrochloride,Padagis Israel Pharmaceuticals Ltd,Generic,"solution; tablet, film coated",ML/TAB,3,448211,6395236.0,14.27,
+US,cetirizine,cetirizine hydrochloride,Padagis Israel Pharmaceuticals Ltd,Generic,"tablet, film coated; solution",ML/TAB,3,448211,6395236.0,14.27,
 US,cetirizine,Cetirizine hydrochloride,Granules Pharmaceuticals Inc.,Generic,"tablet, coated",TAB,2,860782,6177899.0,7.18,0.1763
-US,cetirizine,Cetirizine Hydrochloride,Sandoz Inc,Generic,"tablet; tablet, chewable",TAB,3,78320,5507173.0,70.32,2.2606
+US,cetirizine,Cetirizine Hydrochloride,Sandoz Inc,Generic,"tablet, chewable; tablet",TAB,3,78320,5507173.0,70.32,2.2606
 US,cetirizine,CETIRIZINE HYDROCHLORIDE,"Rising Pharma Holdings, Inc.",Generic,solution,ML,2,549082,4818113.0,8.77,0.0598
 US,cetirizine,CETIRIZINE HYDROCHLORIDE,QUAGEN PHARMACEUTICALS LLC,Generic,solution,ML,1,441813,4729113.0,10.7,0.0687
 US,cetirizine,childrens cetirizine hydrochloride,Major Pharmaceuticals,Generic,solution,ML,1,268283,4160443.0,15.51,0.1061
@@ -787,18 +786,18 @@ US,ciprofloxacin / dexamethasone,Ciprofloxacin and Dexamethasone,Amneal Pharmace
 US,ciprofloxacin / dexamethasone,Ciprofloxacin and Dexamethasone,NorthStar RxLLC,Generic,suspension/ drops,ML,1,32067,2872341.0,89.57,11.8702
 US,ciprofloxacin / dexamethasone,CIPRODEX,Novartis Pharmaceuticals Corporation,"Brand, generic competition",,ML,1,67,15882.0,237.04,31.6056
 US,clindamycin,Clindamycin Phosphate,Solaris Pharma Corporation,Generic,gel,ML/GM,3,22719,12016618.0,528.92,
-US,clindamycin,Clindamycin Phosphate,"Encube Ethicals, Inc.",Generic,gel; lotion,GM/ML,3,478475,11676378.0,24.4,
-US,clindamycin,Clindamycin Phosphate,Padagis Israel Pharmaceuticals Ltd,Generic,"solution; aerosol, foam; lotion",ML/GM,6,368680,9564818.0,25.94,
+US,clindamycin,Clindamycin Phosphate,"Encube Ethicals, Inc.",Generic,lotion; gel,ML/GM,3,478475,11676378.0,24.4,
+US,clindamycin,Clindamycin Phosphate,Padagis Israel Pharmaceuticals Ltd,Generic,"solution; lotion; aerosol, foam",GM/ML,6,368680,9564818.0,25.94,
 US,clindamycin,Clindamycin Hydrochloride,Aurobindo Pharma Limited,Generic,capsule,CAP,2,387688,4704446.0,12.13,0.4254
 US,clindamycin,clindamycin phosphate,Mylan Pharmaceuticals Inc.,Authorized generic,cream; lotion; gel,GM/ML,4,113729,4532065.0,39.85,
 US,clindamycin,Clindamycin Palmitate Hydrochloride (Pediatric),Aurobindo Pharma Limited,Generic,solution,ML,2,71404,4070522.0,57.01,0.1885
 US,clindamycin,Clindamycin hydrochloride,"Sun Pharmaceutical Industries, Inc.",Generic,capsule,CAP,3,297679,3812253.0,12.81,0.4031
 US,clindamycin,Clindamycin Phosphate,Oceanside Pharmaceuticals,Authorized generic,gel,ML,1,6660,3189103.0,478.84,6.2447
-US,clindamycin,Clindamycin Phosphate,"Sun Pharmaceutical Industries, Inc.",Generic,"gel; aerosol, foam; lotion; solution",EA/GM/ML,7,103378,3013912.0,29.15,
-US,clindamycin,Clindamycin Phosphate,Viona Pharmaceuticals Inc,Generic,solution; gel,GM/ML,4,164177,2838600.0,17.29,
+US,clindamycin,Clindamycin Phosphate,"Sun Pharmaceutical Industries, Inc.",Generic,"solution; lotion; aerosol, foam; gel",ML/GM/EA,7,103378,3013912.0,29.15,
+US,clindamycin,Clindamycin Phosphate,Viona Pharmaceuticals Inc,Generic,gel; solution,GM/ML,4,164177,2838600.0,17.29,
 US,clindamycin,Clindamycin Hydrochloride,"GLENMARK PHARMACEUTICALS INC., USA",Generic,capsule,CAP,4,259895,2729287.0,10.5,0.3601
 US,clindamycin,"Clindamycin Phoaphate Topical Solution USP, 1%","Encube Ethicals, Inc.",Generic,solution,ML,2,145318,2456841.0,16.91,0.2928
-US,clindamycin,clindamycin phosphate,"E. Fougera & Co. a division of Fougera Pharmaceuticals, LLC",Generic,lotion; gel; solution,GM/ML,5,99839,2263873.0,22.68,
+US,clindamycin,clindamycin phosphate,"E. Fougera & Co. a division of Fougera Pharmaceuticals, LLC",Generic,gel; solution; lotion,ML/GM,5,99839,2263873.0,22.68,
 US,clindamycin,Clindamycin Palmitate Hydrochloride (Pediatric),NorthStar Rx LLC,Generic,solution,ML,2,38113,2105830.0,55.25,0.1889
 US,clindamycin,CLINDAMYCIN PHOSPHATE,Alembic Pharmaceuticals Inc.,Generic,gel,GM,2,69810,1612128.0,23.09,0.4758
 US,clindamycin,CLINDAMYCIN HYDROCHLORIDE,Micro Labs Limited,Generic,capsule,CAP,3,145562,1514425.0,10.4,0.3454
@@ -880,13 +879,13 @@ US,cyclosporine,Cyclosporine,Apotex Corp,Authorized generic,emulsion,ML,2,18103,
 US,cyclosporine,Cyclosporine,Apotex Corp.,Generic,"capsule, gelatin coated",CAP,2,5445,2679965.0,492.19,4.3621
 US,cyclosporine,CYCLOSPORINE,"Lupin Pharmaceuticals, Inc.",Authorized generic,emulsion,EA,2,12286,2176046.0,177.12,2.5663
 US,cyclosporine,Cyclosporine,"KVK-TECH, INC.",Authorized generic,emulsion,ML,2,10975,1873474.0,170.7,2.665
-US,cyclosporine,Cyclosporine,"Teva Pharmaceuticals USA, Inc.",Generic,"capsule, liquid filled; solution",ML/CAP,6,18972,1836461.0,96.8,
+US,cyclosporine,Cyclosporine,"Teva Pharmaceuticals USA, Inc.",Generic,"solution; capsule, liquid filled",ML/CAP,6,18972,1836461.0,96.8,
 US,cyclosporine,Verkazia,Santen Incorporated,"Brand, single source",emulsion,ML,1,987,1812961.0,1836.84,48.8458
 US,cyclosporine,Cyclosporine,Mylan Pharmaceuticals Inc.,Generic,emulsion,ML,2,6206,1053007.0,169.68,2.9557
 US,cyclosporine,Cyclosporine,Devatis Inc.,Generic,emulsion,ML,2,4366,735935.0,168.56,2.6146
 US,cyclosporine,CYCLOSPORINE,Heritage Pharmaceuticals Inc. d/b/a Avet Pharmaceuticals Inc.,Generic,"capsule, liquid filled",CAP,3,6708,609397.0,90.85,0.6903
-US,cyclosporine,Neoral,Novartis Pharmaceuticals Corporation,"Brand, generic competition","capsule, liquid filled; solution",ML/CAP,3,1231,586933.0,476.79,
-US,cyclosporine,Gengraf,AbbVie Inc.,Generic,capsule,ML/CAP,3,1644,364385.0,221.65,
+US,cyclosporine,Neoral,Novartis Pharmaceuticals Corporation,"Brand, generic competition","capsule, liquid filled; solution",CAP/ML,3,1231,586933.0,476.79,
+US,cyclosporine,Gengraf,AbbVie Inc.,Generic,capsule,CAP/ML,3,1644,364385.0,221.65,
 US,cyclosporine,Sandimmune,Novartis Pharmaceuticals Corporation,"Brand, generic competition","capsule, liquid filled",CAP,2,203,86637.0,426.78,3.7486
 US,cyclosporine,"CycloSPORINE, Modfied",Apotex Corp.,Generic,"capsule, liquid filled",CAP,3,819,65143.0,79.54,0.6489
 US,cyclosporine,Cyclosporine,Mayne Pharma Inc.,Generic,,CAP,3,778,64915.0,83.44,0.8333
@@ -899,7 +898,7 @@ US,dasatinib,Dasatinib,Prasco Laboratories,Authorized generic,tablet,TAB,6,1123,
 US,dasatinib,Dasatinib,Dr.Reddys Laboratories Inc,Generic,"tablet, film coated",TAB,5,977,3847157.0,3937.73,137.5311
 US,dasatinib,Dasatinib,Biocon Pharma Inc.,Generic,"tablet, film coated",TAB,1,217,880408.0,4057.18,142.2307
 US,dasatinib,DASATINIB,Aurobindo Pharma Limited,Generic,tablet,TAB,2,79,250678.0,3173.14,111.4125
-US,deflazacort,EMFLAZA,"PTC Therapeutics, Inc.","Brand, generic competition",tablet; suspension,TAB/ML,5,14127,161580717.0,11437.72,
+US,deflazacort,EMFLAZA,"PTC Therapeutics, Inc.","Brand, generic competition",suspension; tablet,TAB/ML,5,14127,161580717.0,11437.72,
 US,deflazacort,Deflazacort,Aurobindo Pharma Limited,Generic,tablet,TAB,4,3571,25785910.0,7220.92,221.778
 US,deflazacort,Deflazacort Oral Suspension,"Cranbury Pharmaceuticals, LLC",Generic,suspension,ML,1,591,6133547.0,10378.25,380.493
 US,deflazacort,Deflazacort,"Upsher-Smith Laboratories, LLC",Generic,tablet,TAB,4,286,2034613.0,7114.03,227.0014
@@ -909,7 +908,7 @@ US,denosumab,WYOST,Sandoz Inc,Interchangeable biosimilar,injection,ML,1,382,7773
 US,denosumab,JUBBONTI,Sandoz Inc,Interchangeable biosimilar,injection,ML,1,414,362566.0,875.76,629.672
 US,denosumab,Osenvelt,"CELLTRION USA, Inc.",Interchangeable biosimilar,injection,ML,1,53,62918.0,1187.13,750.7004
 US,denosumab,Stoboclo,"CELLTRION USA, Inc.",Interchangeable biosimilar,injection,ML,1,26,10188.0,391.85,391.6071
-US,deutetrabenazine,AUSTEDO XR,"Teva Neuroscience, Inc.","Brand, single source","kit; tablet, film coated, extended release",TAB,9,35844,313817837.0,8755.1,286.4221
+US,deutetrabenazine,AUSTEDO XR,"Teva Neuroscience, Inc.","Brand, single source","tablet, film coated, extended release; kit",TAB,9,35844,313817837.0,8755.1,286.4221
 US,deutetrabenazine,Austedo,"Teva Neuroscience, Inc.","Brand, single source","tablet, coated",TAB,3,30844,195690516.0,6344.52,99.5948
 US,dextromethorphan / guaifenesin,Mucus Relief DM Extended Release Caplets,Rugby Laboratories,Generic,"tablet, extended release",TAB,2,91517,2095987.0,22.9,0.6992
 US,dextromethorphan / guaifenesin,robafen dm,Major Pharmaceuticals,OTC / unapproved / unclassified,solution,ML,2,110558,1971407.0,17.83,0.0783
@@ -1029,14 +1028,14 @@ US,diclofenac,DICLOFENAC SODIUM,"Encube Ethicals, Inc.",Generic,gel,GM,1,65880,6
 US,diclofenac,Diclofenac sodium,Alembic Pharmaceuticals Inc.,Generic,solution,GM,1,4365,612675.0,140.36,1.1928
 US,diclofenac,Diclofenac Sodium,Aurolife Pharma LLC,Generic,solution,GM,1,4940,594049.0,120.25,1.037
 US,diclofenac,Diclofenac sodium,"Sun Pharmaceutical Industries, Inc.",Generic,gel,GM,1,11757,577302.0,49.1,0.4362
-US,diclofenac,Diclofenac Sodium,"Sun Pharmaceutical Industries, Inc.",Generic,solution,GM/ML,2,9099,569758.0,62.62,
+US,diclofenac,Diclofenac Sodium,"Sun Pharmaceutical Industries, Inc.",Generic,solution,ML/GM,2,9099,569758.0,62.62,
 US,diclofenac,good sense arthritis pain,L. Perrigo Company,Generic,gel,GM,2,29548,560527.0,18.97,0.1503
 US,diclofenac,Arthritis Pain Reliever,AmerisourceBergen (Good Neighbor Pharmacy) 46122,Generic,gel,GM,3,29723,529956.0,17.83,0.1455
 US,diclofenac,Diclofenac Sodium,Apotex Corp.,Generic,solution,GM,1,4684,471100.0,100.58,0.8867
-US,diclofenac,Diclofenac Sodium,Amneal Pharmaceuticals LLC,Generic,solution,GM/ML,2,5715,448329.0,78.45,
-US,diclofenac,Diclofenac Sodium,NorthStar Rx LLC,Generic,"solution; tablet, delayed release",GM/TAB,6,10368,430953.0,41.57,
+US,diclofenac,Diclofenac Sodium,Amneal Pharmaceuticals LLC,Generic,solution,ML/GM,2,5715,448329.0,78.45,
+US,diclofenac,Diclofenac Sodium,NorthStar Rx LLC,Generic,"solution; tablet, delayed release",TAB/GM,6,10368,430953.0,41.57,
 US,diclofenac,Diclofenac Sodium,Edenbridge Pharmaceuticals LLC.,Generic,"tablet, extended release",TAB,1,11260,420080.0,37.31,1.0226
-US,diclofenac,Diclofenac Sodium,"Actavis Pharma, Inc.",Generic,"gel; tablet, delayed release",TAB/GM,7,10301,389259.0,37.79,
+US,diclofenac,Diclofenac Sodium,"Actavis Pharma, Inc.",Generic,"gel; tablet, delayed release",GM/TAB,7,10301,389258.0,37.79,
 US,diclofenac,Arthritis Pain,"Strategic Sourcing Services, LLC",Generic,gel,GM,2,17421,375151.0,21.53,0.1679
 US,diclofenac,Diclofenac Sodium,Advagen Pharma Ltd,Generic,"tablet, delayed release",TAB,7,19394,341201.0,17.59,0.3234
 US,diclofenac,Diclofenac Potassium,Amici Pharma Inc.,Generic,"tablet, film coated",TAB,2,608,334183.0,549.64,10.5122
@@ -1090,7 +1089,7 @@ US,diphenhydramine,good sense allergy,L. Perrigo Company,OTC / unapproved / uncl
 US,diphenhydramine,DIPHENHYDRAMINE HYDROCHLORIDE,"PAI Holdings, LLC dba PAI Pharma",Generic,solution,ML,5,6741,133025.0,19.73,0.4907
 US,diphenhydramine,Good Neighbor Pharmacy Childrens Allergy,Amerisource Bergen,OTC / unapproved / unclassified,solution,ML,1,8723,90849.0,10.41,0.0755
 US,diphenhydramine,Diphenhydramine Hydrochloride,"Fresenius Kabi USA, LLC",Generic,"injection, solution",ML,1,4353,71058.0,16.32,2.8732
-US,diphenhydramine,Allergy Relief,Amerisource Bergen,OTC / unapproved / unclassified,"tablet, chewable; tablet, film coated; capsule; solution",CAP/ML/TAB,5,8419,70536.0,8.38,
+US,diphenhydramine,Allergy Relief,Amerisource Bergen,OTC / unapproved / unclassified,"capsule; solution; tablet, chewable; tablet, film coated",CAP/TAB/ML,5,8419,70536.0,8.38,
 US,diphenhydramine,Diphenhydramine HCL STRAWBERRY FLAVOR,Innovida Pharmaeutique Corporation,OTC / unapproved / unclassified,solution,ML,1,1419,61212.0,43.14,0.2956
 US,diphenhydramine,Allergy Relief,Strategic Sourcing Services LLC,OTC / unapproved / unclassified,"tablet, film coated; capsule",TAB/CAP,3,5898,52488.0,8.9,
 US,diphenhydramine,Diphenhydramine Hydrochloride,Mylan Institutional LLC,Generic,,ML,1,23702,36882.0,1.56,1.0632
@@ -1115,7 +1114,7 @@ US,diphenhydramine,Diphenhydramine HCl Oral Solution,Natco Pharma USA LLC,OTC / 
 US,diphenhydramine,Diphenhydramine Hydrochloride,Heritage Pharmaceuticals Inc. d/b/a Avet Pharmaceuticals Inc.,Generic,injection,ML,2,599,3708.0,6.19,1.1174
 US,diphenhydramine,Diphenhydramine HCl,AARNA USA INC.,OTC / unapproved / unclassified,capsule,CAP,2,384,3498.0,9.11,0.1891
 US,diphenhydramine,children allergy relief dye free cherry,Strategic Sourcing Services LLC,OTC / unapproved / unclassified,,ML,2,132,2373.0,17.98,0.1468
-US,diphenhydramine,Nighttime Sleep Aid,Cardinal Health (Leader) 70000,OTC / unapproved / unclassified,"capsule; capsule, liquid filled",CAP,2,139,2173.0,15.63,0.4289
+US,diphenhydramine,Nighttime Sleep Aid,Cardinal Health (Leader) 70000,OTC / unapproved / unclassified,"capsule, liquid filled; capsule",CAP,2,139,2173.0,15.63,0.4289
 US,diphenhydramine,Diphenhist,Rugby Laboratories,OTC / unapproved / unclassified,,CAP,1,114,2109.0,18.5,0.4369
 US,diphenhydramine,ALLERGY RELIEF,"TIME CAP LABORATORIES, INC",OTC / unapproved / unclassified,"tablet, film coated",TAB,2,210,2057.0,9.8,0.2306
 US,diphenhydramine,Childrens Allergy Relief,"Cardinal Health 110, LLC. DBA Leader",OTC / unapproved / unclassified,solution,ML,1,167,1505.0,9.01,0.0626
@@ -1233,7 +1232,7 @@ US,epoetin alfa,EPOGEN,"Amgen, Inc",Reference biologic,solution,ML,12,439402,239
 US,epoetin alfa,PROCRIT,"Janssen Products, LP",Reference biologic,"injection, solution",ML,15,31743,14175678.0,446.58,170.3592
 US,epoetin alfa,RETACRIT,Pfizer Laboratories Div Pfizer Inc,Biosimilar,"injection, solution",ML,13,43077,7870682.0,182.71,58.4602
 US,epoetin alfa,RETACRIT,Vifor (International) Inc.,Biosimilar,"injection, solution",ML,12,40194,1525090.0,37.94,57.5998
-US,erenumab,AIMOVIG,"Amgen, Inc",Reference biologic,"injection; injection, solution",ML,2,185708,140144088.0,754.65,717.9904
+US,erenumab,AIMOVIG,"Amgen, Inc",Reference biologic,"injection, solution; injection",ML,2,185708,140144088.0,754.65,717.9904
 US,ergocalciferol,"Ergocalciferol Capsules,",Epic Pharma LLC,Generic,capsule,CAP,2,3131723,24235708.0,7.74,1.2781
 US,ergocalciferol,VITAMIN D,Strides Pharma Science Limited,Generic,capsule,CAP,1,2386982,22258777.0,9.33,1.7862
 US,ergocalciferol,Ergocalciferol,Bionpharma Inc.,Generic,"capsule, liquid filled",CAP,1,2307171,16301865.0,7.07,1.2349
@@ -1267,14 +1266,7 @@ US,escitalopram,escitalopram,Major Pharmaceuticals,Generic,"tablet, film coated"
 US,escitalopram,escitalopram oxalate,Quallent Pharmaceuticals Health LLC,Generic,tablet,TAB,3,563,5400.0,9.59,0.1539
 US,escitalopram,Escitalopram,American Health Packaging,Generic,"tablet, film coated",TAB,4,814,3661.0,4.5,0.9047
 US,escitalopram,Escitalopram,"Lupin Pharmaceuticals, Inc.",Generic,,TAB,1,31,425.0,13.71,0.4287
-US,eslicarbazepine,Aptiom,"Sumitomo Pharma America, Inc.","Brand, generic competition",tablet,TAB,4,40287,79009193.0,1961.16,40.4678
-US,eslicarbazepine,Eslicarbazepine Acetate,"Lupin Pharmaceuticals, Inc.",Generic,tablet,TAB,4,3728,1530043.0,410.42,8.9803
-US,eslicarbazepine,Eslicarbazepine Acetate,"Ascend Laboratories, LLC",Generic,tablet,TAB,4,3827,1081219.0,282.52,5.2542
-US,eslicarbazepine,Eslicarbazepine acetate,"Camber Pharmaceuticals, Inc.",Generic,tablet,TAB,4,3335,1073459.0,321.88,6.3166
-US,eslicarbazepine,Eslicarbazepine acetate,Torrent Pharmaceuticals Limited,Generic,tablet,TAB,4,4364,1049542.0,240.5,4.6758
-US,eslicarbazepine,Eslicarbazepine Acetate,Apotex Corp.,Generic,tablet,TAB,4,1611,904972.0,561.75,10.7337
-US,eslicarbazepine,Eslicarbazepine Acetate,Dr.Reddys Laboratories Inc,Generic,tablet,TAB,4,2118,706880.0,333.75,7.2973
-US,estradiol,Estradiol,Mylan Pharmaceuticals Inc.,Generic,cream; patch,TDP/GM,22,235553,14849681.0,63.04,
+US,estradiol,Estradiol,Mylan Pharmaceuticals Inc.,Generic,patch; cream,TDP/GM,22,235553,14849681.0,63.04,
 US,estradiol,Estradiol,"Teva Pharmaceuticals USA, Inc.",Generic,tablet; insert; cream,TAB/GM,8,410452,8195867.0,19.97,
 US,estradiol,Estradiol,Sandoz Inc,Authorized generic,"patch, extended release",TDP,5,99431,7751273.0,77.96,6.6057
 US,estradiol,Estradiol Transdermal System,Sandoz Inc,Authorized generic,patch,TDP,6,100243,6690876.0,66.75,11.7712
@@ -1286,7 +1278,7 @@ US,estradiol,Estradiol Vaginal,Padagis Israel Pharmaceuticals Ltd,Generic,cream,
 US,estradiol,Estring,Pfizer Laboratories Div Pfizer Inc,"Brand, single source",system,EA,1,6104,3232962.0,529.65,528.9532
 US,estradiol,Minivelle,"Noven Therapeutics, LLC","Brand, generic competition","film, extended release",TDP,5,18576,3203386.0,172.45,14.9498
 US,estradiol,Estradiol Vaginal Cream,Prasco Laboratories,Generic,cream,GM,1,89030,3143333.0,35.31,0.8291
-US,estradiol,Estradiol,"ANI Pharmaceuticals, Inc.",Generic,"gel, metered; gel; tablet",GM/TAB,11,227325,3115434.0,13.7,
+US,estradiol,Estradiol,"ANI Pharmaceuticals, Inc.",Generic,"gel, metered; tablet; gel",GM/TAB,11,227325,3115434.0,13.7,
 US,estradiol,YUVAFEM,Amneal Pharmaceuticals LLC,Generic,tablet,TAB,2,29492,3084610.0,104.59,6.6697
 US,estradiol,Estradiol,"Noven Therapeutics, LLC",Authorized generic,"film, extended release",TDP,5,34201,2428870.0,71.02,6.4763
 US,estradiol,Climara,Bayer HealthCare Pharmaceuticals Inc.,"Brand, generic competition",patch,TDP,6,14493,2377873.0,164.07,16.9522
@@ -1297,7 +1289,7 @@ US,estradiol,LYLLANA,Amneal Pharmaceuticals LLC,Generic,"patch, extended release
 US,estradiol,Depo-Estradiol,Pharmacia & Upjohn Company LLC,Generic,injection,ML,1,7601,1716056.0,225.77,45.9
 US,estradiol,Femring,"Millicent US, Inc.","Brand, single source",ring,EA,2,1383,1102294.0,797.03,804.5941
 US,estradiol,Imvexxy,Mayne Pharma,"Brand, single source",,SUP,4,3281,1007510.0,307.07,25.7425
-US,estradiol,Estradiol,NorthStar Rx LLC,Generic,gel; tablet,GM/TAB,10,58383,720305.0,12.34,
+US,estradiol,Estradiol,NorthStar Rx LLC,Generic,tablet; gel,GM/TAB,10,58383,720305.0,12.34,
 US,estradiol,Delestrogen,"Par Health USA, LLC","Brand, generic competition",injection,ML,3,4324,597526.0,138.19,34.6476
 US,estradiol,Estradiol,"Trigen Laboratories, LLC","Brand, generic competition",gel,EA,5,4563,382598.0,83.85,2.0495
 US,estradiol,DIVIGEL,"Vertical Pharmaceuticals, LLC","Brand, generic competition",gel,EA,5,1519,313359.0,206.29,5.351
@@ -1418,7 +1410,7 @@ US,famotidine,Famotidine,"Lupin Pharmaceuticals, Inc.",Generic,"powder, for susp
 US,famotidine,FAMOTIDINE,"Camber Pharmaceuticals, Inc.",Generic,"powder, for suspension",EA,1,154719,4482358.0,28.97,0.4474
 US,famotidine,Famotidine,Amneal Pharmaceuticals NY LLC,Generic,"powder, for suspension",ML,2,130863,3750166.0,28.66,0.4281
 US,famotidine,Famotidine,Ajanta Pharma USA Inc.,Generic,for suspension,ML,1,115217,3511463.0,30.48,0.4367
-US,famotidine,Famotidine,BluePoint Laboratories,Generic,"tablet; tablet, film coated",TAB,6,357546,3459546.0,9.68,0.2119
+US,famotidine,Famotidine,BluePoint Laboratories,Generic,"tablet, film coated; tablet",TAB,6,357546,3459546.0,9.68,0.2119
 US,famotidine,Famotidine,"Legacy Pharmaceutical Packaging, LLC",Generic,"tablet, film coated",TAB,2,276129,2445288.0,8.86,0.1484
 US,famotidine,Famotidine,"Ascend Laboratories, LLC",Generic,"powder, for suspension",ML,1,77247,2357204.0,30.52,0.4203
 US,famotidine,Famotidine,Zydus Pharmaceuticals USA Inc.,Generic,"tablet, film coated",TAB,5,240624,2167987.0,9.01,0.1985
@@ -1449,7 +1441,7 @@ US,famotidine,Famotidine,"LEADER/ CARDINAL HEALTH 110, INC.",Generic,"tablet, fi
 US,famotidine,Famotidine,Amerisource Bergen,Generic,"tablet, film coated",TAB,4,2031,20850.0,10.27,0.2314
 US,famotidine,good sense acid reducer,L. Perrigo Company,Generic,"tablet, film coated",TAB,1,2139,20000.0,9.35,0.1981
 US,famotidine,Famotidine,"Athenex Pharmaceutical Division, LLC.",Generic,,ML,2,5896,19484.0,3.3,0.2589
-US,famotidine,Famotidine,AvPAK,Generic,"tablet, film coated; tablet",TAB,4,1822,14297.0,7.85,3.8749
+US,famotidine,Famotidine,AvPAK,Generic,"tablet; tablet, film coated",TAB,4,1822,14297.0,7.85,3.8749
 US,famotidine,Good Sense Acid Reducer,L. Perrigo Company,Generic,"tablet, film coated",TAB,1,1129,10158.0,9.0,0.1425
 US,famotidine,Famotidine,American Health Packaging,Generic,"tablet, film coated",TAB,2,3862,8550.0,2.21,0.741
 US,famotidine,Famotidine,Sagent Pharmaceuticals,Generic,"injection, solution",ML,1,747,8187.0,10.96,2.1314
@@ -1480,10 +1472,10 @@ US,filgrastim,ZARXIO,Sandoz Inc.,Biosimilar,"injection, solution",ML,7,14213,754
 US,filgrastim,Nivestym,Pfizer Laboratories Div Pfizer Inc,Biosimilar,"injection, solution",ML,7,9785,5827110.0,595.51,263.5638
 US,filgrastim,RELEUKO,Amneal Pharmaceuticals LLC,Biosimilar,"injection, solution",ML,5,2890,454687.0,157.33,81.2346
 US,filgrastim,Granix  (tbo-fligrastim) Injection 480 mcg/1.6 mL 10x 1.6 mL S,"CEPHALON, INC.",Reference biologic,,ML,1,51,27695.0,543.03,343.1938
-US,fluoxetine,Fluoxetine,Aurobindo Pharma Limited,Generic,"capsule; solution; tablet, film coated",CAP/TAB/ML,21,1696696,20703695.0,12.2,
+US,fluoxetine,Fluoxetine,Aurobindo Pharma Limited,Generic,"tablet, film coated; capsule; solution",CAP/ML/TAB,21,1696696,20703695.0,12.2,
 US,fluoxetine,Fluoxetine,"Teva Pharmaceuticals USA, Inc.",Generic,capsule,CAP,10,1621646,16025816.0,9.88,0.2007
-US,fluoxetine,Fluoxetine,"ScieGen Pharmaceuticals, Inc.",Generic,tablet; capsule,CAP/TAB,10,653189,7347046.0,11.25,
-US,fluoxetine,Fluoxetine,NorthStar Rx LLC,Generic,"capsule; tablet, film coated",CAP/TAB,11,622709,6263115.0,10.06,
+US,fluoxetine,Fluoxetine,"ScieGen Pharmaceuticals, Inc.",Generic,capsule; tablet,TAB/CAP,10,653189,7347046.0,11.25,
+US,fluoxetine,Fluoxetine,NorthStar Rx LLC,Generic,"capsule; tablet, film coated",TAB/CAP,11,622709,6263115.0,10.06,
 US,fluoxetine,Fluoxetine,BluePoint Laboratories,Generic,capsule,CAP,9,334850,3326722.0,9.93,0.2526
 US,fluoxetine,Fluoxetine,Alembic Pharmaceuticals Inc.,Generic,"tablet, film coated; capsule",CAP/TAB,11,398000,3251317.0,8.17,
 US,fluoxetine,Fluoxetine,"TIME CAP LABORATORIES, INC.",Generic,capsule,CAP,5,347806,2390432.0,6.87,0.1447
@@ -1527,8 +1519,8 @@ US,fluticasone,FLUTICASONE PROPIONATE,Prasco Laboratories,Authorized generic,"po
 US,fluticasone,FLUTICASONE PROPIONATE,Advagen Pharma Ltd,Generic,spray,GM,1,150850,2288875.0,15.17,0.903
 US,fluticasone,RUGBY FLUTICASONE PROPIONATE NASAL,Rugby Laboratories,Generic,"spray, metered",ML,4,165013,2165438.0,13.12,0.9754
 US,fluticasone,Fluticasone Furoate Ellipta,Prasco Laboratories,Authorized generic,powder,EA,3,8882,1624664.0,182.92,5.5858
-US,fluticasone,Fluticasone Propionate,Padagis Israel Pharmaceuticals Ltd,Generic,cream; ointment,GM,6,36438,686122.0,18.83,0.4608
-US,fluticasone,Fluticasone Propionate,"Cosette Pharmaceuticals, Inc.",Generic,ointment; cream,GM,6,23563,603543.0,25.61,0.5832
+US,fluticasone,Fluticasone Propionate,Padagis Israel Pharmaceuticals Ltd,Generic,ointment; cream,GM,6,36438,686122.0,18.83,0.4608
+US,fluticasone,Fluticasone Propionate,"Cosette Pharmaceuticals, Inc.",Generic,cream; ointment,GM,6,23563,603543.0,25.61,0.5832
 US,fluticasone,FLOVENT,GlaxoSmithKline LLC,"Brand, generic competition",,EA/GM,6,2129,590717.0,277.46,
 US,fluticasone,Foster and Thrive Allergy Relief,Strategic Sourcing Services LLC,Generic,"spray, metered",ML,2,4799,93039.0,19.39,1.4526
 US,fluticasone,fluticasone propionate,Padagis Israel Pharmaceuticals Ltd,Generic,lotion,ML,1,335,76032.0,226.96,3.4813
@@ -1576,7 +1568,7 @@ US,furosemide,FUROSCIX,"scPharmaceuticals Inc., a wholly owned subsidiary of Man
 US,furosemide,Furosemide,Solco Healthcare LLC,Generic,tablet,TAB,6,311393,2929989.0,9.41,0.1777
 US,furosemide,Furosemide,Hikma Pharmaceuticals USA Inc.,"Brand, generic competition",tablet; injection,ML/TAB,12,352794,2559242.0,7.25,
 US,furosemide,Furosemide,Ipca Laboratories Limited,Generic,tablet,TAB,6,135204,1179758.0,8.73,0.1781
-US,furosemide,Furosemide,Hikma Pharmaceuticals USA Inc.,Generic,tablet; solution,ML/TAB,6,58325,685502.0,11.75,
+US,furosemide,Furosemide,Hikma Pharmaceuticals USA Inc.,Generic,solution; tablet,TAB/ML,6,58325,685502.0,11.75,
 US,furosemide,FUROSEMIDE,Baxter Healthcare Corporation,Generic,"injection, solution",ML,3,17143,82083.0,4.79,0.6688
 US,furosemide,Furosemide,Meitheal Pharmaceuticals Inc.,Generic,"injection, solution",ML,6,10526,71953.0,6.84,1.0427
 US,furosemide,Furosemide,"Fresenius Kabi USA, LLC","Brand, generic competition","injection, solution",ML,11,9764,56501.0,5.79,1.0968
@@ -1600,14 +1592,14 @@ US,furosemide,Furosemide,"Athenex Pharmaceutical Division, LLC.",Generic,,ML,2,6
 US,furosemide,FUROSEMIDE,Devatis Inc.,Generic,"injection, solution",ML,2,43,167.0,3.88,0.4293
 US,furosemide,Furosemide,Phlow Corporation,"Brand, generic competition","injection, solution",ML,1,52,139.0,2.66,0.5254
 US,furosemide,FUROSEM 40,Unknown labeler,OTC / unapproved / unclassified,,,1,88,0.0,0.0,
-US,gabapentin,Gabapentin,"ScieGen Pharmaceuticals, Inc.",Generic,tablet; capsule,TAB/CAP,12,2192518,28593109.0,13.04,
+US,gabapentin,Gabapentin,"ScieGen Pharmaceuticals, Inc.",Generic,capsule; tablet,CAP/TAB,12,2192518,28593109.0,13.04,
 US,gabapentin,Gabapentin,"Ascend Laboratories, LLC",Generic,capsule; tablet,CAP/TAB,13,1421680,16557551.0,11.65,
-US,gabapentin,GABAPENTIN,"Camber Pharmaceuticals, Inc.",Generic,"tablet, film coated; solution; tablet; capsule",ML/TAB/CAP,14,1209372,15252957.0,12.61,
-US,gabapentin,Gabapentin,Amneal Pharmaceuticals LLC,Generic,capsule; solution,CAP/ML,9,1330906,15241277.0,11.45,
+US,gabapentin,GABAPENTIN,"Camber Pharmaceuticals, Inc.",Generic,"tablet, film coated; tablet; capsule; solution",ML/TAB/CAP,14,1209372,15252957.0,12.61,
+US,gabapentin,Gabapentin,Amneal Pharmaceuticals LLC,Generic,solution; capsule,ML/CAP,9,1330906,15241277.0,11.45,
 US,gabapentin,Gabapentin,NorthStar Rx LLC,Generic,"capsule; tablet, film coated",TAB/CAP,10,1151049,14243990.0,12.37,
 US,gabapentin,Gabapentin,"Glenmark Pharmaceuticals Inc., USA",Generic,tablet,TAB,4,617501,10617787.0,17.19,0.1713
 US,gabapentin,Gabapentin,"Actavis Pharma, Inc.",Generic,capsule,CAP/TAB,10,876397,10213920.0,11.65,
-US,gabapentin,Gabapentin,Aurobindo Pharma Limited,Generic,"capsule; tablet, film coated",TAB/CAP,12,638707,9552952.0,14.96,
+US,gabapentin,Gabapentin,Aurobindo Pharma Limited,Generic,"tablet, film coated; capsule",TAB/CAP,12,638707,9552952.0,14.96,
 US,gabapentin,Horizant,"Azurity Pharmaceuticals, Inc. (formerly Arbor Pharmaceuticals)","Brand, single source","tablet, extended release",TAB,2,8566,7518940.0,877.77,17.6741
 US,gabapentin,Gabapentin,"Rising Pharma Holdings, Inc.",Generic,tablet,TAB,6,390027,6406355.0,16.43,0.1623
 US,gabapentin,GABAPENTIN,Cipla USA Inc.,Generic,capsule,CAP,5,557215,5324310.0,9.56,0.1007
@@ -1615,18 +1607,18 @@ US,gabapentin,GABARONE,INA Pharmaceutics Inc.,Generic,tablet,TAB,2,3297,4935989.
 US,gabapentin,gabapentin,"Rising Pharma Holdings, Inc.",Generic,capsule,CAP,9,454158,4754121.0,10.47,0.1122
 US,gabapentin,Gabapentin,BluePoint Laboratories,Generic,tablet,TAB,4,277766,4457197.0,16.05,0.1794
 US,gabapentin,Gabapentin,Granules Pharmaceuticals Inc.,Generic,"tablet, film coated",TAB,3,270337,4185997.0,15.48,0.1599
-US,gabapentin,Neurontin,Parke-Davis Div of Pfizer Inc,"Brand, generic competition",capsule; solution,CAP/ML/TAB,6,5561,3690013.0,663.55,
+US,gabapentin,Neurontin,Parke-Davis Div of Pfizer Inc,"Brand, generic competition",capsule; solution,CAP/TAB/ML,7,5611,3690013.0,657.64,
 US,gabapentin,Gabapentin,"Acella Pharmaceuticals, LLC",Generic,solution,ML,4,90367,3639542.0,40.28,0.1135
-US,gabapentin,Gabapentin,"Westminster Pharmaceuticals, LLC",Generic,"tablet, coated; capsule",TAB/CAP,10,163555,2352684.0,14.38,
+US,gabapentin,Gabapentin,"Westminster Pharmaceuticals, LLC",Generic,"tablet, coated; capsule",CAP/TAB,10,163555,2352684.0,14.38,
 US,gabapentin,Gralise,Almatica Pharma LLC,"Brand, generic competition","tablet, film coated",TAB,3,1912,1425203.0,745.4,11.0802
 US,gabapentin,GABAPENTIN,"TIME CAP LABORATORIES, INC",Generic,capsule,CAP,9,106400,1305264.0,12.27,0.139
-US,gabapentin,Gabapentin,"ACI Healthcare USA, Inc.",Generic,,TAB/CAP,15,87759,1183651.0,13.49,
+US,gabapentin,Gabapentin,"ACI Healthcare USA, Inc.",Generic,,CAP/TAB,15,87759,1183651.0,13.49,
 US,gabapentin,GABAPENTIN,Heritage Pharmaceuticals Inc. d/b/a Avet Pharmaceuticals Inc.,Generic,capsule,CAP,6,64618,707714.0,10.95,0.1119
 US,gabapentin,GABAPENTIN,Granules Pharmaceuticals Inc,Generic,capsule,CAP,8,57325,690232.0,12.04,0.1344
-US,gabapentin,Gabapentin,Advagen Pharma Ltd,Generic,tablet; solution,ML/TAB,4,17963,618029.0,34.41,
+US,gabapentin,Gabapentin,Advagen Pharma Ltd,Generic,tablet; solution,TAB/ML,4,17963,618029.0,34.41,
 US,gabapentin,"Gabapentin Caps 300mg, 1000ct","HERITAGE PHARMACEUTICALS, INC.",Generic,,CAP,1,32497,353106.0,10.87,0.1306
 US,gabapentin,gabapentin,Zydus Pharmaceuticals USA Inc.,Generic,tablet,TAB,3,2124,318440.0,149.92,2.5284
-US,gabapentin,Gabapentin,"Epic Pharma, LLC",Generic,tablet; capsule,CAP/TAB,4,2686,318275.0,118.49,
+US,gabapentin,Gabapentin,"Epic Pharma, LLC",Generic,capsule; tablet,TAB/CAP,4,2686,318275.0,118.49,
 US,gabapentin,Gabapentin,"TAGI Pharma, Inc.",Generic,"tablet, coated",TAB,2,17175,251554.0,14.65,0.1715
 US,gabapentin,GABAPENTIN,Mylan Pharmaceuticals Inc.,Authorized generic,suspension,ML,1,4965,201328.0,40.55,0.1077
 US,gabapentin,GABAPENTIN,Exelan Pharmaceuticals Inc.,Generic,"tablet, film coated",TAB,4,1272,163233.0,128.33,1.4455
@@ -1634,18 +1626,18 @@ US,gabapentin,"Gabapentin Caps 100mg, 1000ct","HERITAGE PHARMACEUTICALS, INC.",G
 US,gabapentin,Gabapentin,Zydus Pharmaceuticals USA Inc.,Generic,"tablet, film coated",TAB,4,8969,147293.0,16.42,0.1851
 US,gabapentin,Gralise,Almatica Pharma LLC,"Brand, single source","tablet, film coated",TAB,2,255,120709.0,473.37,12.3009
 US,gabapentin,Gabapentin,"Precision Dose, Inc.",Generic,"tablet, coated",TAB,4,7618,113375.0,14.88,0.1651
-US,gabapentin,Neurontin,Viatris Specialty LLC,"Brand, generic competition","tablet, film coated; capsule",CAP/TAB,4,298,103594.0,347.63,
+US,gabapentin,Neurontin,Viatris Specialty LLC,"Brand, generic competition","capsule; tablet, film coated",TAB/CAP,4,298,103594.0,347.63,
 US,gabapentin,GABAPENTIN,"Exelan Pharmaceuticals, Inc.",Generic,capsule; tablet,CAP/TAB,7,5983,96569.0,16.14,
 US,gabapentin,GABAPENTIN CAPSULES 300 MG 500CT,SUN PHARMACEUTICAL INDUSTRIES INC.,Generic,,CAP,1,8665,89396.0,10.32,0.1391
-US,gabapentin,Gabapentin,Major Pharmaceuticals,Generic,"capsule; tablet, film coated",CAP/TAB,5,17229,74699.0,4.34,
+US,gabapentin,Gabapentin,Major Pharmaceuticals,Generic,"capsule; tablet, film coated",TAB/CAP,5,17229,74699.0,4.34,
 US,gabapentin,Gabapentin,Laurus Labs Limited,Generic,capsule,CAP,4,8172,70100.0,8.58,0.116
 US,gabapentin,Gabapentin,American Health Packaging,Generic,"capsule; tablet, film coated",TAB/CAP,9,15855,64819.0,4.09,
 US,gabapentin,GABAPENTIN CAPSULES 400 MG 500CT,SUN PHARMACEUTICAL INDUSTRIES INC.,Generic,,CAP,1,5368,53914.0,10.04,0.1328
-US,gabapentin,Gabapentin,Mullan Pharmaceutical Inc.,Generic,"capsule; tablet, coated",CAP/TAB,9,4441,42899.0,9.66,
+US,gabapentin,Gabapentin,Mullan Pharmaceutical Inc.,Generic,"tablet, coated; capsule",CAP/TAB,9,4441,42899.0,9.66,
 US,gabapentin,GABAPENTIN CAPSULES 300 MG 1000CT,SUN PHARMACEUTICAL INDUSTRIES INC.,Generic,,CAP,1,3728,42125.0,11.3,0.1349
 US,gabapentin,gabapentin,"Sun Pharmaceutical Industries, Inc.",Generic,"tablet, film coated",TAB,4,2977,40423.0,13.58,0.1792
 US,gabapentin,GABAPENTIN,Greenstone LLC,Authorized generic,,TAB/CAP,5,906,32968.0,36.39,
-US,gabapentin,Gabapentin,Strides Pharma Science Limited,Generic,tablet; capsule,CAP/TAB,7,2056,31049.0,15.1,
+US,gabapentin,Gabapentin,Strides Pharma Science Limited,Generic,capsule; tablet,TAB/CAP,7,2056,31049.0,15.1,
 US,gabapentin,GABAPENTIN CAPSULES 300 MG 100CT,SUN PHARMACEUTICAL INDUSTRIES INC.,Generic,,CAP,1,2366,22596.0,9.55,0.1111
 US,gabapentin,Gabapentin,"PAI Holdings, LLC dba PAI Pharma",Generic,solution,ML,2,375,17291.0,46.11,0.1044
 US,gabapentin,GABAPENTIN CAPSULES 100 MG 100CT,SUN PHARMACEUTICAL INDUSTRIES INC.,Generic,,CAP,1,1535,12926.0,8.42,0.1071
@@ -1665,9 +1657,10 @@ US,gabapentin,Gabapentin,McKesson Corporation dba SKY Packaging,Generic,,TAB,1,1
 US,gabapentin,Gabapentin,Apotex Corp.,Generic,,CAP,2,24,267.0,11.11,0.1481
 US,gabapentin,Gabapentin,AvPAK,Generic,"tablet, coated",TAB,1,88,62.0,0.71,0.5309
 US,gabapentin,Gabapentin,Mckesson Corporation DBA SKY Packaginng,Generic,,CAP,1,38,0.0,0.0,0.0
-US,gabapentin,Neurontin,Parke-Davis Div of Pfizer Inc,"Brand, single source",,,1,50,0.0,0.0,
 US,galcanezumab,EMGALITY,Eli Lilly and Company,Reference biologic,"injection, solution",ML,5,307374,237664577.0,773.21,687.5632
-US,glecaprevir / pibrentasvir,Mavyret,AbbVie Inc.,"Brand, single source","tablet, film coated; pellet",EA/TAB,4,45561,597784095.0,13120.52,
+US,glecaprevir / pibrentasvir,Mavyret,AbbVie Inc.,"Brand, single source","pellet; tablet, film coated",TAB/EA,4,45561,597784095.0,13120.52,
+US,glycerol phenylbutyrate,Ravicti,"Horizon Therapeutics USA, Inc.","Brand, generic competition",liquid,ML,1,4216,257817919.0,61152.26,220.5517
+US,glycerol phenylbutyrate,Glycerol Phenylbutyrate,"Par Health USA, LLC",Generic,liquid,,1,63,2535663.0,40248.62,
 US,guaifenesin,Mucus Relief,Major Pharmaceuticals,Generic,"tablet, extended release",TAB,1,126125,2125137.0,16.85,0.4429
 US,guaifenesin,GUAIFENESIN,GRANULES PHARMACEUTICALS INC.,Generic,"tablet, extended release",TAB,1,107154,1643115.0,15.33,0.404
 US,guaifenesin,Rugby Chest Congestion Relief,Rugby Laboratories,OTC / unapproved / unclassified,tablet,TAB,1,106458,1449698.0,13.62,0.2386
@@ -1736,9 +1729,9 @@ US,hydrocortisone,Hydroxym,PureTek Corporation,OTC / unapproved / unclassified,g
 US,hydrocortisone,Hydrocortisone,"E. Fougera & Co. a division of Fougera Pharmaceuticals, LLC",Generic,cream; ointment,GM,6,1070343,12425562.0,11.61,0.2342
 US,hydrocortisone,Alkindi,"Eton Pharmaceuticals, Inc.","Brand, single source",granule,CAP,4,4043,11332482.0,2802.99,30.8405
 US,hydrocortisone,Hydrocortisone,Padagis Israel Pharmaceuticals Ltd,Generic,ointment; cream,GM,4,673949,7779946.0,11.54,0.1548
-US,hydrocortisone,Hydrocortisone,"ANI Pharmaceuticals, Inc.",Generic,tablet; cream,GM/TAB,5,280720,5756301.0,20.51,
+US,hydrocortisone,Hydrocortisone,"ANI Pharmaceuticals, Inc.",Generic,tablet; cream,TAB/GM,5,280720,5756301.0,20.51,
 US,hydrocortisone,Hydrocortisone,Trifluent Pharma LLC,Generic,solution,ML,1,7529,5663319.0,752.2,24.6017
-US,hydrocortisone,Hydrocortisone Butyrate,"Sun Pharmaceutical Industries, Inc.",Generic,ointment; cream; solution,ML/GM,6,29175,3564836.0,122.19,
+US,hydrocortisone,Hydrocortisone Butyrate,"Sun Pharmaceutical Industries, Inc.",Generic,cream; ointment; solution,ML/GM,6,29175,3564836.0,122.19,
 US,hydrocortisone,Hydrocortisone,"Sun Pharmaceutical Industries, Inc.",Generic,cream,GM,1,268001,2330046.0,8.69,0.2609
 US,hydrocortisone,Hydrocortisone,Strides Pharma Science Limited,Generic,tablet,TAB,3,75036,1941424.0,25.87,0.2474
 US,hydrocortisone,Procto-Med HC,"Leading Pharma, LLC",Generic,cream,GM,2,109399,1833938.0,16.76,0.5378
@@ -1755,7 +1748,7 @@ US,hydrocortisone,PROCTOZONE-HC,"Rising Pharma Holdings, Inc.",Generic,cream,GM,
 US,hydrocortisone,HYDROCORTISONE,Amneal Pharmaceuticals of New York LLC,Generic,tablet,TAB,3,23081,487181.0,21.11,0.265
 US,hydrocortisone,Hydrocortisone,"ANI Pharmaceuticals, Inc.",Authorized generic,enema,ML,1,2332,402575.0,172.63,0.1588
 US,hydrocortisone,Hydrocortisone Valerate,"Sun Pharmaceutical Industries, Inc.",Generic,cream; ointment,GM,6,6154,395277.0,64.23,1.2913
-US,hydrocortisone,Hydrocortisone,"Sun Pharmaceutical Industries, Inc.",OTC / unapproved / unclassified,cream; ointment,GM,7,36042,310452.0,8.61,0.2697
+US,hydrocortisone,Hydrocortisone,"Sun Pharmaceutical Industries, Inc.",OTC / unapproved / unclassified,ointment; cream,GM,7,36042,310452.0,8.61,0.2697
 US,hydrocortisone,Hydrocortisone Butyrate,"Lupin Pharmaceuticals, Inc.",Generic,lotion,ML,2,1515,266281.0,175.76,1.5299
 US,hydrocortisone,Hydrocortisone,BluePoint Laboratories,OTC / unapproved / unclassified,cream; ointment,GM,3,24130,258072.0,10.7,0.2357
 US,hydrocortisone,CORTEF,Pharmacia & Upjohn Company LLC,"Brand, generic competition",tablet,TAB,2,1528,229671.0,150.31,1.0651
@@ -1763,7 +1756,7 @@ US,hydrocortisone,good sense anti itch,L. Perrigo Company,OTC / unapproved / unc
 US,hydrocortisone,Hydrocortisone Cream with Aloe,Rugby Laboratories,OTC / unapproved / unclassified,cream,GM,1,4940,119521.0,24.19,0.7832
 US,hydrocortisone,Solu-Cortef,Pharmacia & Upjohn Company LLC,"Brand, single source","injection, powder, for solution",EA,4,1157,119363.0,103.17,41.5219
 US,hydrocortisone,Hydrocortisone,Cardinal Health,OTC / unapproved / unclassified,cream; ointment,GM,2,9586,99910.0,10.42,0.3153
-US,hydrocortisone,Good Neighbor Pharmacy,AmerisourceBergen,OTC / unapproved / unclassified,ointment; cream,GM,4,9154,96479.0,10.54,0.3456
+US,hydrocortisone,Good Neighbor Pharmacy,AmerisourceBergen,OTC / unapproved / unclassified,cream; ointment,GM,4,9154,96479.0,10.54,0.3456
 US,hydrocortisone,HYDROCORTISONE VALERATE,"Lupin Pharmaceuticals, Inc.",Generic,cream,GM,3,4127,96388.0,23.36,0.5297
 US,hydrocortisone,Khindivi,"Eton Pharmaceuticals, Inc.","Brand, single source",solution,ML,1,13,95516.0,7347.35,24.5984
 US,hydrocortisone,Hydrocortisone Acetate,"Sun Pharmaceutical Industries, Inc.",OTC / unapproved / unclassified,cream,GM,1,8292,77813.0,9.38,0.2864
@@ -1776,7 +1769,7 @@ US,hydrocortisone,Hydrocortisone Acetate,"Westminster Pharmaceuticals, LLC",OTC 
 US,hydrocortisone,Texacort,Mission Pharmacal Company,Generic,solution,ML,1,220,43492.0,197.69,6.2489
 US,hydrocortisone,HYDROCORTISONE VALERATE,"Cosette Pharmaceuticals, Inc.",Generic,cream,GM,3,961,24479.0,25.47,0.6226
 US,hydrocortisone,Hydrocortisone,Heritage Pharmaceuticals Inc. d/b/a Avet Pharmaceuticals Inc,Generic,suspension,ML,1,110,19547.0,177.7,0.1655
-US,hydrocortisone,Hydrocortisone,STRATEGIC SOURCING SERVICES LLC,OTC / unapproved / unclassified,ointment; cream,GM,3,1304,18489.0,14.18,0.3859
+US,hydrocortisone,Hydrocortisone,STRATEGIC SOURCING SERVICES LLC,OTC / unapproved / unclassified,cream; ointment,GM,3,1304,18489.0,14.18,0.3859
 US,hydrocortisone,Anusol,"Salix Pharmaceuticals, Inc",Generic,cream,GM,1,186,14097.0,75.79,2.2964
 US,hydrocortisone,hydrocortisone,Eywa Pharma Inc,Generic,tablet,TAB,2,524,9494.0,18.12,0.1678
 US,hydrocortisone,ANUCORT-HC,"Cosette Pharmaceuticals, Inc.",OTC / unapproved / unclassified,suppository,SUP,1,42,7634.0,181.76,8.182
@@ -1825,44 +1818,44 @@ US,hydroxyzine,Hydroxyzine pamoate,"Chartwell RX, LLC",Generic,capsule,CAP,2,182
 US,hydroxyzine,Hydroxyzine Hydrochloride,Heritage Pharmaceuticals Inc.,Generic,,TAB,4,141,1854.0,13.15,0.296
 US,hydroxyzine,Vistaril,Pfizer Laboratories Div Pfizer Inc,"Brand, generic competition",,CAP,1,37,155.0,4.19,1.7751
 US,hydroxyzine,HYDROXYZINE HYDROCHLORIDE,"Actavis Pharma, Inc.",Generic,,,1,24,0.0,0.0,
-US,ibuprofen,Ibuprofen,Aurobindo Pharma Limited,Generic,suspension; tablet,ML/TAB,8,5396645,53145941.0,9.85,
-US,ibuprofen,Ibuprofen,Strides Pharma Science Limited,Generic,"suspension; tablet, film coated",TAB/ML,8,2130979,21875560.0,10.27,
+US,ibuprofen,Ibuprofen,Aurobindo Pharma Limited,Generic,tablet; suspension,ML/TAB,8,5396645,53145941.0,9.85,
+US,ibuprofen,Ibuprofen,Strides Pharma Science Limited,Generic,"suspension; tablet, film coated",ML/TAB,8,2130979,21875560.0,10.27,
 US,ibuprofen,Ibuprofen,"Ascend Laboratories, LLC",Generic,"tablet, film coated",TAB,10,1553097,16628315.0,10.71,0.2405
 US,ibuprofen,Ibuprofen,Amneal Pharmaceuticals LLC,Generic,tablet,TAB,7,662680,10538444.0,15.9,0.343
 US,ibuprofen,Ibuprofen,Padagis Israel Pharmaceuticals Ltd,Generic,suspension,ML,3,612070,8548319.0,13.97,0.0676
 US,ibuprofen,Ibuprofen,"Legacy Pharmaceutical Packaging, LLC",Generic,"tablet, film coated",TAB,2,802273,5717210.0,7.13,0.1643
 US,ibuprofen,Ibuprofen,"TIME CAP LABORATORIES, INC",Generic,"tablet, film coated",TAB,6,682597,5009682.0,7.34,0.1695
 US,ibuprofen,Ibuprofen,"Westminster Pharmaceuticals, LLC",Generic,"tablet, film coated",TAB,6,497750,4618693.0,9.28,0.2147
-US,ibuprofen,Ibuprofen,Major Pharmaceuticals,Generic,"tablet; suspension; tablet, film coated",ML/TAB,14,288450,3970605.0,13.77,
+US,ibuprofen,Ibuprofen,Major Pharmaceuticals,Generic,"tablet; tablet, film coated; suspension",ML/TAB,14,288450,3970605.0,13.77,
 US,ibuprofen,Ibuprofen,"EXELAN PHARMACEUTICALS, INC.",Generic,"tablet, film coated",TAB,7,28952,3314156.0,114.47,2.3902
 US,ibuprofen,Ibuprofen,"Sun Pharmaceutical Industries, Inc.",Generic,suspension,ML,5,289453,2725887.0,9.42,0.0487
 US,ibuprofen,IBU,Dr. Reddy's Laboratories Limited,Generic,tablet,TAB,6,274860,2433785.0,8.85,0.2091
 US,ibuprofen,ibuprofen,Padagis Israel Pharmaceuticals Ltd,Generic,suspension,ML,2,170883,2333753.0,13.66,0.0739
-US,ibuprofen,ibuprofen,Major Pharmaceuticals,Generic,"suspension; tablet, film coated",ML/CAP/TAB,9,175367,1799813.0,10.26,
+US,ibuprofen,ibuprofen,Major Pharmaceuticals,Generic,"suspension; tablet, film coated",ML/TAB/CAP,9,175367,1799813.0,10.26,
 US,ibuprofen,Ibuprofen,"SOLA Pharmaceuticals, LLC",Generic,tablet,TAB/EA,2,601,967594.0,1609.97,
 US,ibuprofen,CHILDRENS IBUPROFEN,BluePoint Laboratories,Generic,suspension,ML,4,59251,736325.0,12.43,0.0673
 US,ibuprofen,Ibuprofen Oral,Camber Consumer Care Inc,Generic,suspension,ML,8,43717,612297.0,14.01,0.0794
-US,ibuprofen,good sense ibuprofen,L. Perrigo Company,Generic,"suspension; tablet, film coated",ML/TAB,11,58224,537302.0,9.23,
+US,ibuprofen,good sense ibuprofen,L. Perrigo Company,Generic,"tablet, film coated; suspension",TAB/ML,11,58224,537302.0,9.23,
 US,ibuprofen,Childrens Ibuprofen,Precision Dose Inc.,Generic,suspension,ML,6,36355,446479.0,12.28,3.4302
 US,ibuprofen,Ibuprofen,"Rugby Laboratories, Inc.",Generic,"capsule, liquid filled",CAP,1,22446,318328.0,14.18,0.1879
 US,ibuprofen,Childrens Ibuprofen,Padagis Israel Pharmaceuticals Ltd,Generic,suspension,ML,2,30371,307852.0,10.14,0.0583
 US,ibuprofen,Ibuprofen,"Actavis Pharma, Inc.",Generic,suspension,ML,2,14246,208252.0,14.62,0.0791
 US,ibuprofen,Childrens Ibuprofen Oral Suspension,"Pharmaceutical Associates, Inc.",Generic,suspension,ML,4,18213,190158.0,10.44,2.0437
-US,ibuprofen,Leader Ibuprofen,"Cardinal Health 110, LLC. dba Leader",Generic,"tablet, chewable; suspension; tablet, film coated",ML/TAB,10,13443,166482.0,12.38,
+US,ibuprofen,Leader Ibuprofen,"Cardinal Health 110, LLC. dba Leader",Generic,"tablet, chewable; suspension; tablet, film coated",TAB/ML,10,13443,166482.0,12.38,
 US,ibuprofen,foster and thrive ibuprofen,Strategic Sourcing Services LLC,Generic,"tablet, film coated",TAB,8,6347,156095.0,24.59,0.3735
-US,ibuprofen,Good Neighbor Pharmacy Childrens Ibuprofen,Amerisource Bergen,Generic,"suspension; tablet, chewable",ML/TAB,4,11964,155216.0,12.97,
+US,ibuprofen,Good Neighbor Pharmacy Childrens Ibuprofen,Amerisource Bergen,Generic,"suspension; tablet, chewable",TAB/ML,4,11964,155216.0,12.97,
 US,ibuprofen,ibuprofen,"Sun Pharmaceutical Industries, Inc.",Generic,suspension,ML,1,16092,152419.0,9.47,0.0541
-US,ibuprofen,good neighbor pharmacy ibuprofen,Amerisource Bergen,Generic,"suspension; suspension/ drops; tablet, film coated",ML/TAB,9,10477,127906.0,12.21,
+US,ibuprofen,good neighbor pharmacy ibuprofen,Amerisource Bergen,Generic,"suspension/ drops; tablet, film coated; suspension",ML/TAB,9,10477,127906.0,12.21,
 US,ibuprofen,LEADER CHILDRENS IBUPROFEN,"Cardinal Health 110, LLC. dba Leader",Generic,suspension,ML,2,8439,108454.0,12.85,0.0576
 US,ibuprofen,Ibuprofen Oral,Strategic Sourcing Services,Generic,suspension,ML,10,7047,91422.0,12.97,0.0709
 US,ibuprofen,leader Ibuprofen,"Cardinal Health 110, LLC. dba Leader",Generic,suspension,ML,1,4786,68731.0,14.36,0.0801
 US,ibuprofen,Ibuprofen,American Health Packaging,Generic,tablet,TAB,8,26692,65324.0,2.45,0.9611
 US,ibuprofen,foster and thrive childrens ibuprofen ib,Strategic Sourcing Services LLC,Generic,"tablet, chewable",TAB,1,2082,65050.0,31.24,0.6488
 US,ibuprofen,Leader Childrens Ibuprofen,"Cardinal Health 110, LLC. dba Leader",Generic,suspension,ML,1,3887,61051.0,15.71,0.0845
-US,ibuprofen,sunmark ibuprofen,Strategic Sourcing Services LLC,Generic,,ML/TAB,9,1321,54861.0,41.53,
+US,ibuprofen,sunmark ibuprofen,Strategic Sourcing Services LLC,Generic,,TAB/ML,9,1321,54861.0,41.53,
 US,ibuprofen,Caldolor,Cumberland Pharmaceuticals Inc.,"Brand, single source",injection,ML,3,1672,41544.0,24.85,0.2054
-US,ibuprofen,Good Neighbor Pharmacy ibuprofen,Amerisource Bergen,Generic,"suspension; tablet, film coated",ML/CAP,3,2847,35092.0,12.33,
-US,ibuprofen,Good Sense Ibuprofen,L. Perrigo Company,Generic,"suspension; tablet, film coated",TAB/ML,3,2352,31053.0,13.2,
+US,ibuprofen,Good Neighbor Pharmacy ibuprofen,Amerisource Bergen,Generic,"tablet, film coated; suspension",ML/CAP,3,2847,35092.0,12.33,
+US,ibuprofen,Good Sense Ibuprofen,L. Perrigo Company,Generic,"suspension; tablet, film coated",ML/TAB,3,2352,31053.0,13.2,
 US,ibuprofen,Ibuprofen,"Florida Pharmaceutical Products, LLC",Generic,"tablet, film coated",TAB,3,2499,24291.0,9.72,0.2571
 US,ibuprofen,Dye Free Childrens Ibuprofen,Precision Dose Inc.,Generic,suspension,ML,3,7515,23489.0,3.13,0.6346
 US,ibuprofen,good neighbor pharmacy childrens ibuprofen,Amerisource Bergen,Generic,"tablet, chewable",TAB,1,2329,22666.0,9.73,0.3192
@@ -1899,8 +1892,8 @@ US,ibuprofen,Ibuprofen,"Strategic Sourcing Services, LLC",Generic,"tablet, film 
 US,ibuprofen,Childrens Ibuprofen Oral Suspension,McKesson Corporation dba SKY Packaging,Generic,,ML,2,289,455.0,1.57,0.4244
 US,ibuprofen,IBUPROFEN TABLETS 200MG 10'S,L. PERRIGO COMPANY,Generic,,TAB,1,17,175.0,10.3,0.211
 US,ibuprofen,IBUPROFEN,"Pharmaceutical Associates, Inc.",Generic,,ML,1,104,126.0,1.21,0.4438
-US,ibuprofen,Ibuprofen,Major Pharmaceuticals,OTC / unapproved / unclassified,,TAB,1,45,0.0,0.0,0.0
 US,ibuprofen,IBUPROFEN,Unknown labeler,OTC / unapproved / unclassified,,,3,326,0.0,0.0,
+US,ibuprofen,Ibuprofen,Major Pharmaceuticals,OTC / unapproved / unclassified,,TAB,1,45,0.0,0.0,0.0
 US,immunoglobulin G,GAMMAGARD Liquid,"Takeda Pharmaceuticals America, Inc.",Reference biologic,"injection, solution",GM,12,45606,190836088.0,4184.45,99.237
 US,immunoglobulin G,Hizentra,CSL Behring AG,Reference biologic,liquid,EA,12,51649,149269425.0,2890.07,574.3536
 US,immunoglobulin G,Gamunex-C,"GRIFOLS USA, LLC",Reference biologic,injection,ML,12,37133,127769852.0,3440.87,9.0449
@@ -2011,7 +2004,7 @@ US,levothyroxine,Levothyroxine sodium,"Teva Pharmaceuticals, Inc.",Generic,table
 US,levothyroxine,Unithroid,Amneal Pharmaceuticals LLC,"Brand, generic competition",tablet,TAB,12,21795,1304856.0,59.87,1.2276
 US,levothyroxine,LEVOXYL,Pfizer Laboratories Div Pfizer Inc,"Brand, generic competition",tablet,TAB,11,24905,732995.0,29.43,0.5913
 US,levothyroxine,Levothyroxine Sodium,"Lannett Company, Inc.",Authorized generic,,CAP,12,5152,700677.0,136.0,3.3339
-US,levothyroxine,Levothyroxine Sodium,"Fresenius Kabi USA, LLC","Brand, single source","injection, solution; injection, powder, lyophilized, for solution",EA/ML,5,1083,610223.0,563.46,
+US,levothyroxine,Levothyroxine Sodium,"Fresenius Kabi USA, LLC","Brand, single source","injection, solution; injection, powder, lyophilized, for solution",ML/EA,5,1083,610223.0,563.46,
 US,levothyroxine,THYQUIDITY,"Azurity Pharmaceuticals, Inc.","Brand, single source",,ML,1,1798,396213.0,220.36,1.3891
 US,levothyroxine,Levothyroxine Sodium,"Fresenius Kabi USA, LLC","Brand, generic competition","injection, powder, lyophilized, for solution",EA,4,339,393286.0,1160.14,173.3141
 US,levothyroxine,LEVOTHYROXINE SODIUM,NorthStar RxLLC,Generic,tablet,TAB,14,26095,273626.0,10.49,0.2569
@@ -2029,7 +2022,7 @@ US,levothyroxine,LEVOTHYROXINE SODIUM,"Camber Pharmaceuticals, Inc.",Generic,tab
 US,lidocaine,Ztlido,Scilex Pharmaceuticals Inc.,"Brand, single source",patch,TDP,2,123577,67726160.0,548.05,12.1892
 US,lidocaine,Lidocaine,"Par Health USA, LLC",Authorized generic,patch,TDP,2,983080,67550867.0,68.71,2.2227
 US,lidocaine,Lidocaine,"Actavis Pharma, Inc.",Generic,patch,TDP,4,234434,15183135.0,64.77,2.2515
-US,lidocaine,Lidocaine,Amneal Pharmaceuticals LLC,Generic,ointment; patch,GM/TDP,4,229528,15035459.0,65.51,
+US,lidocaine,Lidocaine,Amneal Pharmaceuticals LLC,Generic,patch; ointment,GM/TDP,4,229528,15035459.0,65.51,
 US,lidocaine,Rugby PAIN RELIEF PATCHES,RUGBY LABORATORIES,OTC / unapproved / unclassified,patch,TDP,3,382171,11977241.0,31.34,1.1336
 US,lidocaine,Leader PAIN RELIEF PATCHES,"Cardinal Health, 110 dba LEADER",OTC / unapproved / unclassified,patch,TDP,2,124492,4121932.0,33.11,1.1954
 US,lidocaine,Lidocaine Viscous,Hikma Pharmaceuticals USA Inc.,Generic,solution,ML,1,176526,3081618.0,17.46,0.1527
@@ -2039,7 +2032,7 @@ US,lidocaine,Lidocaine 4% Patch,SOLA Pharmaceuticals,OTC / unapproved / unclassi
 US,lidocaine,Lidocaine hydrochloride,"Westminster Pharmaceuticals, LLC",OTC / unapproved / unclassified,cream,GM,2,42957,1880410.0,43.77,0.547
 US,lidocaine,Lidocaine Hydrochloride,"Hospira, Inc.",Generic,"injection, solution",ML,36,162107,1367755.0,8.44,0.5477
 US,lidocaine,Xylocaine,"Fresenius Kabi USA, LLC","Brand, generic competition","injection, solution",ML,35,139417,1317560.0,9.45,0.9442
-US,lidocaine,Lidocaine Hydrochloride,"PAI Holdings, LLC dba PAI Pharma",Generic,solution,ML/TDP,4,81175,1239026.0,15.26,
+US,lidocaine,Lidocaine Hydrochloride,"PAI Holdings, LLC dba PAI Pharma",Generic,solution,TDP/ML,4,81175,1239026.0,15.26,
 US,lidocaine,Lidocaine,Macleods Pharmaceuticals Limited,Generic,ointment,GM,3,60480,1180090.0,19.51,0.345
 US,lidocaine,Lidocaine Hydrochloride,Eugia US LLC,Generic,"injection, solution",ML,21,116522,965966.0,8.29,0.6149
 US,lidocaine,PAIN RELIEF PATCHES,Amerisource Bergen,OTC / unapproved / unclassified,patch,TDP,1,36111,906162.0,25.09,1.2363
@@ -2048,7 +2041,7 @@ US,lidocaine,Lidocaine,Patrin Pharma Inc.,OTC / unapproved / unclassified,cream,
 US,lidocaine,Lidogel,PureTek Corporation,OTC / unapproved / unclassified,gel,GM,1,506,785215.0,1551.81,15.2217
 US,lidocaine,Lidocaine 4% Patch,"Oncora Pharma, LLC",OTC / unapproved / unclassified,patch,TDP,1,988,778204.0,787.66,38.9044
 US,lidocaine,Lidocaine,ARMAS PHARMACEUTICALS INC.,Generic,jelly,ML,1,5121,695777.0,135.87,3.8015
-US,lidocaine,Lidocaine Hydrochloride,"International Medication Systems, Limited",Generic,solution; injection; jelly,ML,6,25441,642712.0,25.26,1.2026
+US,lidocaine,Lidocaine Hydrochloride,"International Medication Systems, Limited",Generic,injection; solution; jelly,ML,6,25441,642712.0,25.26,1.2026
 US,lidocaine,lidocaine,"Glenmark Pharmaceuticals Inc., USA",Generic,ointment,GM,2,33235,609917.0,18.35,0.3314
 US,lidocaine,Lidocaine Pain Relief,"PAI Holdings, LLC dba PAI Pharma",OTC / unapproved / unclassified,patch,TDP,2,15565,532821.0,34.23,1.3198
 US,lidocaine,4 Lidocaine Topical Anesthetic,RUGBY LABORATORIES,OTC / unapproved / unclassified,cream,GM,1,19625,524998.0,26.75,0.7443
@@ -2116,7 +2109,7 @@ US,lidocaine,Lidocaine Hydrochloride,"Camber Pharmaceuticals, Inc.",Generic,"inj
 US,lidocaine,Leader Lidocaine,CARDINAL HEALTH,OTC / unapproved / unclassified,liquid,ML,1,28,117.0,4.2,0.0586
 US,lidocaine,Lidocaine Hydrochloride,"Precision Dose, Inc.",Generic,solution,ML,1,65,93.0,1.43,0.0683
 US,lidocaine,Lidocaine hydrochloride,NorthStar RxLLC,Generic,"injection, solution",ML,1,134,71.0,0.53,0.3755
-US,lidocaine,XYLOCAINE,AstraZeneca Pharmaceuticals LP,"Brand, single source",,,2,313,66.0,0.21,
+US,lidocaine,XYLOCAINE,AstraZeneca Pharmaceuticals LP,"Brand, generic competition",,,2,313,66.0,0.21,
 US,lidocaine,LIDOCN 1%,Unknown labeler,OTC / unapproved / unclassified,,,1,89,0.0,0.0,
 US,lidocaine,LIDOCN 2%,Unknown labeler,OTC / unapproved / unclassified,,,1,13,0.0,0.0,
 US,linaclotide,Linzess,"Allergan, Inc.","Brand, single source","capsule, gelatin coated",CAP,3,924006,571438443.0,618.44,17.7195
@@ -2127,13 +2120,13 @@ US,liraglutide,Liraglutide,Hikma Pharmaceuticals USA Inc.,Generic,injection,ML,2
 US,liraglutide,Liraglutide,Meitheal Pharmaceuticals Inc.,Generic,injection,ML,2,18562,6462684.0,348.17,43.8092
 US,liraglutide,Liraglutide,"Teva Pharmaceuticals, Inc.",Generic,"injection, solution",ML,1,1813,1690705.0,932.55,67.0755
 US,liraglutide,Liraglutide,"Lupin Pharmaceuticals, Inc.",Generic,injection,ML,2,1239,405602.0,327.36,41.1695
-US,lisdexamfetamine,Vyvanse,"Takeda Pharmaceuticals America, Inc.","Brand, generic competition","tablet, chewable; capsule",TAB/CAP,13,2886437,1065298638.0,369.07,
+US,lisdexamfetamine,Vyvanse,"Takeda Pharmaceuticals America, Inc.","Brand, generic competition","capsule; tablet, chewable",TAB/CAP,13,2886437,1065298638.0,369.07,
 US,lisdexamfetamine,lisdexamfetamine dimesylate,Alvogen Inc.,Generic,capsule,CAP,7,258238,31851982.0,123.34,4.1614
-US,lisdexamfetamine,LISDEXAMFETAMINE DIMESYLATE,"Sun Pharmaceutical Industries, Inc.",Generic,"tablet, chewable; capsule",CAP/TAB,13,144695,21490931.0,148.53,
+US,lisdexamfetamine,LISDEXAMFETAMINE DIMESYLATE,"Sun Pharmaceutical Industries, Inc.",Generic,"tablet, chewable; capsule",CAP/TAB,13,144695,21490930.0,148.53,
 US,lisdexamfetamine,Lisdexamfetamine Dimesylate,Amneal Pharmaceuticals LLC,Generic,capsule,CAP,6,105718,14414616.0,136.35,4.6136
-US,lisdexamfetamine,Lisdexamfetamine Dimesylate,SpecGx LLC,Generic,"capsule; tablet, chewable",TAB/CAP,12,86842,11120191.0,128.05,
+US,lisdexamfetamine,Lisdexamfetamine Dimesylate,SpecGx LLC,Generic,"tablet, chewable; capsule",CAP/TAB,12,86842,11120191.0,128.05,
 US,lisdexamfetamine,Lisdexamfetamine Dimesylate,"Elite Laboratories, Inc.",Generic,capsule,CAP,7,84541,10656315.0,126.05,4.2263
-US,lisdexamfetamine,LISDEXAMFETAMINE DIMESYLATE,"Camber Pharmaceuticals, Inc.",Generic,"capsule; tablet, chewable",TAB/CAP,13,73891,10230448.0,138.45,
+US,lisdexamfetamine,LISDEXAMFETAMINE DIMESYLATE,"Camber Pharmaceuticals, Inc.",Generic,"tablet, chewable; capsule",CAP/TAB,13,73891,10230448.0,138.45,
 US,lisdexamfetamine,Lisdexamfetamine Dimesylate,"Lannett Company, LLC",Generic,capsule,CAP,7,62308,8388154.0,134.62,4.5437
 US,lisdexamfetamine,LISDEXAMFETAMINE DIMESYLATE,Granules Pharmaceuticals Inc.,Generic,capsule,CAP,7,57000,7374661.0,129.38,4.3648
 US,lisdexamfetamine,Lisdexamfetamine dimesylate,Novadoz Pharmaceuticals LLC,Generic,"tablet, chewable",TAB,6,31978,6684730.0,209.04,6.9375
@@ -2164,7 +2157,7 @@ US,lisinopril,Lisinopril,"Teva Pharmaceuticals USA, Inc.",Generic,,TAB,1,142,128
 US,lisinopril,Lisinopril Tablets 5mg,"LUPIN PHARMACEUTICALS, INC.",Generic,,TAB,1,87,939.0,10.79,0.2025
 US,lisinopril,Lisinopril,"Chartwell RX, LLC",Generic,tablet,TAB,2,22,238.0,10.8,0.2233
 US,lisinopril,"Lisinopril Tablets, 40mg","LUPIN PHARMACEUTICALS, INC.",Generic,,TAB,1,12,139.0,11.62,0.2581
-US,lisinopril,ZESTRIL,AstraZeneca Pharmaceuticals LP,"Brand, single source",,,1,11,0.0,0.0,
+US,lisinopril,ZESTRIL,AstraZeneca Pharmaceuticals LP,"Brand, generic competition",,,1,11,0.0,0.0,
 US,lithium carbonate,Lithium Carbonate,"Glenmark Pharmaceuticals Inc., USA",Generic,"tablet; capsule; tablet, film coated, extended release",CAP/TAB,6,614430,9468770.0,15.41,
 US,lithium carbonate,Lithium Carbonate,Hikma Pharmaceuticals USA Inc.,"Brand, generic competition","tablet; capsule, gelatin coated",CAP/TAB,9,253479,4059603.0,16.02,
 US,lithium carbonate,Lithium Carbonate,Hikma Pharmaceuticals USA Inc.,Generic,"tablet, extended release",TAB,3,168386,3249804.0,19.3,0.2888
@@ -2175,14 +2168,14 @@ US,lithium carbonate,lithium carbonate,"Camber Pharmaceuticals, Inc.",Generic,ca
 US,lithium carbonate,Lithium Carbonate,"Sun Pharmaceutical Industries, Inc.",Generic,tablet,TAB,2,3790,61769.0,16.3,0.2727
 US,lithium carbonate,Lithium Carbonate,Mylan Pharmaceuticals Inc.,Generic,,TAB,3,1544,31137.0,20.17,0.3447
 US,lithium carbonate,LITHIUM CARBONATE,Alembic Pharmaceuticals Inc.,Generic,capsule,CAP,4,744,11036.0,14.83,0.2548
-US,lithium carbonate,Lithium Carbonate,American Health Packaging,Generic,"tablet, extended release; capsule",TAB/CAP,5,380,3403.0,8.96,
+US,lithium carbonate,Lithium Carbonate,American Health Packaging,Generic,"capsule; tablet, extended release",CAP/TAB,5,380,3403.0,8.96,
 US,losartan,Losartan Potassium,"Camber Pharmaceuticals, Inc.",Generic,"tablet, film coated",TAB,9,2250520,20640269.0,9.17,0.1904
 US,losartan,Losartan Potassium,Aurobindo Pharma Limited,Generic,"tablet, film coated",TAB,8,1571134,16508285.0,10.51,0.2186
 US,losartan,Losartan potassium,Novadoz Pharmaceuticals LLC,Generic,"tablet, film coated",TAB,6,855291,8725572.0,10.2,0.1519
 US,losartan,Losartan Potassium,Zydus Pharmaceuticals USA Inc.,Generic,"tablet, film coated",TAB,9,473952,5122665.0,10.81,0.1556
 US,losartan,Losartan Potassium,"Solco Healthcare US, LLC",Generic,"tablet, film coated",TAB,9,495859,4488236.0,9.05,0.1746
 US,losartan,Losartan Potassium,Alembic Pharmaceuticals Inc.,Generic,"tablet, film coated",TAB,8,231909,2010767.0,8.67,0.1432
-US,losartan,Losartan Potassium,"Lupin Pharmaceuticals, Inc.",Generic,tablet,TAB/EA,6,115671,1180865.0,10.21,
+US,losartan,Losartan Potassium,"Lupin Pharmaceuticals, Inc.",Generic,tablet,EA/TAB,6,115671,1180865.0,10.21,
 US,losartan,Losartan Potassium,NorthStar RxLLC,Generic,"tablet, film coated",TAB,6,41645,378091.0,9.08,0.1665
 US,losartan,Losartan potassium,Macleods Pharmaceuticals Limited,Generic,"tablet, film coated",TAB,8,18553,208176.0,11.22,0.2444
 US,losartan,Losartan Potassium,Granules Pharmaceuticals Inc.,Generic,tablet,TAB,7,12019,118743.0,9.88,0.2218
@@ -2204,7 +2197,7 @@ US,losartan,Losartan Potassium,Mckesson Corporation DBA SKY Packaginng,Generic,,
 US,losartan,Losartan Potassium,Torrent Pharmaceuticals Limited,Generic,,TAB,3,79,798.0,10.1,0.2393
 US,losartan,Losortan Potassium,Mckesson Corporation DBA SKY Packaginng,Generic,,TAB,1,66,220.0,3.33,0.3431
 US,losartan,Losartan Potassium,McKesson Corporation dba SKY Packaging,Generic,,TAB,1,15,14.0,0.92,0.312
-US,losartan,COZAAR,Merck Sharp & Dohme Corp.,"Brand, single source",,,1,45,0.0,0.0,
+US,losartan,COZAAR,Merck Sharp & Dohme Corp.,"Brand, generic competition",,,1,45,0.0,0.0,
 US,lumateperone,CAPLYTA,"Intra-Cellular Therapies, Inc","Brand, single source",capsule,CAP,4,256826,421557302.0,1641.41,54.082
 US,magnesium oxide,Magnesium Oxide,Par Health,OTC / unapproved / unclassified,tablet,TAB,2,581764,5581105.0,9.59,0.2085
 US,magnesium oxide,Magnesium Oxide,"Westminster Pharmaceuticals, LLC",OTC / unapproved / unclassified,tablet,TAB,1,42264,401349.0,9.5,0.2168
@@ -2230,7 +2223,7 @@ US,meclizine,Meclizine Hydrochloride,Rugby Laboratories,OTC / unapproved / uncla
 US,meclizine,Meclizine Hydrochloride,Amneal Pharmaceuticals LLC,Generic,tablet,TAB,4,19578,240738.0,12.3,0.2508
 US,meclizine,Meclizine HCl,BluePoint Laboratories,OTC / unapproved / unclassified,"tablet, chewable; tablet",TAB,3,16998,187527.0,11.03,0.2311
 US,meclizine,MECLIZINE HYDROCHLORIDE,Jubilant Cadista Pharmacuticals Inc.,Generic,tablet,TAB,4,14772,175565.0,11.88,0.254
-US,meclizine,Meclizine HCl,"Rising Pharma Holdings, Inc.",OTC / unapproved / unclassified,"tablet, chewable; tablet",TAB,3,7425,67724.0,9.12,0.1749
+US,meclizine,Meclizine HCl,"Rising Pharma Holdings, Inc.",OTC / unapproved / unclassified,"tablet; tablet, chewable",TAB,3,7425,67724.0,9.12,0.1749
 US,meclizine,Motion Sickness Relief,"Cardinal Health 110, LLC. DBA Leader",OTC / unapproved / unclassified,tablet,TAB,1,2410,37501.0,15.56,0.3712
 US,meclizine,Meclizine Hydrochloride,American Health Packaging,Generic,tablet,TAB,8,2573,34737.0,13.5,6.8658
 US,meclizine,Motion Sickness,Strategic Sourcing Services LLC,OTC / unapproved / unclassified,tablet,TAB,1,1040,19102.0,18.37,0.4278
@@ -2258,13 +2251,13 @@ US,medroxyprogesterone,Depo-SubQ Provera,Pharmacia & Upjohn Company LLC,"Brand, 
 US,medroxyprogesterone,Medroxyprogesterone Acetate,Amneal Pharmaceuticals NY LLC,Generic,"injection, suspension",ML,1,1112,30210.0,27.17,24.6007
 US,medroxyprogesterone,Medroxyprogesterone Acetate,"Teva Parenteral Medicines, Inc.",Generic,,ML,1,273,15208.0,55.71,71.4804
 US,medroxyprogesterone,MEDROXYPROGESTERONE ACETATE,"Afaxys Pharma, LLC",Generic,,ML,1,71,3631.0,51.14,63.5899
-US,medroxyprogesterone,MEDROXYPROGESTERONE ACETATE,"Sun Pharmaceutical Industries, Inc.",Generic,"injection, suspension",ML/EA,2,31,2482.0,80.05,
+US,medroxyprogesterone,MEDROXYPROGESTERONE ACETATE,"Sun Pharmaceutical Industries, Inc.",Generic,"injection, suspension",EA/ML,2,31,2482.0,80.05,
 US,medroxyprogesterone,Medroxyprogesterone Acetate,American Health Packaging,Generic,tablet,TAB,2,276,685.0,2.48,0.6731
 US,metformin,Metformin Hydrochloride,"Lifsa Drugs, LLC",Generic,tablet,TAB,2,21806,44869255.0,2057.66,21.6773
 US,metformin,Metformin Hydrochloride,Granules Pharmaceuticals Inc.,Generic,tablet,TAB,14,2615757,25558128.0,9.77,0.1114
 US,metformin,Metformin,Granules Pharmaceuticals Inc.,Generic,"tablet, extended release",TAB,5,1117079,14100684.0,12.62,0.1123
 US,metformin,Metformin Hydrochloride,Aurobindo Pharma Limited,Generic,"tablet, film coated; tablet, extended release",TAB,17,1193198,11730392.0,9.83,0.0905
-US,metformin,METFORMIN HYDROCHLORIDE,"Ascend Laboratories, LLC",Generic,"tablet, extended release; tablet, film coated",TAB,6,628477,7212456.0,11.48,0.1034
+US,metformin,METFORMIN HYDROCHLORIDE,"Ascend Laboratories, LLC",Generic,"tablet, film coated; tablet, extended release",TAB,6,628477,7212456.0,11.48,0.1034
 US,metformin,Metformin Hydrochloride,Laurus Labs Limited,Generic,"tablet, film coated",TAB,9,696232,6119724.0,8.79,0.1093
 US,metformin,METFORMIN HYDROCHLORIDE,Laurus Labs Limited,Generic,"tablet, extended release",TAB,5,447632,4659163.0,10.41,0.0931
 US,metformin,Metformin hydrochloride,"Legacy Pharmaceutical Packaging, LLC",Generic,tablet,TAB,3,530781,4382884.0,8.26,0.0739
@@ -2320,12 +2313,12 @@ US,metformin,Metformin Hydrochloride,"Epic Pharma, LLC",Generic,"tablet, film co
 US,metformin,Metformin Hydrochloride,"Solco Healthcare U.S., LLC",Generic,,TAB,2,87,1058.0,12.17,0.1753
 US,metformin,Metformin Hydrochloride,"Legacy Pharmaceutical Packaging, LLC",Generic,,TAB,1,84,492.0,5.86,0.0824
 US,metformin,Metformin Hydrochloride,AvPAK,Generic,"tablet, extended release",TAB,2,112,246.0,2.2,1.0622
-US,methadone,Methadone Hydrochloride,"VistaPharm, LLC",Generic,tablet; solution; concentrate,EA/TAB/ML,6,1372140,9888109.0,7.21,
+US,methadone,Methadone Hydrochloride,"VistaPharm, LLC",Generic,concentrate; tablet; solution,TAB/EA/ML,6,1372140,9888109.0,7.21,
 US,methadone,METHADOSE,SpecGx LLC,"Brand, generic competition",concentrate,ML,2,1579772,9780731.0,6.19,0.3713
 US,methadone,METHADONE HYDROCHLORIDE,Hikma Pharmaceuticals USA Inc.,"Brand, generic competition",,TAB,1,28828,5096305.0,176.78,176.7832
 US,methadone,Methadone Hydrochloride,Hikma Pharmaceuticals USA,Generic,concentrate,ML,2,857973,4735386.0,5.52,0.5304
-US,methadone,Methadone Hydrochloride,Hikma Pharmaceuticals USA Inc.,Generic,concentrate; solution,ML,3,8659,752667.0,86.92,1.0039
-US,methadone,METHADONE HYDROCHLORIDE,SpecGx LLC,Generic,solution; tablet,ML/TAB,7,32541,698411.0,21.46,
+US,methadone,Methadone Hydrochloride,Hikma Pharmaceuticals USA Inc.,Generic,solution; concentrate,ML,3,8659,752667.0,86.92,1.0039
+US,methadone,METHADONE HYDROCHLORIDE,SpecGx LLC,Generic,tablet; solution,ML/TAB,7,32541,698411.0,21.46,
 US,methadone,METHADONE HYDROCHLORIDE,Hikma Pharmaceuticals USA Inc.,Generic,tablet,TAB,4,30345,622178.0,20.5,0.2273
 US,methadone,Methadone Hydrochloride,"Camber Pharmaceuticals, Inc",Generic,tablet,TAB,2,9073,194308.0,21.42,0.2309
 US,methadone,Methadone Hydrochloride,Mylan Institutional LLC,"Brand, generic competition","injection, solution",ML,1,450,61982.0,137.74,24.9175
@@ -2343,7 +2336,7 @@ US,methylphenidate,JORNAY PM,Ironshore Pharmaceuticals Inc.,"Brand, single sourc
 US,methylphenidate,Quillivant,"NextWave Pharmaceuticals, Inc","Brand, single source","suspension, extended release",ML,4,231986,100433310.0,432.93,2.6434
 US,methylphenidate,QuilliChew ER,"NextWave Pharmaceuticals, Inc","Brand, single source","tablet, chewable, extended release",TAB,3,215921,78776156.0,364.84,11.8688
 US,methylphenidate,Methylphenidate Hydrochloride,"Trigen Laboratories, LLC",Generic,"tablet, extended release",TAB,5,1500910,58650988.0,39.08,1.2583
-US,methylphenidate,Methylphenidate Hydrochloride,SpecGx LLC,Generic,"tablet, extended release; capsule, extended release; tablet",TAB/CAP,14,570869,19613996.0,34.36,
+US,methylphenidate,Methylphenidate Hydrochloride,SpecGx LLC,Generic,"tablet, extended release; capsule, extended release; tablet",CAP/TAB,14,570869,19613996.0,34.36,
 US,methylphenidate,Methylphenidate Hydrochloride,Granules Pharmaceuticals Inc.,Generic,"capsule, extended release",CAP,5,132499,10558385.0,79.69,2.5998
 US,methylphenidate,Methylphenidate Hydrochloride,"Camber Pharmaceuticals, Inc.",Generic,"tablet, extended release",TAB,4,252544,9397054.0,37.21,1.1857
 US,methylphenidate,Cotempla XR-ODT,"Neos Therapeutics Brands, LLC","Brand, single source","tablet, orally disintegrating",TAB,3,14937,8875981.0,594.23,16.2354
@@ -2474,7 +2467,7 @@ US,mirabegron,Myrbetriq,"Astellas Pharma US, Inc.","Brand, generic competition",
 US,mirabegron,Mirabegron,Zydus Pharmaceuticals (USA) Inc.,Generic,"tablet, extended release",TAB,4,65982,23500992.0,356.17,9.2471
 US,mirabegron,MIRABEGRON,"Lupin Pharmaceuticals, Inc.",Generic,"tablet, film coated, extended release",TAB,4,45585,15776455.0,346.09,8.9972
 US,mirabegron,Myrbetriq,"Astellas Pharma US, Inc.","Brand, single source","granule, for suspension, extended release",ML,1,6918,1726050.0,249.5,1.9727
-US,nicotine,Nicotine,Rugby Laboratories,Generic,"gum, chewing; patch",TAB/TDP,28,835123,33594556.0,40.23,
+US,nicotine,Nicotine,Rugby Laboratories,Generic,"gum, chewing; patch",TDP/TAB,28,835123,33594556.0,40.23,
 US,nicotine,Nicotine,Dr. Reddy's Laboratories Inc.,"Brand, generic competition","patch, extended release",TDP,10,595771,25806548.0,43.32,1.746
 US,nicotine,Nicotrol,Pharmacia & Upjohn Company LLC,"Brand, single source","spray, metered",EA/ML,2,8751,4717897.0,539.13,
 US,nicotine,Nicotine Polacrilex,Dr. Reddy's Laboratories Inc.,Generic,lozenge,TAB,4,95570,4174170.0,43.68,0.3517
@@ -2490,13 +2483,13 @@ US,nicotine,"Rugby Nicotine Polacrilex Gum, Coated Fruit Flavor",Rugby Laborator
 US,nicotine,Nicotine,"Rising Pharma Holdings, Inc.",Generic,lozenge,TAB,2,14856,836960.0,56.34,0.4041
 US,nicotine,Mini Nicotine,"Rugby Laboratories, Inc.",Generic,lozenge,TAB,1,14408,721813.0,50.1,0.4085
 US,nicotine,NICOTINE,Padagis Israel Pharmaceuticals Ltd,Generic,"gum, chewing",TAB,1,14752,598584.0,40.58,0.305
-US,nicotine,foster and thrive nicotine,Strategic Sourcing Services LLC,Generic,"gum, chewing; lozenge",TAB/EA,13,12361,546151.0,44.18,
+US,nicotine,foster and thrive nicotine,Strategic Sourcing Services LLC,Generic,"gum, chewing; lozenge",EA/TAB,13,12361,546151.0,44.18,
 US,nicotine,Nicotine Mini,"Rugby Laboratories, Inc.",Generic,lozenge,TAB,2,8928,471686.0,52.83,0.4363
 US,nicotine,good sense nicotine,L. Perrigo Company,Generic,"lozenge; gum, chewing",EA/TAB,4,8258,439553.0,53.23,
 US,nicotine,Nicotine,Dr. Reddys Laboratories Inc.,"Brand, single source",kit,TDP,1,4846,384207.0,79.28,1.4833
 US,nicotine,Nicotine,AmerisourceBergen (Good Neighbor Pharmacy) 46122,Generic,"gum, chewing; lozenge",CAP/EA,5,7492,318230.0,42.48,
 US,nicotine,Nicotine Polacrilex,"CARDINAL HEALTH 110, LLC. DBA LEADER 70000",Generic,"gum, chewing",TAB,10,8496,311264.0,36.64,0.3346
-US,nicotine,Good Sense Nicotine,L. Perrigo Company,Generic,"lozenge; gum, chewing",EA/TAB,10,7145,278495.0,38.98,
+US,nicotine,Good Sense Nicotine,L. Perrigo Company,Generic,"gum, chewing; lozenge",TAB/EA,10,7145,278495.0,38.98,
 US,nicotine,Nicotine Polacrilex,AmerisourceBergen (Good Neighbor Pharmacy) 46122,Generic,"gum, chewing",EA/TAB/CAP,6,5307,195454.0,36.83,
 US,nicotine,Nicotine,McKesson Corporation dba SKY Packaging,Generic,"gum, chewing",EA,4,4334,163343.0,37.69,0.2771
 US,nicotine,foster and thrive STEP 1,Strategic Sourcing Services LLC,Generic,patch,TDP,1,3703,152914.0,41.29,1.6476
@@ -2508,7 +2501,7 @@ US,nicotine,Nicotine Mini,Cardinal Health (Leader) 70000,Generic,lozenge,TAB,2,1
 US,nicotine,Foster and Thrive Nicotine,Strategic Sourcing Services LLC,Generic,"lozenge; gum, chewing",EA,5,2870,86901.0,30.28,0.2614
 US,nicotine,Nicotine,"CARDINAL HEALTH 110, LLC. DBA LEADER 70000",Generic,lozenge,TAB,1,1756,74422.0,42.38,0.404
 US,nicotine,Mini Nicotine,AmerisourceBergen (Good Neighbor Pharmacy) 46122,Generic,lozenge,CAP,2,1491,72762.0,48.8,0.4208
-US,nicotine,Sunmark Nicotine,Strategic Sourcing Services LLC,Generic,,TAB/EA,8,1595,64337.0,40.34,
+US,nicotine,Sunmark Nicotine,Strategic Sourcing Services LLC,Generic,,EA/TAB,8,1595,64337.0,40.34,
 US,nicotine,Nicotine Mini,AmerisourceBergen (Good Neighbor Pharmacy) 46122,Generic,lozenge,CAP,2,1343,59435.0,44.26,0.4158
 US,nicotine,foster and thrive STEP 3,Strategic Sourcing Services LLC,Generic,patch,TDP,1,1106,45636.0,41.26,1.7478
 US,nicotine,Nicotine Transdermal System,Apotex Corp.,Generic,,TDP,3,1146,45602.0,39.79,1.7737
@@ -2583,10 +2576,10 @@ US,omeprazole,sunmark omeprazole,Strategic Sourcing Services LLC,"Brand, generic
 US,omeprazole,OMEPRAZOLE DR CAPS 10MG,APOTEX CORP.,Generic,,CAP,1,370,4284.0,11.58,0.3423
 US,omeprazole,Omeprazole,American Health Packaging,Generic,"capsule, delayed release",CAP,3,329,1667.0,5.07,0.4162
 US,omeprazole,leader omeprazole,"Cardinal Health 110, LLC. dba Leader","Brand, generic competition","tablet, delayed release",TAB,1,17,524.0,30.81,0.7088
-US,ondansetron,Ondansetron,"Glenmark Pharmaceuticals Inc., USA",Generic,"tablet, film coated; tablet, orally disintegrating",TAB,7,2511859,27037307.0,10.76,0.5584
+US,ondansetron,Ondansetron,"Glenmark Pharmaceuticals Inc., USA",Generic,"tablet, orally disintegrating; tablet, film coated",TAB,7,2511859,27037307.0,10.76,0.5584
 US,ondansetron,Ondansetron,"Rising Pharma Holdings, Inc.",Generic,"tablet, orally disintegrating",TAB,6,2014092,22493751.0,11.17,0.614
 US,ondansetron,Ondansetron,Aurobindo Pharma Limited,Generic,"tablet, orally disintegrating",TAB,2,1538853,16184369.0,10.52,0.531
-US,ondansetron,Ondansetron,NorthStar Rx LLC,Generic,"tablet, orally disintegrating; tablet, film coated; solution",TAB/ML,7,1013377,12227528.0,12.07,
+US,ondansetron,Ondansetron,NorthStar Rx LLC,Generic,"solution; tablet, film coated; tablet, orally disintegrating",TAB/ML,7,1013377,12227528.0,12.07,
 US,ondansetron,Ondansetron Hydrochloride,Aurobindo Pharma Limited,Generic,"tablet, film coated",TAB,2,630551,6392815.0,10.14,0.4062
 US,ondansetron,Ondansetron Hydrochloride,"Rising Pharma Holdings, Inc.",Generic,"tablet, film coated",TAB,4,502730,5620982.0,11.18,0.4185
 US,ondansetron,ONDANSETRON,Apotex Corp.,Generic,injection,ML,2,653302,4734741.0,7.25,2.4309
@@ -2632,7 +2625,7 @@ US,ondansetron,Ondansetron,Major Pharmaceuticals,Generic,,ML,2,185,926.0,5.0,1.6
 US,ondansetron,Ondansetron Hydrochloride,Heritage Pharmaceuticals Inc. d/b/a Avet Pharmaceuticals Inc.,Generic,,ML,3,702,827.0,1.18,0.5306
 US,ondansetron,Ondansetron,West-Ward Pharmaceuticals Corp,Generic,injection,ML,2,273,484.0,1.77,0.2273
 US,ondansetron,Ondansetron,Sandoz Inc,Generic,,TAB,2,95,379.0,3.99,2.8067
-US,oxcarbazepine,Trileptal,Novartis Pharmaceuticals Corporation,"Brand, generic competition","suspension; tablet, film coated",ML/TAB,4,55020,53420664.0,970.93,
+US,oxcarbazepine,Trileptal,Novartis Pharmaceuticals Corporation,"Brand, generic competition","suspension; tablet, film coated",TAB/ML,4,55020,53420664.0,970.93,
 US,oxcarbazepine,OXTELLAR XR,"Supernus Pharmaceuticals, Inc.","Brand, generic competition",tablet,TAB,3,26072,35778123.0,1372.28,18.1133
 US,oxcarbazepine,OXCARBAZEPINE,Apotex Corp.,Generic,"tablet, extended release",TAB,3,15252,13593309.0,891.25,11.9012
 US,oxcarbazepine,Oxcarbazepine,"Glenmark Pharmaceuticals Inc., USA",Generic,"tablet, film coated",TAB,3,531889,12720688.0,23.92,0.3065
@@ -2644,7 +2637,7 @@ US,oxcarbazepine,Oxcarbazepine,Ajanta Pharma USA Inc.,Authorized generic,,TAB,3,
 US,oxcarbazepine,OXCARBAZEPINE,"Camber Pharmaceuticals, Inc.",Generic,suspension,EA,1,32706,3735617.0,114.22,0.2358
 US,oxcarbazepine,Oxcarbazepine,Ajanta Pharma USA Inc.,Generic,"tablet, extended release",TAB,3,4267,3612004.0,846.5,11.4696
 US,oxcarbazepine,Oxcarbazepine,"EPIC PHARMA, LLC",Generic,suspension,ML,1,28539,3223948.0,112.97,0.2393
-US,oxcarbazepine,OXCARBAZEPINE,NorthStar RxLLC,Generic,"suspension; tablet, film coated",ML/TAB,5,55281,1660199.0,30.03,
+US,oxcarbazepine,OXCARBAZEPINE,NorthStar RxLLC,Generic,"tablet, film coated; suspension",ML/TAB,5,55281,1660199.0,30.03,
 US,oxcarbazepine,Oxcarbazepine,"Ingenus Pharmaceuticals, LLC",Generic,"tablet, extended release",TAB,3,1606,1478007.0,920.3,11.1569
 US,oxcarbazepine,Oxcarbazepine,"Ascend Laboratories, LLC",Generic,suspension,ML,1,8237,815181.0,98.97,0.2213
 US,oxcarbazepine,OXCARBAZEPINE,Advagen Pharma Ltd,Generic,suspension,ML,1,7719,767326.0,99.41,0.2019
@@ -2686,7 +2679,7 @@ US,pantoprazole,Pantoprazole,NorthStar RxLLC,Generic,"tablet, delayed release",T
 US,pantoprazole,Pantoprazole sodium,Ajanta Pharma USA Inc.,Generic,for suspension,EA,1,3241,727184.0,224.37,6.8584
 US,pantoprazole,pantoprazole sodium,Granules Pharmaceuticals Inc.,Generic,"tablet, delayed release",TAB,3,96171,722071.0,7.51,0.1819
 US,pantoprazole,Pantoprazole Sodium,Edenbridge Pharmaceuticals LLC.,Generic,"granule, delayed release",EA,1,3205,664894.0,207.46,6.4823
-US,pantoprazole,PANTOPRAZOLE SODIUM,"Sun Pharmaceutical Industries, Inc.",Generic,"granule, delayed release; injection, powder, lyophilized, for solution",ML/CAP,3,2829,469413.0,165.93,
+US,pantoprazole,PANTOPRAZOLE SODIUM,"Sun Pharmaceutical Industries, Inc.",Generic,"injection, powder, lyophilized, for solution; granule, delayed release",CAP/ML,3,2829,469413.0,165.93,
 US,pantoprazole,Pantoprazole Sodium,"Lannett Company, Inc.",Generic,"tablet, delayed release",TAB,3,17031,420086.0,24.67,0.6115
 US,pantoprazole,Pantoprazole,Dr.Reddy's Laboratories Limited,Generic,"tablet, delayed release",TAB,2,43695,412840.0,9.45,0.2428
 US,pantoprazole,Pantoprazole Sodium,Meitheal Pharmaceuticals Inc.,Generic,"injection, powder, for solution",EA,2,53680,406428.0,7.57,2.6766
@@ -2718,7 +2711,7 @@ US,pantoprazole,Pantoprazole Sodium,McKesson Corporation dba SKY Packaging,Gener
 US,pantoprazole,Pantoprazole Sodium,Devatis Inc.,Generic,"injection, powder, for solution",EA,2,32,522.0,16.32,2.3847
 US,pantoprazole,Pantoprazole sodium,BE Pharmaceuticals Inc.,Generic,"injection, powder, for solution",EA,1,27,152.0,5.61,3.8867
 US,pantoprazole,PANTOPRAZOLE SODIUM,Baxter Healthcare Company,"Brand, single source","injection, solution",ML,2,22,105.0,4.78,0.052
-US,pegfilgrastim,Neulasta,"Amgen, Inc",Reference biologic,kit; injection,ML,2,11859,38312245.0,3230.65,5223.4991
+US,pegfilgrastim,Neulasta,"Amgen, Inc",Reference biologic,injection; kit,ML,2,11859,38312245.0,3230.65,5223.4991
 US,pegfilgrastim,UDENYCA,"Coherus Oncology, Inc.",Biosimilar,"injection, solution",ML,3,15378,29304344.0,1905.6,2718.828
 US,pegfilgrastim,Fulphila,Biocon Biologics Inc.,Biosimilar,injection,ML,1,17566,25378804.0,1444.77,2368.3223
 US,pegfilgrastim,NYVEPRIA,Pfizer Laboratories Div Pfizer Inc,Biosimilar,"injection, solution",ML,1,5810,18262447.0,3143.28,4726.9263
@@ -2731,7 +2724,7 @@ US,pegfilgrastim,ZIEXTENZO,SANDOZ INC.,Biosimilar,,ML,1,115,245022.0,2130.63,354
 US,pembrolizumab,KEYTRUDA,Merck Sharp & Dohme LLC,Reference biologic,"injection, solution",ML,3,78912,753342746.0,9546.62,1097.608
 US,perampanel,Fycompa,"Catalyst Pharmaceuticals, Inc.","Brand, generic competition",suspension; tablet,ML/TAB,7,67236,82113177.0,1221.27,
 US,perampanel,Perampanel,"Teva Pharmaceuticals, Inc.",Generic,"tablet, film coated",TAB,6,9109,8347946.0,916.45,26.3191
-US,perampanel,Fycompa,Eisai Inc.,"Brand, generic competition",suspension; tablet,ML/TAB,6,486,502218.0,1033.37,
+US,perampanel,Fycompa,Eisai Inc.,"Brand, generic competition",tablet; suspension,ML/TAB,6,486,502218.0,1033.37,
 US,perampanel,Perampanel,"Sun Pharmaceutical Industries, Inc.",Generic,"tablet, film coated",TAB,5,118,100857.0,854.72,24.9584
 US,perampanel,Perampanel,Novadoz Pharmaceuticals LLC,Generic,"tablet, film coated",TAB,6,132,82623.0,625.93,18.32
 US,perampanel,PERAMPANEL,Novadoz Pharmaceuticals LLC,Generic,suspension,ML,1,11,12919.0,1174.43,3.2216
@@ -2747,7 +2740,7 @@ US,phenazopyridine,Leader Urinary Pain Relief,Cardinal Health,OTC / unapproved /
 US,phenazopyridine,Foster and Thrive Neighbor Pharmacy Urinary Pain Relief,Strategic Sourcing Services LLC,OTC / unapproved / unclassified,tablet,TAB,1,90,767.0,8.52,0.3945
 US,phenazopyridine,URO-PAIN,"Rising Pharma Holdings, Inc.",OTC / unapproved / unclassified,tablet,TAB,2,70,421.0,6.02,0.5271
 US,phenazopyridine,Sunmark Urinary Pain Relief,Strategic Sourcing Services LLC,OTC / unapproved / unclassified,tablet,TAB,1,52,386.0,7.43,0.4516
-US,phenobarbital,Phenobarbital,"Rising Pharma Holdings, Inc.",OTC / unapproved / unclassified,liquid; tablet,ML/TAB,15,92236,2165563.0,23.48,
+US,phenobarbital,Phenobarbital,"Rising Pharma Holdings, Inc.",OTC / unapproved / unclassified,tablet; liquid,ML/TAB,15,92236,2165563.0,23.48,
 US,phenobarbital,Phenobarbital Sodium,Hikma Pharmaceuticals USA Inc.,OTC / unapproved / unclassified,injection,ML,4,5137,940201.0,183.03,36.8604
 US,phenobarbital,Phenobarbital,Strides Pharma Science Limited,OTC / unapproved / unclassified,elixir,ML,1,14416,544618.0,37.78,0.0666
 US,phenobarbital,Phenobarbital Oral Solution,"PAI Holdings, LLC dba PAI Pharma",OTC / unapproved / unclassified,solution,ML,1,10691,395004.0,36.95,0.0637
@@ -2756,7 +2749,7 @@ US,phenobarbital,Phenobarbital,"WINDER LABORATORIES, LLC",OTC / unapproved / unc
 US,phenobarbital,Phenobarbital,"Westminster Pharmaceuticals, LLC",OTC / unapproved / unclassified,tablet,ML/TAB,22,16884,289598.0,17.15,
 US,phenobarbital,Phenobarbital,Hikma Pharmaceuticals USA Inc.,OTC / unapproved / unclassified,tablet,TAB,8,13016,216585.0,16.64,0.2719
 US,phenobarbital,Phenobarbital Sodium,Cameron Pharmaceuticals,OTC / unapproved / unclassified,injection,ML,7,2787,213137.0,76.48,12.8035
-US,phenobarbital,Phenobarbital,"e5 Pharma, LLC",OTC / unapproved / unclassified,tablet,TAB/EA/ML,20,5298,112160.0,21.17,
+US,phenobarbital,Phenobarbital,"e5 Pharma, LLC",OTC / unapproved / unclassified,tablet,EA/ML/TAB,20,5298,112160.0,21.17,
 US,phenobarbital,PHENOBARBITAL,Genus Lifesciences,OTC / unapproved / unclassified,tablet,,8,2601,46264.0,17.79,
 US,phenobarbital,PHENOBARBITAL 1/2GR TAB,"PAR HEALTH USA, LLC.",OTC / unapproved / unclassified,,TAB,1,1050,20717.0,19.73,0.2668
 US,phenobarbital,Phenobarbital,"Trigen Laboratories, LLC",OTC / unapproved / unclassified,elixir; tablet,TAB/ML,3,305,12970.0,42.53,
@@ -2879,7 +2872,7 @@ US,sacubitril / valsartan,Sacubitril and Valsartan,Amneal Pharmaceuticals NY LLC
 US,sacubitril / valsartan,ENTRESTO,Novartis Pharmaceuticals Corporation,"Brand, single source",pellet,CAP,1,135,102183.0,756.91,11.1081
 US,sacubitril / valsartan,Sacubitril and Valsartan,Novugen Pharma (USA) LLC,Generic,"tablet, film coated",TAB,3,512,37980.0,74.18,1.118
 US,sacubitril / valsartan,Sacubitril and Valsartan,"ANI Pharmaceuticals, Inc.",Generic,"tablet, film coated",TAB,5,154,15269.0,99.15,1.2845
-US,secukinumab,COSENTYX,Novartis Pharmaceuticals Corporation,Reference biologic,"injection; injection, solution, concentrate",ML,7,154503,1411653367.0,9136.74,3743.8554
+US,secukinumab,COSENTYX,Novartis Pharmaceuticals Corporation,Reference biologic,"injection, solution, concentrate; injection",ML,7,154503,1411653367.0,9136.74,3743.8554
 US,semaglutide,Ozempic,"Novo Nordisk Pharmaceutical Industries, LP","Brand, single source","injection, solution",ML,7,3695644,3678939886.0,995.48,314.5859
 US,semaglutide,WEGOVY,"Novo Nordisk Pharmaceutical Industries, LP","Brand, single source","injection, solution",ML,5,1995718,2571069545.0,1288.29,523.8586
 US,semaglutide,RYBELSUS,"Novo Nordisk Pharmaceutical Industries, LP","Brand, single source",tablet,TAB,3,201299,253843426.0,1261.03,31.9415
@@ -2893,7 +2886,7 @@ US,"sennosides, USP",Plus Pharma Senna,"Gemini Pharmaceuticals, Inc. dba Plus Ph
 US,"sennosides, USP",Senna,AmerisourceBergen (Good Neighbor Pharmacy) 46122,OTC / unapproved / unclassified,tablet,TAB,1,9997,95620.0,9.56,0.1638
 US,"sennosides, USP",Sennosides,"LEADER/ Cardinal Health 110, Inc.",OTC / unapproved / unclassified,"tablet, film coated",TAB,4,9390,80667.0,8.59,0.1461
 US,"sennosides, USP",Senna Laxative,Strategic Sourcing Services LLC,OTC / unapproved / unclassified,tablet,TAB,3,8152,74232.0,9.11,0.1546
-US,"sennosides, USP",Senokot,"Atlantis Consumer Healthcare, Inc.",OTC / unapproved / unclassified,"tablet, film coated; tablet",TAB,5,4172,64929.0,15.56,0.3155
+US,"sennosides, USP",Senokot,"Atlantis Consumer Healthcare, Inc.",OTC / unapproved / unclassified,"tablet; tablet, film coated",TAB,5,4172,64929.0,15.56,0.3155
 US,"sennosides, USP",Leader Regular Strength Chocolate Laxative sennosides,CARDINAL HEALTH,OTC / unapproved / unclassified,tablet,TAB,1,3947,40076.0,10.15,0.3083
 US,"sennosides, USP",Senna Syrup,"Llorens Pharmaceutical International Division, Inc.",OTC / unapproved / unclassified,liquid,ML,1,2214,30609.0,13.83,0.0623
 US,"sennosides, USP",SENNA,STRATEGIC SOURCING SERVICES LLC,OTC / unapproved / unclassified,,TAB,1,1643,18764.0,11.42,0.176
@@ -2913,7 +2906,7 @@ US,sertraline,Sertraline Hydrochloride,"Lupin Pharmaceuticals, Inc.",Generic,"ta
 US,sertraline,Sertraline Hydrochloride,Cipla USA Inc.,Generic,capsule; tablet,CAP/TAB,9,1756730,18961427.0,10.79,
 US,sertraline,Sertraline Hydrochloride,Aurobindo Pharma Limited,Generic,"tablet, film coated",TAB,9,1795427,18154548.0,10.11,0.2252
 US,sertraline,sertraline HCl,Almatica Pharma LLC,"Brand, generic competition",capsule,CAP,2,60923,11250434.0,184.67,5.3691
-US,sertraline,Sertraline Hydrochloride,NorthStar Rx LLC,Generic,"tablet, film coated; solution",TAB/ML,13,909234,10387534.0,11.42,
+US,sertraline,Sertraline Hydrochloride,NorthStar Rx LLC,Generic,"solution; tablet, film coated",TAB/ML,13,909234,10387534.0,11.42,
 US,sertraline,Sertraline Hydrochloride,"Legacy Pharmaceutical Packaging, LLC",Generic,tablet,TAB,3,820092,7432186.0,9.06,0.1902
 US,sertraline,Sertraline hydrochloride,Granules Pharmaceuticals Inc.,Generic,"tablet, film coated",TAB,6,603559,5779821.0,9.58,0.2119
 US,sertraline,SERTRALINE HYDROCHLORIDE,"Camber Pharmaceuticals, Inc.",Generic,tablet,TAB,3,515473,5351438.0,10.38,0.2111
@@ -2922,7 +2915,7 @@ US,sertraline,SERTRALINE,"Exelan Pharmaceuticals, Inc.",Generic,,TAB,16,20055,23
 US,sertraline,Zoloft,Viatris Specialty LLC,"Brand, generic competition","tablet, film coated",TAB,3,2797,2130032.0,761.54,13.4876
 US,sertraline,Sertraline Hydrochloride,"Rising Pharma Holdings, Inc.",Generic,"solution, concentrate",ML,1,32150,1594152.0,49.58,0.5342
 US,sertraline,Zoloft,ROERIG,"Brand, generic competition",,TAB,5,1432,899039.0,627.82,13.3796
-US,sertraline,SERTRALINE HYDROCHLORIDE,"ACI Healthcare USA, Inc.",Generic,,ML/TAB,3,14563,691679.0,47.5,
+US,sertraline,SERTRALINE HYDROCHLORIDE,"ACI Healthcare USA, Inc.",Generic,,TAB/ML,3,14563,691679.0,47.5,
 US,sertraline,sertraline hydrochloride,"Alvogen, Inc.",Authorized generic,capsule,CAP,2,2584,397365.0,153.78,4.3734
 US,sertraline,SERTRALINE HYDROCHLORIDE,"Accord Healthcare, Inc.",Generic,"tablet, film coated",TAB,6,15717,201963.0,12.85,0.3286
 US,sertraline,Sertraline hydrochloride,Mylan Pharmaceuticals Inc.,Authorized generic,"solution, concentrate",ML,1,1731,84054.0,48.56,0.5267
@@ -2974,21 +2967,21 @@ US,sodium bicarbonate,Sodium Bicarbonate,OMNIVIUM PHARMACEUTICALS LLC.,Generic,"
 US,sodium bicarbonate,Sodium Bicarbonate,Civica,Generic,"injection, solution",ML,3,921,13957.0,15.15,0.1519
 US,sodium bicarbonate,Sodium Bicarbonate,Major Pharmaceuticals,OTC / unapproved / unclassified,tablet,TAB,1,1052,8937.0,8.5,0.0999
 US,sodium bicarbonate,Sodium Bicarbonate,APNAR PHARMA LP,OTC / unapproved / unclassified,tablet,TAB,1,71,789.0,11.11,0.102
-US,sodium chloride,Sodium Chloride,Baxter Healthcare Corporation,"Brand, generic competition","injection, solution; injection",ML,13,1441479,42590595.0,29.55,0.0327
+US,sodium chloride,Sodium Chloride,Baxter Healthcare Corporation,"Brand, generic competition","injection; injection, solution",ML,13,1441479,42590595.0,29.55,0.0327
 US,sodium chloride,Sodium Chloride,B. Braun Medical Inc.,"Brand, generic competition","injection, solution",ML,12,711013,22107144.0,31.09,0.0218
 US,sodium chloride,SODIUM CHLORIDE,"Hospira, Inc.","Brand, generic competition","injection, solution, concentrate",ML,2,25681,8668905.0,337.56,2.4179
 US,sodium chloride,BACTERIOSTATIC SODIUM CHLORIDE,"Hospira, Inc.","Brand, generic competition","injection, solution",ML,6,4189,7238825.0,1728.06,44.9605
-US,sodium chloride,Sodium Chloride,"Fresenius Kabi USA, LLC",Generic,"injection, solution, concentrate; injection, solution; injection",ML,14,30857,6512210.0,211.04,2.2683
+US,sodium chloride,Sodium Chloride,"Fresenius Kabi USA, LLC",Generic,"injection; injection, solution; injection, solution, concentrate",ML,14,30857,6512210.0,211.04,2.2683
 US,sodium chloride,Sodium Chloride,"Hospira, Inc.","Brand, generic competition","injection, solution; injection, solution, concentrate",ML,19,43070,5419066.0,125.82,1.0804
 US,sodium chloride,Sodium Chloride,ICU Medical Inc.,"Brand, generic competition","injection, solution",ML,10,371681,4424264.0,11.9,0.0119
-US,sodium chloride,SODIUM CHLORIDE,Baxter Healthcare Corporation,"Brand, generic competition","injection, solution; injection",ML,9,62552,1333016.0,21.31,0.0462
+US,sodium chloride,SODIUM CHLORIDE,Baxter Healthcare Corporation,"Brand, generic competition","injection; injection, solution",ML,9,62552,1333016.0,21.31,0.0462
 US,sodium chloride,Bacteriostatic Sodium Chloride,"Fresenius Kabi USA, LLC",Generic,injection,ML,4,414,697647.0,1685.14,61.4245
 US,sodium chloride,Sodium chloride,"Fresenius Kabi USA, LLC",Generic,"injection, solution",ML,22,42657,672666.0,15.77,0.008
 US,sodium chloride,SODIUM CHLORIDE,Baxter Healthcare Corporation,"Brand, single source",irrigant,ML,3,28800,601590.0,20.89,0.0073
 US,sodium chloride,Sodium Chloride,B. Braun Medical Inc.,"Brand, single source","irrigant; injection, solution",ML,5,24960,565753.0,22.67,0.006
 US,sodium chloride,Sodium Chloride,"Fresenius Kabi USA, LLC",OTC / unapproved / unclassified,"injection, solution",ML,2,978,366039.0,374.27,4.8724
-US,sodium chloride,Muro 128,Bausch & Lomb Incorporated,OTC / unapproved / unclassified,solution; ointment,ML/GM,4,14149,344874.0,24.37,
-US,sodium chloride,Sodium Chloride,Baxter Healthcare Corporation,"Brand, single source","irrigant; injection, solution",ML,5,8833,342252.0,38.75,0.0822
+US,sodium chloride,Muro 128,Bausch & Lomb Incorporated,OTC / unapproved / unclassified,ointment; solution,GM/ML,4,14149,344874.0,24.37,
+US,sodium chloride,Sodium Chloride,Baxter Healthcare Corporation,"Brand, single source","injection, solution; irrigant",ML,5,8833,342252.0,38.75,0.0822
 US,sodium chloride,Sodium Chloride,ICU Medical Inc.,"Brand, single source","irrigant; injection, solution",ML,11,15246,322131.0,21.13,0.0168
 US,sodium chloride,"Unnamed product, NDC 70756-0661",Unknown labeler,OTC / unapproved / unclassified,,,1,10783,269053.0,24.95,
 US,sodium chloride,"Unnamed product, NDC 69367-0220",Unknown labeler,OTC / unapproved / unclassified,,,1,18187,160924.0,8.85,
@@ -3057,7 +3050,7 @@ US,sodium fluoride,Sodium Fluoride 5000 Plus,"Method Pharmaceuticals, LLC",OTC /
 US,sodium fluoride,SoluVita S,Unknown labeler,OTC / unapproved / unclassified,,,1,17,246.0,14.48,
 US,sofosbuvir / velpatasvir,Sofosbuvir and Velpatasvir,Asegua Therapeutics LLC,Authorized generic,"tablet, film coated",TAB,1,46802,370916333.0,7925.22,271.3019
 US,sofosbuvir / velpatasvir,Epclusa,"Gilead Sciences, Inc.","Brand, generic competition","tablet, film coated",TAB,1,2390,51798044.0,21672.82,767.3216
-US,sofosbuvir / velpatasvir,Epclusa,"Gilead Sciences, Inc.","Brand, single source","tablet, film coated; pellet",TAB/EA,3,167,4617210.0,27647.96,
+US,sofosbuvir / velpatasvir,Epclusa,"Gilead Sciences, Inc.","Brand, single source","tablet, film coated; pellet",EA/TAB,3,167,4617210.0,27647.96,
 US,somatropin,Norditropin,Novo Nordisk,Reference biologic,"injection, solution",ML,4,93747,515447242.0,5498.28,1165.6308
 US,somatropin,GENOTROPIN,Pfizer Laboratories Div Pfizer Inc,Reference biologic,kit,EA,12,39590,189752171.0,4792.93,561.3298
 US,somatropin,Omnitrope,Sandoz Inc,Reference biologic,"kit; injection, solution",ML/EA,3,12192,50648599.0,4154.25,
@@ -3070,7 +3063,7 @@ US,somatropin,Nutropin AQ NuSpin 5,"Genentech, Inc.",Reference biologic,,ML,1,78
 US,sucralfate,Sucralfate,"VistaPharm, LLC",Generic,suspension,ML,1,53564,6531864.0,121.95,0.199
 US,sucralfate,Sucralfate,Amneal Pharmaceuticals LLC,Generic,suspension,ML,1,42742,4783839.0,111.92,0.1769
 US,sucralfate,Sucralfate,"Mylan Pharmaceuticals, Inc.",Authorized generic,tablet,TAB,2,196429,4462538.0,22.72,0.2572
-US,sucralfate,Carafate,"Allergan, Inc.","Brand, generic competition",suspension; tablet,TAB/ML,2,12616,4376932.0,346.94,
+US,sucralfate,Carafate,"Allergan, Inc.","Brand, generic competition",tablet; suspension,TAB/ML,2,12616,4376932.0,346.94,
 US,sucralfate,Sucralfate,"Teva Pharmaceuticals USA, Inc.",Generic,tablet,TAB,3,198784,4245486.0,21.36,0.244
 US,sucralfate,Sucralfate,"Pacific Pharma, Inc.",Authorized generic,suspension,ML,1,24815,2907031.0,117.15,0.1951
 US,sucralfate,Sucralfate,Viona Pharmaceuticals Inc,Generic,tablet,TAB,2,125466,2640350.0,21.04,0.2293
@@ -3085,7 +3078,7 @@ US,sucralfate,Sucralfate,Par Pharmaceutical Inc.,Authorized generic,,ML,1,1211,1
 US,sucralfate,Sucralfate,Mylan Institutional Inc.,Generic,tablet,TAB,2,2439,12990.0,5.33,0.3413
 US,sucralfate,Sucralfate,"PAI Holdings, LLC dba PAI Pharma",Generic,suspension,ML,3,564,6156.0,10.92,0.5565
 US,sucralfate,Sucralfate,Torrent Pharmaceuticals Limited,Generic,suspension,ML,1,64,5870.0,91.72,0.1371
-US,sucralfate,Sucralfate,American Health Packaging,Generic,suspension,ML/TAB,5,1168,5023.0,4.3,
+US,sucralfate,Sucralfate,American Health Packaging,Generic,suspension,TAB/ML,5,1168,5023.0,4.3,
 US,sucralfate,Sucralfate,Major Pharmaceuticals,Generic,suspension,ML,5,230,4080.0,17.74,0.4738
 US,sucralfate,Sucralfate,AvPAK,Generic,suspension,ML,2,339,2230.0,6.58,1.2082
 US,sucralfate,Sucralfate,"Chartwell RX, LLC",Generic,tablet,TAB,1,57,633.0,11.11,0.2099
@@ -3120,7 +3113,7 @@ US,tirzepatide,Mounjaro,Eli Lilly and Company,"Brand, single source","injection,
 US,tocilizumab,Actemra ACTPen,"Genentech, Inc.",Reference biologic,"injection, solution",ML,1,16640,58766550.0,3531.64,1263.5033
 US,tocilizumab,ACTEMRA,"Genentech, Inc.",Reference biologic,"injection, solution, concentrate",ML,3,22037,32437983.0,1471.98,92.2434
 US,tocilizumab,Actemra,"Genentech, Inc.",Reference biologic,"injection, solution",ML,1,5602,19121232.0,3413.29,1263.6208
-US,tocilizumab,TYENNE,"Fresenius Kabi USA, LLC",Biosimilar,"injection, solution, concentrate; injection, solution",ML,7,5016,9432032.0,1880.39,291.2564
+US,tocilizumab,TYENNE,"Fresenius Kabi USA, LLC",Biosimilar,"injection, solution; injection, solution, concentrate",ML,7,5016,9432032.0,1880.39,291.2564
 US,tocilizumab,Tofidence,Biogen MA Inc,Biosimilar,injection,ML,3,151,158354.0,1048.7,88.4982
 US,tolvaptan,Jynarque,"Otsuka America Pharmaceutical, Inc.","Brand, generic competition",kit,TAB,5,6647,138628052.0,20855.73,373.9569
 US,tolvaptan,TOLVAPTAN,"Lupin Pharmaceuticals, Inc.",Generic,kit,TAB,5,1538,24021575.0,15618.71,285.7806
@@ -3133,14 +3126,14 @@ US,trastuzumab,Enhertu,Daiichi Sankyo Inc.,Reference biologic,"injection, powder
 US,trastuzumab,KADCYLA,"Genentech, Inc.",Reference biologic,"injection, powder, lyophilized, for solution",EA,2,8293,51818844.0,6248.5,3830.6731
 US,trastuzumab,Herceptin,"Genentech, Inc.",Reference biologic,"injection, powder, lyophilized, for solution",EA,1,5601,16428442.0,2933.13,1157.7105
 US,trastuzumab,Kanjinti,"Amgen, Inc",Biosimilar,"injection, powder, lyophilized, for solution",EA,4,6714,14735009.0,2194.67,1662.5452
-US,trastuzumab,OGIVRI,Biocon Biologics Inc.,Biosimilar,"kit; injection, powder, lyophilized, for solution",EA,2,7465,12908875.0,1729.25,1281.8322
-US,trastuzumab,Trazimera,Pfizer Laboratories Div Pfizer Inc,Biosimilar,"kit; injection, powder, lyophilized, for solution",EA,2,6264,7821037.0,1248.57,971.9135
-US,trastuzumab,OGIVRI,Mylan Institutional LLC,Biosimilar,"injection, powder, lyophilized, for solution; kit",EA,2,642,2498069.0,3891.07,2278.6675
+US,trastuzumab,OGIVRI,Biocon Biologics Inc.,Biosimilar,"injection, powder, lyophilized, for solution; kit",EA,2,7465,12908875.0,1729.25,1281.8322
+US,trastuzumab,Trazimera,Pfizer Laboratories Div Pfizer Inc,Biosimilar,"injection, powder, lyophilized, for solution; kit",EA,2,6264,7821037.0,1248.57,971.9135
+US,trastuzumab,OGIVRI,Mylan Institutional LLC,Biosimilar,"kit; injection, powder, lyophilized, for solution",EA,2,642,2498069.0,3891.07,2278.6675
 US,trastuzumab,Ogivri for injection 420 mg/Vial,Biocon Biologics Inc,Biosimilar,,EA,1,1172,2020145.0,1723.67,1391.0586
 US,trastuzumab,TRAZIMERA 420MG SFDPO 1X30ML GVL US,PFIZER LABORATORIES DIV PFIZER INC,Biosimilar,,EA,1,1188,1705890.0,1435.93,1285.9753
 US,trastuzumab,Ontruzant,Organon LLC,Biosimilar,"kit; injection, powder, lyophilized, for solution",EA,3,822,1674592.0,2037.22,1359.0793
 US,trastuzumab,HERCESSI,Accord BioPharma Inc.,Biosimilar,"injection, powder, lyophilized, for solution",EA,2,590,839728.0,1423.27,1103.3939
-US,trastuzumab,HERZUMA,"Cephalon, Inc.",Biosimilar,"injection, powder, lyophilized, for solution; kit",EA,2,244,632458.0,2592.04,1031.5935
+US,trastuzumab,HERZUMA,"Cephalon, Inc.",Biosimilar,"kit; injection, powder, lyophilized, for solution",EA,2,244,632458.0,2592.04,1031.5935
 US,trazodone,Trazodone Hydrochloride,"Teva Pharmaceuticals USA, Inc.",Generic,tablet,TAB,9,3145907,30376830.0,9.66,0.2328
 US,trazodone,Trazodone Hydrochloride,Zydus Pharmaceuticals USA Inc.,Generic,tablet,TAB,9,2843794,27847376.0,9.79,0.2238
 US,trazodone,Trazodone Hydrochloride,Torrent Pharmaceuticals Limited,Generic,tablet,TAB,7,791585,9355628.0,11.82,0.2823
@@ -3162,7 +3155,7 @@ US,treprostinil,Yutrepia,"Liquidia Technologies, Inc.","Brand, single source",ca
 US,treprostinil,Treprostinil,Sandoz Inc,Generic,injection,ML,4,854,5508508.0,6450.24,82.2406
 US,treprostinil,Treprostinil,"Teva Parenteral Medicines, Inc.",Generic,"injection, solution",ML,4,484,3737365.0,7721.83,137.0615
 US,tretinoin,TRETINOIN,Padagis US LLC,Generic,cream; gel,GM,10,307019,15424977.0,50.24,1.3803
-US,tretinoin,Retin-A,"Bausch Health US, LLC","Brand, generic competition",gel; cream,GM,10,422238,14113485.0,33.43,0.9242
+US,tretinoin,Retin-A,"Bausch Health US, LLC","Brand, generic competition",cream; gel,GM,10,422238,14113485.0,33.43,0.9242
 US,tretinoin,Tretinoin,"Sun Pharmaceutical Industries, Inc.",Generic,cream,GM,6,325044,13023597.0,40.07,1.1462
 US,tretinoin,Tretinoin,Mylan Pharmaceuticals Inc.,Authorized generic,cream; gel,GM,12,166986,9116967.0,54.6,1.5302
 US,tretinoin,TRETINOIN,"Encube Ethicals, Inc.",Generic,gel,GM,1,10609,7435456.0,700.86,11.2328
@@ -3180,12 +3173,12 @@ US,tretinoin,Tretinoin (Microsphere),Mayne Pharma,Generic,gel,GM,1,327,174450.0,
 US,tretinoin,Altreno,"Bausch Health US, LLC","Brand, single source",lotion,GM,2,1045,96607.0,92.45,2.5273
 US,tretinoin,Tretinoin,American Health Packaging,Generic,capsule,CAP,1,14,30468.0,2176.26,21.9507
 US,tretinoin,Tretinoin,"Teva Pharmaceuticals USA, Inc.",Generic,,CAP,1,11,13273.0,1206.61,11.3442
-US,triamcinolone,Triamcinolone Acetonide,Padagis Israel Pharmaceuticals Ltd,Generic,"aerosol, spray; cream; ointment",GM,16,972140,14182331.0,14.59,0.1167
+US,triamcinolone,Triamcinolone Acetonide,Padagis Israel Pharmaceuticals Ltd,Generic,"cream; ointment; aerosol, spray",GM,16,972140,14182331.0,14.59,0.1167
 US,triamcinolone,TRIAMCINOLONE ACETONIDE,"Encube Ethicals, Inc.",Generic,ointment; cream,GM,8,804305,8994977.0,11.18,0.1174
 US,triamcinolone,TRIAMCINOLONE ACETONIDE,"Ascend Laboratories, LLC",Generic,cream,GM,8,494042,5996418.0,12.14,0.1011
-US,triamcinolone,Triamcinolone Acetonide,"Sun Pharmaceutical Industries, Inc.",Generic,ointment; paste; cream,GM,7,442922,5065942.0,11.44,0.3075
+US,triamcinolone,Triamcinolone Acetonide,"Sun Pharmaceutical Industries, Inc.",Generic,ointment; cream; paste,GM,7,442922,5065942.0,11.44,0.3075
 US,triamcinolone,Triamcinolone Acetonide,Macleods Pharmaceuticals Limited,Generic,cream,GM,6,353058,4089423.0,11.58,0.1262
-US,triamcinolone,Triamcinolone Acetonide,"Cosette Pharmaceuticals, Inc.",Generic,ointment; cream; paste; lotion,GM/ML,12,306512,3719321.0,12.13,
+US,triamcinolone,Triamcinolone Acetonide,"Cosette Pharmaceuticals, Inc.",Generic,lotion; cream; paste; ointment,ML/GM,12,306512,3719321.0,12.13,
 US,triamcinolone,Triamcinolone acetonide,Macleods Pharmaceuticals Limited,Generic,ointment,GM,8,180127,2705012.0,15.02,0.1356
 US,triamcinolone,Triamcinolone Acetonide,"E. Fougera & Co. a division of Fougera Pharmaceuticals, LLC",Generic,ointment,GM,4,278775,2541675.0,9.12,0.1402
 US,triamcinolone,Zilretta,"Pacira Pharmaceuticals, Inc.","Brand, single source",kit,EA,1,7012,2442448.0,348.32,252.0316
@@ -3198,7 +3191,7 @@ US,triamcinolone,Triamcinolone Acetonide,Amneal Pharmaceuticals LLC,Generic,"inj
 US,triamcinolone,TRIESENCE,"Alcon Laboratories, Inc.","Brand, generic competition",,ML,1,4199,853931.0,203.37,198.3682
 US,triamcinolone,Triamcinolone Acetonide,"Rising Pharma Holdings, Inc.",Generic,paste,GM,1,32018,846074.0,26.42,4.5596
 US,triamcinolone,Triamcinolone Acetonide,NorthStar Rx LLC,Generic,"injection, suspension",ML,4,210947,786353.0,3.73,2.329
-US,triamcinolone,TRIAMCINOLONE ACETONIDE,QUAGEN PHARMACEUTICALS LLC,Generic,lotion; paste,GM/ML,3,29075,784422.0,26.98,
+US,triamcinolone,TRIAMCINOLONE ACETONIDE,QUAGEN PHARMACEUTICALS LLC,Generic,paste; lotion,ML/GM,3,29075,784422.0,26.98,
 US,triamcinolone,Triamcinolone acetonide,NorthStar RxLLC,Generic,ointment,GM,7,44697,607051.0,13.58,0.1331
 US,triamcinolone,KENALOG-10,"E.R. Squibb & Sons, L.L.C.","Brand, generic competition","injection, suspension",ML,1,252936,512638.0,2.03,0.9225
 US,triamcinolone,Triamcinolone Acetonide,"TruPharma, LLC",Generic,cream,GM,1,24882,489900.0,19.69,0.0488
@@ -3253,23 +3246,23 @@ US,urea,UREA,AvPAK,OTC / unapproved / unclassified,cream,GM,3,1138,59536.0,52.32
 US,urea,Urea Cream 40%,Major Pharmaceuticals,OTC / unapproved / unclassified,,GM,2,532,29087.0,54.68,0.7434
 US,urea,Urea 39% Cream,"BioComp Pharma, Inc.",OTC / unapproved / unclassified,cream,,1,41,9096.0,221.85,
 US,ustekinumab,STELARA,"Janssen Biotech, Inc.",Reference biologic,"injection, solution",ML,3,52611,1327778106.0,25237.65,26982.6368
-US,ustekinumab,YESINTEK,Biocon Biologics Inc.,Interchangeable biosimilar,"injection, solution; solution",ML,4,3864,8177229.0,2116.26,954.5037
+US,ustekinumab,YESINTEK,Biocon Biologics Inc.,Interchangeable biosimilar,"solution; injection, solution",ML,4,3864,8177229.0,2116.26,954.5037
 US,ustekinumab,Selarsdi,"Teva Pharmaceuticals USA, Inc.",Interchangeable biosimilar,"injection, solution",ML,3,2081,7832008.0,3763.58,533.2968
 US,ustekinumab,Stelara,"Janssen Biotech, Inc.",Reference biologic,solution,ML,1,921,4331271.0,4702.79,66.5386
 US,ustekinumab,ustekinumab,"Janssen Biotech, Inc.",Reference biologic,"injection, solution",ML,3,507,3031954.0,5980.19,6969.6576
 US,ustekinumab,PYZCHIVA,SANDOZ INC,Interchangeable biosimilar,"injection, solution",ML,2,485,1927087.0,3973.38,4139.8218
 US,ustekinumab,STEQEYMA,"CELLTRION USA, Inc.",Interchangeable biosimilar,"injection, solution",ML,3,492,1744437.0,3545.6,1086.5379
 US,ustekinumab,Otulfi,"Fresenius Kabi USA, LLC",Interchangeable biosimilar,"injection, solution",ML,2,196,634545.0,3237.47,3496.1158
-US,valbenazine,INGREZZA,"Neurocrine Biosciences, Inc.","Brand, single source",capsule; kit,TAB/CAP,4,85513,662617353.0,7748.73,
+US,valbenazine,INGREZZA,"Neurocrine Biosciences, Inc.","Brand, single source",kit; capsule,CAP/TAB,4,85513,662617353.0,7748.73,
 US,valbenazine,INGREZZA Sprinkle,"Neurocrine Biosciences, Inc.","Brand, single source",capsule,CAP,3,1155,9328968.0,8077.03,271.554
-US,vigabatrin,SABRIL,Lundbeck Pharmaceuticals LLC,"Brand, generic competition","powder, for solution; tablet, film coated",EA/TAB,2,3920,103393616.0,26375.92,
-US,vigabatrin,VIGADRONE,"Upsher-Smith Laboratories, LLC",Generic,"powder, for solution; tablet",EA/TAB,2,6359,61422683.0,9659.17,
+US,vigabatrin,SABRIL,Lundbeck Pharmaceuticals LLC,"Brand, generic competition","tablet, film coated; powder, for solution",TAB/EA,2,3920,103393616.0,26375.92,
+US,vigabatrin,VIGADRONE,"Upsher-Smith Laboratories, LLC",Generic,"tablet; powder, for solution",EA/TAB,2,6359,61422683.0,9659.17,
 US,vigabatrin,VIGAFYDE,"Upsher-Smith Laboratories, LLC","Brand, single source",solution,ML,1,3180,32774234.0,10306.36,23.563
 US,vigabatrin,VIGABATRIN,"Cipla USA, Inc.",Generic,"powder, for solution",EA,1,6658,15461999.0,2322.32,18.2735
 US,vigabatrin,Vigabatrin,"Actavis Pharma, Inc.",Generic,"tablet, film coated",TAB,1,1081,11424197.0,10568.17,68.9214
 US,vigabatrin,Vigabatrin,Amneal Pharmaceuticals NY LLC,Generic,for solution,EA,2,1659,10946726.0,6598.39,56.3833
-US,vigabatrin,Vigabatrin,"Dr. Reddy¿s Laboratories Inc.,",Generic,"powder, for solution; tablet, film coated",EA/TAB,2,1314,9797886.0,7456.53,
-US,vigabatrin,Vigabatrin,Aurobindo Pharma Limited,Generic,"powder, for solution; tablet",TAB/EA,2,596,1152617.0,1933.92,
+US,vigabatrin,Vigabatrin,"Dr. Reddy¿s Laboratories Inc.,",Generic,"tablet, film coated; powder, for solution",TAB/EA,2,1314,9797886.0,7456.53,
+US,vigabatrin,Vigabatrin,Aurobindo Pharma Limited,Generic,"tablet; powder, for solution",TAB/EA,2,596,1152617.0,1933.92,
 US,vigabatrin,VIGABATRIN,"Par Health USA, LLC",Generic,"powder, for solution",EA,1,133,970973.0,7300.55,58.7294
 US,vigabatrin,VIGPODER,"Pyros Pharmaceuticals, Inc.",Generic,,EA,1,33,328847.0,9965.07,83.0423
 US,vigabatrin,Vigabatrin,Hikma Pharmaceuticals USA Inc,Generic,tablet,TAB,1,28,120293.0,4296.18,30.9634

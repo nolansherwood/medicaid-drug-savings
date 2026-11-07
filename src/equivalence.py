@@ -23,8 +23,14 @@ Each NDC gets a role and two group keys:
                across strengths (numbers removed from the clinical drug name)
 
 A generic is a switch target only with an FDA "A" therapeutic equivalence
-code in the MDRP file (AB, AA, AN, AO, AP, AT, A1, A2, ...). Authorized
-generics are the brand's own product and always qualify.
+code in the MDRP file (AB, AA, AN, AO, AP, AT, A1, A2, ...), or, when MDRP
+has no code or "NR", an A rating for every Orange Book product of its ANDA
+(D-026). Authorized generics are the brand's own product and always qualify.
+An NDC with no MDRP unit type takes the unit most other NDCs of its clinical
+drug have (D-026). Units are then put on one basis per clinical drug (D-027):
+EA with a stated volume becomes ML, and EA counts as TAB/CAP where the drug's
+other NDCs use those. unit_type and unit_factor record it (SDUD units x
+unit_factor = units in unit_type); the group keys use unit_type.
 
 Usage:
     python -m src.equivalence --year 2025
@@ -159,10 +165,13 @@ def build(year: int) -> pd.DataFrame:
         df[col] = df["product_rxcui"].map(lambda p: clinical[p][col] if isinstance(p, str) else None)
 
     role = df["product_type"].map(ROLE_BY_TYPE).fillna("none")
-    role = role.where(~((role == "generic") & ~df["mdrp_te_code"].map(is_a_rated)), "generic_not_a_rated")
+    rated = pt.a_rated(df["mdrp_te_code"], df["application_no"], pt.orange_book_a_rated())   # D-026
+    role = role.where(~((role == "generic") & ~rated), "generic_not_a_rated")
     df["role"] = role
 
-    unit = df["mdrp_unit_type"].fillna("UNK")
+    unit = pt.fill_units(df["mdrp_unit_type"], df["clinical_rxcui"])                           # D-026
+    unit, df["unit_factor"] = pt.common_units(unit, df["clinical_name"], df["clinical_rxcui"])  # D-027
+    df["unit_type"] = unit
     is_bio = df["modality"] == pt.BIO
     has = df["clinical_name"].notna() & (df["role"] != "none")
     bio_name = df["clinical_name"].fillna("").map(strip_biosimilar_suffix)

@@ -1,12 +1,12 @@
 pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amount,presentations
-0,Ozempic,"Novo Nordisk Pharmaceutical Industries, LP",semaglutide,"Brand, single source",Small molecule,3695736.0,3679040254.0,4
+0,Ozempic,"Novo Nordisk Pharmaceutical Industries, LP",semaglutide,"Brand, single source",Small molecule,3695736.0,3679040254.0,3
 1,Biktarvy,"Gilead Sciences, Inc.",bictegravir / emtricitabine / tenofovir alafenamide,"Brand, single source",Small molecule,780134.0,3491876241.0,2
 2,Humira,AbbVie Inc.,adalimumab,Reference biologic,Biologic,386973.0,3449136746.0,9
-3,Dupixent,Sanofi-Aventis U.S. LLC,dupilumab,Reference biologic,Biologic,765807.0,2988298895.0,8
+3,Dupixent,Sanofi-Aventis U.S. LLC,dupilumab,Reference biologic,Biologic,765807.0,2988298895.0,4
 4,WEGOVY,"Novo Nordisk Pharmaceutical Industries, LP",semaglutide,"Brand, single source",Small molecule,1995718.0,2571069545.0,5
 5,Jardiance,"Boehringer Ingelheim Pharmaceuticals, Inc.",empagliflozin,"Brand, single source",Small molecule,2945841.0,2479054435.0,2
 6,Trulicity,Eli Lilly and Company,dulaglutide,Reference biologic,Biologic,1940795.0,1926997400.0,4
-7,INVEGA SUSTENNA,"Janssen Pharmaceuticals, Inc.",paliperidone,"Brand, single source",Small molecule,638353.0,1793486905.0,7
+7,INVEGA SUSTENNA,"Janssen Pharmaceuticals, Inc.",paliperidone,"Brand, single source",Small molecule,638353.0,1793486905.0,5
 8,ZEPBOUND,Eli Lilly and Company,tirzepatide,"Brand, single source",Small molecule,1723702.0,1783538706.0,6
 9,Skyrizi,AbbVie Inc.,risankizumab,Reference biologic,Biologic,86735.0,1724805688.0,5
 10,Vraylar,"Allergan, Inc.",cariprazine,"Brand, single source",Small molecule,1096927.0,1613935812.0,4
@@ -31,7 +31,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 29,Mavyret,AbbVie Inc.,glecaprevir / pibrentasvir,"Brand, single source",Small molecule,45561.0,597784095.0,2
 30,Linzess,"Allergan, Inc.",linaclotide,"Brand, single source",Small molecule,924006.0,571438443.0,3
 31,Trelegy Ellipta,GlaxoSmithKline LLC,fluticasone / umeclidinium / vilanterol,"Brand, single source",Small molecule,779112.0,541539771.0,4
-32,ENTRESTO,Novartis Pharmaceuticals Corporation,sacubitril / valsartan,"Brand, single source",Small molecule,666978.0,537413162.0,4
+32,ENTRESTO,Novartis Pharmaceuticals Corporation,sacubitril / valsartan,"Brand, generic competition",Small molecule,666978.0,537413162.0,4
 33,TREMFYA,"Janssen Biotech, Inc.",guselkumab,Reference biologic,Biologic,36317.0,523912102.0,6
 34,Epidiolex,"Jazz Pharmaceuticals, Inc.",cannabidiol,"Brand, single source",Small molecule,152460.0,522780021.0,1
 35,Rexulti,"Otsuka America Pharmaceutical, Inc.",brexpiprazole,"Brand, single source",Small molecule,351599.0,522263859.0,6
@@ -69,14 +69,14 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 67,Lantus Solostar,sanofi-aventis U.S. LLC,insulin glargine,Reference biologic,Biologic,2542149.0,267155702.0,1
 68,XELJANZ,Pfizer Laboratories Div Pfizer Inc,tofacitinib,"Brand, single source",Small molecule,43863.0,264251342.0,5
 69,BENLYSTA,GlaxoSmithKline LLC,belimumab,Reference biologic,Biologic,66077.0,260334379.0,4
-70,Ravicti,"Horizon Therapeutics USA, Inc.",glycerol phenylbutyrate,"Brand, single source",Small molecule,4216.0,257817919.0,1
+70,Ravicti,"Horizon Therapeutics USA, Inc.",glycerol phenylbutyrate,"Brand, generic competition",Small molecule,4216.0,257817919.0,1
 71,ORENCIA,"E.R. Squibb & Sons, L.L.C.",abatacept,Reference biologic,Biologic,58386.0,256662640.0,5
 72,Exondys 51,"Sarepta Therapeutics, Inc.",eteplirsen,"Brand, single source",Small molecule,8928.0,254855777.0,2
 73,RYBELSUS,"Novo Nordisk Pharmaceutical Industries, LP",semaglutide,"Brand, single source",Small molecule,201299.0,253843426.0,3
 74,Valtoco,"Neurelis, Inc",diazepam,"Brand, single source",Small molecule,172086.0,246989149.0,4
 75,CRYSVITA,"Kyowa Kirin, Inc.",burosumab,Reference biologic,Biologic,9175.0,246257086.0,3
 76,Spiriva Respimat,"Boehringer Ingelheim Pharmaceuticals, Inc.",tiotropium,"Brand, single source",Small molecule,445561.0,245165523.0,3
-77,BOTOX,"Allergan, Inc.",botulinum toxin type A,Reference biologic,Biologic,338522.0,243796590.0,4
+77,BOTOX,"Allergan, Inc.",botulinum toxin type A,Reference biologic,Biologic,338522.0,243796590.0,2
 78,Tivicay,ViiV Healthcare Company,dolutegravir,"Brand, single source",Small molecule,94073.0,238561488.0,1
 79,EMGALITY,Eli Lilly and Company,galcanezumab,Reference biologic,Biologic,307374.0,237664577.0,3
 80,Daybue,Acadia Pharmaceuticals Inc.,trofinetide,"Brand, single source",Small molecule,5345.0,235532251.0,1
@@ -100,7 +100,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 98,LYBALVI,"Alkermes, Inc.",olanzapine / samidorphan,"Brand, single source",Small molecule,126835.0,196515841.0,4
 99,ADVAIR,GlaxoSmithKline LLC,fluticasone / salmeterol,"Brand, generic competition",Small molecule,871471.0,195990245.0,3
 100,Austedo,"Teva Neuroscience, Inc.",deutetrabenazine,"Brand, single source",Small molecule,30844.0,195690516.0,3
-101,Xolair,"Genentech, Inc.",omalizumab,Reference biologic,Biologic,57885.0,195542853.0,3
+101,Xolair,"Genentech, Inc.",omalizumab,Reference biologic,Biologic,57885.0,195542853.0,2
 102,ODEFSEY,"Gilead Sciences, Inc.",emtricitabine / rilpivirine / tenofovir alafenamide,"Brand, single source",Small molecule,46583.0,193655623.0,1
 103,Trintellix,"Takeda Pharmaceuticals America, Inc.",vortioxetine,"Brand, single source",Small molecule,359682.0,193590741.0,3
 104,Xcopri,"SK Life Science, Inc.",cenobamate,"Brand, single source",Small molecule,147586.0,192936408.0,10
@@ -111,7 +111,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 109,Cimzia,"UCB, Inc.",certolizumab pegol,Reference biologic,Biologic,34972.0,184357449.0,3
 110,OPDIVO,"E.R. Squibb & Sons, L.L.C.",nivolumab,Reference biologic,Biologic,27692.0,183825812.0,4
 111,Pulmozyme,"Genentech, Inc.",dornase alfa,Reference biologic,Biologic,42687.0,183741754.0,1
-112,EYLEA,"Regeneron Pharmaceuticals, Inc.",aflibercept,Reference biologic,Biologic,175878.0,183408730.0,4
+112,EYLEA,"Regeneron Pharmaceuticals, Inc.",aflibercept,Reference biologic,Biologic,175878.0,183408730.0,2
 113,AMONDYS 45,"Sarepta Therapeutics, Inc.",casimersen,"Brand, single source",Small molecule,3583.0,182771060.0,1
 114,Humalog,Eli Lilly and Company,insulin lispro,Reference biologic,Biologic,658716.0,181713561.0,9
 115,FASENRA,AstraZeneca Pharmaceuticals LP,benralizumab,Reference biologic,Biologic,35290.0,178644218.0,3
@@ -135,7 +135,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 133,Lenvima,Eisai Inc.,lenvatinib,"Brand, single source",Small molecule,6159.0,146070015.0,8
 134,NovoSeven,Novo Nordisk,factor VIIa,Reference biologic,Biologic,2242.0,144012478.0,1
 135,Livmarli,Mirum Pharmaceuticals Inc.,maralixibat,"Brand, single source",Small molecule,2203.0,142179853.0,4
-136,Nucala,GlaxoSmithKline LLC,mepolizumab,Reference biologic,Biologic,37859.0,141787382.0,5
+136,Nucala,GlaxoSmithKline LLC,mepolizumab,Reference biologic,Biologic,37859.0,141787382.0,4
 137,Skytrofa,"Ascendis Pharma Endocrinology, Inc.",lonapegsomatropin,Reference biologic,Biologic,17408.0,141231839.0,9
 138,Mirena,Bayer HealthCare Pharmaceuticals Inc.,levonorgestrel,"Brand, single source",Small molecule,123086.0,141041818.0,1
 139,AIMOVIG,"Amgen, Inc",erenumab,Reference biologic,Biologic,185708.0,140144088.0,2
@@ -173,7 +173,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 171,ALPROLIX,Bioverativ Therapeutics Inc.,coagulation factor IX recombinant immunoglobulin G1 fusion protein,Reference biologic,Biologic,3537.0,112919111.0,1
 172,Tradjenta,"Boehringer Ingelheim Pharmaceuticals, Inc.",linagliptin,"Brand, single source",Small molecule,171535.0,112192741.0,1
 173,Lupron Depot-PED,AbbVie Inc.,leuprolide,"Brand, single source",Small molecule,8329.0,112000284.0,6
-174,VABYSMO,"Genentech, Inc.",faricimab,Reference biologic,Biologic,87326.0,111686851.0,3
+174,VABYSMO,"Genentech, Inc.",faricimab,Reference biologic,Biologic,87326.0,111686851.0,2
 175,IDELVION,CSL Behring Lengnau AG,factor IX,Reference biologic,Biologic,3773.0,107837429.0,1
 176,Insulin Aspart,"Novo Nordisk Pharma, Inc.","insulin aspart, human",Reference biologic,Biologic,603050.0,107635570.0,3
 177,REZDIFFRA,"Madrigal Pharmaceuticals, Inc.",resmetirom,"Brand, single source",Small molecule,25035.0,107052746.0,3
@@ -183,12 +183,12 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 181,SABRIL,Lundbeck Pharmaceuticals LLC,vigabatrin,"Brand, generic competition",Small molecule,3920.0,103393616.0,2
 182,Krystexxa,"Horizon Therapeutics USA, Inc.",pegloticase,Reference biologic,Biologic,3571.0,102042462.0,2
 183,ZORYVE,"Arcutis Biotherapeutics, Inc.",roflumilast,"Brand, single source",Small molecule,115639.0,101782796.0,4
-184,Myrbetriq,"Astellas Pharma US, Inc.",mirabegron,"Brand, generic competition",Small molecule,192217.0,101047268.0,3
+184,Myrbetriq,"Astellas Pharma US, Inc.",mirabegron,"Brand, single source",Small molecule,192217.0,101047268.0,3
 185,Quillivant,"NextWave Pharmaceuticals, Inc",methylphenidate,"Brand, single source",Small molecule,231986.0,100433310.0,1
 186,SCEMBLIX,Novartis Pharmaceuticals Corporation,asciminib,"Brand, single source",Small molecule,4274.0,99840097.0,3
 187,REMICADE,"Janssen Biotech, Inc.",infliximab,Reference biologic,Biologic,43390.0,97415471.0,1
 188,Spiriva,"Boehringer Ingelheim Pharmaceuticals, Inc.",tiotropium,"Brand, generic competition",Small molecule,252657.0,95825381.0,1
-189,Apretude,ViiV Healthcare Company,cabotegravir,"Brand, single source",Small molecule,25426.0,95771735.0,2
+189,Apretude,ViiV Healthcare Company,cabotegravir,"Brand, single source",Small molecule,25426.0,95771735.0,1
 190,JANUMET,Merck Sharp & Dohme LLC,metformin / sitagliptin,"Brand, single source",Small molecule,208178.0,95723375.0,5
 191,Pomalyst,Celgene Corporation,pomalidomide,"Brand, single source",Small molecule,4218.0,95512877.0,4
 192,PERJETA,"Genentech, Inc.",pertuzumab,Reference biologic,Biologic,15156.0,94702829.0,1
@@ -226,7 +226,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 224,SLYND,"Exeltis USA, Inc.",drospirenone / inert ingredients,"Brand, single source",Small molecule,247168.0,77277501.0,1
 225,Afinitor,Novartis Pharmaceuticals Corporation,everolimus,"Brand, generic competition",Small molecule,3101.0,77026268.0,7
 226,Buprenorphine and Naloxone,Dr.Reddys Laboratories Inc,buprenorphine / naloxone,Generic,Small molecule,796386.0,76815744.0,4
-227,FERRIPROX,"Chiesi USA, Inc.",deferiprone,"Brand, generic competition",Small molecule,3400.0,76148291.0,4
+227,FERRIPROX,"Chiesi USA, Inc.",deferiprone,"Brand, single source",Small molecule,3400.0,76148291.0,4
 228,TECENTRIQ,"Genentech, Inc.",atezolizumab,Reference biologic,Biologic,10328.0,75300810.0,2
 229,Imbruvica,Pharmacyclics LLC,ibrutinib,"Brand, single source",Small molecule,4313.0,75203042.0,4
 230,Mekinist,Novartis Pharmaceuticals Corporation,trametinib,"Brand, single source",Small molecule,6829.0,74818809.0,3
@@ -259,7 +259,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 257,ELOCTATE,Bioverativ Therapeutics Inc.,efmoroctocog alfa,Reference biologic,Biologic,1938.0,63893343.0,1
 258,Viltepso,"NS Pharma, Inc.",viltolarsen,"Brand, single source",Small molecule,1327.0,63658112.0,1
 259,Fluticasone Propionate,Hikma Pharmaceuticals USA Inc.,fluticasone,Generic,Small molecule,4095352.0,63254894.0,1
-260,Methylphenidate Hydrochloride,"Trigen Laboratories, LLC",methylphenidate,Authorized generic,Small molecule,1509799.0,62988484.0,7
+260,Methylphenidate Hydrochloride,"Trigen Laboratories, LLC",methylphenidate,Generic,Small molecule,1509799.0,62988484.0,7
 261,Hadlima,Organon LLC,adalimumab,Interchangeable biosimilar,Biologic,50659.0,62828329.0,4
 262,Arcalyst,"Kiniksa Pharmaceuticals (UK), Ltd.",rilonacept,Reference biologic,Biologic,2677.0,62760148.0,1
 263,Lenalidomide,"Teva Pharmaceuticals, Inc.",lenalidomide,Generic,Small molecule,4697.0,62431531.0,6
@@ -310,7 +310,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 308,Keppra,"UCB, Inc.",levetiracetam,"Brand, generic competition",Small molecule,38296.0,51247546.0,8
 309,INVOKANA,"Janssen Pharmaceuticals, Inc.",canagliflozin,"Brand, single source",Small molecule,63312.0,51229434.0,2
 310,DOPTELET,"AkaRx, Inc.",avatrombopag,"Brand, single source",Small molecule,3465.0,50813333.0,3
-311,EYLEA HD,"Regeneron Pharmaceuticals, Inc",aflibercept,Reference biologic,Biologic,31295.0,50729120.0,2
+311,EYLEA HD,"Regeneron Pharmaceuticals, Inc",aflibercept,Reference biologic,Biologic,31295.0,50729120.0,1
 312,Omnitrope,Sandoz Inc,somatropin,Reference biologic,Biologic,12192.0,50648599.0,3
 313,SOLIRIS,Alexion Pharmaceuticals Inc.,eculizumab,Reference biologic,Biologic,2279.0,50630017.0,1
 314,Tafinlar,Novartis Pharmaceuticals Corporation,dabrafenib,"Brand, single source",Small molecule,4008.0,50448745.0,3
@@ -353,7 +353,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 351,Avastin,"Genentech, Inc.",bevacizumab,Reference biologic,Biologic,276792.0,44117918.0,2
 352,PREVYMIS,Merck Sharp & Dohme LLC,letermovir,"Brand, single source",Small molecule,6052.0,44068427.0,4
 353,BELBUCA,BioDelivery Sciences International Inc,buprenorphine,"Brand, single source",Small molecule,59194.0,43488425.0,7
-354,Sodium Chloride,Baxter Healthcare Corporation,sodium chloride,"Brand, single source",Small molecule,1454545.0,43018428.0,10
+354,Sodium Chloride,Baxter Healthcare Corporation,sodium chloride,"Brand, generic competition",Small molecule,1454545.0,43018428.0,10
 355,Liraglutide,"Teva Pharmaceuticals USA, Inc.",liraglutide,Authorized generic,Small molecule,99655.0,42921702.0,1
 356,TYVASO,United Therapeutics Corporation,treprostinil,"Brand, single source",Small molecule,2455.0,42604683.0,1
 357,MVASI,"Amgen, Inc",bevacizumab,Biosimilar,Biologic,27569.0,42245638.0,2
@@ -394,7 +394,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 392,VOQUEZNA,Phathom Pharmaceuticals Inc.,vonoprazan,"Brand, single source",Small molecule,54659.0,35720273.0,2
 393,NEXIUM,AstraZeneca Pharmaceuticals LP,esomeprazole,"Brand, generic competition",Small molecule,110313.0,35659684.0,8
 394,Lantus,sanofi-aventis U.S. LLC,insulin glargine,Reference biologic,Biologic,394214.0,35566826.0,1
-395,Breo Ellipta,GlaxoSmithKline LLC,fluticasone / vilanterol,"Brand, generic competition",Small molecule,87530.0,35436362.0,5
+395,Breo Ellipta,GlaxoSmithKline LLC,fluticasone / vilanterol,"Brand, single source",Small molecule,87530.0,35436362.0,5
 396,Nicotine,Rugby Laboratories,nicotine,Generic,Small molecule,874377.0,35233447.0,5
 397,Fensolvi,TOLMAR Inc.,leuprolide,"Brand, single source",Small molecule,1416.0,35092334.0,1
 398,Prolastin-C Liquid,"GRIFOLS USA, LLC",alpha 1-antitrypsin,Reference biologic,Biologic,5507.0,34778347.0,1
@@ -449,7 +449,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 447,Carbaglu,Recordati Rare Diseases,carglumic acid,"Brand, generic competition",Small molecule,510.0,28738510.0,1
 448,Humate-P,CSL Behring GmbH,factor VIII / von Willebrand factor,Reference biologic,Biologic,3061.0,28689994.0,1
 449,Gabapentin,"ScieGen Pharmaceuticals, Inc.",gabapentin,Generic,Small molecule,2192518.0,28593109.0,5
-450,Arnuity Ellipta,GlaxoSmithKline LLC,fluticasone,"Brand, single source",Small molecule,121678.0,28540926.0,5
+450,Arnuity Ellipta,GlaxoSmithKline LLC,fluticasone,"Brand, generic competition",Small molecule,121678.0,28540926.0,5
 451,DICLOFENAC SODIUM,Dr. Reddy's Laboratories Inc.,diclofenac,Generic,Small molecule,1451821.0,28142703.0,1
 452,Polyethylene Glycol 3350,Padagis Israel Pharmaceuticals Ltd,polyethylene glycol 3350,Generic,Small molecule,1689264.0,28105835.0,1
 453,Cibinqo,Pfizer Laboratories Div Pfizer Inc,abrocitinib,"Brand, single source",Small molecule,4731.0,27945886.0,3
@@ -490,7 +490,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 488,Reblozyl,Celgene Corporation,luspatercept,Reference biologic,Biologic,4884.0,25889755.0,2
 489,Nicotine,Dr. Reddy's Laboratories Inc.,nicotine,"Brand, generic competition",Small molecule,595771.0,25806548.0,3
 490,Deflazacort,Aurobindo Pharma Limited,deflazacort,Generic,Small molecule,3571.0,25785910.0,4
-491,Sandostatin LAR Depot,Novartis Pharmaceuticals Corporation,octreotide,"Brand, single source",Small molecule,6201.0,25744301.0,3
+491,Sandostatin LAR Depot,Novartis Pharmaceuticals Corporation,octreotide,"Brand, generic competition",Small molecule,6201.0,25744301.0,3
 492,TIBSOVO,Servier Pharmaceutical LLC,ivosidenib,"Brand, single source",Small molecule,836.0,25583752.0,1
 493,ADAKVEO,Novartis Pharmaceuticals Corporation,crizanlizumab,Reference biologic,Biologic,4279.0,25568669.0,1
 494,Metformin Hydrochloride,Granules Pharmaceuticals Inc.,metformin,Generic,Small molecule,2615757.0,25558128.0,3
@@ -521,7 +521,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 519,"Dextroamphetamine Saccharate, Amphetamine Aspartate, Dextroamphetamine Sulfate and Amphetamine Sulfate","Teva Pharmaceuticals USA, Inc.",amphetamine aspartate / amphetamine sulfate / dextroamphetamine saccharate / dextroamphetamine sulfate,Generic,Small molecule,1040785.0,23909670.0,7
 520,Twirla,"Agile Therapeutics, Inc.",ethinyl estradiol / levonorgestrel,"Brand, single source",Small molecule,59323.0,23796706.0,1
 521,Prednisolone,"PAI Holdings, LLC dba PAI Pharma",prednisolone,Generic,Small molecule,848438.0,23746949.0,1
-522,Hetlioz,Vanda Pharmaceuticals Inc.,tasimelteon,"Brand, single source",Small molecule,1157.0,23716458.0,2
+522,Hetlioz,Vanda Pharmaceuticals Inc.,tasimelteon,"Brand, generic competition",Small molecule,1157.0,23716458.0,2
 523,Tiotropium Bromide,"Lupin Pharmaceuticals, Inc.",tiotropium,Generic,Small molecule,54006.0,23680735.0,1
 524,Buspirone Hydrochloride,"Unichem Pharmaceuticals (USA), Inc.",buspirone,Generic,Small molecule,2165369.0,23628040.0,4
 525,HYDROXYZINE HYDROCHLORIDE,"Rising Pharma Holdings, Inc.",hydroxyzine,Generic,Small molecule,2411588.0,23555795.0,3
@@ -542,7 +542,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 540,DICLOFENAC POTASSIUM,"INA Pharmaceutics Inc,",diclofenac,Generic,Small molecule,38197.0,22710612.0,1
 541,Myalept,"Chiesi USA, Inc.",metreleptin,Reference biologic,Biologic,227.0,22708348.0,1
 542,Aspirin,Major Pharmaceuticals,aspirin,OTC / unapproved / unclassified,Other,2430851.0,22702753.0,0
-543,Sodium Chloride,B. Braun Medical Inc.,sodium chloride,"Brand, single source",Small molecule,736145.0,22673653.0,11
+543,Sodium Chloride,B. Braun Medical Inc.,sodium chloride,OTC / unapproved / unclassified,Other,736145.0,22673653.0,11
 544,Diacomit,"BIOCODEX, INC.",stiripentol,"Brand, single source",Small molecule,4932.0,22627027.0,4
 545,Truxima,"Cephalon, Inc.",rituximab,Interchangeable biosimilar,Biologic,8949.0,22574440.0,2
 546,Amlodipine Besylate,"Unichem Pharmaceuticals (USA), Inc.",amlodipine,Generic,Small molecule,2901007.0,22508680.0,3
@@ -559,7 +559,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 557,XENPOZYME,Genzyme Corporation,olipudase alfa,Reference biologic,Biologic,362.0,22098615.0,2
 558,NUZYRA,"Paratek Pharmaceuticals, Inc.",omadacycline,"Brand, single source",Small molecule,3039.0,22050499.0,2
 559,Emverm,Amneal Pharmaceuticals LLC,mebendazole,Generic,Small molecule,13646.0,22044787.0,1
-560,Pantoprazole Sodium,Aurobindo Pharma Limited,pantoprazole,Generic,Small molecule,2228173.0,21996286.0,3
+560,Pantoprazole Sodium,Aurobindo Pharma Limited,pantoprazole,Generic,Small molecule,2228173.0,21996286.0,2
 561,CELEBREX,Viatris Specialty LLC,celecoxib,"Brand, generic competition",Small molecule,28905.0,21976754.0,4
 562,BELSOMRA,Merck Sharp & Dohme LLC,suvorexant,"Brand, single source",Small molecule,51531.0,21967312.0,4
 563,DALVANCE,"Allergan, Inc.",dalbavancin,"Brand, generic competition",Small molecule,6535.0,21913665.0,1
@@ -599,7 +599,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 597,REBINYN,Novo Nordisk,factor IX,Reference biologic,Biologic,787.0,20019507.0,1
 598,Albuterol Sulfate,Hikma Pharmaceuticals USA Inc.,albuterol,Generic,Small molecule,826514.0,19912569.0,1
 599,Levothyroxine Sodium,Amneal Pharmaceuticals NY LLC,levothyroxine,Authorized generic,Small molecule,1829028.0,19838621.0,12
-600,Amoxicillin,"Teva Pharmaceuticals USA, Inc.",amoxicillin,Generic,Small molecule,2096536.0,19739178.0,10
+600,Amoxicillin,"Teva Pharmaceuticals USA, Inc.",amoxicillin,Generic,Small molecule,2096536.0,19739178.0,9
 601,CLOZAPINE,Aurobindo Pharma Limited,clozapine,Generic,Small molecule,490078.0,19621793.0,4
 602,Methylphenidate Hydrochloride,SpecGx LLC,methylphenidate,Generic,Small molecule,570869.0,19613996.0,14
 603,NITYR,Cycle Pharmaceuticals Ltd.,nitisinone,"Brand, single source",Small molecule,734.0,19597272.0,3
@@ -645,19 +645,19 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 643,fluticasone propionate and salmeterol,Hikma Pharmaceuticals USA Inc.,fluticasone / salmeterol,Generic,Small molecule,173306.0,17726415.0,3
 644,Albuterol Sulfate,Sandoz Inc,albuterol,Authorized generic,Small molecule,742565.0,17700173.0,1
 645,CYRAMZA,Eli Lilly and Company,ramucirumab,Reference biologic,Biologic,3813.0,17697185.0,2
-646,Sterile Water,Baxter Healthcare Company,,"Brand, generic competition",Small molecule,66662.0,17573954.0,0
+646,Sterile Water,Baxter Healthcare Company,,OTC / unapproved / unclassified,Other,66662.0,17573954.0,0
 647,Tracleer,"Actelion Pharmaceuticals US, Inc.",bosentan,"Brand, generic competition",Small molecule,1776.0,17487816.0,3
 648,Revuforj,"Syndax Pharmaceuticals, Inc.",revumenib,"Brand, single source",Small molecule,487.0,17477014.0,3
 649,BESREMi,PharmaEssentia USA,ropeginterferon alfa-2b,Reference biologic,Biologic,1126.0,17340258.0,1
 650,Cholbam,"Manchester Pharmaceuticals, LLC",cholic acid,"Brand, single source",Small molecule,506.0,17335251.0,2
-651,Albuterol Sulfate,Mylan Pharmaceuticals Inc.,albuterol,Generic,Small molecule,1087959.0,17219065.0,3
+651,Albuterol Sulfate,Mylan Pharmaceuticals Inc.,albuterol,Authorized generic,Small molecule,1087959.0,17219065.0,3
 652,AMJEVITA,"Amgen, Inc",adalimumab,Interchangeable biosimilar,Biologic,10860.0,17171184.0,6
 653,Monoferric,Pharmacosmos Therapeutics Inc.,ferric derisomaltose,"Brand, single source",Small molecule,10177.0,17146059.0,1
 654,ALDURAZYME,Genzyme Corporation,laronidase,Reference biologic,Biologic,908.0,17132185.0,1
 655,YUPELRI,Viatris Specialty LLC,revefenacin,"Brand, single source",Small molecule,21487.0,17092688.0,1
 656,XIAFLEX,"Endo USA, Inc.",collagenase Clostridium histolyticum,Reference biologic,Biologic,3538.0,17088081.0,1
 657,SAPROPTERIN DIHYDROCHLORIDE,"Par Health USA, LLC",sapropterin,Generic,Small molecule,4386.0,17067299.0,2
-658,Nitrofurantoin,"Rising Pharma Holdings, Inc.",nitrofurantoin,Authorized generic,Small molecule,8908.0,17064753.0,2
+658,Nitrofurantoin,"Rising Pharma Holdings, Inc.",nitrofurantoin,Generic,Small molecule,8908.0,17064753.0,2
 659,LUMIGAN,"Allergan, Inc.",bimatoprost,"Brand, single source",Small molecule,45946.0,17059418.0,1
 660,Dexmethylphenidate hydrochloride,Amneal Pharmaceuticals of New York LLC,dexmethylphenidate,Generic,Small molecule,334947.0,17018598.0,7
 661,Ketoconazole,Padagis Israel Pharmaceuticals Ltd,ketoconazole,Generic,Small molecule,981426.0,16820771.0,1
@@ -673,7 +673,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 671,bupropion hydrochloride,"Rising Pharma Holdings, Inc.",bupropion,Generic,Small molecule,1287802.0,16502076.0,2
 672,DYANAVEL XR,"NextWave Pharmaceuticals, Inc",amphetamine,"Brand, single source",Small molecule,41823.0,16480932.0,4
 673,Savella,"Allergan, Inc.",milnacipran,"Brand, single source",Small molecule,31082.0,16453961.0,5
-674,Pentasa,"Takeda Pharmaceuticals America, Inc.",mesalamine,"Brand, generic competition",Small molecule,16212.0,16436144.0,2
+674,Pentasa,"Takeda Pharmaceuticals America, Inc.",mesalamine,"Brand, single source",Small molecule,16212.0,16436144.0,2
 675,Herceptin,"Genentech, Inc.",trastuzumab,Reference biologic,Biologic,5601.0,16428442.0,1
 676,OXYCODONE AND ACETAMINOPHEN,SpecGx LLC,acetaminophen / oxycodone,Generic,Small molecule,902325.0,16411284.0,3
 677,Enspryng,"Genentech, Inc.",satralizumab,Reference biologic,Biologic,907.0,16364238.0,1
@@ -749,7 +749,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 747,Retin-A,"Bausch Health US, LLC",tretinoin,"Brand, generic competition",Small molecule,422238.0,14113485.0,5
 748,Metformin,Granules Pharmaceuticals Inc.,metformin,Generic,Small molecule,1117079.0,14100684.0,2
 749,CTEXLI,Mirum Pharmaceuticals Inc.,chenodeoxycholate,"Brand, single source",Small molecule,309.0,14094129.0,1
-750,Magnesium Sulfate,"Fresenius Kabi USA, LLC",magnesium sulfate,"Brand, generic competition",Small molecule,95855.0,14068204.0,4
+750,Magnesium Sulfate,"Fresenius Kabi USA, LLC",magnesium sulfate,"Brand, single source",Small molecule,95855.0,14068204.0,4
 751,Tacrolimus,"Glenmark Pharmaceuticals Inc., USA",tacrolimus,Generic,Small molecule,218545.0,14014348.0,2
 752,"dextroamphetamine saccharate, amphetamine aspartate monohydrate, dextroamphetamine sulfate and amphetamine sulfate",Granules Pharmaceuticals Inc.,amphetamine aspartate / amphetamine sulfate / dextroamphetamine saccharate / dextroamphetamine sulfate,Generic,Small molecule,477507.0,14009339.0,6
 753,Cefdinir,Aurobindo Pharma Limited,cefdinir,Generic,Small molecule,829686.0,13874924.0,3
@@ -838,7 +838,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 836,Olanzapine,Macleods Pharmaceuticals Limited,olanzapine,Generic,Small molecule,891814.0,11827791.0,10
 837,Cetirizine Hydrochloride,Dr. Reddy's Laboratories Inc.,cetirizine,Generic,Small molecule,1887452.0,11824638.0,1
 838,Mixed Salts of a Single Entity Amphetamine Product,SpecGx LLC,amphetamine aspartate / amphetamine sulfate / dextroamphetamine saccharate / dextroamphetamine sulfate,Generic,Small molecule,398188.0,11795651.0,6
-839,Metformin Hydrochloride,Aurobindo Pharma Limited,metformin,Generic,Small molecule,1193198.0,11730392.0,5
+839,Metformin Hydrochloride,Aurobindo Pharma Limited,metformin,Generic,Small molecule,1193198.0,11730392.0,4
 840,Buprenorphine and Naloxone,"Lannett Company, Inc.",buprenorphine / naloxone,Generic,Small molecule,187227.0,11713657.0,2
 841,Albuterol Sulfate,"Sun Pharmaceutical Industries, Inc.",albuterol,Generic,Small molecule,789290.0,11700586.0,1
 842,Clindamycin Phosphate,"Encube Ethicals, Inc.",clindamycin,Generic,Small molecule,478475.0,11676378.0,2
@@ -854,14 +854,14 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 852,Amoxicillin,"Rising Pharma Holdings, Inc.",amoxicillin,Generic,Small molecule,1217458.0,11490858.0,5
 853,MOTEGRITY,"Takeda Pharmaceuticals America, Inc.",prucalopride,"Brand, generic competition",Small molecule,19717.0,11465696.0,2
 854,Prazosin Hydrochloride,"ANI Pharmaceuticals, Inc.",prazosin,Generic,Small molecule,878511.0,11457530.0,3
-855,DOCIVYX,"Avyxa Pharma, LLC",docetaxel,"Brand, single source",Small molecule,3758.0,11430182.0,3
+855,DOCIVYX,"Avyxa Pharma, LLC",docetaxel,"Brand, generic competition",Small molecule,3758.0,11430182.0,3
 856,Vigabatrin,"Actavis Pharma, Inc.",vigabatrin,Generic,Small molecule,1081.0,11424197.0,1
 857,Fetzima,"Allergan, Inc.",levomilnacipran,"Brand, single source",Small molecule,20632.0,11415213.0,5
 858,Carvedilol,Zydus Pharmaceuticals USA Inc.,carvedilol,Generic,Small molecule,1232673.0,11409442.0,4
 859,Nifedipine,"Ingenus Pharmaceuticals, LLC",nifedipine,Generic,Small molecule,765250.0,11386744.0,6
 860,ZILBRYSQ,"UCB, Inc.",zilucoplan,"Brand, single source",Small molecule,266.0,11385320.0,2
 861,MEPSEVII,Ultragenyx Pharmaceutical Inc.,vestronidase alfa,Reference biologic,Biologic,136.0,11376186.0,1
-862,Calcium Gluconate,"Fresenius Kabi USA, LLC",calcium gluconate,"Brand, single source",Small molecule,36881.0,11355656.0,5
+862,Calcium Gluconate,"Fresenius Kabi USA, LLC",calcium gluconate,"Brand, generic competition",Small molecule,36881.0,11355656.0,5
 863,Mupirocin,"Teva Pharmaceuticals USA, Inc.",mupirocin,Generic,Small molecule,1004656.0,11350042.0,1
 864,ZYMFENTRA,CELLTRION USA Inc.,infliximab,Reference biologic,Biologic,1715.0,11335781.0,1
 865,Alkindi,"Eton Pharmaceuticals, Inc.",hydrocortisone,"Brand, single source",Small molecule,4043.0,11332482.0,4
@@ -932,13 +932,13 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 930,Alhemo,Novo Nordisk,concizumab,Reference biologic,Biologic,125.0,10127451.0,3
 931,FOLIC ACID,"SUNRISE PHARMACEUTICAL, INC.",folic acid,Generic,Small molecule,1191484.0,10088857.0,1
 932,Umeclidinium and Vilanterol Ellipta,Prasco Laboratories,umeclidinium / vilanterol,Authorized generic,Small molecule,27416.0,10060754.0,1
-933,Lactated Ringers,Baxter Healthcare Company,calcium chloride / lactate / potassium chloride / sodium chloride,"Brand, single source",Small molecule,468585.0,10050456.0,2
+933,Lactated Ringers,Baxter Healthcare Company,calcium chloride / lactate / potassium chloride / sodium chloride,"Brand, generic competition",Small molecule,468585.0,10050456.0,2
 934,IMDELLTRA (AMG757),"Amgen, Inc",tarlatamab,Reference biologic,Biologic,1009.0,10022199.0,2
 935,Dexlansoprazole,"Upsher-Smith Laboratories, LLC",dexlansoprazole,Generic,Small molecule,58693.0,9989328.0,2
 936,Oxcarbazepine,"Camber Pharmaceuticals, Inc.",oxcarbazepine,Generic,Small molecule,491573.0,9937589.0,3
 937,AFREZZA,Mannkind Corporation,"insulin, regular, human",Reference biologic,Biologic,5636.0,9930053.0,6
-938,PREZISTA,Janssen Products LP,darunavir,"Brand, single source",Small molecule,4522.0,9923398.0,3
-939,Methadone Hydrochloride,"VistaPharm, LLC",methadone,Generic,Small molecule,1372140.0,9888109.0,5
+938,PREZISTA,Janssen Products LP,darunavir,"Brand, generic competition",Small molecule,4522.0,9923398.0,3
+939,Methadone Hydrochloride,"VistaPharm, LLC",methadone,Generic,Small molecule,1372140.0,9888109.0,4
 940,Dasatinib,Prasco Laboratories,dasatinib,Authorized generic,Small molecule,1123.0,9884461.0,6
 941,Idhifa,Celgene Corporation,enasidenib,"Brand, single source",Small molecule,283.0,9866518.0,2
 942,Amitriptyline Hydrochloride,"Unichem Pharmaceuticals (USA), Inc.",amitriptyline,Generic,Small molecule,970444.0,9839547.0,6
@@ -978,7 +978,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 976,TYENNE,"Fresenius Kabi USA, LLC",tocilizumab,Biosimilar,Biologic,5016.0,9432032.0,5
 977,Methylphenidate Hydrochloride,"Camber Pharmaceuticals, Inc.",methylphenidate,Generic,Small molecule,252544.0,9397054.0,4
 978,Fluticasone Propionate and Salmeterol,"Teva Pharmaceuticals USA, Inc.",fluticasone / salmeterol,Authorized generic,Small molecule,81418.0,9386966.0,3
-979,Clotrimazole,"Sun Pharmaceutical Industries, Inc.",clotrimazole,OTC / unapproved / unclassified,Other,601670.0,9384476.0,4
+979,Clotrimazole,"Sun Pharmaceutical Industries, Inc.",clotrimazole,Generic,Small molecule,601670.0,9384476.0,4
 980,BLINCYTO (blinatumomab),AMGEN INC.,blinatumomab,Reference biologic,Biologic,821.0,9377168.0,1
 981,SYMDEKO,Vertex Pharmaceuticals Incorporated,ivacaftor / tezacaftor,"Brand, single source",Small molecule,380.0,9367958.0,2
 982,Trazodone Hydrochloride,Torrent Pharmaceuticals Limited,trazodone,Generic,Small molecule,791585.0,9355628.0,4
@@ -990,7 +990,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 988,meloxicam,Zydus Pharmaceuticals USA Inc.,meloxicam,Generic,Small molecule,1172219.0,9239693.0,2
 989,Metronidazole,"Teva Pharmaceuticals USA, Inc.",metronidazole,Generic,Small molecule,1064033.0,9213125.0,2
 990,Baclofen,"ANI Pharmaceuticals, Inc.",baclofen,Generic,Small molecule,11682.0,9201756.0,1
-991,Clonazepam,Advagen Pharma Ltd,clonazepam,Generic,Small molecule,1168209.0,9177754.0,5
+991,Clonazepam,Advagen Pharma Ltd,clonazepam,Generic,Small molecule,1168209.0,9177754.0,3
 992,APRISO,"Salix Pharmaceuticals, Inc.",mesalamine,"Brand, generic competition",Small molecule,15983.0,9177642.0,1
 993,Divalproex Sodium,"Unichem Pharmaceuticals (USA), Inc.",valproate,Generic,Small molecule,543394.0,9170754.0,3
 994,Eprontia,"Azurity Pharmaceuticals, Inc.",topiramate,"Brand, generic competition",Small molecule,21538.0,9149031.0,1
@@ -1019,7 +1019,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 1017,Kitabis Pak,"Pari Respiratory Equipment, Inc.",tobramycin,"Brand, generic competition",Small molecule,2077.0,8801129.0,1
 1018,ELAHERE,"ImmunoGen, Inc.",mirvetuximab soravtansine,Reference biologic,Biologic,793.0,8760911.0,1
 1019,Buprenorphine HCl and Naloxone HCl,Amneal Pharmaceuticals LLC,buprenorphine / naloxone,Generic,Small molecule,228909.0,8760837.0,2
-1020,Sodium Acetate,"Hospira, Inc.",sodium acetate,"Brand, generic competition",Small molecule,25402.0,8736354.0,2
+1020,Sodium Acetate,"Hospira, Inc.",sodium acetate,"Brand, single source",Small molecule,25402.0,8736354.0,2
 1021,Qutenza,Averitas Pharma Inc,capsaicin,"Brand, single source",Small molecule,3512.0,8734269.0,1
 1022,Hydrocodone Bitartrate and Acetaminophen,Amneal Pharmaceuticals of New York LLC,acetaminophen / hydrocodone,Generic,Small molecule,812527.0,8727917.0,2
 1023,Losartan potassium,Novadoz Pharmaceuticals LLC,losartan,Generic,Small molecule,855291.0,8725572.0,3
@@ -1042,7 +1042,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 1040,RYDAPT,Novartis Pharmaceuticals Corporation,midostaurin,"Brand, single source",Small molecule,419.0,8401969.0,1
 1041,Lisdexamfetamine Dimesylate,"Lannett Company, LLC",lisdexamfetamine,Generic,Small molecule,62308.0,8388154.0,7
 1042,Jentadueto XR,"Boehringer Ingelheim Pharmaceuticals, Inc.",linagliptin / metformin,"Brand, single source",Small molecule,14580.0,8385115.0,2
-1043,Oxcarbazepine,Ajanta Pharma USA Inc.,oxcarbazepine,Authorized generic,Small molecule,10140.0,8366100.0,3
+1043,Oxcarbazepine,Ajanta Pharma USA Inc.,oxcarbazepine,Generic,Small molecule,10140.0,8366100.0,3
 1044,Buprenorphine and Naloxone,"Sun Pharmaceutical Industries, Inc.",buprenorphine / naloxone,Generic,Small molecule,230323.0,8359281.0,2
 1045,atomoxetine,"Glenmark Pharmaceuticals Inc., USA",atomoxetine,Generic,Small molecule,292056.0,8355102.0,7
 1046,NULOJIX,"E.R. Squibb & Sons, L.L.C.",belatacept,Reference biologic,Biologic,10909.0,8348919.0,1
@@ -1050,7 +1050,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 1048,oseltamivir phosphate,Novadoz Pharmaceuticals LLC,oseltamivir,Generic,Small molecule,293314.0,8316969.0,1
 1049,Atomoxetine,Dr. Reddy's Laboratories Limited,atomoxetine,Generic,Small molecule,270379.0,8306255.0,7
 1050,Lamzede,"Chiesi USA, Inc.",velmanase alfa,Reference biologic,Biologic,345.0,8273305.0,1
-1051,Gablofen,Piramal Critical Care Inc,baclofen,"Brand, single source",Small molecule,12768.0,8268049.0,6
+1051,Gablofen,Piramal Critical Care Inc,baclofen,"Brand, generic competition",Small molecule,12768.0,8268049.0,6
 1052,Atomoxetine,"Rising Pharma Holdings, Inc.",atomoxetine,Generic,Small molecule,292013.0,8242960.0,7
 1053,Erythromycin Ethylsuccinate,"ANI Pharmaceuticals, Inc.",erythromycin,Generic,Small molecule,32544.0,8228754.0,2
 1054,LACTULOSE,"PAI Holdings, LLC dba PAI Pharma",lactulose,Generic,Small molecule,359832.0,8226855.0,1
@@ -1145,9 +1145,9 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 1143,Mirtazapine,"Rising Pharma Holdings, Inc.",mirtazapine,Generic,Small molecule,527771.0,7349078.0,7
 1144,Fluoxetine,"ScieGen Pharmaceuticals, Inc.",fluoxetine,Generic,Small molecule,653189.0,7347046.0,4
 1145,AZITHROMYCIN,"Epic Pharma, LLC",azithromycin,Generic,Small molecule,483461.0,7341406.0,2
-1146,Omeprazole,Aurobindo Pharma Limited,omeprazole,Generic,Small molecule,687513.0,7326660.0,4
+1146,Omeprazole,Aurobindo Pharma Limited,omeprazole,Generic,Small molecule,687513.0,7326660.0,3
 1147,Clonidine hydrochloride,Ajanta Pharma USA Inc.,clonidine,Generic,Small molecule,242654.0,7318400.0,1
-1148,Lithium Carbonate,Hikma Pharmaceuticals USA Inc.,lithium carbonate,"Brand, generic competition",Small molecule,421865.0,7309407.0,6
+1148,Lithium Carbonate,Hikma Pharmaceuticals USA Inc.,lithium carbonate,Generic,Small molecule,421865.0,7309407.0,6
 1149,ATORVASTATIN CALCIUM,"Camber Pharmaceuticals, Inc.",atorvastatin,Generic,Small molecule,690184.0,7276805.0,4
 1150,JOURNAVX,Vertex Pharmaceuticals Incorporated,suzetrigine,"Brand, single source",Small molecule,16813.0,7270520.0,1
 1151,Glyxambi,"Boehringer Ingelheim Pharmaceuticals, Inc.",empagliflozin / linagliptin,"Brand, single source",Small molecule,8858.0,7259455.0,2
@@ -1223,7 +1223,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 1221,Olanzapine,Dr. Reddy's Laboratories Ltd.,olanzapine,Generic,Small molecule,483597.0,6535972.0,3
 1222,Sucralfate,"VistaPharm, LLC",sucralfate,Generic,Small molecule,53564.0,6531864.0,1
 1223,Sterile Water,B. Braun Medical Inc.,water,"Brand, generic competition",Small molecule,49887.0,6526682.0,1
-1224,Prograf,"Astellas Pharma US, Inc.",tacrolimus,"Brand, single source",Small molecule,10513.0,6525075.0,6
+1224,Prograf,"Astellas Pharma US, Inc.",tacrolimus,"Brand, generic competition",Small molecule,10513.0,6525075.0,6
 1225,neffy,"ARS Pharmaceuticals Operations, Inc.",epinephrine,"Brand, single source",Small molecule,8377.0,6518020.0,2
 1226,Cabtreo,Bausch Health US LLC,adapalene / benzoyl peroxide / clindamycin,"Brand, single source",Small molecule,7247.0,6517036.0,1
 1227,Nexletol,"Esperion Therapeutics, Inc.",bempedoic acid,"Brand, single source",Small molecule,12001.0,6509643.0,1
@@ -1325,7 +1325,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 1323,Celecoxib,Alembic Pharmaceuticals Inc.,celecoxib,Generic,Small molecule,438431.0,5728840.0,4
 1324,DYMISTA,Viatris Specialty LLC,azelastine / fluticasone,"Brand, generic competition",Small molecule,26925.0,5727974.0,1
 1325,LISINOPRIL,"Exelan Pharmaceuticals, Inc",lisinopril,Generic,Small molecule,30398.0,5720494.0,6
-1326,METHADONE HYDROCHLORIDE,Hikma Pharmaceuticals USA Inc.,methadone,Generic,Small molecule,59173.0,5718483.0,2
+1326,METHADONE HYDROCHLORIDE,Hikma Pharmaceuticals USA Inc.,methadone,"Brand, generic competition",Small molecule,59173.0,5718483.0,2
 1327,Ibuprofen,"Legacy Pharmaceutical Packaging, LLC",ibuprofen,Generic,Small molecule,802273.0,5717210.0,2
 1328,OXYCODONE AND ACETAMINOPHEN,"Camber Pharmaceuticals, Inc.",acetaminophen / oxycodone,Generic,Small molecule,283725.0,5695490.0,4
 1329,Ocrevus Zunovo,"Genentech, Inc.",hyaluronidase / ocrelizumab,Reference biologic,Biologic,172.0,5686227.0,1
@@ -1373,7 +1373,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 1371,ketoconazole,"E. Fougera & Co. a division of Fougera Pharmaceuticals, LLC",ketoconazole,Generic,Small molecule,304398.0,5443017.0,1
 1372,VANFLYTA,Daiichi Sankyo Inc.,quizartinib,"Brand, single source",Small molecule,270.0,5435661.0,2
 1373,Haloperidol,Zydus Pharmaceuticals USA Inc.,haloperidol,Generic,Small molecule,272604.0,5425129.0,6
-1374,Sodium Chloride,"Hospira, Inc.",sodium chloride,"Brand, single source",Small molecule,43220.0,5419102.0,10
+1374,Sodium Chloride,"Hospira, Inc.",sodium chloride,"Brand, generic competition",Small molecule,43220.0,5419102.0,10
 1375,Estradiol valerate,"Xiromed, LLC",estradiol,Generic,Small molecule,48072.0,5413858.0,3
 1376,Lisinopril,"Legacy Pharmaceutical Packaging, LLC",lisinopril,Generic,Small molecule,689585.0,5413297.0,6
 1377,Mupirocin,"Sun Pharmaceutical Industries, Inc.",mupirocin,Generic,Small molecule,455902.0,5410551.0,2
@@ -1434,7 +1434,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 1432,Methylphenidate Hydrochloride,"Actavis Pharma, Inc.",methylphenidate,Generic,Small molecule,137887.0,5103872.0,4
 1433,Azelastine Hydrochloride,Apotex Corp.,azelastine,Generic,Small molecule,297533.0,5097625.0,1
 1434,ZOLPIDEM TARTRATE,Torrent Pharmaceuticals Limited,zolpidem,Generic,Small molecule,645188.0,5095179.0,2
-1435,Heparin Sodium,"Fresenius Kabi USA, LLC",heparin,Generic,Small molecule,61579.0,5093355.0,11
+1435,Heparin Sodium,"Fresenius Kabi USA, LLC",heparin,"Brand, generic competition",Small molecule,61579.0,5093355.0,11
 1436,Pantoprazole Sodium,Torrent Pharmaceuticals Limited,pantoprazole,Generic,Small molecule,611466.0,5093182.0,2
 1437,TobraDex,Novartis Pharmaceuticals Corporation,dexamethasone / tobramycin,"Brand, single source",Small molecule,17529.0,5090953.0,1
 1438,Photrexa Cross-linking Kit,Glaukos Corporation,riboflavin 5'-phosphate,"Brand, single source",Small molecule,1227.0,5090655.0,1
@@ -1459,7 +1459,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 1457,Famotidine,"Lupin Pharmaceuticals, Inc.",famotidine,Generic,Small molecule,159182.0,4981546.0,1
 1458,Ella,"PMI Branded Pharmaceuticals, Inc.",ulipristal,"Brand, single source",Small molecule,93157.0,4980178.0,1
 1459,Doxycycline Hyclate,Hikma Pharmaceuticals USA Inc.,doxycycline,Generic,Small molecule,452707.0,4978216.0,3
-1460,Orfadin,SWEDISH ORPHAN BIOVITRUM AB (PUBL),nitisinone,"Brand, single source",Small molecule,225.0,4973357.0,3
+1460,Orfadin,SWEDISH ORPHAN BIOVITRUM AB (PUBL),nitisinone,"Brand, generic competition",Small molecule,225.0,4973357.0,3
 1461,Lisdexamfetamine Dimesylate,Apotex Corp.,lisdexamfetamine,Generic,Small molecule,37746.0,4962037.0,7
 1462,ZELSUVMI,"LNHC, Inc.",berdazimer,"Brand, single source",Small molecule,2580.0,4958333.0,1
 1463,GABARONE,INA Pharmaceutics Inc.,gabapentin,Generic,Small molecule,3297.0,4935989.0,2
@@ -1743,7 +1743,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 1741,Nystatin,"PAI Holdings, LLC dba PAI Pharma",nystatin,Generic,Small molecule,219467.0,3700014.0,1
 1742,COSELA,"G1 Therapeutics, Inc.",trilaciclib,"Brand, single source",Small molecule,2798.0,3699473.0,1
 1743,Acamprosate Calcium,Mylan Pharmaceuticals Inc.,acamprosate,Generic,Small molecule,41939.0,3691784.0,1
-1744,Neurontin,Parke-Davis Div of Pfizer Inc,gabapentin,"Brand, generic competition",Small molecule,5611.0,3690013.0,7
+1744,Neurontin,Parke-Davis Div of Pfizer Inc,gabapentin,"Brand, generic competition",Small molecule,5611.0,3690013.0,6
 1745,Citalopram,Mylan Pharmaceuticals Inc.,citalopram,Generic,Small molecule,394571.0,3686237.0,3
 1746,SECUADO,"Noven Therapeutics, LLC",asenapine,"Brand, single source",Small molecule,2724.0,3681865.0,3
 1747,Prednisolone Sodium Phosphate,Edenbridge Pharmaceuticals LLC.,prednisolone,Generic,Small molecule,290657.0,3674921.0,4
@@ -1863,14 +1863,14 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 1861,Siliq,Bausch Health US LLC,brodalumab,Reference biologic,Biologic,554.0,3250564.0,1
 1862,Mycapssa,Amryt Pharmaceuticals Designated Activity Company,octreotide,"Brand, single source",Small molecule,317.0,3249557.0,1
 1863,Furosemide,Hikma Pharmaceuticals USA Inc.,furosemide,"Brand, generic competition",Small molecule,411119.0,3244743.0,8
-1864,Potassium Chloride,"Upsher-Smith Laboratories, LLC",potassium chloride,"Brand, generic competition",Small molecule,259583.0,3240577.0,3
+1864,Potassium Chloride,"Upsher-Smith Laboratories, LLC",potassium chloride,Generic,Small molecule,259583.0,3240577.0,3
 1865,Vancomycin Hydrochloride,"Hospira, Inc.",vancomycin,Generic,Small molecule,44227.0,3240052.0,6
 1866,Prilosec,"Covis Pharma US, Inc",omeprazole,"Brand, single source",Small molecule,4117.0,3238986.0,2
 1867,PREDNISOLONE ACETATE,"Lupin Pharmaceuticals, Inc.",prednisolone,Generic,Small molecule,85034.0,3234963.0,1
 1868,IZERVAY,"Astellas Pharma US, Inc.",avacincaptad pegol,"Brand, single source",Small molecule,5030.0,3234675.0,1
 1869,Estring,Pfizer Laboratories Div Pfizer Inc,estradiol,"Brand, single source",Small molecule,6104.0,3232962.0,1
 1870,Travatan Z,Sandoz Inc,travoprost,"Brand, generic competition",Small molecule,8582.0,3229885.0,1
-1871,Cyclobenzaprine Hydrochloride,"Teva Pharmaceuticals USA, Inc.",cyclobenzaprine,Authorized generic,Small molecule,410029.0,3228504.0,5
+1871,Cyclobenzaprine Hydrochloride,"Teva Pharmaceuticals USA, Inc.",cyclobenzaprine,Generic,Small molecule,410029.0,3228504.0,5
 1872,Oxcarbazepine,"EPIC PHARMA, LLC",oxcarbazepine,Generic,Small molecule,28539.0,3223948.0,1
 1873,Clobazam,Amneal Pharmaceuticals NY LLC,clobazam,Generic,Small molecule,51498.0,3223793.0,1
 1874,PROCENTRA,"INDEPENDENCE PHARMACEUTICALS, LLC",dextroamphetamine,Generic,Small molecule,8434.0,3223341.0,1
@@ -1910,7 +1910,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 1908,Budesonide Inhalation,Amneal Pharmaceuticals of New York LLC,budesonide,Generic,Small molecule,35739.0,3119475.0,2
 1909,Mesalamine,"Teva Pharmaceuticals USA, Inc.",mesalamine,Generic,Small molecule,8070.0,3117776.0,1
 1910,Estradiol,"ANI Pharmaceuticals, Inc.",estradiol,Generic,Small molecule,227325.0,3115434.0,9
-1911,Glipizide,Aurobindo Pharma Limited,glipizide,Generic,Small molecule,204165.0,3114463.0,4
+1911,Glipizide,Aurobindo Pharma Limited,glipizide,Generic,Small molecule,204165.0,3114463.0,3
 1912,Acamprosate Calcium,"Glenmark Pharmaceuticals Inc., USA",acamprosate,Generic,Small molecule,32457.0,3108233.0,1
 1913,PYLERA,"H2-Pharma, LLC",bismuth subcitrate / metronidazole / tetracycline,"Brand, generic competition",Small molecule,9816.0,3107870.0,1
 1914,HYDROXYCHLOROQUINE SULFATE,Dr. Reddy's Laboratories Inc.,hydroxychloroquine,Generic,Small molecule,148438.0,3105746.0,4
@@ -1960,7 +1960,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 1958,Clarithromycin,Sandoz Inc,clarithromycin,Generic,Small molecule,31233.0,2989956.0,4
 1959,Ammonium Lactate,"Sun Pharmaceutical Industries, Inc.",lactate,Generic,Small molecule,158555.0,2989172.0,2
 1960,PRAVASTATIN SODIUM,Apotex Corp.,pravastatin,Generic,Small molecule,240410.0,2984095.0,4
-1961,Terconazole,"E. Fougera & Co. a division of Fougera Pharmaceuticals, LLC",terconazole,Generic,Small molecule,100336.0,2977781.0,2
+1961,Terconazole,"E. Fougera & Co. a division of Fougera Pharmaceuticals, LLC",terconazole,"Brand, generic competition",Small molecule,100336.0,2977781.0,2
 1962,Pyrimethamine,DR.REDDYS LABORATORIES INC,pyrimethamine,Generic,Small molecule,294.0,2977165.0,1
 1963,Childrens Cetirizine Hydrochloride,"Sun Pharmaceutical Industries, Inc.",cetirizine,Generic,Small molecule,236721.0,2971115.0,1
 1964,DIMETHYL FUMARATE,"Solco Healthcare US, LLC",dimethyl fumarate,Generic,Small molecule,7054.0,2969537.0,2
@@ -2024,7 +2024,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 2022,Baclofen,"Teva Pharmaceuticals USA, Inc.",baclofen,Generic,Small molecule,243687.0,2823827.0,2
 2023,Griseofulvin,"Actavis Pharma, Inc.",griseofulvin,Generic,Small molecule,20387.0,2822983.0,1
 2024,Lansoprazole,Aurobindo Pharma Limited,lansoprazole,Generic,Small molecule,25267.0,2812371.0,2
-2025,hydrocortisone,Padagis Israel Pharmaceuticals Ltd,hydrocortisone,Generic,Small molecule,226976.0,2809741.0,1
+2025,hydrocortisone,Padagis Israel Pharmaceuticals Ltd,hydrocortisone,OTC / unapproved / unclassified,Other,226976.0,2809741.0,1
 2026,Ezetimibe,"Ascend Laboratories, LLC",ezetimibe,Generic,Small molecule,235329.0,2806869.0,1
 2027,Lamotrigine,Torrent Pharmaceuticals Limited,lamotrigine,Generic,Small molecule,58189.0,2803895.0,3
 2028,Glipizide,"Actavis Pharma, Inc.",glipizide,Generic,Small molecule,245799.0,2801144.0,5
@@ -2055,7 +2055,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 2053,Clindamycin Hydrochloride,"GLENMARK PHARMACEUTICALS INC., USA",clindamycin,Generic,Small molecule,259895.0,2729287.0,3
 2054,Ibuprofen,"Sun Pharmaceutical Industries, Inc.",ibuprofen,Generic,Small molecule,289453.0,2725887.0,1
 2055,posfrea,"Avyxa Pharma, LLC",palonosetron,"Brand, generic competition",Small molecule,6034.0,2724642.0,1
-2056,Sertraline,Heritage Pharmaceuticals Inc. d/b/a Avet Pharmaceuticals Inc.,sertraline,Generic,Small molecule,278753.0,2724209.0,4
+2056,Sertraline,Heritage Pharmaceuticals Inc. d/b/a Avet Pharmaceuticals Inc.,sertraline,Generic,Small molecule,278753.0,2724209.0,3
 2057,Paliperidone,Tris Pharma Inc,paliperidone,Generic,Small molecule,43717.0,2720933.0,4
 2058,ROMVIMZA,"Deciphera Pharmaceuticals, LLC",vimseltinib,"Brand, single source",Small molecule,108.0,2720754.0,2
 2059,PredniSONE,Hikma Pharmaceuticals USA Inc.,prednisone,Generic,Small molecule,226276.0,2711124.0,7
@@ -2093,12 +2093,12 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 2091,Propranolol Hydrochloride,Ipca Laboratories Limited,propranolol,Generic,Small molecule,217519.0,2651756.0,5
 2092,Permethrin,"Encube Ethicals, Inc.",permethrin,Generic,Small molecule,109958.0,2650320.0,1
 2093,Derma-Smoothe/FS,"Royal Pharmaceuticals, LLC",fluocinolone,"Brand, generic competition",Small molecule,68857.0,2649707.0,1
-2094,KETOROLAC TROMETHAMINE,"Camber Pharmaceuticals, Inc.",ketorolac,Generic,Small molecule,71168.0,2649633.0,6
+2094,KETOROLAC TROMETHAMINE,"Camber Pharmaceuticals, Inc.",ketorolac,Generic,Small molecule,71168.0,2649633.0,3
 2095,Icosapent Ethyl,Hikma Pharmaceuticals USA Inc.,icosapent ethyl,Generic,Small molecule,24455.0,2644317.0,2
 2096,Glycopyrrolate,"Par Health USA, LLC",glycopyrronium,Generic,Small molecule,57433.0,2642993.0,3
 2097,Mili,Aurobindo Pharma Limited,ethinyl estradiol / norgestimate,Generic,Small molecule,172317.0,2642806.0,1
 2098,Latanoprost,Bausch & Lomb Incorporated,latanoprost,Generic,Small molecule,205643.0,2640894.0,1
-2099,Hydrocortisone,"Sun Pharmaceutical Industries, Inc.",hydrocortisone,Generic,Small molecule,304043.0,2640498.0,1
+2099,Hydrocortisone,"Sun Pharmaceutical Industries, Inc.",hydrocortisone,OTC / unapproved / unclassified,Other,304043.0,2640498.0,1
 2100,Sucralfate,Viona Pharmaceuticals Inc,sucralfate,Generic,Small molecule,125466.0,2640350.0,1
 2101,NITROFURANTOIN,Biocon Pharma Inc,nitrofurantoin,Generic,Small molecule,3614.0,2638255.0,1
 2102,Polyethylene glycol 3350,Major Pharmaceuticals,polyethylene glycol 3350,Generic,Small molecule,72773.0,2633870.0,1
@@ -2117,7 +2117,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 2115,Pregabalin,Aurobindo Pharma Limited,pregabalin,Generic,Small molecule,195610.0,2617239.0,8
 2116,XELSTRYM,"Noven Therapeutics, LLC",dextroamphetamine,"Brand, single source",Small molecule,5497.0,2612798.0,4
 2117,Olanzapine,NorthStar RxLLC,olanzapine,Generic,Small molecule,203644.0,2610807.0,7
-2118,IMITREX,GlaxoSmithKline LLC,sumatriptan,"Brand, single source",Small molecule,2031.0,2610404.0,3
+2118,IMITREX,GlaxoSmithKline LLC,sumatriptan,"Brand, generic competition",Small molecule,2031.0,2610404.0,3
 2119,LACOSAMIDE,ScieGen Pharmaceuticals Inc,lacosamide,Generic,Small molecule,75049.0,2595560.0,4
 2120,Amlodipine besylate,"Exelan Pharmaceuticals, Inc.",amlodipine,Generic,Small molecule,10829.0,2590403.0,3
 2121,DESVENLAFAXINE,Advagen Pharma Ltd,desvenlafaxine,Generic,Small molecule,96225.0,2588599.0,3
@@ -2132,7 +2132,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 2130,bupropion hydrochloride,Solco Healthcare US LLC,bupropion,Generic,Small molecule,202430.0,2554781.0,3
 2131,Metformin Hydrochloride Oral Solution,MICRO LABS LIMITED,metformin,Generic,Small molecule,9736.0,2552975.0,1
 2132,ATORVASTATIN CALCIUM,NORTHSTAR RX LLC,atorvastatin,Generic,Small molecule,238834.0,2551356.0,4
-2133,Morphine Sulfate,Hikma Pharmaceuticals USA Inc.,morphine,"Brand, single source",Small molecule,227884.0,2546490.0,10
+2133,Morphine Sulfate,Hikma Pharmaceuticals USA Inc.,morphine,Generic,Small molecule,227884.0,2546490.0,10
 2134,Methocarbamol,"Oxford Pharmaceuticals, LLC",methocarbamol,Generic,Small molecule,292240.0,2544520.0,2
 2135,Rizatriptan,Macleods Pharmaceuticals Limited,rizatriptan,Generic,Small molecule,202896.0,2544082.0,2
 2136,Lidocaine and Prilocaine,"E. Fougera & Co. a division of Fougera Pharmaceuticals, LLC",lidocaine / prilocaine,Generic,Small molecule,92343.0,2544056.0,1
@@ -2143,7 +2143,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 2141,SENNA TIME,"TIME CAP LABORATORIES, INC","sennosides, USP",OTC / unapproved / unclassified,Other,366535.0,2537354.0,0
 2142,Glycerol Phenylbutyrate,"Par Health USA, LLC",glycerol phenylbutyrate,Generic,Small molecule,63.0,2535663.0,1
 2143,CUVRIOR,Orphalan SA,trientine,"Brand, single source",Small molecule,107.0,2535555.0,1
-2144,SOLU-MEDROL,Pharmacia & Upjohn Company LLC,methylprednisolone,"Brand, single source",Small molecule,277730.0,2535264.0,6
+2144,SOLU-MEDROL,Pharmacia & Upjohn Company LLC,methylprednisolone,"Brand, generic competition",Small molecule,277730.0,2535264.0,6
 2145,Reltone 200 mg,Intra-Sana Laboratories,ursodeoxycholate,Generic,Small molecule,1459.0,2532382.0,1
 2146,lacosamide,Glenmark Pharmaceuticals Inc. USA,lacosamide,Generic,Small molecule,79340.0,2531022.0,4
 2147,Vitafol Gummies,"EXELTIS USA, INC.",,OTC / unapproved / unclassified,Other,19617.0,2530719.0,0
@@ -2365,7 +2365,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 2363,Gvoke PFS,"Xeris Pharmaceuticals, Inc.",glucagon,"Brand, single source",Small molecule,4146.0,2073700.0,1
 2364,Lamotrigine,NorthStar Rx LLC,lamotrigine,Generic,Small molecule,34367.0,2066259.0,8
 2365,Levemir,Novo Nordisk,insulin detemir,Reference biologic,Biologic,12519.0,2065565.0,2
-2366,Fenofibrate,"Lupin Pharmaceuticals, Inc.",fenofibrate,Generic,Small molecule,142675.0,2065530.0,6
+2366,Fenofibrate,"Lupin Pharmaceuticals, Inc.",fenofibrate,Authorized generic,Small molecule,142675.0,2065530.0,6
 2367,Infants,RUGBY LABORATORIES,simethicone,OTC / unapproved / unclassified,Other,51165.0,2064399.0,0
 2368,Trexall,Teva Women's Health LLC,methotrexate,Generic,Small molecule,5606.0,2061293.0,4
 2369,BUPROPION HYDROCHLORIDE,Accord Healthcare Inc.,bupropion,Generic,Small molecule,167692.0,2060069.0,2
@@ -2407,7 +2407,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 2405,Norgesic Forte,"Poly Pharmaceuticals, Inc.",aspirin / caffeine / orphenadrine,Generic,Small molecule,718.0,2007047.0,1
 2406,Amitriptyline Hydrochloride,Zydus Pharmaceuticals USA Inc.,amitriptyline,Generic,Small molecule,194622.0,2006780.0,6
 2407,Mesalamine,"Teva Pharmaceuticals, Inc.",mesalamine,Generic,Small molecule,2639.0,2006761.0,1
-2408,Hysingla ER,Knoa Pharma LLC,hydrocodone,"Brand, generic competition",Small molecule,3325.0,2004733.0,5
+2408,Hysingla ER,Knoa Pharma LLC,hydrocodone,"Brand, single source",Small molecule,3325.0,2004733.0,5
 2409,Blisovi Fe 1/20,"Lupin Pharmaceuticals, Inc.",ethinyl estradiol / norethindrone,Generic,Small molecule,142521.0,2004302.0,1
 2410,Cinacalcet,"Camber Pharmaceuticals, Inc.",cinacalcet,Generic,Small molecule,23076.0,2001833.0,3
 2411,dextroamphetamine sulfate,"Actavis Pharma, Inc.",dextroamphetamine,Generic,Small molecule,29497.0,2001715.0,3
@@ -2468,7 +2468,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 2466,Sildenafil,"Camber Pharmaceuticals, Inc.",sildenafil,Generic,Small molecule,5558.0,1921701.0,5
 2467,Tetrabenazine,Dr. Reddys Laboratories Inc,tetrabenazine,Generic,Small molecule,4806.0,1921062.0,2
 2468,Hydroxyzine Hydrochloride,"KVK-Tech, Inc.",hydroxyzine,Generic,Small molecule,179323.0,1915436.0,3
-2469,Xylocaine,"Fresenius Kabi USA, LLC",lidocaine,"Brand, generic competition",Small molecule,186129.0,1913279.0,21
+2469,Xylocaine,"Fresenius Kabi USA, LLC",epinephrine / lidocaine,"Brand, generic competition",Small molecule,186129.0,1913279.0,20
 2470,Enalapril maleate oral solution,"Camber Pharmaceuticals, Inc.",enalapril,Generic,Small molecule,10622.0,1912380.0,1
 2471,Etonogestrel and Ethinyl Estradiol,"Teva Pharmaceuticals USA, Inc.",ethinyl estradiol / etonogestrel,Generic,Small molecule,14727.0,1909286.0,1
 2472,Escitalopram Oxalate,"Legacy Pharmaceutical Packaging, LLC",escitalopram,Generic,Small molecule,208290.0,1907456.0,2
@@ -2549,12 +2549,12 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 2547,Mirtazapine,"Sun Pharmaceutical Industries, Inc.",mirtazapine,Generic,Small molecule,129750.0,1805560.0,4
 2548,Potassium Chloride,Granules Pharmaceuticals Inc,potassium chloride,Generic,Small molecule,116101.0,1804935.0,2
 2549,TOBRAMYCIN AND DEXAMETHASONE,Padagis US LLC,dexamethasone / tobramycin,Generic,Small molecule,57132.0,1804035.0,1
-2550,Zemplar,AbbVie Inc.,paricalcitol,"Brand, single source",Small molecule,129127.0,1803979.0,4
+2550,Zemplar,AbbVie Inc.,paricalcitol,"Brand, generic competition",Small molecule,129127.0,1803979.0,4
 2551,Rugby Childrens Acetaminophen,Rugby Laboratories,acetaminophen,OTC / unapproved / unclassified,Other,86515.0,1799842.0,0
 2552,ibuprofen,Major Pharmaceuticals,ibuprofen,Generic,Small molecule,175367.0,1799813.0,3
 2553,"Brompheniramine maleate, pseudoephedrine hydrochloride,",Eywa Pharma Inc,brompheniramine / dextromethorphan / pseudoephedrine,Generic,Small molecule,101258.0,1799284.0,1
 2554,Valganciclovir,"Camber Pharmaceuticals, Inc.",valganciclovir,Generic,Small molecule,13973.0,1796112.0,1
-2555,Ondansetron,"Hospira, Inc.",ondansetron,Generic,Small molecule,331425.0,1794972.0,3
+2555,Ondansetron,"Hospira, Inc.",ondansetron,Generic,Small molecule,331425.0,1794972.0,2
 2556,TRANEXAMIC ACID,ADVAGEN PHARMA LIMITED,tranexamic acid,Generic,Small molecule,38973.0,1792337.0,1
 2557,DRIZALMA SPRINKLE,"SUN PHARMACEUTICAL INDUSTRIES, INC.",duloxetine,"Brand, single source",Small molecule,7479.0,1791930.0,4
 2558,Emtricitabine and tenofovir disoproxil fumarate,"Camber Pharmaceuticals, Inc.",emtricitabine / tenofovir disoproxil,Generic,Small molecule,17756.0,1790684.0,1
@@ -2568,7 +2568,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 2566,Naproxen,"ScieGen Pharmaceuticals, Inc.",naproxen,Generic,Small molecule,191605.0,1778690.0,3
 2567,WesTab Plus Prenatal/Postnatal Tabs 100ct,"WESTMINSTER PHARMACEUTICALS, LLC.",,OTC / unapproved / unclassified,Other,139295.0,1778359.0,0
 2568,Midodrine Hydrochloride,Novugen Pharma (USA) LLC,midodrine,Generic,Small molecule,83432.0,1774712.0,3
-2569,Hydrochlorothiazide,"Actavis Pharma, Inc.",hydrochlorothiazide,Authorized generic,Small molecule,166968.0,1774497.0,2
+2569,Hydrochlorothiazide,"Actavis Pharma, Inc.",hydrochlorothiazide,Generic,Small molecule,166968.0,1774497.0,2
 2570,Losartan potassium and Hydrochlorothiazide,Macleods Pharmaceuticals Limited,hydrochlorothiazide / losartan,Generic,Small molecule,158010.0,1774169.0,3
 2571,Alendronate Sodium,"Rising Pharma Holdings, Inc.",alendronate,Generic,Small molecule,191052.0,1773105.0,3
 2572,VILAZODONE HYDROCHLORIDE,Alembic Pharmaceuticals Inc.,vilazodone,Generic,Small molecule,40960.0,1773032.0,3
@@ -2604,7 +2604,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 2602,PROMETHEGAN,"Cosette Pharmaceuticals, Inc.",promethazine,Generic,Small molecule,29175.0,1738415.0,3
 2603,sulfacetamide sodium and sulfur,"Allegis Pharmaceuticals, LLC",sulfacetamide / sulfur,OTC / unapproved / unclassified,Other,1924.0,1738078.0,0
 2604,Levocetirizine Dihydrochloride,Micro Labs Limited,levocetirizine,Generic,Small molecule,170545.0,1737745.0,1
-2605,budesonide,Oceanside Pharmaceuticals,budesonide,Authorized generic,Small molecule,2612.0,1737341.0,2
+2605,budesonide,Oceanside Pharmaceuticals,budesonide,"Brand, generic competition",Small molecule,2612.0,1737341.0,2
 2606,Ativan,Bausch Health US LLC,lorazepam,"Brand, generic competition",Small molecule,500.0,1737068.0,3
 2607,ciprofloxacin,"Rising Pharma Holdings, Inc.",ciprofloxacin,Generic,Small molecule,210339.0,1736880.0,3
 2608,"SODIUM SULFATE, POTASSIUM SULFATE AND MAGNESIUM SULFATE","Affordable Pharmaceuticals, LLC",magnesium sulfate / potassium sulfate / sodium sulfate,"Brand, generic competition",Small molecule,29217.0,1736671.0,1
@@ -2669,7 +2669,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 2667,Calcitriol,BIONPHARMA INC.,calcitriol,Generic,Small molecule,100620.0,1653578.0,2
 2668,methylprednisolone,Zydus Pharmaceuticals USA Inc.,methylprednisolone,Generic,Small molecule,151043.0,1649074.0,5
 2669,Levalbuterol,Amneal Pharmaceuticals of New York LLC,levalbuterol,Generic,Small molecule,32902.0,1648433.0,3
-2670,EMEND,Merck Sharp & Dohme LLC,aprepitant,"Brand, generic competition",Small molecule,5456.0,1647285.0,4
+2670,EMEND,Merck Sharp & Dohme LLC,fosaprepitant,"Brand, generic competition",Small molecule,5456.0,1647285.0,4
 2671,Rufinamide,Hikma Pharmaceuticals USA Inc.,rufinamide,Generic,Small molecule,4955.0,1644032.0,3
 2672,GUAIFENESIN,GRANULES PHARMACEUTICALS INC.,guaifenesin,Generic,Small molecule,107154.0,1643115.0,1
 2673,Abiraterone Acetate,Novugen Pharma (USA) LLC,abiraterone,Generic,Small molecule,1818.0,1642050.0,2
@@ -2806,12 +2806,12 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 2804,Solu-Cortef,Pharmacia & Upjohn Company LLC,hydrocortisone,"Brand, single source",Small molecule,35293.0,1493786.0,4
 2805,DESMOPRESSIN ACETATE,Apotex Corp.,desmopressin,Generic,Small molecule,13531.0,1492739.0,1
 2806,Exjade,Novartis Pharmaceuticals Corporation,deferasirox,"Brand, generic competition",Small molecule,113.0,1492595.0,2
-2807,ROCURONIUM BROMIDE,"Solco Healthcare US, LLC",rocuronium,Generic,Small molecule,315.0,1492344.0,2
+2807,ROCURONIUM BROMIDE,"Solco Healthcare US, LLC",rocuronium,Generic,Small molecule,315.0,1492344.0,1
 2808,Omeprazole,Sandoz Inc,omeprazole,Generic,Small molecule,139275.0,1490821.0,3
 2809,Promethazine Hydrochloride,Amneal Pharmaceuticals of New York LLC,promethazine,Generic,Small molecule,193973.0,1489625.0,3
 2810,Clindamycin Phosphate,Amneal Pharmaceuticals NY LLC,clindamycin,Generic,Small molecule,3514.0,1488578.0,1
 2811,Aveed,"Endo USA, Inc.",testosterone,"Brand, single source",Small molecule,1296.0,1488548.0,1
-2812,Rugby Chest Congestion Relief,Rugby Laboratories,dextromethorphan / guaifenesin,OTC / unapproved / unclassified,Other,110088.0,1488372.0,0
+2812,Rugby Chest Congestion Relief,Rugby Laboratories,guaifenesin,OTC / unapproved / unclassified,Other,110088.0,1488372.0,0
 2813,foster and thrive childrens pain and fever,Strategic Sourcing Services LLC,acetaminophen,OTC / unapproved / unclassified,Other,22563.0,1488302.0,0
 2814,ETHOSUXIMIDE,"PAI Holdings, LLC dba PAI Pharma",ethosuximide,Generic,Small molecule,29651.0,1485909.0,1
 2815,CEFPODOXIME PROXETIL,Aurobindo Pharma Limited,cefpodoxime,Generic,Small molecule,40989.0,1485014.0,2
@@ -2828,7 +2828,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 2826,Rituxan Hycela,"Genentech, Inc.",hyaluronidase / rituximab,Reference biologic,Biologic,447.0,1476509.0,1
 2827,Phenazopyridine Hydrochloride,"Winder Laboratories, LLC",phenazopyridine,OTC / unapproved / unclassified,Other,170332.0,1475796.0,0
 2828,Tecentriq Hybreza,"Genentech, Inc.",atezolizumab / hyaluronidase,Reference biologic,Biologic,192.0,1475619.0,1
-2829,MERCAPTOPURINE,Hikma Pharmaceuticals USA Inc.,mercaptopurine,Generic,Small molecule,1493.0,1475400.0,2
+2829,MERCAPTOPURINE,Hikma Pharmaceuticals USA Inc.,mercaptopurine,Generic,Small molecule,1493.0,1475400.0,1
 2830,OSELTAMIVIR,Alembic Pharmaceuticals Inc.,oseltamivir,Generic,Small molecule,76266.0,1475006.0,3
 2831,Rifabutin,"ANI Pharmaceuticals, Inc.",rifabutin,Generic,Small molecule,4660.0,1466533.0,1
 2832,Ambrisentan,Zydus Pharmaceuticals USA Inc.,ambrisentan,Generic,Small molecule,1794.0,1464389.0,2
@@ -2837,7 +2837,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 2835,Amantadine Hydrochloride,Strides Pharma Inc.,amantadine,Generic,Small molecule,46852.0,1462096.0,2
 2836,BACLOFEN,Aurobindo Pharma Limited,baclofen,Generic,Small molecule,116962.0,1457892.0,2
 2837,SELZENTRY,ViiV Healthcare Company,maraviroc,"Brand, generic competition",Small molecule,773.0,1456097.0,2
-2838,Spritam,"Aprecia Pharmaceuticals, LLC",levetiracetam,"Brand, single source",Small molecule,1682.0,1455777.0,4
+2838,Spritam,"Aprecia Pharmaceuticals, LLC",levetiracetam,"Brand, generic competition",Small molecule,1682.0,1455777.0,4
 2839,Fenofibrate,"Camber Pharmaceuticals, Inc.",fenofibrate,Generic,Small molecule,118567.0,1455616.0,2
 2840,Entecavir,"Camber Pharmaceuticals, Inc.",entecavir,Generic,Small molecule,24936.0,1455226.0,2
 2841,Warfarin Sodium,"Sun Pharmaceutical Industries, Inc.",warfarin,Generic,Small molecule,99315.0,1454278.0,9
@@ -2893,7 +2893,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 2891,Baclofen,Lifestar Pharma LLC,baclofen,Generic,Small molecule,98068.0,1406225.0,3
 2892,MYTESI,"Napo Pharmaceuticals, Inc.",crofelemer,"Brand, single source",Small molecule,542.0,1401217.0,1
 2893,Atovaquone and Proguanil Hydrochloride,"Glenmark Pharmaceuticals Inc.,USA",atovaquone / proguanil,Generic,Small molecule,19792.0,1400949.0,1
-2894,Levothyroxine sodium,"Teva Pharmaceuticals, Inc.",levothyroxine,Generic,Small molecule,133418.0,1397791.0,14
+2894,Levothyroxine sodium,"Teva Pharmaceuticals, Inc.",levothyroxine,Generic,Small molecule,133418.0,1397791.0,12
 2895,Atropine,Apotex Corp.,atropine,Generic,Small molecule,32652.0,1396355.0,1
 2896,Larin Fe 1/20,Northstar Rx LLC,ethinyl estradiol / norethindrone,Generic,Small molecule,104035.0,1395039.0,1
 2897,Enoxaparin Sodium,BluePoint Laboratories,enoxaparin,Generic,Small molecule,13369.0,1394926.0,8
@@ -2977,7 +2977,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 2975,GABAPENTIN,"TIME CAP LABORATORIES, INC",gabapentin,Generic,Small molecule,106400.0,1305264.0,3
 2976,Unithroid,Amneal Pharmaceuticals LLC,levothyroxine,"Brand, generic competition",Small molecule,21795.0,1304856.0,12
 2977,DROSPIRENONE AND ETHINYL ESTRADIOL,"Lupin Pharmaceuticals, Inc.",drospirenone / ethinyl estradiol,Generic,Small molecule,70799.0,1303812.0,1
-2978,Brimonidine Tartrate,Sandoz Inc,brimonidine,"Brand, generic competition",Small molecule,81289.0,1302886.0,2
+2978,Brimonidine Tartrate,Sandoz Inc,brimonidine,Generic,Small molecule,81289.0,1302886.0,2
 2979,Haloperidol,Lifestar Pharma LLC,haloperidol,Generic,Small molecule,87852.0,1302517.0,6
 2980,Olopatadine Hydrochloride,Rugby Laboratories,olopatadine,Generic,Small molecule,72148.0,1301491.0,1
 2981,Ritalin,Novartis Pharmaceuticals Corporation,methylphenidate,"Brand, generic competition",Small molecule,4344.0,1300612.0,5
@@ -2985,7 +2985,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 2983,DOXEPIN HYDROCHLORIDE,Alembic Pharmaceuticals Inc.,doxepin,Generic,Small molecule,95633.0,1300065.0,5
 2984,Neomycin and Polymyxin B Sulfates and Dexamethasone,Bausch & Lomb Incorporated,dexamethasone / neomycin / polymyxin B,Generic,Small molecule,78872.0,1299576.0,1
 2985,Esomeprazole Magnesium,"Camber Pharmaceuticals, Inc.",esomeprazole,Generic,Small molecule,80333.0,1299513.0,2
-2986,Cleocin,Pharmacia & Upjohn Company LLC,clindamycin,"Brand, single source",Small molecule,7425.0,1297966.0,2
+2986,Cleocin,Pharmacia & Upjohn Company LLC,clindamycin,"Brand, generic competition",Small molecule,7425.0,1297966.0,2
 2987,Hydroxychloroquine Sulfate,Ipca Laboratories Limited,hydroxychloroquine,Generic,Small molecule,61786.0,1296818.0,1
 2988,Tudorza Pressair,"Covis Pharma US, Inc",aclidinium,"Brand, single source",Small molecule,2904.0,1296434.0,2
 2989,Ofloxacin,ARMAS PHARMACEUTICALS INC.,ofloxacin,Generic,Small molecule,86301.0,1296389.0,1
@@ -2998,7 +2998,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 2996,Esomeprazole Magnesium,Aurobindo Pharma Limited,esomeprazole,Generic,Small molecule,79028.0,1286842.0,2
 2997,METOPROLOL TARTRATE,Advagen Pharma Limited,metoprolol,Generic,Small molecule,146240.0,1286718.0,5
 2998,RUFINAMIDE,"Lupin Pharmaceuticals, Inc.",rufinamide,Generic,Small molecule,4071.0,1284393.0,2
-2999,Viread,"Gilead Sciences, Inc.",tenofovir disoproxil,"Brand, single source",Small molecule,928.0,1284320.0,4
+2999,Viread,"Gilead Sciences, Inc.",tenofovir disoproxil,"Brand, generic competition",Small molecule,928.0,1284320.0,4
 3000,URSODIOL,Strides Pharma Science Limited,ursodeoxycholate,Generic,Small molecule,22094.0,1284011.0,3
 3001,METFORMIN HYDROCHLORIDE,ScieGen Pharmaceuticals Inc,metformin,Generic,Small molecule,94698.0,1283008.0,3
 3002,"Dextroamphetamine Saccharate, Amphetamine Aspartate, Dextroamphetamine Sulfate, Amphetamine Sulfate","GLENMARK PHARMACEUTICALS INC., USA",amphetamine aspartate / amphetamine sulfate / dextroamphetamine saccharate / dextroamphetamine sulfate,Generic,Small molecule,60899.0,1282090.0,5
@@ -3193,7 +3193,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 3191,Oseltamivir Phosphate for Oral Suspension,Alvogen Inc.,oseltamivir,Generic,Small molecule,26744.0,1116073.0,1
 3192,POSLUMA,Blue Earth Diagnostics,,"Brand, single source",Small molecule,395.0,1116001.0,0
 3193,Diclofenac Sodium,EXELAN PHARMACEUTICALS INC.,diclofenac,Generic,Small molecule,11433.0,1115532.0,1
-3194,Fenofibrate,"ANI Pharmaceuticals, Inc.",fenofibrate,Authorized generic,Small molecule,29857.0,1115291.0,5
+3194,Fenofibrate,"ANI Pharmaceuticals, Inc.",fenofibrate,Generic,Small molecule,29857.0,1115291.0,5
 3195,Lacosamide,Glenmark Pharmaceuticals Limited,lacosamide,Generic,Small molecule,15064.0,1114742.0,1
 3196,Trazodone Hydrochloride,Apotex Corp,trazodone,Generic,Small molecule,36954.0,1114562.0,4
 3197,Nuedexta Capsules,"AVANIR PHARMACEUTICALS, INC.",dextromethorphan / quinidine,"Brand, single source",Small molecule,860.0,1114362.0,1
@@ -3304,7 +3304,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 3302,Cyanocobalamin,Meitheal Pharmaceuticals Inc.,vitamin B12,Generic,Small molecule,139825.0,1043121.0,1
 3303,Levocarnitine,Hikma Pharmaceuticals USA Inc.,levocarnitine,Generic,Small molecule,4169.0,1042798.0,1
 3304,Amitriptyline Hydrochloride,"Westminster Pharmaceuticals, LLC",amitriptyline,Generic,Small molecule,90124.0,1042139.0,6
-3305,Vancomycin Hydrochloride,Mylan Institutional LLC,vancomycin,"Brand, single source",Small molecule,24231.0,1041996.0,8
+3305,Vancomycin Hydrochloride,Mylan Institutional LLC,vancomycin,"Brand, generic competition",Small molecule,24231.0,1041996.0,8
 3306,Carvedilol Phosphate,"Sun Pharmaceutical Industries, Inc.",carvedilol,Generic,Small molecule,3994.0,1041968.0,4
 3307,Enoxaparin Sodium,"Amphastar Pharmaceuticals, Inc.",enoxaparin,Generic,Small molecule,11886.0,1041810.0,8
 3308,Potassium Chloride,"Epic Pharma, LLC",potassium chloride,Generic,Small molecule,83211.0,1041722.0,2
@@ -3430,7 +3430,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 3428,Lidocaine Hydrochloride,Eugia US LLC,lidocaine,Generic,Small molecule,116522.0,965966.0,7
 3429,Veklury,"Gilead Sciences, Inc.",remdesivir,"Brand, single source",Small molecule,1580.0,965581.0,1
 3430,Risperidone,"Par Health USA, LLC",risperidone,Generic,Small molecule,13118.0,963316.0,6
-3431,Zyprexa,Eli Lilly and Company,olanzapine,"Brand, generic competition",Small molecule,1063.0,962864.0,6
+3431,Zyprexa,Eli Lilly and Company,olanzapine,"Brand, generic competition",Small molecule,1063.0,962864.0,5
 3432,Valproic Acid,Bionpharma Inc.,valproate,Generic,Small molecule,26784.0,962796.0,1
 3433,posaconazole,Hikma Pharmaceuticals USA Inc.,posaconazole,Generic,Small molecule,369.0,962135.0,1
 3434,Tetracycline Hydrochloride,Heritage Pharmaceuticals Inc. d/b/a Avet Pharmaceuticals Inc.,tetracycline,Generic,Small molecule,20787.0,961044.0,2
@@ -3438,7 +3438,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 3436,colchicine,"Dr.Reddys Laboratories, Inc.",colchicine,Generic,Small molecule,49195.0,960653.0,1
 3437,Droxidopa,"Camber Pharmaceuticals, Inc.",droxidopa,Generic,Small molecule,2206.0,959701.0,3
 3438,Haloperidol,Aurobindo Pharma Limited,haloperidol,Generic,Small molecule,56457.0,959578.0,6
-3439,Dilaudid,"Fresenius Kabi USA, LLC",hydromorphone,"Brand, generic competition",Small molecule,141999.0,959494.0,4
+3439,Dilaudid,"Fresenius Kabi USA, LLC",hydromorphone,"Brand, single source",Small molecule,141999.0,959494.0,4
 3440,VELCADE,"Takeda Pharmaceuticals America, Inc.",bortezomib,"Brand, generic competition",Small molecule,3532.0,958645.0,1
 3441,Folic Acid,"Rising Pharma Holdings, Inc.",folic acid,Generic,Small molecule,135435.0,956421.0,1
 3442,Fexofenadine HCL,NorthStar RxLLC,fexofenadine,Generic,Small molecule,59440.0,956348.0,1
@@ -3464,7 +3464,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 3462,fexofenadine hcl,Major Pharmaceuticals,fexofenadine,Generic,Small molecule,56021.0,947609.0,2
 3463,Fluconazole,BluePoint Laboratories,fluconazole,Generic,Small molecule,96379.0,947451.0,4
 3464,PONVORY,Vanda Pharmaceuticals Inc.,ponesimod,"Brand, single source",Small molecule,92.0,946632.0,1
-3465,zoledronic acid,Sagent Pharmaceuticals,zoledronic acid,Generic,Small molecule,14875.0,946266.0,3
+3465,zoledronic acid,Sagent Pharmaceuticals,zoledronic acid,"Brand, generic competition",Small molecule,14875.0,946266.0,3
 3466,Mycophenolate Mofetil,Sandoz Inc,mycophenolate mofetil,Generic,Small molecule,21608.0,944604.0,2
 3467,InnoPran XL,"ANI Pharmaceuticals, Inc.",propranolol,"Brand, generic competition",Small molecule,347.0,944544.0,2
 3468,Levalbuterol,"Teva Pharmaceuticals USA, Inc.",levalbuterol,Generic,Small molecule,18344.0,944140.0,3
@@ -3504,7 +3504,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 3502,Metronidazole,Viona Pharmaceuticals Inc,metronidazole,Generic,Small molecule,38604.0,924374.0,1
 3503,Betaine,"Cosette Pharmaceuticals, Inc.",betaine,Generic,Small molecule,480.0,923990.0,1
 3504,Renflexis,Merck Sharp & Dohme LLC,infliximab,Biosimilar,Biologic,655.0,923433.0,1
-3505,Midazolam,"Hospira, Inc.",midazolam,Generic,Small molecule,148422.0,923221.0,7
+3505,Midazolam,"Hospira, Inc.",midazolam,Generic,Small molecule,148422.0,923221.0,6
 3506,Bupropion Hydrochloride,Dr. Reddys Laboratories Inc.,bupropion,Generic,Small molecule,67571.0,922483.0,3
 3507,clindamycin and benzoyl peroxide,Padagis Israel Pharmaceuticals Ltd,benzoyl peroxide / clindamycin,Generic,Small molecule,23276.0,920892.0,1
 3508,Fosaprepitant,Novadoz Pharmaceuticals LLC,fosaprepitant,Generic,Small molecule,14850.0,920890.0,1
@@ -3527,14 +3527,14 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 3525,CAMCEVI,"Accord BioPharma, Inc.",leuprolide,"Brand, single source",Small molecule,1034.0,911708.0,1
 3526,Famotidine,"Upsher-Smith Laboratories, LLC",famotidine,Generic,Small molecule,28547.0,911425.0,1
 3527,Nystatin,Macleods Pharmaceuticals Limited,nystatin,Generic,Small molecule,73326.0,911222.0,2
-3528,Famotidine,"Fresenius Kabi USA, LLC",famotidine,Generic,Small molecule,139878.0,910914.0,3
+3528,Famotidine,"Fresenius Kabi USA, LLC",famotidine,Generic,Small molecule,139878.0,910914.0,2
 3529,Butalbital and Acetaminophen,Oceanside Pharmaceuticals,acetaminophen / butalbital,Generic,Small molecule,2497.0,910631.0,1
 3530,Indomethacin,"ANI Pharmaceuticals, Inc.",indomethacin,Generic,Small molecule,679.0,909878.0,1
 3531,Diclofenac Sodium,BluePoint Laboratories,diclofenac,Generic,Small molecule,66093.0,909526.0,3
 3532,NITROGLYCERIN,"Trupharma, LLC",nitroglycerin,Generic,Small molecule,2194.0,908926.0,1
 3533,Famotidine,Novadoz Pharmaceuticals LLC,famotidine,Generic,Small molecule,126763.0,908712.0,2
 3534,ASENAPINE,"Sigmapharm Laboratories, LLC",asenapine,Generic,Small molecule,7360.0,908568.0,2
-3535,Betamethasone Valerate,"Cosette Pharmaceuticals, Inc.",betamethasone,Generic,Small molecule,41067.0,908219.0,2
+3535,Betamethasone Valerate,"Cosette Pharmaceuticals, Inc.",betamethasone,"Brand, generic competition",Small molecule,41067.0,908219.0,2
 3536,Allopurinol,"Par Health USA, LLC",allopurinol,Generic,Small molecule,87072.0,907868.0,2
 3537,Bijuva,Mayne Pharma,estradiol / progesterone,"Brand, single source",Small molecule,2729.0,907600.0,2
 3538,Methylprednisolone,Jubilant Cadista Pharmaceuticals Inc.,methylprednisolone,Generic,Small molecule,92909.0,906393.0,5
@@ -3602,9 +3602,9 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 3600,Ramelteon,Micro Labs Limited,ramelteon,Generic,Small molecule,28121.0,863421.0,1
 3601,Lovastatin,"Lupin Pharmaceuticals, Inc.",lovastatin,Generic,Small molecule,83497.0,862849.0,3
 3602,Anastrozole,Zydus Pharmaceuticals USA Inc.,anastrozole,Generic,Small molecule,66663.0,862397.0,1
-3603,Norvir,AbbVie Inc.,ritonavir,"Brand, single source",Small molecule,2341.0,861782.0,2
+3603,Norvir,AbbVie Inc.,ritonavir,"Brand, generic competition",Small molecule,2341.0,861782.0,2
 3604,NP Thyroid 60,"Acella Pharmaceuticals, LLC",thyroid (USP),OTC / unapproved / unclassified,Other,23183.0,861618.0,0
-3605,Cefazolin Sodium,B. Braun Medical Inc.,cefazolin,"Brand, generic competition",Small molecule,42558.0,861404.0,3
+3605,Cefazolin Sodium,B. Braun Medical Inc.,cefazolin,"Brand, single source",Small molecule,42558.0,861404.0,3
 3606,CARBA SUSPENSION 100/5ML 450ML,"TARO PHARMACEUTICALS USA,  INC.",carbamazepine,Generic,Small molecule,10106.0,861351.0,1
 3607,Buprenorphine,"Teva Pharmaceuticals USA, Inc.",buprenorphine,Generic,Small molecule,4925.0,860906.0,5
 3608,Cefprozil,"Rising Pharma Holdings, Inc.",cefprozil,Generic,Small molecule,34365.0,860867.0,4
@@ -3698,7 +3698,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 3696,AZELASTINE HYDROCHLORIDE AND FLUTICASONE PROPIONATE,Padagis Israel Pharmaceuticals Ltd,azelastine / fluticasone,Generic,Small molecule,10861.0,807398.0,1
 3697,Sofdra,Botanix SB Inc.,sofpironium,"Brand, single source",Small molecule,892.0,807123.0,1
 3698,Neomycin and Polymyxin B Sulfates and Dexamethasone,Sandoz Inc,dexamethasone / neomycin / polymyxin B,Authorized generic,Small molecule,47351.0,805211.0,1
-3699,Fleet,"C.B. Fleet Company, Inc.",bisacodyl,OTC / unapproved / unclassified,Other,44008.0,804601.0,0
+3699,Fleet,"C.B. Fleet Company, Inc.","sodium phosphate, dibasic / sodium phosphate, monobasic",OTC / unapproved / unclassified,Other,44008.0,804601.0,0
 3700,"Brompheniramine Maleate, Pseudoephedrine Hydrochloride and Dextromethorphan Hydrobromide","PAI Holdings, LLC dba PAI Pharma",brompheniramine / dextromethorphan / pseudoephedrine,Generic,Small molecule,49340.0,804569.0,1
 3701,Halobetasol Propionate,"Cosette Pharmaceuticals, Inc.",halobetasol,Generic,Small molecule,23680.0,804190.0,2
 3702,DALFAMPRIDINE,Micro Labs Limited,dalfampridine,Generic,Small molecule,6806.0,803669.0,1
@@ -3775,7 +3775,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 3773,OXCARBAZEPINE,Advagen Pharma Ltd,oxcarbazepine,Generic,Small molecule,7719.0,767326.0,1
 3774,Isosorbide dinitrate,Zydus Pharmaceuticals (USA) Inc.,isosorbide dinitrate,Generic,Small molecule,12265.0,767038.0,5
 3775,Thyroid,"ANI Pharmaceuticals, Inc.",thyroid (USP),OTC / unapproved / unclassified,Other,18238.0,766657.0,0
-3776,VESIcare,"Astellas Pharma US, Inc.",solifenacin,"Brand, generic competition",Small molecule,2252.0,766565.0,3
+3776,VESIcare,"Astellas Pharma US, Inc.",solifenacin,"Brand, single source",Small molecule,2252.0,766565.0,3
 3777,Clonidine Hydrochloride,"Method Pharmaceuticals, LLC",clonidine,Generic,Small molecule,93323.0,766063.0,3
 3778,Sevelamer hydrochloride,"Lupin Pharmaceuticals, Inc.",sevelamer,Generic,Small molecule,3668.0,765888.0,1
 3779,Amphetamine Extended-Release,"Neos Therapeutics, LP",amphetamine,Authorized generic,Small molecule,1591.0,764649.0,6
@@ -3794,7 +3794,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 3792,EPLERENONE,"Breckenridge Pharmaceutical, Inc.",eplerenone,Generic,Small molecule,19234.0,759719.0,2
 3793,Colchicine,Aurobindo Pharma Limited,colchicine,Generic,Small molecule,19963.0,759395.0,2
 3794,CLOMIPRAMINE HYDROCHLORIDE,Micro Labs Limited,clomipramine,Generic,Small molecule,21606.0,758982.0,3
-3795,Namzaric,"Allergan, Inc.",donepezil / memantine,"Brand, generic competition",Small molecule,1285.0,758691.0,4
+3795,Namzaric,"Allergan, Inc.",donepezil / memantine,"Brand, single source",Small molecule,1285.0,758691.0,4
 3796,Sirolimus,Amneal Pharmaceuticals NY LLC,sirolimus,Generic,Small molecule,1543.0,758138.0,1
 3797,Irbesartan,Macleods Pharmaceuticals Limited,irbesartan,Generic,Small molecule,44821.0,757829.0,3
 3798,ERTAPENEM SODIUM,"Dr.Reddys Laboratories Inc.,",ertapenem,Generic,Small molecule,4881.0,757492.0,1
@@ -3843,7 +3843,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 3841,FAMOTIDINE,Biocon Pharma Inc.,famotidine,Generic,Small molecule,25017.0,738124.0,1
 3842,"Dextroamphetamine Saccharate, Amphetamine Aspartate, Dextroamphetamine Sulfate and Amphetamine Sulfate",Oryza Pharmaceuticals Inc.,amphetamine aspartate / amphetamine sulfate / dextroamphetamine saccharate / dextroamphetamine sulfate,Generic,Small molecule,33968.0,736995.0,5
 3843,Clindamycin Phosphate and Tretinoin,Solaris Pharma Corporation,clindamycin / tretinoin,Generic,Small molecule,2079.0,736874.0,1
-3844,ENDOMETRIN,Ferring Pharmaceuticals Inc.,progesterone,"Brand, single source",Small molecule,1288.0,736666.0,1
+3844,ENDOMETRIN,Ferring Pharmaceuticals Inc.,progesterone,"Brand, generic competition",Small molecule,1288.0,736666.0,1
 3845,CHILDRENS IBUPROFEN,BluePoint Laboratories,ibuprofen,Generic,Small molecule,59251.0,736325.0,1
 3846,Cyclosporine,Devatis Inc.,cyclosporine,Generic,Small molecule,4366.0,735935.0,1
 3847,Elinest,Northstar Rx LLC,ethinyl estradiol / norgestrel,Generic,Small molecule,30341.0,734922.0,1
@@ -3868,7 +3868,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 3866,Vancomycin Hydrochloride,"Fresenius Kabi USA, LLC",vancomycin,Generic,Small molecule,8586.0,728521.0,3
 3867,Adalimumab-aacf,"Fresenius Kabi USA, LLC",adalimumab,Biosimilar,Biologic,745.0,728174.0,1
 3868,Amantadine,Alembic Pharmaceuticals Inc.,amantadine,Generic,Small molecule,25315.0,727958.0,1
-3869,Metoclopramide,"ANI Pharmaceuticals, Inc.",metoclopramide,Authorized generic,Small molecule,26297.0,727806.0,3
+3869,Metoclopramide,"ANI Pharmaceuticals, Inc.",metoclopramide,Generic,Small molecule,26297.0,727806.0,3
 3870,Carbidopa and levodopa,"Teva Pharmaceuticals USA, Inc.",carbidopa / levodopa,Generic,Small molecule,36827.0,727620.0,3
 3871,Pantoprazole sodium,Ajanta Pharma USA Inc.,pantoprazole,Generic,Small molecule,3241.0,727184.0,1
 3872,Fluocinonide,"Encube Ethicals, Inc.",fluocinonide,Generic,Small molecule,28505.0,726824.0,1
@@ -3923,7 +3923,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 3921,Metformin Hydrochloride,"Chartwell RX, LLC",metformin,Generic,Small molecule,582.0,705890.0,3
 3922,Palonosetron Hydrochloride,"Teva Parenteral Medicines, Inc.",palonosetron,Generic,Small molecule,7454.0,705604.0,1
 3923,Diphenoxylate Hydrochloride and Atropine Sulfate,"Leading Pharma, LLC",atropine / diphenoxylate,Generic,Small molecule,37431.0,705504.0,1
-3924,CHOLESTYRAMINE LIGHT,"EPIC PHARMA, LLC",cholestyramine resin,Generic,Small molecule,14133.0,705336.0,2
+3924,CHOLESTYRAMINE LIGHT,"EPIC PHARMA, LLC",cholestyramine resin,Generic,Small molecule,14133.0,705336.0,1
 3925,Lessina,"Teva Pharmaceuticals USA, Inc.",ethinyl estradiol / levonorgestrel,Generic,Small molecule,41673.0,705256.0,1
 3926,Tacrolimus,Strides Pharma Science Limited,tacrolimus,Generic,Small molecule,14391.0,704490.0,3
 3927,Sodium Fluoride 5000 ppm Fruit,Sheffield Pharmaceuticals LLC,sodium fluoride,OTC / unapproved / unclassified,Other,47244.0,704226.0,0
@@ -3961,7 +3961,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 3959,SERTRALINE HYDROCHLORIDE,"ACI Healthcare USA, Inc.",sertraline,Generic,Small molecule,14563.0,691679.0,3
 3960,CLINDAMYCIN AND BENZOYL PEROXIDE,Padagis Israel Pharmaceuticals Ltd,benzoyl peroxide / clindamycin,Generic,Small molecule,15481.0,691571.0,1
 3961,Memantine Hydrochloride,Dr. Reddys Laboratories Limited,memantine,Generic,Small molecule,53403.0,691369.0,2
-3962,Heparin Sodium,"Hospira, Inc.",heparin,Generic,Small molecule,161354.0,690777.0,12
+3962,Heparin Sodium,"Hospira, Inc.",heparin,"Brand, single source",Small molecule,161354.0,690777.0,12
 3963,medroxyprogesterone acetate,Mylan Pharmaceuticals Inc.,medroxyprogesterone,Authorized generic,Small molecule,29797.0,690689.0,5
 3964,SudoGest,Major Pharmaceuticals,pseudoephedrine,OTC / unapproved / unclassified,Other,64486.0,690662.0,0
 3965,NP Thyroid 30,"Acella Pharmaceuticals, LLC",thyroid (USP),OTC / unapproved / unclassified,Other,20051.0,690464.0,0
@@ -4158,7 +4158,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 4156,Desonide,"Sun Pharmaceutical Industries, Inc.",desonide,Generic,Small molecule,20768.0,609681.0,3
 4157,CYCLOSPORINE,Heritage Pharmaceuticals Inc. d/b/a Avet Pharmaceuticals Inc.,cyclosporine,Generic,Small molecule,6708.0,609397.0,3
 4158,"venlafaxine hydrochloride, extended release",Edenbridge Pharmaceuticals LLC.,venlafaxine,Generic,Small molecule,15566.0,608801.0,2
-4159,Zosyn,Baxter Healthcare Corporation,piperacillin / tazobactam,"Brand, single source",Small molecule,14055.0,608584.0,3
+4159,Zosyn,Baxter Healthcare Corporation,piperacillin / tazobactam,"Brand, generic competition",Small molecule,14055.0,608584.0,3
 4160,Metronidazole,Alembic Pharmaceuticals Inc.,metronidazole,Generic,Small molecule,13912.0,608533.0,4
 4161,Adalimumab-adbm,QUALLENT PHARMACEUTICALS HEALTH LLC,adalimumab,Interchangeable biosimilar,Biologic,196.0,608133.0,1
 4162,Gentamicin Sulfate,Sandoz Inc,gentamicin,Generic,Small molecule,54928.0,607877.0,1
@@ -4333,7 +4333,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 4331,LOTRONEX,Sebela Pharmaceuticals Inc.,alosetron,"Brand, generic competition",Small molecule,162.0,546439.0,2
 4332,CYCLOPHOSPHAMIDE,BluePoint Laboratories,cyclophosphamide,"Brand, single source",Small molecule,1729.0,546344.0,1
 4333,Hydroxychloroquine Sulfate,Amneal Pharmaceuticals NY LLC,hydroxychloroquine,Generic,Small molecule,23114.0,546343.0,1
-4334,foster and thrive nicotine,Strategic Sourcing Services LLC,nicotine,Generic,Small molecule,12361.0,546151.0,5
+4334,foster and thrive nicotine,Strategic Sourcing Services LLC,nicotine,Generic,Small molecule,12361.0,546151.0,4
 4335,Mycophenolate mofetil,Heritage Pharmaceuticals Inc. d/b/a Avet Pharmaceuticals Inc.,mycophenolate mofetil,Generic,Small molecule,15427.0,545440.0,2
 4336,Rugby Benzoyl Peroxide Wash,Rugby Laboratories,benzoyl peroxide,OTC / unapproved / unclassified,Other,48308.0,544852.0,0
 4337,Methylprednisolone,Mylan Pharmaceuticals Inc.,methylprednisolone,Authorized generic,Small molecule,27404.0,544842.0,5
@@ -4555,7 +4555,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 4553,Pyridostigmine,Novitium Pharma LLC,pyridostigmine,Generic,Small molecule,1688.0,477079.0,1
 4554,ERYTHROMYCIN,Torrent Pharmaceuticals Limited,erythromycin,Generic,Small molecule,2951.0,476996.0,3
 4555,Potassium Chloride,Baxter Healthcare Corporation,potassium chloride,"Brand, generic competition",Small molecule,35655.0,476748.0,5
-4556,NOXAFIL,Merck Sharp & Dohme LLC,posaconazole,"Brand, single source",Small molecule,87.0,476530.0,2
+4556,NOXAFIL,Merck Sharp & Dohme LLC,posaconazole,"Brand, generic competition",Small molecule,87.0,476530.0,2
 4557,Mirtazapine,Viona Pharmaceuticals Inc.,mirtazapine,Generic,Small molecule,21452.0,476369.0,3
 4558,Incassia,Aurobindo Pharma Limited,norethindrone,Generic,Small molecule,35457.0,476193.0,1
 4559,pyridostigmine bromide,Zydus Pharmaceuticals (USA) Inc.,pyridostigmine,Generic,Small molecule,13217.0,476154.0,1
@@ -4637,7 +4637,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 4635,BUDESONIDE,Padagis Israel Pharmaceuticals Ltd,budesonide,Generic,Small molecule,793.0,456859.0,1
 4636,Prochlorperazine Edisylate,Heritage Pharmaceuticals Inc. d/b/a Avet Pharmaceuticals Inc.,prochlorperazine,Generic,Small molecule,36693.0,456047.0,1
 4637,Capecitabine,"Ascend Laboratories, LLC",capecitabine,Generic,Small molecule,4561.0,456035.0,2
-4638,SENSORCAINE,"Fresenius Kabi USA, LLC",bupivacaine / epinephrine,Generic,Small molecule,36361.0,454701.0,14
+4638,SENSORCAINE,"Fresenius Kabi USA, LLC",bupivacaine,Generic,Small molecule,36361.0,454701.0,14
 4639,RELEUKO,Amneal Pharmaceuticals LLC,filgrastim,Biosimilar,Biologic,2890.0,454687.0,3
 4640,Striverdi Respimat,"Boehringer Ingelheim Pharmaceuticals, Inc.",olodaterol,"Brand, single source",Small molecule,1624.0,454421.0,1
 4641,Optison,GE Healthcare Inc.,,"Brand, single source",Small molecule,6277.0,454032.0,0
@@ -4691,7 +4691,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 4689,Bumetanide,"Rising Pharma Holdings, Inc",bumetanide,Generic,Small molecule,17398.0,439615.0,3
 4690,Erythromycin,Amneal Pharmaceuticals NY LLC,erythromycin,Generic,Small molecule,2607.0,439601.0,3
 4691,Valganciclovir,Ajanta Pharma USA Inc.,valganciclovir,Generic,Small molecule,2717.0,439579.0,1
-4692,good sense nicotine,L. Perrigo Company,nicotine,Generic,Small molecule,8258.0,439553.0,4
+4692,good sense nicotine,L. Perrigo Company,nicotine,Generic,Small molecule,8258.0,439553.0,3
 4693,Oravig,"Galt Pharmaceuticals, LLC",miconazole,"Brand, single source",Small molecule,365.0,439427.0,1
 4694,Leucovorin Calcium,"Fresenius Kabi USA, LLC",leucovorin,Generic,Small molecule,9673.0,439177.0,2
 4695,losartan potassium and hydrochlorothiazide,"Unichem Pharmaceuticals (USA), Inc.",hydrochlorothiazide / losartan,Generic,Small molecule,37744.0,439103.0,3
@@ -4823,7 +4823,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 4821,Levetiracetam,"PAI Holdings, LLC dba PAI Pharma",levetiracetam,Generic,Small molecule,12426.0,405770.0,1
 4822,Liraglutide,"Lupin Pharmaceuticals, Inc.",liraglutide,Generic,Small molecule,1239.0,405602.0,1
 4823,Cyanocobalamin,"Fresenius Kabi USA, LLC",vitamin B12,Generic,Small molecule,79653.0,405541.0,1
-4824,Systane,"Alcon Laboratories, Inc.",hypromellose,OTC / unapproved / unclassified,Other,17122.0,405534.0,0
+4824,Systane,"Alcon Laboratories, Inc.",polyethylene glycol 400 / propylene glycol,OTC / unapproved / unclassified,Other,17122.0,405534.0,0
 4825,Xofigo,Bayer HealthCare Pharmaceuticals Inc.,radium,"Brand, single source",Small molecule,26.0,404599.0,1
 4826,Trientine Hydrochloride,"Par Health USA, LLC",trientine,Generic,Small molecule,293.0,404574.0,1
 4827,Dicyclomine Hydrochloride,Hikma Pharmaceuticals USA Inc.,dicyclomine,Generic,Small molecule,12637.0,403977.0,2
@@ -4837,7 +4837,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 4835,VUSION,Mylan Pharmaceuticals Inc.,miconazole / petrolatum / zinc oxide,"Brand, generic competition",Small molecule,726.0,401797.0,1
 4836,STIMULANT LAXATIVE,"TIME CAP LABORATORIES, INC.",bisacodyl,OTC / unapproved / unclassified,Other,74864.0,401726.0,0
 4837,Bromocriptine mesylate,Zydus Pharmaceuticals USA Inc.,bromocriptine,Generic,Small molecule,1756.0,401604.0,1
-4838,CLINIMIX E,Baxter Healthcare Company,alanine / arginine / calcium chloride / dibasic potassium phosphate / glucose / glycine / histidine / isoleucine / leucine / lysine / magnesium chloride / methionine / phenylalanine / proline / serine / sodium acetate / sodium chloride / threonine / tryptophan / tyrosine / valine,"Brand, generic competition",Small molecule,787.0,401438.0,2
+4838,CLINIMIX E,Baxter Healthcare Company,alanine / arginine / calcium chloride / dibasic potassium phosphate / glucose / glycine / histidine / isoleucine / leucine / lysine / magnesium chloride / methionine / phenylalanine / proline / serine / sodium acetate / sodium chloride / threonine / tryptophan / tyrosine / valine,"Brand, single source",Small molecule,787.0,401438.0,2
 4839,Magnesium Oxide,"Westminster Pharmaceuticals, LLC",magnesium oxide,OTC / unapproved / unclassified,Other,42264.0,401349.0,0
 4840,Escitalopram Oxalate,"Rising Pharma Holdings, Inc.",escitalopram,Generic,Small molecule,6239.0,401239.0,1
 4841,Glyburide,Modavar Pharmaceuticals LLC,glyburide,Generic,Small molecule,30724.0,400730.0,3
@@ -4893,7 +4893,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 4891,Tussin,Strategic Sourcing Services,guaifenesin,OTC / unapproved / unclassified,Other,9687.0,388661.0,0
 4892,Methylphenidate Hydrochloride,"Sun Pharmaceutical Industries, Inc.",methylphenidate,Generic,Small molecule,4864.0,388391.0,4
 4893,Sodium Fluoride 5000 ppm Sensitive,Sheffield Pharmaceuticals LLC,potassium nitrate / sodium fluoride,OTC / unapproved / unclassified,Other,19518.0,387856.0,0
-4894,good sense pain relief,L. Perrigo Company,acetaminophen,Generic,Small molecule,39010.0,387779.0,1
+4894,good sense pain relief,L. Perrigo Company,acetaminophen,OTC / unapproved / unclassified,Other,39010.0,387779.0,1
 4895,Halobetasol propionate,Mayne Pharma,halobetasol,Generic,Small molecule,448.0,387728.0,1
 4896,NITROFURANTOIN,Alembic Pharmaceuticals Inc.,nitrofurantoin,Generic,Small molecule,22945.0,387581.0,3
 4897,Acetaminophen,Baxter Healthcare Corporation,acetaminophen,Generic,Small molecule,32315.0,387416.0,2
@@ -4922,13 +4922,13 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 4920,Vancomycin Hydrochloride for Oral Solution,"Wilshire Pharmaceuticals, Inc.",vancomycin,Authorized generic,Small molecule,3367.0,380444.0,2
 4921,Gadobutrol,"Fresenius Kabi USA, LLC",,Generic,Small molecule,16709.0,379685.0,0
 4922,Rizatriptan Benzoate,"Ascend Laboratories, LLC",rizatriptan,Generic,Small molecule,32290.0,379672.0,2
-4923,Fentanyl Citrate,"Fresenius Kabi USA, LLC",fentanyl,Generic,Small molecule,58574.0,379502.0,8
+4923,Fentanyl Citrate,"Fresenius Kabi USA, LLC",fentanyl,Generic,Small molecule,58574.0,379502.0,7
 4924,Timolol Maleate Ophthalmic Gel Forming Solution 0.5%,"Dr. Reddy's Laboratories, Inc.",timolol,Generic,Small molecule,4807.0,379397.0,1
 4925,Dofetilide,Novadoz Pharmaceuticals LLC,dofetilide,Generic,Small molecule,8067.0,379254.0,3
 4926,Naproxen,Aurobindo Pharma Limited,naproxen,Generic,Small molecule,37262.0,378991.0,1
 4927,Gentamicin Sulfate,Bausch & Lomb Incorporated,gentamicin,Generic,Small molecule,31090.0,378880.0,1
 4928,BUPROPION HYDROCHLORIDE,Aurobindo Pharma Limited,bupropion,Generic,Small molecule,25644.0,378750.0,2
-4929,Cefazolin,Baxter Healthcare Corporation,cefazolin,"Brand, single source",Small molecule,27544.0,378498.0,3
+4929,Cefazolin,Baxter Healthcare Corporation,cefazolin,"Brand, generic competition",Small molecule,27544.0,378498.0,3
 4930,Oxycodone Hydrochloride,SpecGx LLC,oxycodone,Generic,Small molecule,15224.0,378136.0,2
 4931,Losartan Potassium,NorthStar RxLLC,losartan,Generic,Small molecule,41645.0,378091.0,3
 4932,Atovaquone,Bionpharma Inc.,atovaquone,Generic,Small molecule,1526.0,377884.0,1
@@ -5001,7 +5001,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 4999,QUINIDINE SULFATE,"EPIC PHARMA, LLC",quinidine,Generic,Small molecule,388.0,360366.0,2
 5000,"Dextroamphetamine Saccharate, Amphetamine Aspartate Monohydrate, Dextroamphetamine Sulfate, and Amphetamine Sulfate",Rhodes Pharmaceuticals LLC,amphetamine aspartate / amphetamine sulfate / dextroamphetamine saccharate / dextroamphetamine sulfate,Generic,Small molecule,23119.0,360341.0,5
 5001,amiodarone hydrochloride,Zydus Pharmaceuticals USA Inc.,amiodarone,Generic,Small molecule,11663.0,359968.0,3
-5002,DEXTROSE,B. Braun Medical Inc.,glucose,"Brand, single source",Small molecule,24547.0,359544.0,6
+5002,DEXTROSE,B. Braun Medical Inc.,glucose,"Brand, generic competition",Small molecule,24547.0,359544.0,6
 5003,Bortezomib,"Dr.Reddy's Laboratories, Inc.",bortezomib,Generic,Small molecule,3805.0,359453.0,1
 5004,ATORVASTATIN CALCIUM,"ScieGen Pharmaceuticals, Inc.",atorvastatin,Generic,Small molecule,32875.0,359425.0,4
 5005,Haloperidol,"Amici Pharmaceuticals, LLC",haloperidol,Generic,Small molecule,17994.0,359065.0,6
@@ -5036,7 +5036,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 5034,Methimazole,Bionpharma Inc.,methimazole,Generic,Small molecule,24870.0,352842.0,2
 5035,Bacitracin,RUGBY LABORATORIES,bacitracin,OTC / unapproved / unclassified,Other,26004.0,352708.0,0
 5036,Roflumilast,Novadoz Pharmaceuticals LLC,roflumilast,Generic,Small molecule,8176.0,352689.0,2
-5037,"Butalbital, Acetaminophen, Caffeine, and Codeine Phosphate","Actavis Pharma, Inc.",acetaminophen / butalbital / caffeine / codeine,Authorized generic,Small molecule,2964.0,352047.0,2
+5037,"Butalbital, Acetaminophen, Caffeine, and Codeine Phosphate","Actavis Pharma, Inc.",acetaminophen / butalbital / caffeine / codeine,Generic,Small molecule,2964.0,352047.0,2
 5038,Memantine Hydrochloride,Ajanta Pharma USA Inc.,memantine,Generic,Small molecule,24529.0,351974.0,2
 5039,CARBOplatin,"Teva Parenteral Medicines, Inc.",carboplatin,Generic,Small molecule,8855.0,351926.0,1
 5040,Fexofenadine hydrochloride,MAJOR PHARMACEUTICALS,fexofenadine,Generic,Small molecule,20748.0,351902.0,1
@@ -5160,7 +5160,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 5158,Lidocaine Hydrochloride and Epinephrine,"Hospira, Inc.",epinephrine / lidocaine,Generic,Small molecule,26366.0,328450.0,5
 5159,Daliresp,AstraZeneca Pharmaceuticals LP,roflumilast,"Brand, generic competition",Small molecule,754.0,328380.0,2
 5160,Alaway,Bausch & Lomb Incorporated,ketotifen,"Brand, generic competition",Small molecule,17968.0,328253.0,1
-5161,Lidocaine,"Fresenius Kabi USA, LLC",lidocaine,"Brand, generic competition",Small molecule,52535.0,328231.0,3
+5161,Lidocaine,"Fresenius Kabi USA, LLC",lidocaine,Generic,Small molecule,52535.0,328231.0,3
 5162,Cefepime,Baxter Healthcare Corporation,cefepime,"Brand, single source",Small molecule,1681.0,328179.0,2
 5163,Telmisartan and Amlodipine,Mylan Pharmaceuticals Inc.,amlodipine / telmisartan,Generic,Small molecule,2653.0,327895.0,4
 5164,Potassium Acetate,"Fresenius Kabi USA, LLC",potassium acetate,Generic,Small molecule,1033.0,327800.0,2
@@ -5322,7 +5322,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 5320,Good Sense Pain Relief,L. Perrigo Company,acetaminophen,OTC / unapproved / unclassified,Other,31950.0,300182.0,0
 5321,CITALOPRAM HYDROBROMIDE,Exelan Pharmaceuticals Inc.,citalopram,Generic,Small molecule,1802.0,300152.0,3
 5322,Triamcinolone Acetonide,"Saptalis Pharmaceuticals, LLC.",triamcinolone,Generic,Small molecule,23118.0,300146.0,2
-5323,Dextrose and Sodium Chloride,Baxter Healthcare Company,glucose / sodium chloride,"Brand, generic competition",Small molecule,27026.0,299950.0,5
+5323,Dextrose and Sodium Chloride,Baxter Healthcare Company,glucose / sodium chloride,"Brand, single source",Small molecule,27026.0,299950.0,5
 5324,candesartan cilexetil,Mylan Pharmaceuticals Inc.,candesartan,Generic,Small molecule,7301.0,299905.0,4
 5325,Zolmitriptan,Ajanta Pharma USA Inc.,zolmitriptan,Generic,Small molecule,12474.0,299732.0,2
 5326,foster and thrive pain reliever,Strategic Sourcing Services LLC,acetaminophen,OTC / unapproved / unclassified,Other,26021.0,299481.0,0
@@ -5380,7 +5380,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 5378,PAROXETINE,Apotex Corp.,paroxetine,Generic,Small molecule,26438.0,288287.0,4
 5379,Bupropion Hydrochloride,BluePoint Laboratories,bupropion,Generic,Small molecule,19240.0,288097.0,2
 5380,Multrys,"American Regent, Inc.",copper sulfate / manganese sulfate / selenious acid / zinc sulfate,"Brand, single source",Small molecule,444.0,287774.0,1
-5381,Good Neighbor Pharmacy,AmerisourceBergen,clotrimazole,OTC / unapproved / unclassified,Other,24211.0,287730.0,3
+5381,Good Neighbor Pharmacy,AmerisourceBergen,hydrocortisone,OTC / unapproved / unclassified,Other,24211.0,287730.0,3
 5382,Ursodiol,"Actavis Pharma, Inc.",ursodeoxycholate,Authorized generic,Small molecule,5842.0,287659.0,3
 5383,Isosorbide Dinitrate,"Par Health USA, LLC",isosorbide dinitrate,Generic,Small molecule,7640.0,287620.0,5
 5384,bisoprolol fumarate and hydrochlorothiazide,"Unichem Pharmaceuticals (USA), Inc.",bisoprolol / hydrochlorothiazide,Generic,Small molecule,15606.0,287576.0,3
@@ -5437,7 +5437,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 5435,Temozolomide,"Sun Pharmaceutical Industries, Inc.",temozolomide,Generic,Small molecule,1593.0,278557.0,6
 5436,Tamiflu,"Genentech, Inc.",oseltamivir,"Brand, generic competition",Small molecule,1964.0,278508.0,3
 5437,Zembrace SymTouch,"Tonix Medicines, Inc.",sumatriptan,"Brand, single source",Small molecule,211.0,278496.0,1
-5438,Good Sense Nicotine,L. Perrigo Company,nicotine,Generic,Small molecule,7145.0,278495.0,5
+5438,Good Sense Nicotine,L. Perrigo Company,nicotine,Generic,Small molecule,7145.0,278495.0,4
 5439,Lactulose,APOZEAL PHARMACEUTICALS INC,lactulose,Generic,Small molecule,13826.0,278343.0,1
 5440,Isosorbide Dinitrate,Hikma Pharmaceuticals USA Inc.,isosorbide dinitrate,Generic,Small molecule,10265.0,278242.0,3
 5441,Famotidine,Baxter Healthcare Corporation,famotidine,Generic,Small molecule,9982.0,278021.0,1
@@ -5565,7 +5565,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 5563,Pirfenidone,Laurus Labs Limited,pirfenidone,Generic,Small molecule,290.0,257854.0,3
 5564,Plasma-Lyte A,Baxter Healthcare Corporation,magnesium chloride / potassium chloride / sodium acetate / sodium chloride / sodium gluconate,"Brand, single source",Small molecule,8549.0,257693.0,1
 5565,Varenicline,"Florida Pharmaceutical Products, LLC",varenicline,Generic,Small molecule,4971.0,257649.0,1
-5566,Stool Softener Laxative,Strategic Sourcing Services LLC,"docusate / sennosides, USP",OTC / unapproved / unclassified,Other,8941.0,257604.0,0
+5566,Stool Softener Laxative,Strategic Sourcing Services LLC,docusate,OTC / unapproved / unclassified,Other,8941.0,257604.0,0
 5567,Baclofen,"Par Health USA, LLC",baclofen,Generic,Small molecule,9536.0,257590.0,2
 5568,Fluorouracil,BluePoint Laboratories,fluorouracil,Generic,Small molecule,14959.0,257543.0,3
 5569,Losartan Potassium and Hydrochlorothiazide,Alembic Pharmaceuticals Inc.,hydrochlorothiazide / losartan,Generic,Small molecule,18522.0,257482.0,3
@@ -5599,7 +5599,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 5597,Dobutamine Hydrochloride in Dextrose,Baxter Healthcare Corporation,dobutamine,"Brand, single source",Small molecule,4076.0,252933.0,3
 5598,Potassium Chloride Extended-Release,"Sun Pharmaceutical Industries, Inc.",potassium chloride,Generic,Small molecule,18642.0,252740.0,1
 5599,Celexa,"Allergan, Inc.",citalopram,"Brand, generic competition",Small molecule,669.0,252654.0,3
-5600,Dextrose,"ICU Medical, Inc.",glucose,"Brand, single source",Small molecule,16441.0,252649.0,11
+5600,Dextrose,"ICU Medical, Inc.",glucose,"Brand, single source",Small molecule,16441.0,252649.0,10
 5601,PHYTONADIONE,Dr.Reddy's Laboratories Inc,vitamin K1,Generic,Small molecule,1935.0,252366.0,1
 5602,Prometrium,"Acertis Pharmaceuticals, LLC",progesterone,"Brand, generic competition",Small molecule,310.0,252147.0,2
 5603,DORZOLAMIDE HYDROCHLORIDE AND TIMOLOL MALEATE,Micro Labs Limited,dorzolamide / timolol,Generic,Small molecule,2833.0,252134.0,1
@@ -5758,7 +5758,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 5756,CORTEF,Pharmacia & Upjohn Company LLC,hydrocortisone,"Brand, generic competition",Small molecule,1528.0,229671.0,2
 5757,"Unnamed product, NDC 39328-0557",Unknown labeler,ferrous sulfate,OTC / unapproved / unclassified,Other,17572.0,229663.0,0
 5758,triamcinolone acetonide,Padagis Israel Pharmaceuticals Ltd,triamcinolone,Generic,Small molecule,1997.0,229541.0,1
-5759,Dextrose,Baxter Healthcare Company,glucose,OTC / unapproved / unclassified,Other,9686.0,229464.0,2
+5759,Dextrose,Baxter Healthcare Company,glucose,"Brand, generic competition",Small molecule,9686.0,229464.0,2
 5760,"Polyethylene Glycol 3350, NF Powder for Solution, Laxative","Pharmaceutica North America, Inc.",polyethylene glycol 3350,Generic,Small molecule,6326.0,229180.0,1
 5761,Terconazole,Padagis Israel Pharmaceuticals Ltd,terconazole,Generic,Small molecule,3539.0,229136.0,1
 5762,IVERMECTIN,"DR. REDDY'S LABORATORIES, INC.",ivermectin,Generic,Small molecule,6098.0,229105.0,1
@@ -5781,7 +5781,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 5779,Kaitlib Fe,"Lupin Pharmaceuticals, Inc.",ethinyl estradiol / norethindrone,Generic,Small molecule,2389.0,226911.0,1
 5780,Nesina,"Takeda Pharmaceuticals America, Inc.",alogliptin,"Brand, generic competition",Small molecule,243.0,226773.0,2
 5781,MoviPrep,"Salix Pharmaceuticals, Inc.",ascorbic acid / polyethylene glycol 3350 / potassium chloride / sodium ascorbate / sodium chloride / sodium sulfate,"Brand, generic competition",Small molecule,2137.0,226717.0,1
-5782,Allergy Relief,Camber Consumer Care,cetirizine,Generic,Small molecule,27298.0,226332.0,2
+5782,Allergy Relief,Camber Consumer Care,loratadine,Generic,Small molecule,27298.0,226332.0,2
 5783,testosterone cypionate,Alvogen Inc.,testosterone,Generic,Small molecule,6492.0,226089.0,2
 5784,Drospirenone and ethinyl estradiol,"Camber Pharmaceuticals, Inc.",drospirenone / ethinyl estradiol,Generic,Small molecule,12240.0,226061.0,1
 5785,Fesoterodine fumarate,"Dr.Reddy's Laboratories Inc.,",fesoterodine,Generic,Small molecule,4331.0,225816.0,2
@@ -5793,7 +5793,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 5791,Doxycycline Hyclate,"EPIC PHARMA, LLC",doxycycline,Generic,Small molecule,14342.0,224394.0,1
 5792,DentaGel,"Rising Pharma Holdings, Inc.",sodium fluoride,OTC / unapproved / unclassified,Other,18639.0,224140.0,0
 5793,Mesalamine,Northstar Rx LLC.,mesalamine,Generic,Small molecule,1669.0,223960.0,1
-5794,foster and thrive childrens allergy relief,Strategic Sourcing Services LLC,loratadine,Generic,Small molecule,14438.0,223646.0,2
+5794,foster and thrive childrens allergy relief,Strategic Sourcing Services LLC,cetirizine,Generic,Small molecule,14438.0,223646.0,2
 5795,Bepotastine Besilate Ophthalmic Solution 1.5%,Alembic Pharmaceuticals Inc.,bepotastine,Generic,Small molecule,2317.0,223528.0,1
 5796,ERAXIS,Roerig,anidulafungin,"Brand, single source",Small molecule,501.0,223483.0,1
 5797,FIRVANQ,"Azurity Pharmaceuticals, Inc",vancomycin,"Brand, generic competition",Small molecule,1239.0,223213.0,2
@@ -5858,7 +5858,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 5856,Metronidazole,Baxter Healthcare Corporation,metronidazole,"Brand, generic competition",Small molecule,20242.0,215656.0,1
 5857,Childrens PediaClear 8,"GM Pharmaceuticals, INC",pyrilamine,OTC / unapproved / unclassified,Other,9457.0,215419.0,0
 5858,Mexiletine Hydrochloride,"ANI Pharmaceuticals, Inc.",mexiletine,Generic,Small molecule,4766.0,215329.0,3
-5859,Kaletra,AbbVie Inc.,lopinavir / ritonavir,"Brand, generic competition",Small molecule,251.0,215313.0,2
+5859,Kaletra,AbbVie Inc.,lopinavir / ritonavir,"Brand, single source",Small molecule,251.0,215313.0,2
 5860,Paroxetine,Modavar Pharmaceuticals LLC,paroxetine,Generic,Small molecule,7287.0,215309.0,3
 5861,POTASSIUM CHLORIDE,"Epic Pharma, LLC",potassium chloride,Generic,Small molecule,2888.0,214941.0,1
 5862,famotidine,Camber Consumer Care Inc,famotidine,Generic,Small molecule,15958.0,214896.0,2
@@ -6010,7 +6010,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 6008,Chlorthalidone,"Nivagen Pharmaceuticals, INC.",chlorthalidone,Generic,Small molecule,19382.0,195973.0,2
 6009,Docetaxel,Armas Pharmaceuticals Inc.,docetaxel,Generic,Small molecule,92.0,195546.0,1
 6010,SOOLANTRA,"Galderma Laboratories, L.P.",ivermectin,"Brand, generic competition",Small molecule,375.0,195509.0,1
-6011,Nicotine Polacrilex,AmerisourceBergen (Good Neighbor Pharmacy) 46122,nicotine,Generic,Small molecule,5307.0,195454.0,4
+6011,Nicotine Polacrilex,AmerisourceBergen (Good Neighbor Pharmacy) 46122,nicotine,Generic,Small molecule,5307.0,195454.0,3
 6012,Larin 1.5/30,Northstar Rx LLC,ethinyl estradiol / norethindrone,Generic,Small molecule,8303.0,195442.0,1
 6013,Docetaxel anhydrous,Meitheal Pharmaceuticals Inc,docetaxel,Generic,Small molecule,2074.0,195377.0,1
 6014,Bumetanide,Advagen Pharma Limited,bumetanide,Generic,Small molecule,10399.0,195122.0,3
@@ -6133,7 +6133,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 6131,Ibandronate sodium,Dr. Reddy's Laboratories Limited,ibandronate,Generic,Small molecule,11395.0,179587.0,1
 6132,Clobetasol Propionate,Alembic Pharmaceuticals Inc.,clobetasol,Generic,Small molecule,9070.0,179446.0,1
 6133,Rivastigmine,Amneal Pharmaceuticals LLC,rivastigmine,Generic,Small molecule,2237.0,179429.0,3
-6134,pseudoephedrine hydrochloride,Padagis Israel Pharmaceuticals Ltd,pseudoephedrine,OTC / unapproved / unclassified,Other,25172.0,179349.0,1
+6134,pseudoephedrine hydrochloride,Padagis Israel Pharmaceuticals Ltd,pseudoephedrine,Generic,Small molecule,25172.0,179349.0,1
 6135,TADALAFIL,"Solco Healthcare US, LLC",tadalafil,Generic,Small molecule,9229.0,179227.0,5
 6136,Adalimumab-ryvk,Quallent Pharmaceuticals Health LLC,adalimumab,Interchangeable biosimilar,Biologic,84.0,178995.0,1
 6137,SynoFlex Patch,Sola Pharmaceuticals,lidocaine / menthol,OTC / unapproved / unclassified,Other,116.0,178978.0,0
@@ -6244,7 +6244,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 6242,Pylera,"Allergan, Inc.",bismuth subcitrate / metronidazole / tetracycline,"Brand, generic competition",Small molecule,564.0,168471.0,1
 6243,Ondansetron,Fosun Pharma USA Inc.,ondansetron,Generic,Small molecule,43832.0,168432.0,2
 6244,Alendronate Sodium,"ANI Pharmaceuticals, Inc.",alendronate,Generic,Small molecule,979.0,168187.0,1
-6245,Metronidazole,"Hospira, Inc.",metronidazole,"Brand, generic competition",Small molecule,17065.0,168125.0,1
+6245,Metronidazole,"Hospira, Inc.",metronidazole,Generic,Small molecule,17065.0,168125.0,1
 6246,Fluphenazine Hydrochloride,"Upsher-Smith Laboratories, LLC",fluphenazine,Generic,Small molecule,3729.0,168109.0,4
 6247,Nicotine,Strategic Sourcing Services LLC,nicotine,"Brand, generic competition",Small molecule,4225.0,167974.0,3
 6248,HyperTET,"GRIFOLS USA, LLC",tetanus immune globulin,Reference biologic,Biologic,392.0,167897.0,1
@@ -6310,7 +6310,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 6308,FLUOROURACIL,Dr. Reddy's Labratories Inc.,fluorouracil,Generic,Small molecule,4193.0,162362.0,1
 6309,Cinacalcet,Aurobindo Pharma Limited,cinacalcet,Generic,Small molecule,2291.0,162231.0,3
 6310,E.E.S,Carnegie Pharmaceuticals LLC,erythromycin,Generic,Small molecule,261.0,162223.0,2
-6311,Atropine Sulfate,"American Regent, Inc.",atropine,OTC / unapproved / unclassified,Other,17771.0,162200.0,2
+6311,Atropine Sulfate,"American Regent, Inc.",atropine,Generic,Small molecule,17771.0,162200.0,2
 6312,Metaxalone,CIPLA USA INC.,metaxalone,Generic,Small molecule,767.0,162181.0,1
 6313,Imiquimod,"Teva Pharmaceuticals USA, Inc.",imiquimod,Authorized generic,Small molecule,211.0,161970.0,1
 6314,Estradiol / Norethindrone Acetate,"Breckenridge Pharmaceutical, Inc.",estradiol / norethindrone,Generic,Small molecule,4534.0,161910.0,2
@@ -6343,7 +6343,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 6341,Clindamycin in 5 Percent Dextrose,Sandoz Inc,clindamycin,Generic,Small molecule,10662.0,159610.0,3
 6342,ETHAMBUTOL HYDROCHLORIDE,"Epic Pharma, LLC",ethambutol,Generic,Small molecule,3592.0,159561.0,1
 6343,Solifenacin Succinate,"Unichem Pharmaceuticals (USA), Inc.",solifenacin,Generic,Small molecule,9973.0,159542.0,2
-6344,Calcium Gluconate in Sodium Chloride,"WG Critical Care, LLC",calcium gluconate,"Brand, single source",Small molecule,6762.0,159422.0,3
+6344,Calcium Gluconate in Sodium Chloride,"WG Critical Care, LLC",calcium gluconate,"Brand, generic competition",Small molecule,6762.0,159422.0,3
 6345,Amlodipine and Atorvastatin,Apotex Corp.,amlodipine / atorvastatin,Generic,Small molecule,2123.0,159375.0,8
 6346,Atorvastatin Calcium,Dr. Reddy's Laboratories Limited,atorvastatin,Generic,Small molecule,21678.0,159316.0,4
 6347,Methyldopa,"Chartwell RX, LLC",methyldopa,Authorized generic,Small molecule,303.0,159222.0,2
@@ -6508,10 +6508,10 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 6506,Danazol,"Teva Pharmaceuticals USA, Inc.",danazol,Generic,Small molecule,831.0,144408.0,3
 6507,Aspirin Regimen,"Cardinal Health 110, LLC. DBA Leader",aspirin,OTC / unapproved / unclassified,Other,18715.0,144132.0,0
 6508,Glimepiride,Accord Healthcare Inc,glimepiride,Generic,Small molecule,11068.0,144123.0,3
-6509,Pedia-Lax,"C.B. Fleet Company, Inc.",glycerin,OTC / unapproved / unclassified,Other,10353.0,144113.0,0
+6509,Pedia-Lax,"C.B. Fleet Company, Inc.",magnesium hydroxide,OTC / unapproved / unclassified,Other,10353.0,144113.0,0
 6510,Benazepril Hydrochloride,Heritage Pharmaceuticals Inc. d/b/a Avet Pharmaceuticals Inc.,benazepril,Generic,Small molecule,12532.0,144028.0,4
 6511,INDERAL,"ANI Pharmaceuticals, Inc.",propranolol,"Brand, generic competition",Small molecule,56.0,143996.0,1
-6512,Doxy 100,"Fresenius Kabi USA, LLC",doxycycline,Generic,Small molecule,4348.0,143754.0,2
+6512,Doxy 100,"Fresenius Kabi USA, LLC",doxycycline,Generic,Small molecule,4348.0,143754.0,1
 6513,phenelzine sulfate,Mylan Pharmaceuticals Inc.,phenelzine,Authorized generic,Small molecule,1715.0,143717.0,1
 6514,Multivitamin with 0.25 mg Flouride,"NEOS THERAPEUTICS, LP",ascorbic acid / cholecalciferol / folic acid / niacin / riboflavin / sodium fluoride / thiamine / vitamin A / vitamin B12 / vitamin B6 / vitamin E,OTC / unapproved / unclassified,Other,287.0,143636.0,0
 6515,Pfizerpen,Roerig,penicillin G,Generic,Small molecule,1976.0,143611.0,1
@@ -6644,7 +6644,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 6642,CUPRIC CHLORIDE,Northstar Rx LLC,cupric chloride,Generic,Small molecule,721.0,131714.0,1
 6643,Zolmitriptan,"Glenmark Pharmaceuticals Inc.,USA",zolmitriptan,Generic,Small molecule,5548.0,131576.0,2
 6644,Lidocaine Hydrochloride,Lifestar Pharma LLC,lidocaine,Generic,Small molecule,16984.0,131476.0,6
-6645,Ceftriaxone,Apotex Corporation,ceftriaxone,Generic,Small molecule,1513.0,131337.0,5
+6645,Ceftriaxone,Apotex Corporation,ceftriaxone,Generic,Small molecule,1513.0,131337.0,4
 6646,WesCaps Softgels 100ct,"WESTMINSTER PHARMACEUTICALS, LLC.",ascorbic acid / biotin / folic acid / niacin / pantothenate / pyridoxine / riboflavin / thiamine / vitamin B12,OTC / unapproved / unclassified,Other,9158.0,131108.0,0
 6647,Lisinopril,"Actavis Pharma, Inc.",lisinopril,Generic,Small molecule,20590.0,131086.0,6
 6648,Vilazodone Hydrochloride,Cipla USA Inc.,vilazodone,Generic,Small molecule,3044.0,130844.0,1
@@ -6717,7 +6717,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 6715,Isoproterenol Hydrochloride,Nexus Pharmaceuticals LLC,isoproterenol,Generic,Small molecule,131.0,125205.0,2
 6716,FIBER TABS,Major Pharmaceuticals,calcium polycarbophil,OTC / unapproved / unclassified,Other,13868.0,125199.0,0
 6717,Liquid Acetaminophen,LLORENS PHARMACEUTICALS INTERNATIONAL DIVISION,acetaminophen,OTC / unapproved / unclassified,Other,12900.0,125086.0,0
-6718,Acetaminophen,Amerisource Bergen,acetaminophen,Generic,Small molecule,10299.0,125076.0,1
+6718,Acetaminophen,Amerisource Bergen,acetaminophen,OTC / unapproved / unclassified,Other,10299.0,125076.0,1
 6719,Fesoterodine Fumarate,Alembic Pharmaceuticals Inc.,fesoterodine,Generic,Small molecule,3112.0,124859.0,2
 6720,DILTIAZEM HYDROCHLORIDE,NORTHSTAR RX LLC,diltiazem,Generic,Small molecule,4528.0,124784.0,3
 6721,Pentam 300,"Fresenius Kabi USA, LLC",pentamidine,"Brand, generic competition",Small molecule,1298.0,124659.0,1
@@ -6741,7 +6741,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 6739,Calcium Acetate,Sandoz Inc,calcium acetate,Authorized generic,Small molecule,2318.0,123198.0,1
 6740,Tafluprost,Sandoz Inc,tafluprost,Generic,Small molecule,834.0,123185.0,1
 6741,Carbinoxamine Maleate,"Biocomp Pharma, Inc.",carbinoxamine,Generic,Small molecule,5471.0,123099.0,1
-6742,Dextrose And Sodium Chloride,B. Braun Medical Inc.,glucose / sodium chloride,"Brand, single source",Small molecule,11059.0,123003.0,6
+6742,Dextrose And Sodium Chloride,B. Braun Medical Inc.,glucose / sodium chloride,"Brand, generic competition",Small molecule,11059.0,123003.0,6
 6743,Ranolazine,"Unichem Pharmaceuticals (USA), Inc.",ranolazine,Generic,Small molecule,4713.0,122976.0,2
 6744,DROPERIDOL,Hikma Pharmaceuticals USA Inc.,droperidol,Generic,Small molecule,17396.0,122848.0,2
 6745,FLUOROURACIL,"Encube Ethicals, Inc.",fluorouracil,Generic,Small molecule,2914.0,122785.0,1
@@ -6774,7 +6774,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 6772,CIMETIDINE,Aurobindo Pharma Limited,cimetidine,Generic,Small molecule,4278.0,120875.0,4
 6773,"Butalbital, Acetaminophen, and Caffeine",NORTHSTAR RX LLC,acetaminophen / butalbital / caffeine,Generic,Small molecule,4655.0,120714.0,1
 6774,RAGWITEK,ALK-Abello A S,short ragweed pollen extract,Reference biologic,Biologic,356.0,120711.0,1
-6775,Rocuronium,"Fresenius Kabi USA, LLC",rocuronium,Generic,Small molecule,9812.0,120559.0,2
+6775,Rocuronium,"Fresenius Kabi USA, LLC",rocuronium,"Brand, single source",Small molecule,9812.0,120559.0,2
 6776,Phytonadione,"International Medication Systems, Limited",vitamin K1,Generic,Small molecule,1402.0,120306.0,1
 6777,Vigabatrin,Hikma Pharmaceuticals USA Inc,vigabatrin,Generic,Small molecule,28.0,120293.0,1
 6778,Hydrocodone Bitartrate and Acetaminophen,SpecGx LLC,acetaminophen / hydrocodone,Generic,Small molecule,5258.0,120127.0,3
@@ -7005,7 +7005,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 7003,Lactated Ringers and Dextrose,Baxter Healthcare Corporation,calcium chloride / glucose / lactate / potassium chloride / sodium chloride,"Brand, single source",Small molecule,7784.0,103824.0,1
 7004,Levetiracetam,Mylan Pharmaceuticals Inc.,levetiracetam,Generic,Small molecule,6417.0,103816.0,3
 7005,THROMBIN-JMI,Pfizer Laboratories Div Pfizer Inc,thrombin,Reference biologic,Biologic,1302.0,103792.0,2
-7006,NOREPINEPHRINE BITARTRATE IN SODIUM CHLORIDE,"WG Critical Care, LLC",norepinephrine,"Brand, single source",Small molecule,246.0,103704.0,4
+7006,NOREPINEPHRINE BITARTRATE IN SODIUM CHLORIDE,"WG Critical Care, LLC",norepinephrine,"Brand, single source",Small molecule,246.0,103704.0,3
 7007,PROPAFENONE HYDROCHLORIDE,Aurobindo Pharma Limited,propafenone,Generic,Small molecule,4756.0,103702.0,3
 7008,REFRESH PM OINTMENT,ALLERGAN INC,mineral oil / petrolatum,OTC / unapproved / unclassified,Other,5384.0,103660.0,0
 7009,Neurontin,Viatris Specialty LLC,gabapentin,"Brand, generic competition",Small molecule,298.0,103594.0,4
@@ -7049,7 +7049,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 7047,atropine sulfate,"Alcon Laboratories, Inc.",atropine,"Brand, generic competition",Small molecule,1551.0,101321.0,1
 7048,FLUOXETINE HCL,Strides Pharma Science Limited,fluoxetine,Generic,Small molecule,3719.0,101306.0,1
 7049,"Unnamed product, NDC 70954-0559",Unknown labeler,,OTC / unapproved / unclassified,Other,1458.0,101277.0,0
-7050,Potassium Chloride,ICU Medical Inc.,potassium chloride,"Brand, single source",Small molecule,10851.0,101243.0,5
+7050,Potassium Chloride,ICU Medical Inc.,potassium chloride,"Brand, generic competition",Small molecule,10851.0,101243.0,5
 7051,Triple Antibiotic,BluePoint Laboratories,bacitracin / neomycin / polymyxin B,OTC / unapproved / unclassified,Other,9225.0,101081.0,0
 7052,Perampanel,"Sun Pharmaceutical Industries, Inc.",perampanel,Generic,Small molecule,118.0,100857.0,5
 7053,Poly-Vi-Flor .25mg Oral Suspension,"AYTU THERAPEUTICS, LLC",,OTC / unapproved / unclassified,Other,225.0,100817.0,0
@@ -7202,7 +7202,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 7200,NIFEDIPINE,"Leading Pharma, LLC",nifedipine,Generic,Small molecule,1643.0,92510.0,1
 7201,Palonosetron,Dr.Reddy's Laboratories Limited,palonosetron,Generic,Small molecule,6878.0,92346.0,1
 7202,Rocuronium Bromide,Sandoz Inc,rocuronium,Generic,Small molecule,4812.0,92335.0,1
-7203,Azacitidine,BluePoint Laboratories,azacitidine,"Brand, generic competition",Small molecule,2281.0,92279.0,1
+7203,Azacitidine,BluePoint Laboratories,azacitidine,Generic,Small molecule,2281.0,92279.0,1
 7204,Zolmitriptan,Alembic Pharmaceuticals Inc.,zolmitriptan,Generic,Small molecule,2383.0,92185.0,4
 7205,Metronidazole,Heritage Pharmaceuticals Inc. d/b/a Avet Pharmaceuticals Inc.,metronidazole,Generic,Small molecule,7568.0,92153.0,2
 7206,Olanzapine,Mylan Pharmaceuticals Inc.,olanzapine,Generic,Small molecule,3085.0,92049.0,4
@@ -7241,7 +7241,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 7239,ETHYNODIOL DIACETATE AND ETHINYL ESTRADIOL,Mylan Pharmaceuticals Inc.,ethinyl estradiol / ethynodiol,Generic,Small molecule,3191.0,89674.0,2
 7240,Dexmedetomidine,Piramal Critical Care Inc,dexmedetomidine,Generic,Small molecule,5298.0,89650.0,1
 7241,LOJAIMIESS,Xiromed LLC,ethinyl estradiol / levonorgestrel,Generic,Small molecule,2480.0,89589.0,1
-7242,Metoprolol Succinate,"Nivagen Pharmaceuticals, Inc.",metoprolol,Generic,Small molecule,7823.0,89482.0,5
+7242,Metoprolol Succinate,"Nivagen Pharmaceuticals, Inc.",metoprolol,Generic,Small molecule,7823.0,89482.0,4
 7243,GABAPENTIN CAPSULES 300 MG 500CT,SUN PHARMACEUTICAL INDUSTRIES INC.,gabapentin,Generic,Small molecule,8665.0,89396.0,1
 7244,Etoposide,Accord Healthcare Inc.,etoposide,Generic,Small molecule,3395.0,89387.0,1
 7245,Desmopressin Acetate,"XGen Pharmaceuticals DJB, Inc.",desmopressin,Generic,Small molecule,329.0,89287.0,2
@@ -7399,8 +7399,8 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 7397,Liothyronine Sodium,"Teva Pharmaceuticals USA, Inc.",liothyronine,Generic,Small molecule,2907.0,81699.0,3
 7398,Sodium Sulfacetamide 9.8% and Sulfur 4.8% Cleanser,"Acella Pharmaceuticals, LLC",sulfacetamide / sulfur,OTC / unapproved / unclassified,Other,958.0,81693.0,0
 7399,DACTINOMYCIN,Eugia US LLC,dactinomycin,Generic,Small molecule,62.0,81514.0,1
-7400,Dextrose,"Hospira, Inc.",glucose,"Brand, single source",Small molecule,3841.0,81514.0,4
-7401,Bupivacaine Hydrochloride and Epinephrine,"Hospira, Inc.",bupivacaine / epinephrine,Generic,Small molecule,5057.0,81507.0,7
+7400,Dextrose,"Hospira, Inc.",glucose,"Brand, generic competition",Small molecule,3841.0,81514.0,4
+7401,Bupivacaine Hydrochloride and Epinephrine,"Hospira, Inc.",bupivacaine / epinephrine,Generic,Small molecule,5057.0,81507.0,6
 7402,aspirin,"Time-Cap Labs, Inc",aspirin,OTC / unapproved / unclassified,Other,7848.0,81481.0,0
 7403,Irinotecan Hydrochloride,Hikma Pharmaceuticals USA Inc.,irinotecan,Generic,Small molecule,2441.0,81434.0,2
 7404,Clomiphene Citrate,"RISING PHARMA HOLDINGS, INC.",clomiphene,Generic,Small molecule,755.0,81396.0,1
@@ -7411,7 +7411,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 7409,Good Neighbor Pharmacy Childrens Pain and Fever,Amerisource Bergen,acetaminophen,OTC / unapproved / unclassified,Other,7169.0,81132.0,0
 7410,Levothyroxine Sodium,Sagent Pharmaceuticals,levothyroxine,Generic,Small molecule,171.0,81109.0,1
 7411,Zafirlukast,Aurobindo Pharma Limited,zafirlukast,Generic,Small molecule,1526.0,81074.0,2
-7412,Potassium Chloride in Sodium Chloride,ICU Medical Inc.,potassium chloride / sodium chloride,"Brand, generic competition",Small molecule,4342.0,81056.0,3
+7412,Potassium Chloride in Sodium Chloride,ICU Medical Inc.,potassium chloride / sodium chloride,Generic,Small molecule,4342.0,81056.0,3
 7413,Dasetta 7/7/7,Northstar Rx LLC,ethinyl estradiol / norethindrone,Generic,Small molecule,4587.0,80874.0,1
 7414,DIMETHYL FUMARATE,Amneal Pharmaceuticals NY LLC,dimethyl fumarate,Generic,Small molecule,102.0,80839.0,1
 7415,Tolterodine Tartrate,"Rising Pharma Holdings, Inc.",tolterodine,Generic,Small molecule,3243.0,80791.0,2
@@ -7468,7 +7468,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 7466,Acular,"Allergan, Inc.",ketorolac,"Brand, generic competition",Small molecule,321.0,77974.0,1
 7467,Desoximetasone,"Sun Pharmaceutical Industries, Inc.",desoximetasone,Generic,Small molecule,461.0,77964.0,2
 7468,Lorazepam,"Civica, Inc.",lorazepam,"Brand, generic competition",Small molecule,13270.0,77898.0,1
-7469,Codeine sulfate,Hikma Pharmaceuticals USA Inc.,codeine,"Brand, generic competition",Small molecule,1585.0,77854.0,3
+7469,Codeine sulfate,Hikma Pharmaceuticals USA Inc.,codeine,"Brand, single source",Small molecule,1585.0,77854.0,3
 7470,Sotalol Hydrochloride,"Oxford Pharmaceuticals, LLC",sotalol,Generic,Small molecule,4929.0,77842.0,3
 7471,Flurbiprofen Sodium,"Amici Pharma, Inc.",flurbiprofen,Generic,Small molecule,1797.0,77840.0,1
 7472,Vancomycin Hydrochloride,Xellia Pharmaceuticals USA LLC,vancomycin,Generic,Small molecule,2089.0,77838.0,4
@@ -7738,7 +7738,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 7736,Senokot,"Atlantis Consumer Healthcare, Inc.","sennosides, USP",OTC / unapproved / unclassified,Other,4172.0,64929.0,0
 7737,Terbutaline Sulfate,Hikma Pharmaceuticals USA Inc.,terbutaline,Generic,Small molecule,5130.0,64925.0,1
 7738,Cyclosporine,Mayne Pharma Inc.,cyclosporine,Generic,Small molecule,778.0,64915.0,2
-7739,Dextrose and Sodium Chloride,ICU Medical Inc.,glucose / sodium chloride,"Brand, generic competition",Small molecule,7461.0,64887.0,4
+7739,Dextrose and Sodium Chloride,ICU Medical Inc.,glucose / sodium chloride,"Brand, single source",Small molecule,7461.0,64887.0,4
 7740,leader childrens cough dm,"Cardinal Health 110, LLC. dba Leader",dextromethorphan,Generic,Small molecule,4248.0,64881.0,1
 7741,Azacitidine,Accord Healthcare Inc.,azacitidine,Generic,Small molecule,267.0,64872.0,1
 7742,Rivaroxaban,Macleods Pharmaceuticals Limited,rivaroxaban,Generic,Small molecule,343.0,64838.0,1
@@ -7924,7 +7924,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 7922,Ticagrelor,Mylan Pharmaceuticals Inc.,ticagrelor,Generic,Small molecule,144.0,57823.0,1
 7923,Irinotecan Hydrochloride,"Hospira, Inc.",irinotecan,Generic,Small molecule,1671.0,57822.0,3
 7924,Sodium Bicarbonate,NORTHSTAR RX LLC,sodium bicarbonate,Generic,Small molecule,975.0,57753.0,1
-7925,Zoledronic acid,BluePoint Laboratories,zoledronic acid,Generic,Small molecule,2977.0,57718.0,3
+7925,Zoledronic acid,BluePoint Laboratories,zoledronic acid,Generic,Small molecule,2977.0,57718.0,2
 7926,BIMATOPROST,Micro Labs Limited,bimatoprost,Generic,Small molecule,1170.0,57710.0,1
 7927,Ondansetron,"Fresenius Kabi USA, LLC",ondansetron,Generic,Small molecule,16124.0,57667.0,2
 7928,Aspirin,AmerisourceBergen (Good Neighbor Pharmacy) 46122,aspirin,OTC / unapproved / unclassified,Other,8067.0,57568.0,0
@@ -7939,7 +7939,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 7937,Budesonide,"Exelan Pharmaceuticals, Inc.",budesonide,Generic,Small molecule,389.0,57309.0,2
 7938,ONGLYZA,AstraZeneca Pharmaceuticals LP,saxagliptin,"Brand, generic competition",Small molecule,123.0,57304.0,2
 7939,"Travoprost Ophthalmic Solution, 0.004%",Mylan Pharmaceuticals Inc.,travoprost,Generic,Small molecule,969.0,57285.0,1
-7940,Allergy Relief,Strategic Sourcing Services LLC,diphenhydramine,OTC / unapproved / unclassified,Other,6456.0,57224.0,1
+7940,Allergy Relief,Strategic Sourcing Services LLC,cetirizine,Generic,Small molecule,6456.0,57224.0,1
 7941,Clindamycin Phosphate and Tretinoin,"Actavis Pharma, Inc.",clindamycin / tretinoin,Generic,Small molecule,211.0,57208.0,1
 7942,Bortezomib,Novadoz Pharmaceuticals LLC,bortezomib,Generic,Small molecule,1137.0,57185.0,1
 7943,Bisoprolol Fumarate and Hydrochlorothiazide,"GLENMARK PHARMACEUTICALS INC., USA",bisoprolol / hydrochlorothiazide,Generic,Small molecule,3454.0,57149.0,3
@@ -8092,7 +8092,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 8090,Theophylline,Viona Pharmaceuticals Inc,theophylline,Generic,Small molecule,828.0,51432.0,2
 8091,Levetiracetam,Laurus Generics Inc.,levetiracetam,Generic,Small molecule,1484.0,51296.0,3
 8092,Propafenone Hydrochloride,Aurobindo Pharma Limited,propafenone,Generic,Small molecule,708.0,51284.0,3
-8093,Potassium Chloride in Dextrose and Sodium Chloride,B. Braun Medical Inc.,glucose / potassium chloride / sodium chloride,"Brand, single source",Small molecule,3193.0,51280.0,4
+8093,Potassium Chloride in Dextrose and Sodium Chloride,B. Braun Medical Inc.,glucose / potassium chloride / sodium chloride,"Brand, generic competition",Small molecule,3193.0,51280.0,4
 8094,Good Neighbor Pharmacy Alcohol Antiseptic Skin Cleanser,Amerisouce Bergen,isopropyl alcohol,OTC / unapproved / unclassified,Other,9976.0,51155.0,0
 8095,ALAHIST DM,"Poly Pharmaceuticals, Inc.",dextromethorphan / pheniramine / phenylephrine,OTC / unapproved / unclassified,Other,5356.0,51082.0,0
 8096,Oxaprozin,Amneal Pharmaceuticals NY LLC,oxaprozin,Generic,Small molecule,1326.0,51054.0,1
@@ -8227,7 +8227,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 8225,PHENOBARBITAL,Genus Lifesciences,phenobarbital,OTC / unapproved / unclassified,Other,2601.0,46264.0,0
 8226,Haloperidol,Advagen Pharma Ltd,haloperidol,Generic,Small molecule,1040.0,46236.0,1
 8227,FINGOLIMOD,Aurobindo Pharma Limited,fingolimod,Generic,Small molecule,147.0,46227.0,1
-8228,Ultiva,Mylan Institutional LLC,remifentanil,"Brand, generic competition",Small molecule,1377.0,46183.0,5
+8228,Ultiva,Mylan Institutional LLC,remifentanil,"Brand, single source",Small molecule,1377.0,46183.0,5
 8229,Bleomycin,Meitheal Pharmaceuticals Inc.,bleomycin,Generic,Small molecule,759.0,46167.0,2
 8230,Daptomycin,Hikma Pharmaceuticals USA Inc.,daptomycin,Generic,Small molecule,457.0,46119.0,1
 8231,Amphotericin B,"XGen Pharmaceuticals DJB, Inc.",amphotericin B,Generic,Small molecule,138.0,46109.0,1
@@ -8467,7 +8467,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 8465,ALA-HIST IR,"Poly Pharmaceuticals, Inc.",dexbrompheniramine,OTC / unapproved / unclassified,Other,1039.0,39113.0,0
 8466,Omeprazole,AMERISOURCEBERGEN DRUG CORPORATION,omeprazole,Generic,Small molecule,1742.0,39004.0,1
 8467,Dexamethasone,American Health Packaging,dexamethasone,Generic,Small molecule,14365.0,39003.0,3
-8468,EPINEPHRINE,"Hospira, Inc.",epinephrine,OTC / unapproved / unclassified,Other,932.0,38948.0,1
+8468,EPINEPHRINE,"Hospira, Inc.",epinephrine,"Brand, single source",Small molecule,932.0,38948.0,1
 8469,piperacillin and tazobactam,Armas Pharmaceuticals Inc.,piperacillin / tazobactam,Generic,Small molecule,1540.0,38948.0,2
 8470,Sulfamethoxazole and Trimethoprim,"Sun Pharmaceutical Industries, Inc.",sulfamethoxazole / trimethoprim,Generic,Small molecule,4558.0,38947.0,2
 8471,TNKase 25 mg Vial (Inner),"GENENTECH, INC.",tenecteplase,Reference biologic,Biologic,13.0,38939.0,1
@@ -8589,7 +8589,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 8587,Clonidine,Mayne Pharma Inc.,clonidine,Generic,Small molecule,898.0,36121.0,2
 8588,Rugby Extra Strength Antacid,Rugby Laboratories,calcium carbonate,OTC / unapproved / unclassified,Other,3692.0,36113.0,0
 8589,Betamethasone Valerate,"Actavis Pharma, Inc.",betamethasone,Generic,Small molecule,1464.0,36096.0,2
-8590,Daptomycin,"Civica, Inc.",daptomycin,"Brand, generic competition",Small molecule,1025.0,36087.0,2
+8590,Daptomycin,"Civica, Inc.",daptomycin,Generic,Small molecule,1025.0,36087.0,2
 8591,Xerac AC,Person and Covey,aluminum chloride,OTC / unapproved / unclassified,Other,2381.0,36086.0,0
 8592,Butorphanol Tartrate,"Hospira, Inc.",butorphanol,Generic,Small molecule,3048.0,36084.0,2
 8593,IRINOTECAN HYDROCHLORIDE,Eugia US LLC,irinotecan,Generic,Small molecule,790.0,36078.0,3
@@ -8614,7 +8614,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 8612,BETAXOLOL HYDROCHLORIDE,"KVK-TECH, INC.",betaxolol,Generic,Small molecule,938.0,35475.0,2
 8613,Deferasirox,"Actavis Pharma, Inc.",deferasirox,Generic,Small molecule,32.0,35456.0,2
 8614,Selenious Acid,Woodward Pharma Services LLC,selenious acid,OTC / unapproved / unclassified,Other,95.0,35446.0,0
-8615,PlusPHARMA,"Gemini Pharmaceuticals, Inc. dba Plus Pharma",simethicone,OTC / unapproved / unclassified,Other,2738.0,35445.0,0
+8615,PlusPHARMA,"Gemini Pharmaceuticals, Inc. dba Plus Pharma",docusate,OTC / unapproved / unclassified,Other,2738.0,35445.0,0
 8616,Timolol Maleate,Oceanside Pharmaceuticals,timolol,Authorized generic,Small molecule,397.0,35433.0,2
 8617,Midazolam Hydrochloride,Precision Dose Inc.,midazolam,Generic,Small molecule,2488.0,35386.0,1
 8618,Trospium Chloride,Macleods Pharmaceuticals Limited,trospium,Generic,Small molecule,1444.0,35367.0,1
@@ -8627,7 +8627,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 8625,Guaifenesin,KESIN PHARMA CORPORATION,guaifenesin,OTC / unapproved / unclassified,Other,1189.0,35247.0,0
 8626,Differin,"Galderma Laboratories, L.P.",adapalene,"Brand, single source",Small molecule,1258.0,35205.0,2
 8627,Midodrine Hydrochloride,Mylan Pharmaceuticals Inc.,midodrine,Generic,Small molecule,959.0,35193.0,3
-8628,foster and thrive acid reducer,Strategic Sourcing Services LLC,famotidine,Generic,Small molecule,3011.0,35140.0,3
+8628,foster and thrive acid reducer,Strategic Sourcing Services LLC,lansoprazole,Generic,Small molecule,3011.0,35140.0,3
 8629,Naloxone Hydrochloride,"Somerset Therapeutics, LLC",naloxone,Generic,Small molecule,2594.0,35125.0,1
 8630,cetirizine hydrochloride,Strategic Sourcing Services LLC,cetirizine,Generic,Small molecule,3800.0,35114.0,1
 8631,Libervant 5mg Buccal Film,AQUESTIVE THERAPEUTICS,diazepam,"Brand, single source",Small molecule,31.0,35105.0,1
@@ -8657,7 +8657,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 8655,Cetirizine Hydrochloride,Apotex Corp.,cetirizine,Generic,Small molecule,3030.0,34458.0,2
 8656,RIVAROXABAN,Alembic Pharmaceuticals Inc.,rivaroxaban,Generic,Small molecule,209.0,34347.0,1
 8657,good neighbor pharmacy mucus dm,Amerisource Bergen,dextromethorphan / guaifenesin,Generic,Small molecule,1520.0,34347.0,1
-8658,Metformin Hydrochloride,"Sun Pharmaceutical Industries, Inc.",metformin,Generic,Small molecule,2838.0,34328.0,6
+8658,Metformin Hydrochloride,"Sun Pharmaceutical Industries, Inc.",metformin,Generic,Small molecule,2838.0,34328.0,5
 8659,Naloxone Hydrochloride,Hikma Pharmaceuticals USA Inc.,naloxone,Generic,Small molecule,2528.0,34321.0,2
 8660,Prasugrel,"Unichem Pharmaceuticals (USA), Inc.",prasugrel,Generic,Small molecule,1603.0,34290.0,1
 8661,Clindamycin Palmitate Hydrochloride,Amneal Pharmaceuticals of New York LLC,clindamycin,Generic,Small molecule,596.0,34279.0,1
@@ -8690,7 +8690,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 8688,Ertapenem,"Hospira, Inc.",ertapenem,Generic,Small molecule,1830.0,33554.0,1
 8689,Bortezomib,"Ingenus Pharmaceuticals, LLC",bortezomib,Generic,Small molecule,502.0,33553.0,1
 8690,Tobramycin,"XGen Pharmaceuticals DJB, Inc.",tobramycin,Generic,Small molecule,426.0,33550.0,1
-8691,OLMESARTAN MEDOXOMIL,"Rising Pharma Holdings, Inc.",olmesartan,Generic,Small molecule,1706.0,33543.0,4
+8691,OLMESARTAN MEDOXOMIL,"Rising Pharma Holdings, Inc.",olmesartan,Generic,Small molecule,1706.0,33543.0,3
 8692,Carbidopa and Levodopa,"Westminster Pharmaceuticals, LLC",carbidopa / levodopa,Generic,Small molecule,1359.0,33511.0,3
 8693,Fluphenazine Hydrochloride,"Fresenius Kabi USA, LLC",fluphenazine,Generic,Small molecule,229.0,33500.0,1
 8694,Rizatriptan Benzoate,Mylan Pharmaceuticals Inc.,rizatriptan,Generic,Small molecule,2815.0,33494.0,2
@@ -9170,7 +9170,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 9168,pentamidine isethionate,Heritage Pharmaceuticals Inc. d/b/a Avet Pharmaceuticals Inc.,pentamidine,Generic,Small molecule,285.0,23380.0,1
 9169,Heparin Sodium,Hikma Pharmaceuticals USA Inc.,heparin,"Brand, generic competition",Small molecule,3135.0,23372.0,4
 9170,Nora BE,"Actavis Pharma, Inc.",norethindrone,Authorized generic,Small molecule,153.0,23332.0,1
-9171,Labetalol Hydrochloride,Hikma Pharmaceuticals USA Inc.,labetalol,Generic,Small molecule,2521.0,23330.0,2
+9171,Labetalol Hydrochloride,Hikma Pharmaceuticals USA Inc.,labetalol,"Brand, generic competition",Small molecule,2521.0,23330.0,2
 9172,QUETIAPINE FUMARATE TABLETS 300MG,"SUN PHARMACEUTICALS INDUSTRIES, INC.",quetiapine,Generic,Small molecule,1728.0,23315.0,1
 9173,prochlorperazine edisylate,Avenacy Inc.,prochlorperazine,Generic,Small molecule,2974.0,23291.0,1
 9174,Stool Softener Laxative,AmerisourceBergen (Good Neighbor Pharmacy) 46122,"docusate / sennosides, USP",OTC / unapproved / unclassified,Other,3180.0,23289.0,0
@@ -9204,7 +9204,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 9202,Morphine Sulfate,Major Pharmaceuticals,morphine,Generic,Small molecule,1226.0,22739.0,2
 9203,Micafungin,Zydus Pharmaceuticals USA Inc.,micafungin,Generic,Small molecule,40.0,22725.0,1
 9204,cocaine hydrochloride,Genus Lifesciences Inc.,cocaine,Authorized generic,Small molecule,140.0,22688.0,1
-9205,Carvedilol,Major Pharmaceuticals,carvedilol,Generic,Small molecule,7067.0,22687.0,5
+9205,Carvedilol,Major Pharmaceuticals,carvedilol,Generic,Small molecule,7067.0,22687.0,4
 9206,INDOMETHACIN,"KVK-Tech, Inc.",indomethacin,Generic,Small molecule,1318.0,22681.0,1
 9207,"Unnamed product, NDC 83035-1812",Unknown labeler,calcium carbonate,OTC / unapproved / unclassified,Other,740.0,22681.0,0
 9208,good neighbor pharmacy childrens ibuprofen,Amerisource Bergen,ibuprofen,Generic,Small molecule,2329.0,22666.0,1
@@ -9283,7 +9283,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 9281,ATROPINE SULFATE,Accord Healthcare Inc.,atropine,"Brand, generic competition",Small molecule,748.0,21363.0,2
 9282,Cevimeline,"Sun Pharmaceutical Industries, Inc.",cevimeline,"Brand, generic competition",Small molecule,319.0,21360.0,1
 9283,Milrinone Lactate in Dextrose,Sagent Pharmaceuticals,milrinone,Generic,Small molecule,194.0,21351.0,2
-9284,Allergy Relief,"Cardinal Health 110, LLC. DBA Leader",diphenhydramine,OTC / unapproved / unclassified,Other,2567.0,21343.0,0
+9284,Allergy Relief,"Cardinal Health 110, LLC. DBA Leader",chlorpheniramine,OTC / unapproved / unclassified,Other,2567.0,21343.0,0
 9285,FreshKote Preservative Free Lubricant Eye Drops,Eyevance Pharmaceuticals,polyvinyl alcohol / povidone,OTC / unapproved / unclassified,Other,685.0,21327.0,0
 9286,HALOPERIDOL 1 MG.,"MYLAN PHARMACEUTICALS, INC.",haloperidol,Generic,Small molecule,1316.0,21314.0,1
 9287,Oxacillin,Wockhardt USA LLC.,oxacillin,Generic,Small molecule,46.0,21312.0,1
@@ -9344,8 +9344,8 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 9342,Topotecan Hydrochloride,"Fresenius Kabi USA, LLC",topotecan,Generic,Small molecule,389.0,20376.0,1
 9343,ACYCLOVIR,Apotex Corp.,acyclovir,Generic,Small molecule,1635.0,20354.0,1
 9344,Triazolam,Mylan Pharmaceuticals Inc.,triazolam,Authorized generic,Small molecule,1535.0,20279.0,2
-9345,Leader Chest Congestion Relief,Cardinal Health,dextromethorphan / guaifenesin,OTC / unapproved / unclassified,Other,1687.0,20258.0,0
-9346,GLYRX-PF,"Exela Pharma Sciences, LLC",glycopyrronium,"Brand, single source",Small molecule,1815.0,20222.0,4
+9345,Leader Chest Congestion Relief,Cardinal Health,guaifenesin,OTC / unapproved / unclassified,Other,1687.0,20258.0,0
+9346,GLYRX-PF,"Exela Pharma Sciences, LLC",glycopyrronium,"Brand, generic competition",Small molecule,1815.0,20222.0,4
 9347,Foster and Thrive Lubricant Eye Drops,Strategic Sourcing Services LLC,carboxymethylcellulose,OTC / unapproved / unclassified,Other,1735.0,20206.0,0
 9348,Clindamycin,Sagent Pharmaceuticals,clindamycin,Generic,Small molecule,1499.0,20185.0,3
 9349,Double Antibiotic,STRATEGIC SOURCING SERVICES LLC,bacitracin / polymyxin B,OTC / unapproved / unclassified,Other,1705.0,20182.0,0
@@ -9566,7 +9566,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 9564,Good Sense ibuprofen,L. Perrigo Company,ibuprofen,Generic,Small molecule,1631.0,16547.0,2
 9565,Benztropine Mesylate,Cipla USA Inc.,benztropine,Generic,Small molecule,1446.0,16546.0,3
 9566,Celecoxib,"Actavis Pharma, Inc.",celecoxib,Generic,Small molecule,1303.0,16542.0,3
-9567,Nasal Decongestant,Amerisource Bergen,pseudoephedrine,OTC / unapproved / unclassified,Other,1426.0,16501.0,0
+9567,Nasal Decongestant,Amerisource Bergen,phenylephrine,OTC / unapproved / unclassified,Other,1426.0,16501.0,0
 9568,sunmark nicotine,Strategic Sourcing Services LLC,nicotine,Generic,Small molecule,540.0,16427.0,2
 9569,Good Sense Nasal Allergy,L. Perrigo Company,triamcinolone,Generic,Small molecule,796.0,16421.0,1
 9570,"Unnamed product, NDC 00536-1404",Unknown labeler,,OTC / unapproved / unclassified,Other,785.0,16419.0,0
@@ -9911,7 +9911,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 9909,Clindamycin hydrochloride,Major Pharmaceuticals,clindamycin,Generic,Small molecule,3736.0,11901.0,1
 9910,Minocycline Hydrochloride,"Sun Pharmaceutical Industries, Inc.",minocycline,Generic,Small molecule,573.0,11880.0,2
 9911,Ampicillin and Sulbactam,"NorthStar Rx, LLC",ampicillin / sulbactam,Generic,Small molecule,267.0,11868.0,1
-9912,Fenofibric Acid,Amneal Pharmaceuticals of New York LLC,fenofibrate,Authorized generic,Small molecule,534.0,11860.0,2
+9912,Fenofibric Acid,Amneal Pharmaceuticals of New York LLC,fenofibrate,Generic,Small molecule,534.0,11860.0,2
 9913,Fenofibrate,"Westminster Pharmaceuticals, LLC",fenofibrate,Generic,Small molecule,907.0,11854.0,1
 9914,CARBIDOPA AND LEVODOPA EXTENDED-RELEASE TABLETS 50 MG/200 MG,SUN PHARMACEUTICAL INDUSTRIES INC.,carbidopa / levodopa,Generic,Small molecule,500.0,11845.0,1
 9915,leader infants pain and fever,"Cardinal Health 110, LLC. dba Leader",acetaminophen,OTC / unapproved / unclassified,Other,873.0,11829.0,0
@@ -10041,7 +10041,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 10039,Repaglinide,"Sun Pharmaceutical Industries, Inc.",repaglinide,Generic,Small molecule,443.0,10659.0,2
 10040,Omeprazole,Quallent Pharmaceuticals Health LLC,omeprazole,Generic,Small molecule,1285.0,10655.0,2
 10041,Azithromycin Dihydrate,AvPAK,azithromycin,Generic,Small molecule,1314.0,10642.0,1
-10042,EPINEPHRINE,"Fresenius Kabi USA, LLC",epinephrine,Generic,Small molecule,975.0,10638.0,2
+10042,EPINEPHRINE,"Fresenius Kabi USA, LLC",epinephrine,"Brand, generic competition",Small molecule,975.0,10638.0,2
 10043,Daptomycin,BluePoint Laboratories,daptomycin,Generic,Small molecule,120.0,10620.0,1
 10044,Fosaprepitant,"Avenacy, LLC",fosaprepitant,Generic,Small molecule,539.0,10615.0,1
 10045,Decitabine,BluePoint Laboratories,decitabine,Generic,Small molecule,297.0,10603.0,1
@@ -10207,7 +10207,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 10205,Diclofenac sodium,Amneal Pharmaceuticals NY LLC,diclofenac,Generic,Small molecule,508.0,9015.0,1
 10206,Triamcinolone Acetonide,Eugia US LLC,triamcinolone,Generic,Small molecule,2648.0,8993.0,1
 10207,Centratex,"Centurion Labs, LLC",,OTC / unapproved / unclassified,Other,491.0,8993.0,0
-10208,Lidocaine hydrochloride,"Camber Pharmaceuticals, Inc.",lidocaine,Generic,Small molecule,2121.0,8980.0,2
+10208,Lidocaine hydrochloride,"Camber Pharmaceuticals, Inc.",lidocaine,Generic,Small molecule,2121.0,8980.0,1
 10209,Omeprazole,Major Pharmaceuticals,omeprazole,Generic,Small molecule,1513.0,8967.0,1
 10210,"Unnamed product, NDC 39328-0008",Unknown labeler,potassium phosphate,OTC / unapproved / unclassified,Other,203.0,8967.0,0
 10211,Guaifenesin,BluePoint Laboratories,guaifenesin,Generic,Small molecule,489.0,8957.0,1
@@ -10248,7 +10248,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 10246,HYDROMORPHONE HYDROCHLORIDE,Padagis US LLC,hydromorphone,OTC / unapproved / unclassified,Other,24.0,8646.0,0
 10247,D-Vite Ped,Unknown labeler,cholecalciferol,OTC / unapproved / unclassified,Other,1641.0,8639.0,0
 10248,Ultratag,Curium US LLC,,"Brand, single source",Small molecule,50.0,8633.0,0
-10249,sunmark,Strategic Sourcing Services LLC,clotrimazole,"Brand, single source",Small molecule,757.0,8624.0,1
+10249,sunmark,Strategic Sourcing Services LLC,bacitracin / polymyxin B,OTC / unapproved / unclassified,Other,757.0,8624.0,1
 10250,Esmolol Hydrochloride,Mylan Institutional LLC,esmolol,Generic,Small molecule,1794.0,8597.0,1
 10251,Succinylcholine,"Dr.Reddy's Laboratories Inc.,",succinylcholine,Generic,Small molecule,606.0,8594.0,1
 10252,Tolterodine tartrate,"Unichem Pharmaceuticals (USA), Inc.",tolterodine,Generic,Small molecule,320.0,8586.0,2
@@ -10381,7 +10381,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 10379,Good Neighbor Pharmacy Tussin,Amerisource Bergen,guaifenesin,OTC / unapproved / unclassified,Other,600.0,7576.0,0
 10380,"Acetaminophen, Aspirin, Caffeine","LEADER/ Cardinal Health 110, Inc.",acetaminophen / aspirin / caffeine,OTC / unapproved / unclassified,Other,727.0,7567.0,0
 10381,Doxycycline Hyclate,American Health Packaging,doxycycline,Generic,Small molecule,2550.0,7555.0,2
-10382,Pantoprazole Sodium,"Civica, Inc.",pantoprazole,"Brand, generic competition",Small molecule,1298.0,7546.0,1
+10382,Pantoprazole Sodium,"Civica, Inc.",pantoprazole,Generic,Small molecule,1298.0,7546.0,1
 10383,Fluoxetine,"Sun Pharmaceutical Industries, Inc.",fluoxetine,Generic,Small molecule,569.0,7545.0,1
 10384,Clodan,Medimetriks Pharmaceuticals,clobetasol,Generic,Small molecule,143.0,7527.0,1
 10385,DRY SKIN CREAM,MAJOR PHARMACEUTICALS,,OTC / unapproved / unclassified,Other,858.0,7515.0,0
@@ -10584,7 +10584,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 10582,Major Extra Strength Acetaminophen Liquid,Major Pharmaceuticals,acetaminophen,OTC / unapproved / unclassified,Other,557.0,6222.0,0
 10583,Divalproex Sodium,American Health Packaging,valproate,Generic,Small molecule,1011.0,6219.0,5
 10584,Glutose,"Paddock Laboratories, LLC",glucose,OTC / unapproved / unclassified,Other,415.0,6213.0,0
-10585,Calcium Chloride,"Hospira, Inc.",calcium chloride,OTC / unapproved / unclassified,Other,487.0,6212.0,1
+10585,Calcium Chloride,"Hospira, Inc.",calcium chloride,"Brand, generic competition",Small molecule,487.0,6212.0,1
 10586,topiramate,Major Pharmaceuticals,topiramate,Generic,Small molecule,971.0,6210.0,2
 10587,Telmisartan,Lifestar Pharma LLC,telmisartan,Generic,Small molecule,360.0,6199.0,3
 10588,KAZANO,"Takeda Pharmaceuticals America, Inc.",alogliptin / metformin,"Brand, generic competition",Small molecule,17.0,6192.0,1
@@ -10902,7 +10902,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 10900,ampicillin sodium and sulbactam sodium,Mylan Institutional LLC,ampicillin / sulbactam,Generic,Small molecule,328.0,4480.0,1
 10901,Ultra Lido Gel Patch,"Singular Dreamer, Ltd dba True Marker",lidocaine,OTC / unapproved / unclassified,Other,107.0,4479.0,0
 10902,Tolnaftate,Amerisource Bergen,tolnaftate,OTC / unapproved / unclassified,Other,402.0,4478.0,0
-10903,Morphine Sulfate,American Health Packaging,morphine,Generic,Small molecule,365.0,4477.0,3
+10903,Morphine Sulfate,American Health Packaging,morphine,"Brand, generic competition",Small molecule,365.0,4477.0,3
 10904,Megestrol Acetate,"Par Pharmaceutical, Inc.",megestrol,Generic,Small molecule,220.0,4475.0,1
 10905,Calcium Acetate,"Chartwell RX, LLC.",calcium acetate,Generic,Small molecule,126.0,4474.0,1
 10906,Ropinirole,"Actavis Pharma, Inc.",ropinirole,Generic,Small molecule,142.0,4473.0,4
@@ -10981,7 +10981,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 10979,Antacid,American Health Packaging,calcium carbonate,OTC / unapproved / unclassified,Other,513.0,4121.0,0
 10980,Zoledronic acid,Northstar RxLLC,zoledronic acid,Generic,Small molecule,177.0,4120.0,1
 10981,Foster and Thrive Pain Reliever,Strategic Sourcing Services LLC,acetaminophen,Generic,Small molecule,617.0,4116.0,1
-10982,Emerphed,"Nexus Pharmaceuticals, LLC",ephedrine,"Brand, generic competition",Small molecule,314.0,4113.0,2
+10982,Emerphed,"Nexus Pharmaceuticals, LLC",ephedrine,"Brand, single source",Small molecule,314.0,4113.0,2
 10983,Phendimetrazine Tartrate,"KVK-TECH, INC",phendimetrazine,Generic,Small molecule,334.0,4112.0,1
 10984,"Unnamed product, NDC 00299-3917",Unknown labeler,,OTC / unapproved / unclassified,Other,314.0,4110.0,0
 10985,Chlorhexidine Gluconate,Major Pharmaceuticals,chlorhexidine,Generic,Small molecule,602.0,4109.0,1
@@ -11050,13 +11050,13 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 11048,Haloperidol,American Health Packaging,haloperidol,Generic,Small molecule,644.0,3834.0,2
 11049,Ezetimibe,Sandoz Inc,ezetimibe,Generic,Small molecule,360.0,3832.0,1
 11050,Heparin Sodium,Phlow Corporation,heparin,"Brand, generic competition",Small molecule,103.0,3827.0,1
-11051,Acetaminophen,"Camber Pharmaceuticals, Inc.",acetaminophen,Generic,Small molecule,106.0,3822.0,2
+11051,Acetaminophen,"Camber Pharmaceuticals, Inc.",acetaminophen,Generic,Small molecule,106.0,3822.0,1
 11052,Naloxone Hydrochloride,"Par Health USA, LLC",naloxone,Generic,Small molecule,150.0,3818.0,1
 11053,0.9% SOD C,Unknown labeler,sodium chloride,OTC / unapproved / unclassified,Other,165.0,3818.0,0
 11054,Diphenhydramine HCl Oral Solution,Natco Pharma USA LLC,diphenhydramine,OTC / unapproved / unclassified,Other,2432.0,3813.0,0
 11055,METHSCOPOLAMINE BROMIDE,"i3 Pharmaceuticals, LLC",methscopolamine,Generic,Small molecule,65.0,3813.0,2
 11056,Daptomycin,"Fresenius Kabi USA, LLC",daptomycin,Generic,Small molecule,274.0,3812.0,1
-11057,Mucus Relief,Amerisource Bergen,dextromethorphan / guaifenesin,OTC / unapproved / unclassified,Other,289.0,3812.0,0
+11057,Mucus Relief,Amerisource Bergen,guaifenesin,OTC / unapproved / unclassified,Other,289.0,3812.0,0
 11058,Valsartan,Archis Pharma LLC,valsartan,Generic,Small molecule,246.0,3804.0,3
 11059,Good Neighbor Sugar Free Adult Tussin DM,AMERISOURCE BERGEN,dextromethorphan / guaifenesin,OTC / unapproved / unclassified,Other,283.0,3796.0,0
 11060,DESOXIMETASONE,"Lupin Pharmaceuticals, Inc.",desoximetasone,Generic,Small molecule,123.0,3793.0,1
@@ -11065,7 +11065,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 11063,SINEMET,Organon LLC,carbidopa / levodopa,"Brand, generic competition",Small molecule,12.0,3781.0,1
 11064,PAROXETINE,"Lupin Pharmaceuticals, Inc.",paroxetine,Generic,Small molecule,129.0,3775.0,2
 11065,TETRABENAZINE,Bionpharma Inc.,tetrabenazine,Generic,Small molecule,13.0,3775.0,1
-11066,Succinylcholine Chloride,Hikma Pharmaceuticals USA Inc.,succinylcholine,"Brand, generic competition",Small molecule,905.0,3774.0,2
+11066,Succinylcholine Chloride,Hikma Pharmaceuticals USA Inc.,succinylcholine,Generic,Small molecule,905.0,3774.0,2
 11067,Flumazenil,"Fresenius Kabi USA, LLC",flumazenil,Generic,Small molecule,190.0,3772.0,1
 11068,Rugby Phenazopyridine HCl Urinary Tract Analgesic,Rugby Laboratories,phenazopyridine,OTC / unapproved / unclassified,Other,628.0,3763.0,0
 11069,Norepinephrine,"Long Grove Pharmaceuticals, LLC",norepinephrine,"Brand, single source",Small molecule,48.0,3763.0,2
@@ -11149,7 +11149,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 11147,Headache Relief,Amerisource Bergen,acetaminophen / aspirin / caffeine,OTC / unapproved / unclassified,Other,394.0,3400.0,0
 11148,Guaifenesin and Pseudoephedrine HCL,Dr. Reddys Laboratories Limited,guaifenesin / pseudoephedrine,Generic,Small molecule,257.0,3397.0,2
 11149,fingolimod,"Glenmark Pharmaceuticals Inc., USA",fingolimod,Generic,Small molecule,15.0,3394.0,1
-11150,Thiamine Hydrochloride,"Camber Pharmaceuticals, Inc.",thiamine,Generic,Small molecule,430.0,3394.0,2
+11150,Thiamine Hydrochloride,"Camber Pharmaceuticals, Inc.",thiamine,Generic,Small molecule,430.0,3394.0,1
 11151,Carvedilol,American Health Packaging,carvedilol,Generic,Small molecule,704.0,3388.0,1
 11152,Acetaminophen,"Civica, Inc.",acetaminophen,Generic,Small molecule,712.0,3367.0,1
 11153,Epitol,"Teva Pharmaceuticals USA, Inc.",carbamazepine,Generic,Small molecule,111.0,3366.0,1
@@ -11230,7 +11230,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 11228,Potassium Chloride in Dextrose and Sodium Chloride,"Fresenius Kabi USA, LLC",glucose / potassium chloride / sodium chloride,Generic,Small molecule,261.0,3093.0,2
 11229,Fosaprepitant,"Athenex Pharmaceutical Division, LLC.",fosaprepitant,Generic,Small molecule,67.0,3087.0,1
 11230,Pseudoephedrine hydrochloride,STRATEGIC SOURCING SERVICES LLC,pseudoephedrine,Generic,Small molecule,249.0,3083.0,1
-11231,Hydrocortisone,Strides Pharma Inc.,hydrocortisone,Generic,Small molecule,123.0,3066.0,4
+11231,Hydrocortisone,Strides Pharma Inc.,hydrocortisone,Generic,Small molecule,123.0,3066.0,3
 11232,Leader Maximum Strength Pain Relieving,"CARDINAL HEALTH 110, LLC. DBA LEADER",trolamine salicylate,OTC / unapproved / unclassified,Other,375.0,3058.0,0
 11233,DIETHYLPROPION HYDROCHLORIDE,"KVK-TECH, INC",diethylpropion,Generic,Small molecule,151.0,3057.0,1
 11234,Tamsulosin hydrochloride,"Actavis Pharma, Inc.",tamsulosin,Generic,Small molecule,201.0,3055.0,1
@@ -11452,7 +11452,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 11450,Lactulose Solution,Kesin Pharma Corporation,lactulose,Generic,Small molecule,186.0,2332.0,1
 11451,Cyclobenzaprine Hydrochloride,Major Pharmaceuticals,cyclobenzaprine,Generic,Small molecule,1149.0,2331.0,2
 11452,ROPIVACAINE HYDROCHLORIDE,Mylan Institutional LLC,ropivacaine,Generic,Small molecule,35.0,2327.0,1
-11453,Atropine Sulfate,Hikma Pharmaceuticals USA Inc.,atropine,OTC / unapproved / unclassified,Other,682.0,2310.0,1
+11453,Atropine Sulfate,Hikma Pharmaceuticals USA Inc.,atropine,Generic,Small molecule,682.0,2310.0,1
 11454,ALBUTEROL SULFATE,"Chartwell RX, LLC",albuterol,Generic,Small molecule,68.0,2306.0,1
 11455,Foster and Thrive Long Lasting Lubricant Eye Drops,Strategic Sourcing Services LLC,polyethylene glycol 400 / propylene glycol,OTC / unapproved / unclassified,Other,163.0,2305.0,0
 11456,esmolol hydrochloride,Sagent Pharmaceuticals,esmolol,Generic,Small molecule,59.0,2304.0,2
@@ -11608,7 +11608,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 11606,Restora Rx,U.S. PHARMACEUTICAL CORPORATION,folic acid / Lacticaseibacillus casei,OTC / unapproved / unclassified,Other,41.0,1862.0,0
 11607,"Unnamed product, NDC 61269-0325",Unknown labeler,folic acid / vitamin B12 / vitamin B6,OTC / unapproved / unclassified,Other,123.0,1860.0,0
 11608,Polymyxin B,Xellia Pharmaceuticals USA LLC,polymyxin B,Generic,Small molecule,47.0,1859.0,1
-11609,Colchicine,Major Pharmaceuticals,colchicine,Generic,Small molecule,195.0,1855.0,2
+11609,Colchicine,Major Pharmaceuticals,colchicine,"Brand, generic competition",Small molecule,195.0,1855.0,2
 11610,Hydroxyzine Hydrochloride,Heritage Pharmaceuticals Inc.,hydroxyzine,Generic,Small molecule,141.0,1854.0,3
 11611,Reclast,Sandoz Inc,zoledronic acid,"Brand, generic competition",Small molecule,39.0,1853.0,1
 11612,Progesterone,"Fresenius Kabi USA, LLC",progesterone,Generic,Small molecule,167.0,1852.0,1
@@ -11966,7 +11966,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 11964,RECOMBIVAX HB,Merck Sharp & Dohme LLC,hepatitis B surface antigen vaccine,Reference biologic,Biologic,41.0,1060.0,2
 11965,Ampicillin and Sulbactam,"Fresenius Kabi USA, LLC",ampicillin / sulbactam,Generic,Small molecule,46.0,1060.0,1
 11966,Metformin Hydrochloride,"Solco Healthcare U.S., LLC",metformin,Generic,Small molecule,87.0,1058.0,2
-11967,Magnesium Sulfate in Water,"Athenex Pharmaceutical Division, LLC.",magnesium sulfate,Generic,Small molecule,176.0,1057.0,2
+11967,Magnesium Sulfate in Water,"Athenex Pharmaceutical Division, LLC.",magnesium sulfate,Generic,Small molecule,176.0,1057.0,1
 11968,Fiber Caplets,Strategic Sourcing Services LLC,calcium polycarbophil,OTC / unapproved / unclassified,Other,104.0,1055.0,0
 11969,Leader Nasal Decongestant,"Cardinal Health 110,Inc",oxymetazoline,OTC / unapproved / unclassified,Other,135.0,1051.0,0
 11970,Sulfamethoxazole and Trimethoprim,"Lannett Company, Inc.",sulfamethoxazole / trimethoprim,Generic,Small molecule,48.0,1051.0,1
@@ -11996,7 +11996,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 11994,Fosphenytoin sodium,"GLENMARK PHARMACEUTICALS INC., USA",fosphenytoin,Generic,Small molecule,31.0,1010.0,1
 11995,"Unnamed product, NDC 62225-0600",Unknown labeler,ketorolac / phenylephrine,OTC / unapproved / unclassified,Other,13.0,1008.0,0
 11996,Leader Povidone-Iodine 10% Topical Solution,Cardinal Health,povidone-iodine,OTC / unapproved / unclassified,Other,95.0,999.0,0
-11997,Good Sense Hemorrhoidal,L. Perrigo Company,glycerin / petrolatum / phenylephrine / pramoxine,OTC / unapproved / unclassified,Other,254.0,994.0,0
+11997,Good Sense Hemorrhoidal,L. Perrigo Company,mineral oil / petrolatum / phenylephrine,OTC / unapproved / unclassified,Other,254.0,994.0,0
 11998,Double Antibiotic,Strategic Sourcing Services LLC,bacitracin / polymyxin B,OTC / unapproved / unclassified,Other,64.0,991.0,0
 11999,Cold and Flu Relief,Major Pharmaceuticals,acetaminophen / dextromethorphan / phenylephrine,OTC / unapproved / unclassified,Other,82.0,991.0,0
 12000,Doxycycline Monohydrate,"Chartwell RX, LLC.",doxycycline,Authorized generic,Small molecule,93.0,989.0,1
@@ -12960,7 +12960,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 12958,Heparin Sodium,B. Braun Medical Inc.,heparin,Generic,Small molecule,34.0,67.0,1
 12959,"Aluminum Hydroxide, Magnesium Hydroxide, and Simethicone",Major Pharmaceuticals,aluminum hydroxide / magnesium hydroxide / simethicone,OTC / unapproved / unclassified,Other,26.0,67.0,0
 12960,Sky Oral Rinse,McKesson,chlorhexidine,Generic,Small molecule,84.0,67.0,1
-12961,XYLOCAINE,AstraZeneca Pharmaceuticals LP,lidocaine,"Brand, single source",Small molecule,313.0,66.0,2
+12961,XYLOCAINE,AstraZeneca Pharmaceuticals LP,lidocaine,"Brand, generic competition",Small molecule,313.0,66.0,2
 12962,"Unnamed product, NDC 83035-1855",Unknown labeler,cholecalciferol,OTC / unapproved / unclassified,Other,14.0,65.0,0
 12963,Montelukast,AvPAK,montelukast,Generic,Small molecule,366.0,63.0,1
 12964,MAX Tussin Mucus and Chest Congestion Sugar Free,Akron Pharma Inc.,guaifenesin,OTC / unapproved / unclassified,Other,30.0,63.0,0
@@ -13117,7 +13117,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 13115,GLYCERIN,AMERISOURCE BERGEN,glycerin,OTC / unapproved / unclassified,Other,12.0,1.0,0
 13116,PREVDUO,Endo USA,glycopyrronium / neostigmine,"Brand, single source",Small molecule,13.0,1.0,1
 13117,"Unnamed product, NDC 00281-0205",Unknown labeler,,OTC / unapproved / unclassified,Other,27.0,0.0,0
-13118,Albuterol Sulfate,Dey Pharma L.P.,albuterol,"Brand, single source",Small molecule,161.0,0.0,1
+13118,Albuterol Sulfate,Dey Pharma L.P.,albuterol,"Brand, generic competition",Small molecule,161.0,0.0,1
 13119,FUROSEM 40,Unknown labeler,furosemide,OTC / unapproved / unclassified,Other,88.0,0.0,0
 13120,AFRIN SINU,Unknown labeler,oxymetazoline,OTC / unapproved / unclassified,Other,68.0,0.0,0
 13121,ZOSYN PIPE,Unknown labeler,,OTC / unapproved / unclassified,Other,163.0,0.0,0
@@ -13126,7 +13126,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 13124,BICILLIN C-R 900/300,Pfizer Laboratories Div Pfizer Inc,penicillin G benzathine / penicillin G procaine,"Brand, single source",Small molecule,18.0,0.0,1
 13125,SINGULAIR,Merck Sharp & Dohme Corp.,montelukast,"Brand, generic competition",Small molecule,13.0,0.0,1
 13126,STERILE DILUENT,Merck Sharp & Dohme LLC,,Reference biologic,Biologic,181.0,0.0,0
-13127,COZAAR,Merck Sharp & Dohme Corp.,losartan,"Brand, single source",Small molecule,45.0,0.0,1
+13127,COZAAR,Merck Sharp & Dohme Corp.,losartan,"Brand, generic competition",Small molecule,45.0,0.0,1
 13128,Naropin 0.,Unknown labeler,ropivacaine,OTC / unapproved / unclassified,Other,47.0,0.0,0
 13129,Metronidazole,Amneal Pharmaceuticals Private Limited,metronidazole,Generic,Small molecule,13.0,0.0,1
 13130,QUELICIN 2,Unknown labeler,succinylcholine,OTC / unapproved / unclassified,Other,130.0,0.0,0
@@ -13147,7 +13147,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 13145,Suboxone,Indivior Inc.,,"Brand, single source",Small molecule,15.0,0.0,0
 13146,VIGAMOX,"Alcon Laboratories, Inc.",moxifloxacin,"Brand, generic competition",Small molecule,108.0,0.0,1
 13147,Phenylephrine Hydrochloride,Baxter Healthcare Corporation,phenylephrine,OTC / unapproved / unclassified,Other,15.0,0.0,0
-13148,Metoclopramide,Baxter Healthcare Corporation,metoclopramide,"Brand, single source",Small molecule,297.0,0.0,1
+13148,Metoclopramide,Baxter Healthcare Corporation,metoclopramide,"Brand, generic competition",Small molecule,297.0,0.0,1
 13149,K-DUR,Merck Sharp & Dohme Corp.,,"Brand, single source",Small molecule,14.0,0.0,0
 13150,DIAZEPAM I,Unknown labeler,diazepam,OTC / unapproved / unclassified,Other,71.0,0.0,0
 13151,Atovaquone,American Health Packaging,atovaquone,Generic,Small molecule,13.0,0.0,1
@@ -13168,7 +13168,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 13166,Prednisone,West-ward Pharmaceuticals Corp,prednisone,Generic,Small molecule,12.0,0.0,1
 13167,Clonidine Hydrochloride,Mylan Institutional Inc.,clonidine,Generic,Small molecule,54.0,0.0,1
 13168,VANCOMYCIN,Unknown labeler,vancomycin,OTC / unapproved / unclassified,Other,72.0,0.0,0
-13169,ZESTRIL,AstraZeneca Pharmaceuticals LP,lisinopril,"Brand, single source",Small molecule,11.0,0.0,1
+13169,ZESTRIL,AstraZeneca Pharmaceuticals LP,lisinopril,"Brand, generic competition",Small molecule,11.0,0.0,1
 13170,METRONIDAZ,Unknown labeler,metronidazole,OTC / unapproved / unclassified,Other,76.0,0.0,0
 13171,Zemuron,Organon USA Inc.,,"Brand, generic competition",Small molecule,59.0,0.0,0
 13172,CEPHALEXIN,Unknown labeler,cephalexin,OTC / unapproved / unclassified,Other,54.0,0.0,0
@@ -13191,7 +13191,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 13189,AMOXICILLI,Unknown labeler,amoxicillin,OTC / unapproved / unclassified,Other,14.0,0.0,0
 13190,DOXERCALCIFEROL,"Hospira, Inc.",doxercalciferol,"Brand, generic competition",Small molecule,116.0,0.0,1
 13191,AMMONIUM C,Unknown labeler,,OTC / unapproved / unclassified,Other,34.0,0.0,0
-13192,REMERON,Organon USA Inc.,mirtazapine,"Brand, single source",Small molecule,16.0,0.0,1
+13192,REMERON,Organon USA Inc.,mirtazapine,"Brand, generic competition",Small molecule,16.0,0.0,1
 13193,Dicyclomine Hydrochloride,Mylan Institutional Inc.,dicyclomine,Generic,Small molecule,92.0,0.0,1
 13194,Fluoxetine,Mylan Institutional Inc.,fluoxetine,Generic,Small molecule,26.0,0.0,1
 13195,SENSORCAINE MPF,AstraZeneca Pharmaceuticals LP,bupivacaine,Generic,Small molecule,11.0,0.0,1
@@ -13199,7 +13199,7 @@ pid,product,labeler,ingredient,product_type,modality,prescriptions,medicaid_amou
 13197,Nasal,Major Pharmaceuticals,oxymetazoline,OTC / unapproved / unclassified,Other,51.0,0.0,0
 13198,NITRO-BID,E. Fougera & Co. a division of Fougera Pharmaceuticals Inc.,nitroglycerin,Generic,Small molecule,11.0,0.0,1
 13199,EPINEPHRINE 1ML AMP NON-PRES.,"AMERICAN REGENT LABORATORIES, INC.",epinephrine,OTC / unapproved / unclassified,Other,106.0,0.0,0
-13200,Heparin Sodium,West-ward Pharmaceutical Corp.,heparin,"Brand, single source",Small molecule,135.0,0.0,1
+13200,Heparin Sodium,West-ward Pharmaceutical Corp.,heparin,"Brand, generic competition",Small molecule,135.0,0.0,1
 13201,Varenicline,American Health Packaging,varenicline,Generic,Small molecule,13.0,0.0,1
 13202,Normosol-R,"Hospira, Inc.",magnesium chloride / potassium chloride / sodium acetate / sodium chloride / sodium gluconate,"Brand, single source",Small molecule,32.0,0.0,1
 13203,LIDOCN 1%,Unknown labeler,lidocaine,OTC / unapproved / unclassified,Other,89.0,0.0,0

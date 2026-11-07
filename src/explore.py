@@ -169,9 +169,10 @@ def build(year: int) -> dict[str, pd.DataFrame]:
                    sum(medicaid_amount_reimbursed)::DOUBLE AS amt
             FROM read_parquet('{config.national_fact_path(year)}') GROUP BY ndc)
         SELECT {PRODUCT_EXPR} AS product, {LABELER_EXPR} AS labeler, p.product_type, p.modality,
-               e.role, e.primary_key, e.loose_key, e.group_name, e.mdrp_unit_type AS unit_type,
+               e.role, e.primary_key, e.loose_key, e.group_name, e.unit_type,
                e.ingredient_name AS ingredient, p.application_no,
-               sum(s.units) AS units, sum(s.rx) AS rx, sum(s.amt) AS amt,
+               -- units on the group's common basis (D-027)
+               sum(s.units * coalesce(e.unit_factor, 1)) AS units, sum(s.rx) AS rx, sum(s.amt) AS amt,
                -- NDCs (11 digits) in this row, highest Medicaid spending first.
                string_agg({NDC_FMT}, ' ' ORDER BY s.amt DESC, ndc) AS ndcs
         FROM s
@@ -275,7 +276,7 @@ def state_rows(year: int, index: pd.DataFrame, groups: pd.DataFrame, status: pd.
                    sum(medicaid_amount_reimbursed)::DOUBLE AS amt
             FROM read_parquet('{config.state_fact_path(year)}') GROUP BY state, ndc)
         SELECT s.state, {PRODUCT_EXPR} AS product, {LABELER_EXPR} AS labeler, p.product_type,
-               e.role, e.primary_key AS group_key, s.units, s.rx, s.amt
+               e.role, e.primary_key AS group_key, s.units * coalesce(e.unit_factor, 1) AS units, s.rx, s.amt
         FROM s
         JOIN read_parquet('{pt_paths(year)[0]}') p USING (ndc)
         LEFT JOIN read_parquet('{eq_path}') e USING (ndc)

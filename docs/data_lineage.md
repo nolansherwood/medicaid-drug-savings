@@ -232,7 +232,7 @@ Columns: `state`, `brand_name`, `qualifier`, `note`, `effective_date`, `source_u
   |---|---|---|---|
   | (result) | LEFT JOIN | `crosswalk_ndc` | `ndc = crosswalk.ndc` (to get `product_rxcui`) |
   | `product_rxcui` | API | RxNav properties / related SCD+GPCK | → `clinical_rxcui` |
-  | brand NDC | lookup | set of (`clinical_rxcui`, `mdrp_unit_type`) of A-rated ANDA or authorized-generic NDCs with prescriptions > 0 | `(brand.clinical_rxcui, brand.mdrp_unit_type)` in the set → `generic_on_market` |
+  | brand NDC | lookup | set of (`clinical_rxcui`, unit) of A-rated ANDA or authorized-generic NDCs with prescriptions > 0. A-rated: `mdrp_te_code` starts "A", or, when it is blank or "NR", every Orange Book `products.txt` row of the NDC's ANDA (`Appl_No`) has a `TE_Code` starting "A" (D-026). Unit: `mdrp_unit_type`; blank → the most common unit of the other NDCs with the same `clinical_rxcui` (D-026); then put on one basis per clinical drug (D-027, see `unit_type`) | `(brand.clinical_rxcui, brand unit)` in the set → `generic_on_market` |
 
 
   The MDRP record kept is the latest one with (`year`, `quarter`) ≤ (2025, Q4); if there is none, the earliest later one.
@@ -315,10 +315,12 @@ Outputs are `GROUP BY` the following, with no further joins except the category 
 
   | Field | Small molecules | Biologics |
   |---|---|---|
-  | `primary_key` | `'scd:' + clinical_rxcui + '|' + mdrp_unit_type` | `'bio:' + reference BLA + '|' + presentation(clinical_name) + '|' + mdrp_unit_type` (D-025). Reference BLA: the NDC's own `application_no` for 351(a); for 351(k), the 351(a) BLA of the product named in the raw Purple Book's `Ref. Product Proprietary Name` (matched on the biosimilar's BLA + proprietary name; an unbranded biosimilar takes its BLA's only reference; of several reference BLAs with that name, the one with the same presentation). `presentation` = clinical_name without lowercase ingredient words. Fallback when no reference is found: `'bio:' + clinical_name without biosimilar suffix + '|' + mdrp_unit_type` |
-  | `loose_key` | `'form:' + clinical_name with numbers/units removed + '|' + mdrp_unit_type` | same |
+  | `unit_type`, `unit_factor` | `mdrp_unit_type` (blank → most common unit of the same `clinical_rxcui`, D-026), then on one basis per clinical drug (D-027): EA with a leading volume in `clinical_name` ("0.4 ML ...", not packs) → ML with `unit_factor` = that volume; EA for a `clinical_rxcui` whose other NDCs are TAB or CAP → that unit, factor 1. SDUD `units_reimbursed` × `unit_factor` = units in `unit_type` | same |
+  | `primary_key` | `'scd:' + clinical_rxcui + '|' + unit_type` | `'bio:' + reference BLA + '|' + presentation(clinical_name) + '|' + unit_type` (D-025). Reference BLA: the NDC's own `application_no` for 351(a); for 351(k), the 351(a) BLA of the product named in the raw Purple Book's `Ref. Product Proprietary Name` (matched on the biosimilar's BLA + proprietary name; an unbranded biosimilar takes its BLA's only reference; of several reference BLAs with that name, the one with the same presentation). `presentation` = clinical_name without lowercase ingredient words. Fallback when no reference is found: `'bio:' + clinical_name without biosimilar suffix + '|' + unit_type` |
+  | `loose_key` | `'form:' + clinical_name with numbers/units removed + '|' + unit_type` | same |
 
-- **Role** (from `product_type` and `mdrp_te_code`): brand, generic (A-rated), generic_not_a_rated, authorized_generic, reference, biosimilar, interchangeable, none.
+- **Role** (from `product_type`, `mdrp_te_code` and the Orange Book): brand, generic (A-rated: MDRP TE code "A…", or Orange Book A for every product of its ANDA when MDRP is blank or "NR", D-026), generic_not_a_rated, authorized_generic, reference, biosimilar, interchangeable, none.
+- **Savings units:** the savings step multiplies SDUD `units_reimbursed` by `unit_factor`; the minimum-volume test for a benchmark (`MIN_ALT_UNITS`) uses the units as reported.
 - **`rebate_min_rate`:** from `mdrp_drug_category`, `mdrp_clotting_factor`, `mdrp_pediatric`.
 
 ### B13. `outputs/savings_2025` (step 8)
@@ -523,7 +525,7 @@ Within a step, the newest `effective_time` wins.
 Fields:
 - `group_key` = `equivalence.primary_key`; `presentation` = `equivalence.group_name`.
 - `product`, `labeler`: same naming rules as C5.
-- `role`, `unit_type`: from the equivalence table.
+- `role`, `unit_type`: from the equivalence table; `units` = SDUD units × `unit_factor` (D-027).
 - `units`, `prescriptions`, `medicaid_amount`: SDUD sums.
 - `ndcs`: the row's NDCs as 11 plain digits, space-separated, highest national Medicaid spending first.
 - `cost_per_unit`, `cost_per_prescription`: calculated from those sums.

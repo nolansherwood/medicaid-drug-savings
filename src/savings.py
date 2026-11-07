@@ -106,13 +106,16 @@ def ndc_measures(year: int) -> pd.DataFrame:
 
 def _side(df: pd.DataFrame, key: str) -> pd.DataFrame:
     g = df.groupby(["geo", key])
-    out = g.agg(units=("units", "sum"), rx=("rx", "sum"), amt=("amt", "sum"), ndcs=("ndc", "nunique"),
+    out = g.agg(units=("units", "sum"), reported_units=("reported_units", "sum"), rx=("rx", "sum"),
+                amt=("amt", "sum"), ndcs=("ndc", "nunique"),
                 min_net=("min_net_amt", "sum"), avg_net=("avg_net_amt", "sum"))
     return out.reset_index()
 
 
 def compute(year: int, key: str, tier: str, eq: pd.DataFrame, m: pd.DataFrame, brand_rate: float) -> pd.DataFrame:
     from_role, to_roles = TIERS[tier]
+    if "reported_units" not in m:                 # units not converted (D-027): reported = units
+        m = m.assign(reported_units=m["units"])
     d = m.merge(eq[["ndc", key, "role", "rebate_min_rate", "mdrp_drug_category", "proprietary_name"]], on="ndc")
     d = d[d[key].notna() & (d["units"] > 0) & (d["amt"] > 0)]
     d["min_net_amt"] = d["amt"] * (1 - d["rebate_min_rate"])
@@ -134,7 +137,7 @@ def compute(year: int, key: str, tier: str, eq: pd.DataFrame, m: pd.DataFrame, b
     t["to_cpu"] = t["amt"] / t["units"]
     t["to_min_rate"] = 1 - t["min_net"] / t["amt"]
     t["to_avg_rate"] = 1 - t["avg_net"] / t["amt"]
-    t["sufficient"] = (t["units"] >= MIN_ALT_UNITS) | (t["ndcs"] >= MIN_ALT_NDCS)
+    t["sufficient"] = (t["reported_units"] >= MIN_ALT_UNITS) | (t["ndcs"] >= MIN_ALT_NDCS)
 
     tcols = ["units", "ndcs", "to_cpu", "to_cpu_lowest", "to_min_rate", "to_avg_rate", "sufficient"]
     local = t[["geo", key] + tcols]
@@ -231,6 +234,11 @@ def drop_unit_mismatches(res: pd.DataFrame, eq: pd.DataFrame, m: pd.DataFrame, y
 def run(year: int) -> pd.DataFrame:
     eq = pd.read_parquet(equivalence.output_path(year))
     m = ndc_measures(year)
+    # Units on the group's common basis (D-027): e.g. per-pen units x 0.4 mL per pen. The
+    # minimum-volume test (MIN_ALT_UNITS) keeps using the units as reported, so converting
+    # doesn't change which benchmarks count as having enough volume.
+    m["reported_units"] = m["units"]
+    m["units"] = m["units"] * m["ndc"].map(eq.set_index("ndc")["unit_factor"]).fillna(1.0)
     rates = load_rates()
     brand_rate = float(rates.loc[rates["state"] == "US", "brand_rate_used"].iloc[0])
 

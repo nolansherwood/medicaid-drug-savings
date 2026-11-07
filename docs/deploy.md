@@ -52,8 +52,9 @@ picking Texas on one page shows Texas on the others.
 `tests/test_app.py` runs each page headlessly (Streamlit AppTest), nationally
 and for a state. It checks that pages render, that the home search and the
 region picker work, and that Explore shows the expected strengths for Humira
-and Eliquis. It also pins the 2025 figures shown on the old dashboard
-($9.1B gross savings, $111.9B spending, 80.2% generic share and others).
+and Eliquis. It also pins the 2025 figures ($9.3B gross savings since the
+match audit fixes D-025 to D-027, $111.9B spending, 80.2% generic share and
+others).
 After a data refresh those pinned figures will change: check the new values,
 then update them in the test.
 

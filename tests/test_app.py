@@ -40,10 +40,12 @@ def test_hero_matches_savings_summary():
 
 
 @pytest.mark.parametrize("geo,tier,shown", [
-    # Figures shown on the old dashboard (2025 data): gross, after minimum rebates, after average rebates.
-    ("US", "all", ("$9.1B", "$6.8B", "$2.1B")),
-    ("US", "generic", ("$5.0B", "$3.6B", "$918.9M")),
-    ("NY", "generic", ("$522.7M", "$385.5M", "$106.7M")),
+    # 2025 figures: gross, after minimum rebates, after average rebates. The old dashboard showed
+    # $9.1B / $6.8B / $2.1B (US), $5.0B / $3.6B / $918.9M (US generic) and $522.7M / $385.5M /
+    # $106.7M (NY generic); D-025 to D-027 (2026-11-07) added missed matches.
+    ("US", "all", ("$9.3B", "$6.9B", "$2.1B")),
+    ("US", "generic", ("$5.2B", "$3.7B", "$916.2M")),
+    ("NY", "generic", ("$531.8M", "$391.2M", "$106.2M")),
 ])
 def test_savings_figures_match_old_dashboard(geo, tier, shown):
     row = data.savings_for(geo, tier)
@@ -125,7 +127,7 @@ def test_pages_render(app, path, title, geo):
 def test_home_hero_follows_region(app):
     at = app.run()
     hero = lambda: next(m.value for m in at.markdown if "mr-hero" in m.value)  # noqa: E731
-    assert "$9.1 billion" in hero() and "nationally" in hero()
+    assert "$9.3 billion" in hero() and "nationally" in hero()
     at.selectbox(key="home_geo").select("TX").run()
     assert "in Texas" in hero() and at.session_state["geo"] == "TX"
 
@@ -180,7 +182,8 @@ def test_savings_brands_add_up_their_strengths():
     assert not brands.duplicated(keys).any()                            # one row per brand
     sums = members.groupby(keys).gross_savings.sum()
     merged = brands.set_index(keys).gross_savings
-    assert ((sums.reindex(merged.index) - merged).abs() <= 2).all()     # rounded to whole dollars
+    n = members.groupby(keys).size().reindex(merged.index)
+    assert ((sums.reindex(merged.index) - merged).abs() <= 0.5 * n + 1).all()   # each strength rounded to $1
     us = brands[(brands.geo == "US") & (brands.tier_view == "all")]
     assert len(us) == 25 and us.brand.str.lower().duplicated().sum() == 0
     humira = us[us.brand == "Humira"].iloc[0]

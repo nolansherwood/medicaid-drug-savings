@@ -29,12 +29,13 @@ import argparse
 import json
 import re
 import sys
+import zipfile
 
 import duckdb
 import pandas as pd
 
 from src import config
-from src.reference_data import MDRP_COD_PATHWAY, REF_OUT
+from src.reference_data import MDRP_COD_PATHWAY, REF_OUT, REF_RAW
 
 OVERRIDES_PATH = config.ROOT / "src" / "product_type_overrides.csv"
 TRANSITIONED_PATH = config.ROOT / "src" / "transitioned_biologics.csv"
@@ -325,12 +326,68 @@ def classify_row(r: dict, pb: dict, valid_apps: set, patterns: list[str], overri
     return out, issues
 
 
+# ---------------------------------------------------------------------------
+# Fallbacks for NDCs the MDRP file doesn't rate or give a unit (D-026)
+# ---------------------------------------------------------------------------
+
+def orange_book_a_rated() -> set:
+    """ANDA numbers (6 digits) whose every Orange Book product has an "A" TE code.
+    Used when MDRP has no TE code or "NR" (not rated); an explicit MDRP B code is kept."""
+    with zipfile.ZipFile(REF_RAW / "orange_book.zip") as z:
+        ob = pd.read_csv(z.open("products.txt"), sep="~", dtype=str, encoding="latin1", keep_default_na=False)
+    anda = ob[ob["Appl_Type"] == "A"].assign(appl=ob["Appl_No"].str.lstrip("0").str.zfill(6),
+                                             a=ob["TE_Code"].str.upper().str.startswith("A"))
+    rated = anda.groupby("appl")["a"].all()
+    return set(rated[rated].index)
+
+
+def a_rated(te_code: pd.Series, application_no: pd.Series, ob_a: set) -> pd.Series:
+    """MDRP TE code starting "A"; when MDRP has none or "NR", the Orange Book's rating (D-026)."""
+    te = te_code.fillna("").str.upper().str.strip()
+    return te.str.startswith("A") | (te.isin(["", "NR"]) & application_no.isin(ob_a))
+
+
+def fill_units(unit: pd.Series, clinical_rxcui: pd.Series) -> pd.Series:
+    """MDRP unit type; when MDRP has none, the most common unit of the other NDCs with the same
+    RxNorm clinical drug (D-026). Still unknown: "UNK"."""
+    known = pd.DataFrame({"c": clinical_rxcui, "u": unit}).dropna()
+    mode = known.groupby("c")["u"].agg(lambda s: s.value_counts().index[0])
+    return unit.fillna(clinical_rxcui.map(mode)).fillna("UNK")
+
+
+_VOLUME = re.compile(r"^(\d*\.?\d+) ML ")
+COUNT_UNITS = ("TAB", "CAP")
+
+
+def common_units(unit: pd.Series, clinical_name: pd.Series, clinical_rxcui: pd.Series) -> tuple[pd.Series, pd.Series]:
+    """Put MDRP units on one basis per clinical drug (D-027). Returns (unit_type, unit_factor):
+    reported units x unit_factor are in unit_type.
+    - EA with a stated volume ("0.4 ML adalimumab 100 MG/ML Auto-Injector", "50 ML cefazolin ...
+      Injection") is converted to ML at that volume. Packs ("{3 (0.8 ML ...) } Pack") are not:
+      their volume is per item.
+    - EA for a clinical drug whose other NDCs are billed per TAB or CAP counts as one of those."""
+    name = clinical_name.fillna("")
+    vol = name.str.extract(_VOLUME)[0].astype(float)
+    factor = pd.Series(1.0, index=unit.index)
+    by_volume = (unit == "EA") & vol.notna()
+    unit = unit.where(~by_volume, "ML")
+    factor[by_volume] = vol[by_volume]
+    counted = pd.DataFrame({"c": clinical_rxcui, "u": unit})
+    counted = counted[counted["u"].isin(COUNT_UNITS)].groupby("c")["u"].agg(lambda s: s.value_counts().index[0])
+    as_count = (unit == "EA") & clinical_rxcui.map(counted).notna()
+    unit = unit.where(~as_count, clinical_rxcui.map(counted))
+    return unit, factor
+
+
 def add_market_evidence(df: pd.DataFrame) -> pd.DataFrame:
     """Add clinical_rxcui and generic_on_market for the generic-competition rule (D-019).
 
     generic_on_market is True when some NDC with the same RxNorm SCD/GPCK and
-    MDRP unit type is an A-rated generic (ANDA + MDRP TE code starting "A") or
-    an authorized generic, and had prescriptions in this year's national SDUD.
+    MDRP unit type is an A-rated generic (ANDA + MDRP TE code starting "A", or
+    the Orange Book's A rating when MDRP has none, D-026) or an authorized
+    generic, and had prescriptions in this year's national SDUD. A missing
+    MDRP unit is taken from the other NDCs of the same clinical drug, and units
+    are put on one basis per clinical drug as in the savings groups (D-027).
     None when the NDC's own SCD is unknown.
     """
     from src.crosswalk import CROSSWALK_PATH, parallel_map
@@ -342,11 +399,13 @@ def add_market_evidence(df: pd.DataFrame) -> pd.DataFrame:
     products = sorted(df["product_rxcui"].dropna().unique())
     clinical = parallel_map(rx.clinical_concept, products, "clinical drug")
     df["clinical_rxcui"] = df["product_rxcui"].map(lambda p: clinical[p]["clinical_rxcui"] if isinstance(p, str) else None)
+    clinical_name = df["product_rxcui"].map(lambda p: clinical[p]["clinical_name"] if isinstance(p, str) else None)
 
     pre = [fda_pathway(m) or mdrp_pathway(c) for m, c in zip(df["fda_marketing_category"], df["mdrp_cod_status"])]
-    a_rated = df["mdrp_te_code"].fillna("").str.upper().str.startswith("A")
-    is_alt = (((pd.Series(pre, index=df.index) == "ANDA") & a_rated) | (pd.Series(pre, index=df.index) == "NDA_AG"))
-    unit = df["mdrp_unit_type"].fillna("UNK")
+    rated = a_rated(df["mdrp_te_code"], df["fda_application_no"].fillna(df["mdrp_application_no"]),
+                    orange_book_a_rated())
+    is_alt = (((pd.Series(pre, index=df.index) == "ANDA") & rated) | (pd.Series(pre, index=df.index) == "NDA_AG"))
+    unit, _ = common_units(fill_units(df["mdrp_unit_type"], df["clinical_rxcui"]), clinical_name, df["clinical_rxcui"])
     on_market = df[is_alt & (df["prescriptions"] > 0) & df["clinical_rxcui"].notna()]
     keys = set(zip(on_market["clinical_rxcui"], unit[on_market.index]))
     df["generic_on_market"] = [
