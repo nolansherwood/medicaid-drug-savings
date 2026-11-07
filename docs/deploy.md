@@ -109,8 +109,11 @@ Y=2025
 ```
 
 For a new year, also change `YEAR` in `app/lib/data.py`. Then commit the
-updated `outputs/dashboard/` files and push; Community Cloud redeploys, and
-the app's data cache starts fresh.
+updated `outputs/dashboard/` files and push. Community Cloud pulls the push
+into the running app without restarting it; `data.clear_if_data_changed()`
+(called from Home.py) notices the changed files and clears the data cache.
+If the live figures still look old, reboot the app from the Community Cloud
+dashboard (Manage app > Reboot app).
 
 Disclaimer shown in the side menu: built from CMS State Drug Utilization Data
 and FDA records; spending is before manufacturer rebates.

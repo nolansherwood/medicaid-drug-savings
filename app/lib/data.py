@@ -28,6 +28,27 @@ STATE_NAMES = {
 }
 
 
+@st.cache_resource
+def _loaded_fingerprint() -> dict:
+    return {"files": None}
+
+
+def clear_if_data_changed() -> None:
+    """Drop cached tables when the files in outputs/dashboard/ change.
+
+    st.cache_data keys on each loader's code, not on the files it reads. When
+    Community Cloud pulls a push that only changes data, the running server
+    keeps serving the old tables until rebooted, so compare file sizes and
+    modification times on every run and clear the cache when they differ.
+    """
+    files = tuple((p.name, p.stat().st_size, p.stat().st_mtime_ns) for p in sorted(DASH_DIR.glob("*.csv")))
+    seen = _loaded_fingerprint()
+    if seen["files"] != files:
+        if seen["files"] is not None:
+            st.cache_data.clear()
+        seen["files"] = files
+
+
 def _read(name: str, **kw) -> pd.DataFrame:
     # NDC columns must stay strings (leading zeros), so callers pass dtype.
     return pd.read_csv(DASH_DIR / f"{name}_{YEAR}.csv", **kw)

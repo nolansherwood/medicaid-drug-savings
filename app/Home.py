@@ -7,8 +7,9 @@ from pathlib import Path
 
 import streamlit as st
 
-from lib import ui
+from lib import data, ui
 
+data.clear_if_data_changed()
 st.set_page_config(
     page_title="Medicaid Drug Savings Explorer",
     page_icon=":material/medication:",
