@@ -115,13 +115,13 @@ def page(at, path, **state):
 
 
 @pytest.mark.parametrize("geo", ["US", "TX"])
-@pytest.mark.parametrize("path,title", [("views/home.py", "Home"), ("views/rankings.py", "Rankings"),
+@pytest.mark.parametrize("path,title", [("views/home.py", None), ("views/rankings.py", "Rankings"),
                                         ("views/savings.py", "Savings Opportunity"), ("views/rebates.py", "Rebates"),
                                         ("views/explore.py", "Explore Alternatives"),
                                         ("views/categories.py", "Drug Categories")])
 def test_pages_render(app, path, title, geo):
     at = page(app.run(), path, geo=geo)
-    assert [t.value for t in at.title] == [title]
+    assert [t.value for t in at.title] == ([title] if title else [])  # Home has no title
 
 
 def test_home_hero_follows_region(app):

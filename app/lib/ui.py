@@ -372,11 +372,13 @@ def usd_compact(v: float) -> str:
     return f"{sign}${v:,.0f}"
 
 
-def page_header(title: str, lede: str, picker=None) -> None:
+def page_header(title: "str | None", lede: str, picker=None) -> None:
     """Every page's header: title and lede, with an optional control (the state
-    picker) top-right. One layout so titles sit at the same height on every page."""
+    picker) top-right. One layout so titles sit at the same height on every page.
+    title=None shows only the lede (Home: its name is in the sidebar only)."""
     if picker is None:
-        st.title(title, anchor=False)
+        if title:
+            st.title(title, anchor=False)
         st.markdown(f'<div class="mr-lede">{escape(lede)}</div>', unsafe_allow_html=True)
         return
     head, side = st.columns([5, 2], gap="large")

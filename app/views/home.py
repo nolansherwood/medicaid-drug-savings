@@ -4,8 +4,8 @@ import streamlit as st
 
 from lib import charts, data, tooltips, ui
 
-ui.page_header("Home", f"Medicaid prescription drug spending, {data.YEAR}, and where a generic or biosimilar "
-                           "could cost less.")
+ui.page_header(None, f"Medicaid prescription drug spending, {data.YEAR}, and where a generic or biosimilar "
+                         "could cost less.")
 
 st.session_state.setdefault("geo", data.NATIONAL)
 st.session_state.setdefault("map_metric", "generic_rx_share")
