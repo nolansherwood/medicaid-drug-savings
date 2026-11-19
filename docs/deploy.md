@@ -29,7 +29,7 @@ App layout:
 | File | What it is |
 |---|---|
 | `app/Home.py` | Entry point: page setup, side menu, logo |
-| `app/views/home.py` | Overview: savings hero, region picker, product search, state map |
+| `app/views/home.py` | Home: savings hero, region picker, product search, state map |
 | `app/views/rankings.py` | KPI tiles, category table, top 25 bar charts, products popup |
 | `app/views/savings.py` | Savings KPI tiles by switch type, top 25 brands (strengths added up) |
 | `app/views/explore.py` | Product search, strengths and forms (collapsed), alternatives and FDA reasons |

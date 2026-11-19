@@ -23,7 +23,7 @@ st.logo(str(Path(__file__).parent / "static" / ("logo_light.svg" if ui.mode() ==
 nav = st.navigation(
     {
         "Main menu": [
-            st.Page("views/home.py", title="Overview", icon=":material/space_dashboard:", default=True),
+            st.Page("views/home.py", title="Home", icon=":material/space_dashboard:", default=True),
             st.Page("views/rankings.py", title="Rankings", icon=":material/bar_chart:", url_path="rankings"),
             st.Page("views/savings.py", title="Savings Opportunity", icon=":material/savings:", url_path="savings"),
             st.Page("views/explore.py", title="Explore Alternatives", icon=":material/search:", url_path="explore"),

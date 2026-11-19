@@ -1,10 +1,10 @@
-"""Overview: three cards and a state map. The region picked in the region
+"""Home: three cards and a state map. The region picked in the region
 card (or by clicking the map) drives the hero number and the map outline."""
 import streamlit as st
 
 from lib import charts, data, tooltips, ui
 
-ui.page_header("Overview", f"Medicaid prescription drug spending, {data.YEAR}, and where a generic or biosimilar "
+ui.page_header("Home", f"Medicaid prescription drug spending, {data.YEAR}, and where a generic or biosimilar "
                            "could cost less.")
 
 st.session_state.setdefault("geo", data.NATIONAL)

@@ -123,7 +123,7 @@ div:has(> .st-key-mr-home-wrap) { position: absolute; top: 0; left: 0 !important
 [class*="st-key-card-"] [data-testid="stPageLink"] a p { color: var(--mr-muted); font-size: 0.9rem; }
 [class*="st-key-card-"] [data-testid="stPageLink"] a:hover { background: none; }
 [class*="st-key-card-"] [data-testid="stPageLink"] a:hover p { color: var(--mr-strong); }
-/* Card rows (Overview's three cards, KPI tiles): every card in the row is the same height. */
+/* Card rows (Home's three cards, KPI tiles): every card in the row is the same height. */
 :is(.st-key-home-cards, .st-key-kpi-row, [class*="st-key-cat-row"]) [data-testid="stColumn"] { display: flex; flex-direction: column; }
 :is(.st-key-home-cards, .st-key-kpi-row, [class*="st-key-cat-row"]) [data-testid="stColumn"] > [data-testid="stVerticalBlock"] { flex: 1; }
 :is(.st-key-home-cards, .st-key-kpi-row, [class*="st-key-cat-row"]) [data-testid="stColumn"] > [data-testid="stVerticalBlock"] > div { flex: 1; }

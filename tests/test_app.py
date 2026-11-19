@@ -115,7 +115,7 @@ def page(at, path, **state):
 
 
 @pytest.mark.parametrize("geo", ["US", "TX"])
-@pytest.mark.parametrize("path,title", [("views/home.py", "Overview"), ("views/rankings.py", "Rankings"),
+@pytest.mark.parametrize("path,title", [("views/home.py", "Home"), ("views/rankings.py", "Rankings"),
                                         ("views/savings.py", "Savings Opportunity"), ("views/rebates.py", "Rebates"),
                                         ("views/explore.py", "Explore Alternatives"),
                                         ("views/categories.py", "Drug Categories")])
